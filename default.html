@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+    
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+    
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    {% if page.title %}
+    {% assign page-title = page.title | escape %}
+    {% else %}
+    {% assign page-title = site.title | escape %}
+    {% endif %}
+    
+    <title>{{ page-title }}</title>
+    
+    {% if site.plugins contains "jekyll-seo-tag" %}
+    <!-- jekyll-seo-tag -->
+    {% else %}
+    {% include social-metatags.html %}
+    {% endif %}
+    
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    
+    {% if site.plugins contains "jekyll-feed" %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
+    {% endif %}
+    
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}">
+    
+    <meta name="robots" content="noarchive">
+    
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+        <link rel="alternate" media="handheld" href=""> -->
+        
+        
+        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
+    </head>
+    <body>
+        
+        <header class="page-header"  
+        role="banner">
+      <h1 class="project-name">Stokes Team</h1>
+</header>
+<main id="content" class="main-content" role="main">
+       {{ content }}
+      <footer class="site-footer">
+        &copy; Stokes team2
+      </footer>
+</main>
+    </html>
+    
