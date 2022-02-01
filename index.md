@@ -2,4 +2,5 @@
 
 The map will go up top with links in the heading with the title. Then other information below. 
 
-[Click me](http://www.google.com){: .btn}
+[Publications](http://www.google.com){: .btn .btn-blue .mr-2 } 
+[Team Members](http://www.google.com){: .btn .btn-blue .mr-2 } 
