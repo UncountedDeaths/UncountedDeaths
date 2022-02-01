@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 title: [Mortality Surveillance and Reporting Project]
 description: [Our team is dedicated to investigating and evaluating Covid-19 mortality]
+author: Stokes team
+navbar-links: 
+  Publications: "www.google.com"
+  Test: "tests"
