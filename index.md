@@ -5,4 +5,4 @@
 [Team](https://mortality-surv-and-reporting-proj.github.io/team){: .btn-blue .mr-10 } 
 ## Welcome to the Mortality Surveillance and Reporting Project 
 
-
+![](./tool.svg)
