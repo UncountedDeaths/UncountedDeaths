@@ -9,10 +9,10 @@ Assistant Professor in Global Health at BU
 Steele Myrick
 Master's Student
 
-![Elif Photo](https://github.com/Mortality-Surv-and-Reporting-Proj/Mortality-Surv-and-Reporting-Proj.github.io/blob/main/Photos/Elif.jpeg)
+![Elif Photo](Photos/Elif.jpeg)
 Elif Coskun
 Master's Student 
 
-![Syl Photo](https://github.com/Mortality-Surv-and-Reporting-Proj/Mortality-Surv-and-Reporting-Proj.github.io/blob/main/Photos/Syl.jpeg)
+![Syl Photo](/Mortality-Surv-and-Reporting-Proj.github.io/blob/main/Photos/Syl.jpeg)
 Syl Lutze
 Master's Student
