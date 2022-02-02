@@ -1,5 +1,7 @@
 [Home](https://mortality-surv-and-reporting-proj.github.io/){: .btn-blue .mr-10} 
-[Publications](http://www.google.com){: .btn-blue .mr-10} 
+
+[Publications](https://mortality-surv-and-reporting-proj.github.io/publications){: .btn-blue .mr-10} 
+
 [Team](https://mortality-surv-and-reporting-proj.github.io/team){: .btn-blue .mr-10} 
 
 ## Our Team 
