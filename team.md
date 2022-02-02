@@ -1,6 +1,6 @@
-[Home]((https://mortality-surv-and-reporting-proj.github.io/){: .btn-blue .mr-2} 
-[Publications](http://www.google.com){: .btn-blue .mr-2} 
-[Team]((https://mortality-surv-and-reporting-proj.github.io/team){: .btn-blue .mr-2} 
+[Home](https://mortality-surv-and-reporting-proj.github.io/){: .btn-blue .mr-10} 
+[Publications](http://www.google.com){: .btn-blue .mr-10} 
+[Team](https://mortality-surv-and-reporting-proj.github.io/team){: .btn-blue .mr-10} 
 
 ## Our Team 
 If you are interested in joining the team, please contact Professor Stokes at acstokes@bu.edu 
