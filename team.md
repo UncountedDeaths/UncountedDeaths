@@ -1,13 +1,13 @@
 ## Our Team 
 ### If you are interested in joining the team, please contact Professor Stokes at acstokes@bu.edu 
 
-![Stokes Photo](Photos/Stokes.jpg | width=48)
+![Stokes Photo](Photos/Stokes.jpg){: width="250" }
 
 Andrew Stokes, PhD
 
 Assistant Professor in Global Health at BU 
 
-![Steele Photo](Photos/Steele.jpeg | width=48)
+![Steele Photo](Photos/Steele.jpeg){: width="250" }
 
 Steele Myrick
 
