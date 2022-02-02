@@ -1,4 +1,4 @@
-[Publications](http://www.google.com){: .btn {color: rgb(50,50,50)} 
+[Publications](http://www.google.com){: .btn-blue .mr-2} 
 [Team Members](https://mortality-surv-and-reporting-proj.github.io/team){: .btn .btn-blue .mr-2 } 
 ## Welcome to the Mortality Surveillance and Reporting Project 
 
