@@ -4,7 +4,7 @@
 
 [Team](https://mortality-surv-and-reporting-proj.github.io/team){: .btn-blue .mr-10} 
 
-## Academic Article 
+## Academic Articles 
 [County-level estimates of excess mortality associated with COVID-19 in the United States](https://pubmed.ncbi.nlm.nih.gov/35018297/)
 
 ## Stokes Team in the News 
