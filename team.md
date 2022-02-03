@@ -1,4 +1,4 @@
-[Home](https://mortality-surv-and-reporting-proj.github.io/){: .btn-blue .mr-10} 
+[Home](https://mortality-surv-and-reporting-proj.github.io/home){: .btn-blue .mr-10} 
 
 [Publications](https://mortality-surv-and-reporting-proj.github.io/publications){: .btn-blue .mr-10} 
 
