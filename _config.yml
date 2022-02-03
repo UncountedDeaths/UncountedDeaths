@@ -1,7 +1,4 @@
 theme: jekyll-theme-cayman
-title: [Stokes Covid-19 Mortality Team]
+title: [The Mortality Surveillance & Reporting Laboratory at Boston University]
 description: [Our team is dedicated to investigating and evaluating discrepencies in Covid-19 mortality throughout the US]
 author: Stokes team
-navbar-links: 
-  Publications: "www.google.com"
-  Test: "tests"
