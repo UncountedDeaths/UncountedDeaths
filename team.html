@@ -20,6 +20,23 @@ layout: default
         }
         
         .button1 {background-color: #008CBA;} /* Blue */
+
+        img {
+  border-radius: 50%;
+}
+
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
         </style>
         </head>
         <body>
@@ -36,25 +53,58 @@ layout: default
     <h2>Our Team</h2>
     <p>If you are interested in joining the team, please contact Professor Stokes at acstokes@bu.edu </p>
 
-    <img src="Photos/Stokes.jpg" width="200">
-    <h3>Andrew Stokes, PhD</h3>
-    <p>Assistant Professor in Global Health at BU </p>
+    <div class="container">
+      <div class="image">
+        <img src="Photos/Stokes.jpg" width="200">
+      </div>
+      <div class="text">
+        <h3>Andrew Stokes, PhD</h3>
+        <p>Assistant Professor in Global Health at BU </p>
+          </div>
+    </div>
 
-    <img src="Photos/Steele.jpeg" width="200">
-    <h3>Steele Myrick</h3>
-    <p>Master's Student </p>
 
-    <img src="Photos/Elif.jpeg" width="200">
-    <h3>Elif Coskun</h3>
-    <p>Master's Student </p>
+    <div class="container">
+      <div class="image">
+        <img src="Photos/Steele.jpeg" width="200"> 
+      </div>
+      <div class="text">
+        <h3>Steele Myrick</h3>
+        <p>Master's Student </p> 
+               </div>
+    </div>
 
-    <img src="Photos/Rafeya Raquib.jpeg" width="200">
-    <h3>Rafeya Raquib</h3>
-    <p>Master's Student </p>
+    <div class="container">
+      <div class="image">
+        <img src="Photos/Elif.jpeg" width="200">
+      </div>
+      <div class="text">
+        <h3>Elif Coskun</h3>
+        <p>Master's Student </p>
+              </div>
+    </div>
 
-    <img src="Photos/Syl.jpeg" width="200">
-    <h3>Sylvia Lutze</h3>
-    <p>Master's Student </p>
+    <div class="container">
+      <div class="image">
+        <img src="Photos/Rafeya.jpeg" width="200">
+      </div>
+      <div class="text">
+        <h3>Rafeya Raquib</h3>
+        <p>Master's Student </p>
+              </div>
+    </div>
+
+    <div class="container">
+      <div class="image">
+        <img src="Photos/Syl.jpeg" width="200">
+      </div>
+      <div class="text">
+        <h3>Sylvia Lutze</h3>
+        <p>Master's Student </p>
+              </div>
+    </div>
+
+ 
 
     </body>
 </html>
