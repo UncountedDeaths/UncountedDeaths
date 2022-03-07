@@ -4,7 +4,6 @@ import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { HomePage } from './HomePage';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import { DataPage } from './DataPage';
 import { Page404 } from './404Page';
 import { SupportPage } from './SupportPage';
 import { PartnersPage } from './PartnersPage';
@@ -38,26 +37,22 @@ export const Main: React.FC<Props> = () => {
         of the page, not the entire thing! 
          */}
         <Routes>
-          <Route path="/">
-            <HomePage />
-          </Route>
-          <Route path="/data" >
-            <DataPage />
+          <Route path="/" element={<HomePage/>}>
           </Route>
 
-          <Route path="/support">
-            <SupportPage />
+          <Route path="/support" element={<SupportPage/>}>
+
           </Route>
-          <Route path="/partners">
-            <PartnersPage />
+          <Route path="/partners" element={<PartnersPage/>}>
+            {/* <PartnersPage /> */}
           </Route>
-          <Route path="/about" >
-            <AboutPage />
+          <Route path="/about" element={<AboutPage/>}>
+            {/* <AboutPage /> */}
           </Route>
 
 
-          <Route path="/" >
-            <Page404 />
+          <Route path="/" element={<Page404/>} >
+            {/* <Page404 /> */}
           </Route>
         </Routes>
       </Layout.Content>

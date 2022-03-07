@@ -78,7 +78,7 @@ interface MenuProps {
 const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
   const { inline } = props;
   const [selected, setSelected] = useState(['1']);
-  let history = useHistory();
+  let navigate = useNavigate();
   let location = useLocation();
   useEffect(() => {
     /**
@@ -107,7 +107,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         key={InternalRoutes.HOME.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(InternalRoutes.HOME.path);
+          navigate(InternalRoutes.HOME.path);
           setSelected([`${InternalRoutes.HOME.key}`]);
         }}
       >
@@ -117,7 +117,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         key={InternalRoutes.ABOUT.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(InternalRoutes.ABOUT.path);
+          navigate(InternalRoutes.ABOUT.path);
           setSelected([`${InternalRoutes.ABOUT.key}`]);
         }}
       >
@@ -127,7 +127,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         key={InternalRoutes.DATA.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(InternalRoutes.DATA.path);
+          navigate(InternalRoutes.DATA.path);
           setSelected([`${InternalRoutes.DATA.key}`]);
         }}
       >
@@ -137,7 +137,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         key={InternalRoutes.SUPPORT.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(InternalRoutes.SUPPORT.path);
+          navigate(InternalRoutes.SUPPORT.path);
           setSelected([`${InternalRoutes.SUPPORT.key}`]);
         }}
       >
@@ -147,7 +147,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         key={InternalRoutes.PARTNERS.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(InternalRoutes.PARTNERS.path);
+          navigate(InternalRoutes.PARTNERS.path);
           setSelected([`${InternalRoutes.PARTNERS.key}`]);
         }}
       >
