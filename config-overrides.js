@@ -1,5 +1,5 @@
 const { override, fixBabelImports, addLessLoader, getThemeVariables } = require('customize-cra');
-const { addReactRefresh } = require('customize-cra-react-refresh')
+// const { addReactRefresh } = require('customize-cra-react-refresh')
 
 module.exports = override(
   fixBabelImports('import', {
@@ -22,5 +22,6 @@ module.exports = override(
       },
     },
   }),
-  addReactRefresh()
+  // Removed because it was creating a double plugin error with babel/webpack 
+  // addReactRefresh()
 );

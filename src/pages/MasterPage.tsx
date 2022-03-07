@@ -3,15 +3,15 @@ import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { HomePage } from './HomePage';
-import { Route, Switch, useLocation, useHistory } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { DataPage } from './DataPage';
 import { Page404 } from './404Page';
 import { SupportPage } from './SupportPage';
 import { PartnersPage } from './PartnersPage';
 import { AboutPage } from './AboutPage';
 import { MainFooter } from '../components/Footer';
-import { Routes } from '../routes';
-interface Props {}
+import { InternalRoutes } from '../routes';
+interface Props { }
 
 //Small function to help render the footer
 function renderFooterHelper() {
@@ -27,7 +27,7 @@ function renderFooterHelper() {
  */
 export const Main: React.FC<Props> = () => {
   let location = useLocation();
-  let history = useHistory();
+  let navigate = useNavigate();
   return (
     <Layout className={styles.MasterLayout}>
       <Layout.Header className={styles.MenuHeader}>
@@ -37,45 +37,32 @@ export const Main: React.FC<Props> = () => {
         {/* We put a router directly here so that it only has to re-load the contents
         of the page, not the entire thing! 
          */}
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/data" component={DataPage} />
-          <Route exact path="/support" component={SupportPage} />
-          <Route exact path="/partners" component={PartnersPage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route
-            exact
-            path="/redirect/github"
-            component={() => {
-              window.open('https://github.com/CRANE-toolbox');
-              history.goBack();
-              return null;
-            }}
-          />
-          <Route
-            exact
-            path="/redirect/devpost"
-            component={() => {
-              window.open('https://devpost.com/software/crane-dvkeuf');
-              history.goBack();
-              return null;
-            }}
-          />
-          <Route
-            exact
-            path="/redirect/emailus"
-            component={() => {
-              window.open('https://forms.gle/fPnisqH8j5PgeLpH6');
-              history.goBack();
-              return null;
-            }}
-          />
+        <Routes>
+          <Route path="/">
+            <HomePage />
+          </Route>
+          <Route path="/data" >
+            <DataPage />
+          </Route>
 
-          <Route path="/" component={Page404} />
-        </Switch>
+          <Route path="/support">
+            <SupportPage />
+          </Route>
+          <Route path="/partners">
+            <PartnersPage />
+          </Route>
+          <Route path="/about" >
+            <AboutPage />
+          </Route>
+
+
+          <Route path="/" >
+            <Page404 />
+          </Route>
+        </Routes>
       </Layout.Content>
       {/* Don't render the footer on the home page */}
-      {location.pathname === Routes.HOME.path ? null : renderFooterHelper()}
+      {location.pathname === InternalRoutes.HOME.path ? null : renderFooterHelper()}
     </Layout>
   );
 };

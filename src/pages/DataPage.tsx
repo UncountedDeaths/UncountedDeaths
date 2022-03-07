@@ -16,7 +16,6 @@ import {
   dataTopicKungflu,
   dataTopicChinese,
   dataTopicCoronavirus,
-  dataTopicInfecting,
   dataAggregateChinaChineseWuhan,
   dataAggregateKungFluWuflu,
 } from '../resources/data';

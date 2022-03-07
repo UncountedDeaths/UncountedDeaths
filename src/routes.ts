@@ -1,6 +1,6 @@
 //All possible routes for the application. Modification here will have a global affect
 
-export const Routes = {
+export const InternalRoutes = {
   HOME: { path: '/', key: 1 },
   DATA: { path: '/data', key: 2 },
   SUPPORT: { path: '/support', key: 3 },

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Row, Col, Layout, Button } from 'antd';
 import styles from '../styles/HomePage.module.less';
-import { useHistory } from 'react-router-dom';
-import { Routes, ExternalRoutes } from '../routes';
+import { useNavigate } from 'react-router-dom';
+import { InternalRoutes, ExternalRoutes } from '../routes';
 import { CircleEmail, DevPost, Github } from '../assets/assets.index';
 interface Props {}
 export const HomePage: React.FC<Props> = () => {
-  let history = useHistory();
+  let navigate = useNavigate();
   return (
     <Layout.Content>
       <Row justify="center">
@@ -37,7 +37,7 @@ export const HomePage: React.FC<Props> = () => {
             size="large"
             className={styles.ActionButtonData}
             onClick={() => {
-              history.push(Routes.DATA.path);
+              navigate(InternalRoutes.DATA.path);
             }}
           >
             See Data
@@ -48,7 +48,7 @@ export const HomePage: React.FC<Props> = () => {
             size="large"
             className={styles.ActionButtonSupport}
             onClick={() => {
-              history.push(Routes.SUPPORT.path);
+              navigate(InternalRoutes.SUPPORT.path);
             }}
           >
             Get Support
@@ -58,13 +58,13 @@ export const HomePage: React.FC<Props> = () => {
       <div style={{ paddingTop: '3rem' }} />
       <Row justify="center" className={styles.SocialIconsRow}>
         <Col className={styles.HomeSocialIcons}>
-          <CircleEmail onClick={() => history.push(ExternalRoutes.EMAILUS, null)} />
+          <CircleEmail />
         </Col>
         <Col className={styles.HomeSocialIcons}>
-          <DevPost onClick={() => history.push(ExternalRoutes.DEVPOST, null)} />
+          <DevPost />
         </Col>
         <Col className={styles.HomeSocialIcons}>
-          <Github onClick={() => history.push(ExternalRoutes.GITHUB)} />
+          <Github  />
         </Col>
       </Row>
     </Layout.Content>

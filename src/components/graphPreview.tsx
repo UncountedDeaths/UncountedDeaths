@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/graphPreview.module.less';
 import useHover from '@react-hook/hover';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ExternalRoutes } from '../routes';
 import { COLORS } from '../styles/colors';
 import { Modal, Button } from 'antd';
@@ -58,7 +58,7 @@ export const GraphPreview: React.FC<Props> = (props: Props) => {
  */
 const ModalContent: React.FC<Props> = (props: Props) => {
   const { modalTitle, textContent, graph, displayCTA } = props;
-  let history = useHistory();
+  let navigate = useNavigate();
   return (
     <div className={styles.ModalContentWrapper}>
       <h1 className={styles.ModalTitle}>{modalTitle}</h1>
@@ -69,7 +69,7 @@ const ModalContent: React.FC<Props> = (props: Props) => {
         <Button
           className={styles.ActionButton}
           onClick={() => {
-            history.push(ExternalRoutes.GITHUB);
+            navigate(ExternalRoutes.GITHUB);
           }}
         >
           Access our research Repo

@@ -5,7 +5,7 @@ import { ReactComponent as Distance } from '../assets/social_distancing.svg';
 import { UserProfile } from '../components/userProfile';
 import { MemberProfile } from '../components/teamMember';
 import { ianProfile, gianlucaProfile, cameliaProfile, rachaelProfile, svetlanaProfile, linaProfile, kellyProfile, emmaProfile } from '../assets/assets.index';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ExternalRoutes } from '../routes';
 interface Props {}
 /**
@@ -13,7 +13,7 @@ interface Props {}
  */
 export const AboutPage: React.FC<Props> = () => {
   //We use this to be able to utilize the react router in this component
-  let history = useHistory();
+  let navigate = useNavigate();
   return (
     <div className={styles.PageWrapper}>
       <Row>
@@ -103,7 +103,7 @@ export const AboutPage: React.FC<Props> = () => {
             </body>
             <br />
             <body className={styles.SubTitleContent}>To learn more about our team and the hackathon, check out our Devpost page!</body>
-            <Button className={styles.DevpostButton} onClick={() => history.push(ExternalRoutes.DEVPOST)}>
+            <Button className={styles.DevpostButton} onClick={() => navigate(ExternalRoutes.DEVPOST)}>
               Devpost Page
             </Button>
           </div>

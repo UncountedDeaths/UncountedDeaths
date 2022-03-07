@@ -2,13 +2,12 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import styles from '../styles/Footer.module.less';
 import { CircleEmail, DevPost, Github } from '../assets/assets.index';
-import { useHistory } from 'react-router-dom';
-import { ExternalRoutes } from '../routes';
 
-interface Props {}
+
+interface Props { }
 
 export const MainFooter: React.FC<Props> = () => {
-  let history = useHistory();
+
   return (
     <Row className={styles.FooterRow}>
       <Col className={styles.FooterText} sm={24} md={16} lg={14}>
@@ -18,8 +17,8 @@ export const MainFooter: React.FC<Props> = () => {
         <a href="https://forms.gle/fPnisqH8j5PgeLpH6" target="_blank" rel="noopener noreferrer">
           <CircleEmail className={styles.FooterSocialIcons} />
         </a>
-        <DevPost className={styles.FooterSocialIcons} onClick={() => history.push(ExternalRoutes.DEVPOST, null)} />
-        <Github className={styles.FooterSocialIcons} onClick={() => history.push(ExternalRoutes.GITHUB)} />
+        <DevPost className={styles.FooterSocialIcons} />
+        <Github className={styles.FooterSocialIcons} />
       </Col>
     </Row>
   );

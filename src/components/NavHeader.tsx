@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Popover, Button } from 'antd';
 import styles from '../styles/NavHeader.module.less';
-import { useHistory, useLocation } from 'react-router-dom';
-import { Routes } from '../routes';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { InternalRoutes } from '../routes';
 import { ReactComponent as Logo } from '../assets/LOGO.svg';
-import useThrottle from '@react-hook/throttle';
+import {useThrottle} from '@react-hook/throttle';
 interface Props {}
 
 /**
@@ -12,12 +12,12 @@ interface Props {}
  * CSS hides the logo on widths < 800 along with a mobile menu getting rendered at those sizes
  */
 export const Header: React.FC<Props> = () => {
-  let history = useHistory();
+  let navigate = useNavigate();
   const { width } = useViewport();
   const breakpoint = 800;
   return (
     <div className={styles.MenuWrap}>
-      <Logo className={styles.Logo} onClick={() => history.push(Routes.HOME.path)} aria-label="Blue CRANE logo" />
+      <Logo className={styles.Logo} onClick={() => navigate(InternalRoutes.HOME.path)} aria-label="Blue CRANE logo" />
       {width < breakpoint ? (
         <div style={{ margin: '0 auto' }}>
           <RenderMobileMenu />
@@ -89,66 +89,66 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
      *
      * Ideally this would also remove the need to updating the state in the Menu.Item as well but it does not -- something to do with the rendering order and when this effect is called.
      */
-    if (location.pathname === Routes.HOME.path) {
-      setSelected([`${Routes.HOME.key}`]);
-    } else if (location.pathname === Routes.ABOUT.path) {
-      setSelected([`${Routes.ABOUT.key}`]);
-    } else if (location.pathname === Routes.DATA.path) {
-      setSelected([`${Routes.DATA.key}`]);
-    } else if (location.pathname === Routes.SUPPORT.path) {
-      setSelected([`${Routes.SUPPORT.key}`]);
-    } else if (location.pathname === Routes.PARTNERS.path) {
-      setSelected([`${Routes.PARTNERS.key}`]);
+    if (location.pathname === InternalRoutes.HOME.path) {
+      setSelected([`${InternalRoutes.HOME.key}`]);
+    } else if (location.pathname === InternalRoutes.ABOUT.path) {
+      setSelected([`${InternalRoutes.ABOUT.key}`]);
+    } else if (location.pathname === InternalRoutes.DATA.path) {
+      setSelected([`${InternalRoutes.DATA.key}`]);
+    } else if (location.pathname === InternalRoutes.SUPPORT.path) {
+      setSelected([`${InternalRoutes.SUPPORT.key}`]);
+    } else if (location.pathname === InternalRoutes.PARTNERS.path) {
+      setSelected([`${InternalRoutes.PARTNERS.key}`]);
     }
   }, [location.pathname]);
   return (
     <Menu mode={inline ? 'inline' : 'horizontal'} selectedKeys={selected}>
       <Menu.Item
-        key={Routes.HOME.key}
+        key={InternalRoutes.HOME.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(Routes.HOME.path);
-          setSelected([`${Routes.HOME.key}`]);
+          history.push(InternalRoutes.HOME.path);
+          setSelected([`${InternalRoutes.HOME.key}`]);
         }}
       >
         Home
       </Menu.Item>
       <Menu.Item
-        key={Routes.ABOUT.key}
+        key={InternalRoutes.ABOUT.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(Routes.ABOUT.path);
-          setSelected([`${Routes.ABOUT.key}`]);
+          history.push(InternalRoutes.ABOUT.path);
+          setSelected([`${InternalRoutes.ABOUT.key}`]);
         }}
       >
         About
       </Menu.Item>
       <Menu.Item
-        key={Routes.DATA.key}
+        key={InternalRoutes.DATA.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(Routes.DATA.path);
-          setSelected([`${Routes.DATA.key}`]);
+          history.push(InternalRoutes.DATA.path);
+          setSelected([`${InternalRoutes.DATA.key}`]);
         }}
       >
         Data
       </Menu.Item>
       <Menu.Item
-        key={Routes.SUPPORT.key}
+        key={InternalRoutes.SUPPORT.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(Routes.SUPPORT.path);
-          setSelected([`${Routes.SUPPORT.key}`]);
+          history.push(InternalRoutes.SUPPORT.path);
+          setSelected([`${InternalRoutes.SUPPORT.key}`]);
         }}
       >
         Support
       </Menu.Item>
       <Menu.Item
-        key={Routes.PARTNERS.key}
+        key={InternalRoutes.PARTNERS.key}
         className={styles.MenuItem}
         onClick={() => {
-          history.push(Routes.PARTNERS.path);
-          setSelected([`${Routes.PARTNERS.key}`]);
+          history.push(InternalRoutes.PARTNERS.path);
+          setSelected([`${InternalRoutes.PARTNERS.key}`]);
         }}
       >
         Partners

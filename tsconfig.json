@@ -2,7 +2,12 @@
   "compilerOptions": {
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules"
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "camelCase",
+          "customMatcher": "\\.less$",
+          "customRenderer": "node_modules/less-plugin-aliases/lib/customRender.js"
+        }
       }
     ],
     "target": "es5",
@@ -22,9 +27,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src", "src/global.d.ts"
+    "src",
+    "src/global.d.ts"
   ]
 }
