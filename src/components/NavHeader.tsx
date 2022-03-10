@@ -4,8 +4,8 @@ import styles from '../styles/NavHeader.module.less';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { InternalRoutes } from '../routes';
 import { ReactComponent as Logo } from '../assets/LOGO.svg';
-import {useThrottle} from '@react-hook/throttle';
-interface Props {}
+import { useThrottle } from '@react-hook/throttle';
+interface Props { }
 
 /**
  * Top level component for rendering the nav bar with logo and menu
@@ -91,18 +91,20 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
      */
     if (location.pathname === InternalRoutes.HOME.path) {
       setSelected([`${InternalRoutes.HOME.key}`]);
-    } else if (location.pathname === InternalRoutes.ABOUT.path) {
-      setSelected([`${InternalRoutes.ABOUT.key}`]);
-    } else if (location.pathname === InternalRoutes.DATA.path) {
-      setSelected([`${InternalRoutes.DATA.key}`]);
-    } else if (location.pathname === InternalRoutes.SUPPORT.path) {
-      setSelected([`${InternalRoutes.SUPPORT.key}`]);
+    } else if (location.pathname === InternalRoutes.FAQ.path) {
+      setSelected([`${InternalRoutes.FAQ.key}`]);
+    } else if (location.pathname === InternalRoutes.TEAM.path) {
+      setSelected([`${InternalRoutes.TEAM.key}`]);
+    } else if (location.pathname === InternalRoutes.PUBLICATIONS.path) {
+      setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
     } else if (location.pathname === InternalRoutes.PARTNERS.path) {
       setSelected([`${InternalRoutes.PARTNERS.key}`]);
+    } else if (location.pathname === InternalRoutes.TRACKER.path) {
+      setSelected([`${InternalRoutes.TRACKER.key}`]);
     }
   }, [location.pathname]);
   return (
-    <Menu mode={inline ? 'inline' : 'horizontal'} selectedKeys={selected}>
+    <Menu mode={inline ? 'inline' : 'horizontal'} selectedKeys={selected} style={{justifyContent: "right", width: "100%"}}>
       <Menu.Item
         key={InternalRoutes.HOME.key}
         className={styles.MenuItem}
@@ -114,44 +116,44 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         Home
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.ABOUT.key}
+        key={InternalRoutes.TRACKER.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.ABOUT.path);
-          setSelected([`${InternalRoutes.ABOUT.key}`]);
+          navigate(InternalRoutes.TRACKER.path);
+          setSelected([`${InternalRoutes.TRACKER.key}`]);
         }}
       >
-        About
+        Excess Death Tracker
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.DATA.key}
+        key={InternalRoutes.PUBLICATIONS.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.DATA.path);
-          setSelected([`${InternalRoutes.DATA.key}`]);
+          navigate(InternalRoutes.PUBLICATIONS.path);
+          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
         }}
       >
-        Data
+        Publications
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.SUPPORT.key}
+        key={InternalRoutes.TEAM.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.SUPPORT.path);
-          setSelected([`${InternalRoutes.SUPPORT.key}`]);
+          navigate(InternalRoutes.TEAM.path);
+          setSelected([`${InternalRoutes.TEAM.key}`]);
         }}
       >
-        Support
+        Our Team
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.PARTNERS.key}
+        key={InternalRoutes.FAQ.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.PARTNERS.path);
-          setSelected([`${InternalRoutes.PARTNERS.key}`]);
+          navigate(InternalRoutes.FAQ.path);
+          setSelected([`${InternalRoutes.FAQ.key}`]);
         }}
       >
-        Partners
+        FAQ
       </Menu.Item>
     </Menu>
   );

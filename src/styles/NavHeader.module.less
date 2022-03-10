@@ -1,7 +1,7 @@
 @import 'globalSettings.module.less';
 @color: '#99999';
 .MenuHeader {
-  width: 100%;
+  width: 100vw;
   @media only screen and (max-width: @mobile-cutoff) {
     padding: 1rem;
   }
@@ -20,7 +20,7 @@
 }
 
 .MenuWrap {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
 
@@ -37,11 +37,12 @@
   padding-right: 5vw;
   font-size: 1rem;
   margin-left: auto;
-  width: min-content;
+  width: 100vw;
+
 }
 
 .MenuItem * {
-  margin: 100px;
+  margin: 20px;
 }
 
 .MenuRow {
