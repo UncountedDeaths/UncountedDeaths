@@ -2,13 +2,14 @@ import React from 'react';
 import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
-import { HomePage } from './HomePage';
-import {LandingPage} from './LandingPage';
+import { TrackerPage } from '../pages/TrackerPage'
+import { LandingPage } from './LandingPage';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Page404 } from './404Page';
-import { SupportPage } from './SupportPage';
-import { PartnersPage } from './PartnersPage';
-import { AboutPage } from './AboutPage';
+import { PublicationsPage } from './PublicationsPage'
+
+import { OurTeamPage } from './OurTeamPage';
+import { FAQPage } from './FAQPage';
 import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 interface Props { }
@@ -30,29 +31,29 @@ export const Main: React.FC<Props> = () => {
         of the page, not the entire thing! 
          */}
         <Routes>
-          <Route path="/" element={<LandingPage/>}>
+          <Route path={InternalRoutes.HOME.path} element={<LandingPage />}>
           </Route>
 
-          <Route path="/support" element={<SupportPage/>}>
+          <Route path={InternalRoutes.TRACKER.path} element={<TrackerPage />}>
 
           </Route>
-          <Route path="/partners" element={<PartnersPage/>}>
-            {/* <PartnersPage /> */}
+          <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />}>
           </Route>
-          <Route path="/about" element={<AboutPage/>}>
-            {/* <AboutPage /> */}
+          <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />}>
+          </Route>
+          <Route path={InternalRoutes.FAQ.path} element={<FAQPage />}>
           </Route>
 
 
-          <Route path="/" element={<Page404/>} >
+          <Route path="/" element={<Page404 />} >
             {/* <Page404 /> */}
           </Route>
         </Routes>
       </Layout.Content>
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
-      <MainFooter />
-    </Layout.Footer>
+        <MainFooter />
+      </Layout.Footer>
     </Layout>
   );
 };
