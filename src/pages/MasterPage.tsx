@@ -13,14 +13,6 @@ import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 interface Props { }
 
-//Small function to help render the footer
-function renderFooterHelper() {
-  return (
-    <Layout.Footer className={styles.MasterFooter}>
-      <MainFooter />
-    </Layout.Footer>
-  );
-}
 /**
  * This component represents the main part of the website. The header, footer, and content
  * are rendered here. Plus, the react router lives here!
@@ -58,7 +50,9 @@ export const Main: React.FC<Props> = () => {
         </Routes>
       </Layout.Content>
       {/* Don't render the footer on the home page */}
-      {location.pathname === InternalRoutes.HOME.path ? null : renderFooterHelper()}
+      <Layout.Footer className={styles.MasterFooter}>
+      <MainFooter />
+    </Layout.Footer>
     </Layout>
   );
 };
