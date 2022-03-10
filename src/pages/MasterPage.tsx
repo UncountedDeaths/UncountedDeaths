@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { HomePage } from './HomePage';
+import {LandingPage} from './LandingPage';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Page404 } from './404Page';
 import { SupportPage } from './SupportPage';
@@ -37,7 +38,7 @@ export const Main: React.FC<Props> = () => {
         of the page, not the entire thing! 
          */}
         <Routes>
-          <Route path="/" element={<HomePage/>}>
+          <Route path="/" element={<LandingPage/>}>
           </Route>
 
           <Route path="/support" element={<SupportPage/>}>

@@ -1,3 +1,8 @@
+
+export { default as landingPage1 } from './landing_page/landing_page_img_1.png';
+export { default as landingPage2 } from './landing_page/landing_page_img_2.png';
+
+
 /**
  * Profile Photos
  */
@@ -9,6 +14,8 @@ export { default as linaProfile } from './profilePhotos/lina_profile.jpg';
 export { default as kellyProfile } from './profilePhotos/kelly_profile.jpg';
 export { default as gianlucaProfile } from './profilePhotos/gianluca_profile.jpg';
 export { default as emmaProfile } from './profilePhotos/emma_profile.jpg';
+
+export { default as placeholder } from './profilePhotos/placeholder.jpg';
 
 /**
  * Social Icons
