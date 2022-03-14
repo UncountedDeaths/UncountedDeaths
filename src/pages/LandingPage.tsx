@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Layout, Button, Typography, Space } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { InternalRoutes, ExternalRoutes } from '../routes';
-import { landingPage1, landingPage2, placeholder, rachaelProfile } from '../assets/assets.index';
+import { landingPage1, landingPage2, placeholder } from '../assets/assets.index';
 import styles from '../styles/LandingPage.module.less';
 import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
