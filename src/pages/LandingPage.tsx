@@ -54,59 +54,59 @@ export const LandingPage: React.FC<Props> = () => {
                 <Row gutter={[24,24]} className={styles.TeamProfileContainer} justify='center'>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Elif Coskun"
+                            position="Public Health Master's Student"
+                            photo='/Photos/Elif.jpg'
+                            aria-label="Elif Coskun"
 
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Mikas Hansen, PhD"
+                            position="MS/MPH Student in Medical Sciences and Global Health"
+                            photo='/Photos/Mikas.jpg'
+                            aria-label="Mikas Hansen"
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Sylvia Lutze"
+                            position="Applied Biostatistics Master's Student"
+                            photo='/Photos/Syl.jpg'
+                            aria-label="Sylvia Lutze"
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Steele Myrick"
+                            position="Biostatistics Master's Student"
+                            photo='/Photos/Steele.png'
+                            aria-label="Steele Myrick"
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Rafeya Raquib"
+                            position="Applied Biostatistics Master's Student"
+                            photo='/Photos/Rafeya.jpg'
+                            aria-label="Rafeya Raquib"
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Andrew Stokes, PhD"
+                            position="Assistant Professor in Global Health at BU"
+                            photo='/Photos/Stokes.jpg'
+                            aria-label="Andrew Stokes"
                         />
                     </Col>
                     <Col className={styles.TeamProfileRow}>
                         <MemberProfile
-                            name="I am a name"
-                            position="This is a position"
-                            photo={placeholder}
-                            aria-label="Description of photo"
+                            name="Wubin Xie"
+                            position="Postdoctoral Associate"
+                            photo='/Photos/Wubin.jpg'
+                            aria-label="Wubin Xie"
                         />
                     </Col>
                 </Row>

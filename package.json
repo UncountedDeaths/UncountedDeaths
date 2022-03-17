@@ -17,6 +17,7 @@
     "create-react-class": "^15.7.0",
     "csstype": "^3.0.11",
     "customize-cra": "^1.0.0",
+    "package": "^1.0.1",
     "rcolor": "^2.0.2",
     "react": "^17.0.2",
     "react-device-detect": "^2.1.2",
