@@ -11,10 +11,10 @@ interface Props {
 export const MemberProfile: React.FC<Props> = (props: Props) => {
   const { name, position, bio, photo } = props;
   let bio_elm;
-  if (bio != null) { 
-    bio_elm = <div className={styles.Bio}>{bio}</div>
-  } else { 
-    bio_elm = <></>
+  if (bio != null) {
+    bio_elm = <div className={styles.Bio}>{bio}</div>;
+  } else {
+    bio_elm = <></>;
   }
   return (
     <div className={styles.Wrapper}>

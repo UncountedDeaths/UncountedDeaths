@@ -6,10 +6,10 @@ export const InternalRoutes = {
   SUPPORT: { path: '/support', key: 3 },
   PARTNERS: { path: '/partners', key: 4 },
   ABOUT: { path: '/about', key: 5 },
-  TRACKER: {path: '/tracker', key: 6},
-  FAQ: {path: '/faq', key: 7},
-  PUBLICATIONS: {path: '/publications', key: 8},
-  TEAM: {path: '/team', key: 9},
+  TRACKER: { path: '/tracker', key: 6 },
+  FAQ: { path: '/faq', key: 7 },
+  PUBLICATIONS: { path: '/publications', key: 8 },
+  TEAM: { path: '/team', key: 9 },
 } as const;
 
 export const ExternalRoutes = {

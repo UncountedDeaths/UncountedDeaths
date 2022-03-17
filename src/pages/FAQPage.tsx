@@ -1,8 +1,11 @@
-interface Props { }
-export const FAQPage: React.FC<Props> = () => {
-    return (
-        <div>
-            <p>FAQ Page</p>
-        </div>
-    )
-}
+import React from 'react';
+
+const FAQPage: React.FC = () => {
+  return (
+    <div>
+      <p>FAQ Page</p>
+    </div>
+  );
+};
+
+export default FAQPage;
