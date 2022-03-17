@@ -53,6 +53,17 @@ Clearly the question arises as to why aren't we using an API to serve the data f
 ### Code Style
 There is no super strict code style right now. Styles for pages and components should live in `/styles` and import the global style sheet. Pages, components, charts and assets all belong in their respective folders. This is a Typescript project so items should be type enforced whenever possible.
 
+### VSCode Configurations Eslint + Prettier
+The `.vscode/` is currently gitignored so that there will be no conflict between each other's workspace; however, if you want for VSCode to automatically lint the file you save, add the following inside your workspace json (`.vscode/settings.json`):
+```
+{
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_module\\typescript\\lib",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "eslint.format.enable": true,
+  "editor.tabSize": 2,
+}
+```
 #### React 
 
 The project is running on React 16 -- as such you should follow modern design patterns. This means using Hooks, Effects and Contexts whenever possible in place of their classed versions. Most components should also probably be functional (classless) components as well.
