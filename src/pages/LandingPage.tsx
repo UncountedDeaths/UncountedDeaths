@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Layout, Button, Typography, Space } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { InternalRoutes, ExternalRoutes } from '../routes';
-import { landingPage1, landingPage2, placeholder } from '../assets/assets.index';
+import { landingPage1, landingPage2, placeholder, elif, mikas, rafeya, steele, stokes, syl, wubin } from '../assets/assets.index';
 import styles from '../styles/LandingPage.module.less';
 import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
@@ -56,7 +56,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Elif Coskun"
                             position="Public Health Master's Student"
-                            photo='/Photos/Elif.jpg'
+                            photo={elif}
                             aria-label="Elif Coskun"
 
                         />
@@ -65,7 +65,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Mikas Hansen, PhD"
                             position="MS/MPH Student in Medical Sciences and Global Health"
-                            photo='/Photos/Mikas.jpg'
+                            photo={mikas}
                             aria-label="Mikas Hansen"
                         />
                     </Col>
@@ -73,7 +73,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Sylvia Lutze"
                             position="Applied Biostatistics Master's Student"
-                            photo='/Photos/Syl.jpg'
+                            photo={syl}
                             aria-label="Sylvia Lutze"
                         />
                     </Col>
@@ -81,7 +81,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Steele Myrick"
                             position="Biostatistics Master's Student"
-                            photo='/Photos/Steele.png'
+                            photo={steele}
                             aria-label="Steele Myrick"
                         />
                     </Col>
@@ -89,7 +89,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Rafeya Raquib"
                             position="Applied Biostatistics Master's Student"
-                            photo='/Photos/Rafeya.jpg'
+                            photo={rafeya}
                             aria-label="Rafeya Raquib"
                         />
                     </Col>
@@ -97,7 +97,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Andrew Stokes, PhD"
                             position="Assistant Professor in Global Health at BU"
-                            photo='/Photos/Stokes.jpg'
+                            photo={stokes}
                             aria-label="Andrew Stokes"
                         />
                     </Col>
@@ -105,7 +105,7 @@ export const LandingPage: React.FC<Props> = () => {
                         <MemberProfile
                             name="Wubin Xie"
                             position="Postdoctoral Associate"
-                            photo='/Photos/Wubin.jpg'
+                            photo={wubin}
                             aria-label="Wubin Xie"
                         />
                     </Col>
