@@ -29,8 +29,8 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "DISABLE_ESLINT_PLUGIN=true react-app-rewired start",
-    "build": " DISABLE_ESLINT_PLUGIN=true react-app-rewired build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "site": "npm run build",
