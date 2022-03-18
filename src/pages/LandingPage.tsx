@@ -6,6 +6,7 @@ import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import { MemberProfile } from '../components/teamMember';
+import TableauView from '../components/TableauView';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -19,6 +20,11 @@ export const LandingPage: React.FC = () => {
                 The Mortality Surveillance & Reporting Laboratory at Boston University
               </p>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24}>
+            <TableauView />
           </Col>
         </Row>
         <Row>
