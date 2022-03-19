@@ -1,4 +1,3 @@
-
 export { default as landingPage1 } from './landing_page/landing_page_img_1.png';
 export { default as landingPage2 } from './landing_page/landing_page_img_2.png';
 
@@ -28,7 +27,7 @@ export { ReactComponent as CircleEmail } from './social/circle_email.svg';
  */
 
 export { ReactComponent as Logo } from './LOGO.svg';
-export { default as BULogo } from './bu-wordmark.jpg'
+export { default as BULogo } from './bu-wordmark.jpg';
 
 /**
  * Component assets

@@ -58,7 +58,7 @@ export const GraphPreview: React.FC<Props> = (props: Props) => {
  */
 const ModalContent: React.FC<Props> = (props: Props) => {
   const { modalTitle, textContent, graph, displayCTA } = props;
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className={styles.ModalContentWrapper}>
       <h1 className={styles.ModalTitle}>{modalTitle}</h1>

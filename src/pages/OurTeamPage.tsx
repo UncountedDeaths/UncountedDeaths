@@ -1,8 +1,11 @@
-interface Props { }
-export const OurTeamPage: React.FC<Props> = () => {
-    return (
-        <div>
-            <p>Team Page</p>
-        </div>
-    )
-}
+import React from 'react';
+
+const OurTeamPage: React.FC = () => {
+  return (
+    <div>
+      <p>Team Page</p>
+    </div>
+  );
+};
+
+export default OurTeamPage;

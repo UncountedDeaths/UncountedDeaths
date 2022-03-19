@@ -15,7 +15,18 @@ interface props {
 //const colorSchemeSveta1 = ["#ED5959", "#68C6A4", "#F1B531", "#20639B", "#61157C", "#FFCA0F", "#68C6A4", "#F6DEB9", "#F28665", "#DBDD15"]
 //const colorSchemeSveta2 = ["#FFCA0F", "#8D88BD", "#BBD1D5", "#63A5A7", "#8DB039", "#F89900", "#B9D870", "#3CAEA3", "#424C6E", "#ED5958"]
 //const colorSchemeSveta3 = ["#673BB7", "#8BC24A", "#00BCD2", "#E71E62", "#FDC006", "#9C28B1", "#2196F3", "#FEEA3B", "#ED5958", "#CCDB3A"]
-const finalColorScheme = ['#0B5DA2', '#138F60', '#48A4E3', '#8BC24A', '#9C28B1', '#BF6196', '#C8C5FD', '#DE8E08', '#E71E67', '#ECE134'];
+const finalColorScheme = [
+  '#0B5DA2',
+  '#138F60',
+  '#48A4E3',
+  '#8BC24A',
+  '#9C28B1',
+  '#BF6196',
+  '#C8C5FD',
+  '#DE8E08',
+  '#E71E67',
+  '#ECE134',
+];
 
 // const MyPointTooltip = (point: Point) => {
 //     return (
@@ -181,15 +192,25 @@ export const TopicLineChart = (props: props) => (
        *
        * Todo: Refactor this into something more general
        */
-      if (id === 'Negative sentiment towards China/Chinese people' || id === 'China-related, including alternative names for covid19' || id === 'Linking China and Covid19') {
+      if (
+        id === 'Negative sentiment towards China/Chinese people' ||
+        id === 'China-related, including alternative names for covid19' ||
+        id === 'Linking China and Covid19'
+      ) {
         return finalColorScheme[0];
-      } else if (id === 'Mistrust, cover-up, and lies' || id === 'Opinion debates around medicine') {
+      } else if (
+        id === 'Mistrust, cover-up, and lies' ||
+        id === 'Opinion debates around medicine'
+      ) {
         return finalColorScheme[1];
       } else if (id === 'Location names') {
         return finalColorScheme[2];
       } else if (id === 'Biowar') {
         return finalColorScheme[3];
-      } else if (id === 'Alternative names for Covid19' || id === 'Neutral alternative names for Covid19') {
+      } else if (
+        id === 'Alternative names for Covid19' ||
+        id === 'Neutral alternative names for Covid19'
+      ) {
         return finalColorScheme[4];
       } else if (id === 'International trade and diplomacy') {
         return finalColorScheme[5];

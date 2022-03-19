@@ -1,18 +1,10 @@
 import React from 'react';
-import { Row, Col } from 'antd';
-import styles from '../styles/Footer.module.less';
-import { CircleEmail, DevPost, Github, BULogo } from '../assets/assets.index';
-import { BlockList } from 'net';
+import { BULogo } from '../assets/assets.index';
 
-
-
-interface Props { }
-
-export const MainFooter: React.FC<Props> = () => {
-
+export const MainFooter: React.FC = () => {
   return (
-    <div style={{width: "100vw%"}}>
-      <img src={BULogo} style={{display: "block", marginLeft: "auto", padding: "20px"}}/>
+    <div style={{ width: '100vw%' }}>
+      <img src={BULogo} style={{ display: 'block', marginLeft: 'auto', padding: '20px' }} />
     </div>
   );
 };

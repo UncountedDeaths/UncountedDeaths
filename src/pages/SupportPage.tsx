@@ -3,9 +3,7 @@ import { Row, Col, Button } from 'antd';
 import styles from '../styles/SupportPage.module.less';
 import { ResourceCard, CardIcon } from '../components/ResourceCard';
 
-interface Props {}
-
-export const SupportPage: React.FC<Props> = () => {
+export const SupportPage: React.FC = () => {
   return (
     <div>
       <div className={styles.SupportContainer}>
@@ -17,8 +15,10 @@ export const SupportPage: React.FC<Props> = () => {
         <Row>
           <Col span={24}>
             <body className={styles.SubTitleContent}>
-              Below are resources for those directly and indirectly affected by the rise in Xenophobia in the aftermath of the Coronavirus pandemic. Whether you are a victim of
-              online harassment and racism, or you are a concerned citizen wanting to help, the resources can help you take hold of your agency and fight back against the rise in
+              Below are resources for those directly and indirectly affected by the rise in
+              Xenophobia in the aftermath of the Coronavirus pandemic. Whether you are a victim of
+              online harassment and racism, or you are a concerned citizen wanting to help, the
+              resources can help you take hold of your agency and fight back against the rise in
               online hate speech.
             </body>
           </Col>
@@ -36,12 +36,15 @@ export const SupportPage: React.FC<Props> = () => {
             <Col span={24}>
               <div className={styles.HelpContent}>
                 <p>
-                  If you have been a target of hate speech, racism, and/or xenophobia online or in-person following the Coronavirus pandemic, you are not alone. Many are being
-                  harassed in response to COVID-19 based off their ethnicity and race. Below are a list of resouces, including hotlines, virtual support systems, and outreach
+                  If you have been a target of hate speech, racism, and/or xenophobia online or
+                  in-person following the Coronavirus pandemic, you are not alone. Many are being
+                  harassed in response to COVID-19 based off their ethnicity and race. Below are a
+                  list of resouces, including hotlines, virtual support systems, and outreach
                   groups.
                 </p>
                 <p>
-                  If you are in immediate danger, <strong>please contact your local emergency services</strong>.
+                  If you are in immediate danger,{' '}
+                  <strong>please contact your local emergency services</strong>.
                 </p>
               </div>
             </Col>
@@ -50,7 +53,12 @@ export const SupportPage: React.FC<Props> = () => {
           <Row justify="center" className={styles.ActionButtonsRow}>
             <Col>
               <Button size="large" className={styles.ActionButtonLeft}>
-                <a href="https://victimconnect.org/learn/types-of-crime/hate-crimes/" target="_blank" rel="noopener noreferrer" style={{ marginTop: 'auto' }}>
+                <a
+                  href="https://victimconnect.org/learn/types-of-crime/hate-crimes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: 'auto' }}
+                >
                   Get Support Now
                 </a>
               </Button>
@@ -124,8 +132,14 @@ export const SupportPage: React.FC<Props> = () => {
       <Row justify="center" className={styles.MoreResources}>
         <Col>
           <p className={styles.HighSectionText}>
-            You can find more resources to help those affected by racism, hate speech, and xenophobia{' '}
-            <a href="https://advancingjustice-aajc.org/covid19" className={styles.HereLink} target="_blank" rel="noreferrer noopener">
+            You can find more resources to help those affected by racism, hate speech, and
+            xenophobia{' '}
+            <a
+              href="https://advancingjustice-aajc.org/covid19"
+              className={styles.HereLink}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               here
             </a>
           </p>
@@ -142,9 +156,12 @@ export const SupportPage: React.FC<Props> = () => {
           <Col span={24}>
             <body className={styles.SubTitleContent}>
               <p>
-                To those outraged by the increase in racist narratives and hate speech online in the aftermath of the Coronavirus pandemic, there are many ways you can support
-                those being affected. There are many ways you can help combat the rise of Xenophobia online. From online bystander intervention training to donating to antiracist
-                organizations, there are many options you can pursue to make your voice heard and help targets of online racism.
+                To those outraged by the increase in racist narratives and hate speech online in the
+                aftermath of the Coronavirus pandemic, there are many ways you can support those
+                being affected. There are many ways you can help combat the rise of Xenophobia
+                online. From online bystander intervention training to donating to antiracist
+                organizations, there are many options you can pursue to make your voice heard and
+                help targets of online racism.
               </p>
               <p>View the different bystander resources we've collected below!</p>
             </body>

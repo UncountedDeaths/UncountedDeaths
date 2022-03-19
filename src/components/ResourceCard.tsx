@@ -1,5 +1,13 @@
 import React from 'react';
-import { FirstAidImg, FistImg, HandTogetherImg, HeartMobImg, SafeHorizonImg, ChartStatsImg, ToolBoxImg } from '../assets/assets.index';
+import {
+  FirstAidImg,
+  FistImg,
+  HandTogetherImg,
+  HeartMobImg,
+  SafeHorizonImg,
+  ChartStatsImg,
+  ToolBoxImg,
+} from '../assets/assets.index';
 import styles from '../styles/ResourceCard.module.less';
 
 interface Props {

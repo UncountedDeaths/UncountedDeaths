@@ -5,19 +5,22 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { InternalRoutes } from '../routes';
 import { ReactComponent as Logo } from '../assets/LOGO.svg';
 import { useThrottle } from '@react-hook/throttle';
-interface Props { }
 
 /**
  * Top level component for rendering the nav bar with logo and menu
  * CSS hides the logo on widths < 800 along with a mobile menu getting rendered at those sizes
  */
-export const Header: React.FC<Props> = () => {
-  let navigate = useNavigate();
+export const Header: React.FC = () => {
+  const navigate = useNavigate();
   const { width } = useViewport();
   const breakpoint = 800;
   return (
     <div className={styles.MenuWrap}>
-      <Logo className={styles.Logo} onClick={() => navigate(InternalRoutes.HOME.path)} aria-label="Blue CRANE logo" />
+      <Logo
+        className={styles.Logo}
+        onClick={() => navigate(InternalRoutes.HOME.path)}
+        aria-label="Blue CRANE logo"
+      />
       {width < breakpoint ? (
         <div style={{ margin: '0 auto' }}>
           <RenderMobileMenu />
@@ -78,8 +81,8 @@ interface MenuProps {
 const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
   const { inline } = props;
   const [selected, setSelected] = useState(['1']);
-  let navigate = useNavigate();
-  let location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     /**
      * Super ugly bit of code to parse out the current path and update the selected menu item.
@@ -104,7 +107,11 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     }
   }, [location.pathname]);
   return (
-    <Menu mode={inline ? 'inline' : 'horizontal'} selectedKeys={selected} style={{justifyContent: "right", width: "100%"}}>
+    <Menu
+      mode={inline ? 'inline' : 'horizontal'}
+      selectedKeys={selected}
+      style={{ justifyContent: 'right', width: '100%' }}
+    >
       <Menu.Item
         key={InternalRoutes.HOME.key}
         className={styles.MenuItem}
