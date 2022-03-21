@@ -23,7 +23,7 @@ export const LandingPage: React.FC = () => {
         <Row>
           <Col>
             <div className={styles.LandingPageMapImageContainer}>
-              <LandingPage1 className={styles.MapImageStyle}/>
+              <LandingPage1 className={styles.MapImageStyle} />
               <p className={styles.LandingPageOverlayText}>
                 <strong>Millions</strong> of deaths from COVID-19 are underreported.
               </p>
