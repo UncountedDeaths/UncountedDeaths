@@ -16,6 +16,7 @@ import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import { MemberProfile } from '../components/teamMember';
+import FAQ from '../components/FAQ';
 export const LandingPage: React.FC = () => {
   return (
     <Layout.Content>
@@ -112,6 +113,11 @@ export const LandingPage: React.FC = () => {
             photo={wubin}
             aria-label="Wubin Xie"
           />
+        </Col>
+      </Row>
+      <Row>
+        <Col span={24}>
+          <FAQ />
         </Col>
       </Row>
     </Layout.Content>
