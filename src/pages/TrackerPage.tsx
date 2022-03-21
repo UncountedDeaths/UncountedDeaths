@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col, Layout, Typography, Space } from 'antd';
-import styles from '../styles/TrackerPage.module.less';
 import * as Content from '../content/TrackerPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
