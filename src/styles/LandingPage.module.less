@@ -6,23 +6,51 @@
     width: 100vw;
 }
 
+/*
+* US map container
+*/
+.LandingPageMapImageContainer   {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
 
 .ImageStyle { 
     filter: brightness(0.5);
     width: 100%;
 }
 
+// Used padding to shift US map image off center
+.MapImageStyle{
+    height: auto;
+    width: 118%;
+    transform: translate(-4%, 0%);
+    padding-left: 24.9%;
+}
+
+// This definitely needs a better implementation
 .LandingPageOverlayText { 
-    z-index: 100;
     position: absolute;
-    color: white;
-    font-size: calc(1.5vw + 8px);
+    display: inline-block;
+    margin: auto;
+    z-index: 100;
+    top: 7%;
+    right: 0;
+    left: 0;
+    width: 75.3%;
+    color: #373737;
+    display: inline-block;
+    font-size: calc(2.1vw + 26.1px); //arbitrary
     font-weight: 900;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 3vw;
+    text-align: left;
+    line-height: 2.15;
+    padding-left: 5%;
+
+}
+
+// Use strong to give first word emphasis 
+.LandingPageOverlayText strong{ 
+    color: #0b688a;
 }
 
 .ContentText { 
