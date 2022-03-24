@@ -8,12 +8,26 @@ const FAQ: React.FC = () => {
   return (
     <div className="faq-container">
       <Collapse
-        expandIcon={({ isActive }) => (isActive ? <MinusOutlined /> : <PlusOutlined />)}
+        expandIcon={({ isActive }) =>
+          isActive ? (
+            <div className="icon-holder">
+              <span className="faq-collapse-icon">-</span>
+            </div>
+          ) : (
+            <div className="icon-holder">
+              <span className="faq-collapse-icon">+</span>
+            </div>
+          )
+        }
         expandIconPosition="right"
       >
         {FAQ_data.map((f, i) => (
-          <Collapse.Panel key={i} header={<Typography.Text strong>{f.title}</Typography.Text>}>
-            <Typography.Text>{f.content}</Typography.Text>
+          <Collapse.Panel
+            className={`faq-collapse-panel-${i}`}
+            key={i}
+            header={<Typography.Title level={5}>{f.title}</Typography.Title>}
+          >
+            <Typography.Text className="faq-collapse-content">{f.content}</Typography.Text>
           </Collapse.Panel>
         ))}
       </Collapse>
