@@ -79,5 +79,10 @@
     "react-app-rewired": "^2.2.1",
     "typescript-plugin-css-modules": "^3.4.0",
     "husky": "^7.0.0"
+  },
+  "husky": {
+    "hooks": {
+     "pre-push": "npm test"
+    }
   }
 }
