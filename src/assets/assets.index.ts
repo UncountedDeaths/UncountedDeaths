@@ -2,7 +2,7 @@
  * Landing Page Images
  */
 
-export { ReactComponent as LandingPage1 } from './landing_page/landing_page_img_1.svg';
+export { default as landingPage1 } from './landing_page/landing_page_img_1.png';
 export { default as landingPage2 } from './landing_page/landing_page_img_2.png';
 
 /**

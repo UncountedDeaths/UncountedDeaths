@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Layout, Typography, Space } from 'antd';
 import {
-  LandingPage1,
+  landingPage1,
   landingPage2,
   elif,
   mikas,
@@ -22,12 +22,12 @@ export const LandingPage: React.FC = () => {
       <Space direction="vertical" size={150}>
         <Row>
           <Col>
-            <div className={styles.LandingPageMapImageContainer}>
-              <LandingPage1 className={styles.MapImageStyle}/>
+            
+            <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
               <p className={styles.LandingPageOverlayText}>
                 <strong>Millions</strong> of deaths from COVID-19 are underreported.
               </p>
-            </div>
+
           </Col>
         </Row>
         <Row>
