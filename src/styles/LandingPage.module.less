@@ -12,6 +12,22 @@
     width: 100%;
 }
 
+// The underline block underneath "Millions" in the text overlay
+.UnderlineBlock {
+    border-bottom: 0.89rem solid #3b9ec2;;
+    position: absolute;
+    display: inline;
+    width: 12.2rem;
+    left: 3rem;
+    top: 5.01rem;
+}
+
+// Wraps "Millions" and our underline to make sure they
+// Stay together 
+.UnderlineBlockWrapper{
+    display: inline-block;
+}
+
 
 // Needs to be changed
 .LandingPageOverlayText { 
@@ -27,7 +43,8 @@
     font-weight: 400;
     text-align: left;
     line-height: 7.157rem;
-    padding-left: 5%;
+    letter-spacing: 0.1rem;
+    padding-left: 0%;
 }
 
 // Use strong to give first word emphasis 
@@ -35,8 +52,26 @@
     color: #ffffff;
     font-size: 4.063rem; 
     font-weight: bold;
-    border-bottom: 0.8rem solid #3b9ec2;
-    margin-bottom: 0.1rem;
+}
+
+.LandingPageOverlayText button{ 
+    background-color: #3b9ec2;
+    line-height: 2.15;
+    text-align: center;
+    font-size: 1.7rem; 
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 3rem;
+    width: 26rem;
+    height: 4.79542334076rem;
+    padding-top: 0.5rem;
+}
+
+.ButtonWrapper{
+    padding-top: 5rem;
+    display: block;
+    
 }
 
 .ContentText { 
