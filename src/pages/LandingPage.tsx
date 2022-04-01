@@ -1,21 +1,10 @@
 import React from 'react';
 import { Row, Col, Layout, Typography, Space } from 'antd';
-import {
-  landingPage1,
-  landingPage2,
-  elif,
-  mikas,
-  rafeya,
-  steele,
-  stokes,
-  syl,
-  wubin,
-} from '../assets/assets.index';
+import { landingPage1 } from '../assets/assets.index';
 import styles from '../styles/LandingPage.module.less';
 import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
-import { MemberProfile } from '../components/teamMember';
 import ViewTrackerButton from '../components/ViewTrackerButton';
 import FAQ from '../components/FAQ';
 
@@ -49,11 +38,6 @@ export const LandingPage: React.FC = () => {
           <Col span={6}></Col>
         </Row>
         <Row>
-          <Col>
-            <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage2} />
-          </Col>
-        </Row>
-        <Row>
           <Col span={6}></Col>
           <Col span={12}>
             <Typography>
@@ -64,64 +48,6 @@ export const LandingPage: React.FC = () => {
           <Col span={6}></Col>
         </Row>
       </Space>
-      <Row gutter={[24, 24]} className={styles.TeamProfileContainer} justify="center">
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Elif Coskun"
-            position="Public Health Master's Student"
-            photo={elif}
-            aria-label="Elif Coskun"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Mikas Hansen, PhD"
-            position="MS/MPH Student in Medical Sciences and Global Health"
-            photo={mikas}
-            aria-label="Mikas Hansen"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Sylvia Lutze"
-            position="Applied Biostatistics Master's Student"
-            photo={syl}
-            aria-label="Sylvia Lutze"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Steele Myrick"
-            position="Biostatistics Master's Student"
-            photo={steele}
-            aria-label="Steele Myrick"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Rafeya Raquib"
-            position="Applied Biostatistics Master's Student"
-            photo={rafeya}
-            aria-label="Rafeya Raquib"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Andrew Stokes, PhD"
-            position="Assistant Professor in Global Health at BU"
-            photo={stokes}
-            aria-label="Andrew Stokes"
-          />
-        </Col>
-        <Col className={styles.TeamProfileRow}>
-          <MemberProfile
-            name="Wubin Xie"
-            position="Postdoctoral Associate"
-            photo={wubin}
-            aria-label="Wubin Xie"
-          />
-        </Col>
-      </Row>
       <Row>
         <Col span={24}>
           <FAQ />
