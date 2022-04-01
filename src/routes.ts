@@ -9,7 +9,8 @@ export const InternalRoutes = {
   TRACKER: { path: '/tracker', key: 6 },
   FAQ: { path: '/faq', key: 7 },
   PUBLICATIONS: { path: '/publications', key: 8 },
-  TEAM: { path: '/team', key: 9 },
+  MEDIA: { path: '/media', key: 9 },
+  TEAM: { path: '/team', key: 10 },
 } as const;
 
 export const ExternalRoutes = {
