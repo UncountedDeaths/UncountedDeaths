@@ -1,5 +1,6 @@
-import { Avatar, Divider, Space, Typography } from 'antd';
+import { Avatar, Space, Typography } from 'antd';
 import React from 'react';
+import ContentLayout from '../components/ContentLayout';
 import { content, MemberCardProps } from '../content/OurTeamContent';
 import styles from '../styles/OurTeamPage.module.less';
 
@@ -17,17 +18,13 @@ const MemberCard: React.FC<MemberCardProps> = (props) => {
 
 const OurTeamPage: React.FC = () => {
   return (
-    <div className={styles.ourteampage}>
-      <Divider className={styles.teampagedivider} />
-      <div className={styles.myteamtitle}>
-        <Typography.Title>OUR TEAM</Typography.Title>
-      </div>
-      <Space size={80} direction="vertical">
+    <ContentLayout title="OUR TEAM">
+      <Space style={{ marginTop: '10%' }} size={80} direction="vertical">
         {content.map((c) => (
           <MemberCard key={c.imgSrc} {...c} />
         ))}
       </Space>
-    </div>
+    </ContentLayout>
   );
 };
 

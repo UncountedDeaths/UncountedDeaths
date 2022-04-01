@@ -1,0 +1,54 @@
+@import './themes.less';
+
+.pubcardcontainer {
+  display: flex;
+  flex-direction: row;
+  margin: @extra-large-size 0;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > div {
+      text-align: start;
+      font-size: @font-normal-size;
+      margin: @normal-size 0;
+    }
+
+    > img {
+      border-radius: 12px;
+      box-shadow: 3px 6px 20px 5px #c9c9c9;
+      max-height: 250px;
+    }
+  }
+
+  h3 {
+    text-align: start;
+    color: @primary-color;
+    margin-bottom: @extra-small-size;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: @font-extra-small-size;
+    justify-content: space-between;
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.pubcarddate {
+  color: @warm-grey;
+  font-size: @font-small-size;
+}
+
+.pubstarttext {
+  text-align: start;
+  font-size: @font-normal-size;
+  margin-bottom: 12%;
+}
