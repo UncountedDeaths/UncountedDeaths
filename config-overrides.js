@@ -13,15 +13,13 @@ module.exports = override(
       javascriptEnabled: true,
       modifyVars: {
         '@primary-color': '#0b688a',
-        '@font-size-base': '16px',
+        '@font-size-base': '12px',
         '@text-color': '#292929',
         '@layout-body-background': '#fffff',
         '@btn-font-weight': '600',
-        
-
       },
     },
-  }),
-  // Removed because it was creating a double plugin error with babel/webpack 
+  })
+  // Removed because it was creating a double plugin error with babel/webpack
   // addReactRefresh()
 );
