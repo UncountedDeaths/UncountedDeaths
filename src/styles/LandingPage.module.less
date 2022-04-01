@@ -6,27 +6,28 @@
     width: 100vw;
 }
 
-/*
-* US map container
-*/
-.LandingPageMapImageContainer   {
-    position: relative;
-    text-align: center;
-    width: 100vw;
-}
 
 .ImageStyle { 
     filter: brightness(0.5);
     width: 100%;
 }
 
-// Use padding to shift US map image off center
-.MapImageStyle{
-    height: auto;
-    width: 118%;
-    transform: translate(-4%, 0%);
-    padding-left: 24.9%;
+// The underline block underneath "Millions" in the text overlay
+.UnderlineBlock {
+    border-bottom: 0.89rem solid #3b9ec2;;
+    position: absolute;
+    display: inline;
+    width: 12.2rem;
+    left: 3rem;
+    top: 5.01rem;
 }
+
+// Wraps "Millions" and our underline to make sure they
+// Stay together 
+.UnderlineBlockWrapper{
+    display: inline-block;
+}
+
 
 // Needs to be changed
 .LandingPageOverlayText { 
@@ -37,17 +38,42 @@
     right: 0;
     left: 0;
     width: 75.3vw;
-    color: #373737;
+    color: #ffffff;
     font-size: 3.644rem; 
-    font-weight: 900;
+    font-weight: 400;
     text-align: left;
-    line-height: 7.822rem;
-    padding-left: 5%;
+    line-height: 7.157rem;
+    letter-spacing: 0.1rem;
 }
 
 // Use strong to give first word emphasis 
 .LandingPageOverlayText strong{ 
-    color: #0b688a;
+    color: #ffffff;
+    font-size: 4.063rem; 
+    font-weight: bold;
+}
+
+.LandingPageOverlayText button{ 
+    background-color: #3b9ec2;
+    line-height: 2.15;
+    text-align: center;
+    font-size: 1.7rem; 
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 3rem;
+    width: 26rem;
+    height: 4.79542334076rem;
+    transition-duration: 0.4s;
+}
+
+.LandingPageOverlayText button:hover{ 
+    background-color: #3fcafc; 
+}
+
+.ButtonWrapper{
+    padding-top: 3rem;
+    display: block;
 }
 
 .ContentText { 

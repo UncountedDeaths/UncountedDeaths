@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Layout, Typography, Space } from 'antd';
 import {
-  LandingPage1,
+  landingPage1,
   landingPage2,
   elif,
   mikas,
@@ -16,19 +16,26 @@ import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import { MemberProfile } from '../components/teamMember';
+import ViewTrackerButton from '../components/ViewTrackerButton';
 import FAQ from '../components/FAQ';
+
 export const LandingPage: React.FC = () => {
   return (
     <Layout.Content>
       <Space direction="vertical" size={150}>
         <Row>
           <Col>
-            <div className={styles.LandingPageMapImageContainer}>
-              <LandingPage1 className={styles.MapImageStyle} />
-              <p className={styles.LandingPageOverlayText}>
-                <strong>Millions</strong> of deaths from COVID-19 are underreported.
-              </p>
-            </div>
+            <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
+            <p className={styles.LandingPageOverlayText}>
+              <div className={styles.UnderlineBlockWrapper}>
+                <strong>Millions</strong>
+                <div className={styles.UnderlineBlock}></div>
+              </div>{' '}
+              of deaths from COVID-19 are underreported.
+              <div className={styles.ButtonWrapper}>
+                <ViewTrackerButton content="View excess death tracker"></ViewTrackerButton>
+              </div>
+            </p>
           </Col>
         </Row>
         <Row>
