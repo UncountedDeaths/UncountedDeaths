@@ -37,16 +37,6 @@ export const LandingPage: React.FC = () => {
           </Col>
           <Col span={6}></Col>
         </Row>
-        <Row>
-          <Col span={6}></Col>
-          <Col span={12}>
-            <Typography>
-              <Title>{Content.meet_our_team_header}</Title>
-              <Paragraph className={styles.ContentText}>{Content.meet_our_team_body}</Paragraph>
-            </Typography>
-          </Col>
-          <Col span={6}></Col>
-        </Row>
       </Space>
       <Row>
         <Col span={24}>
