@@ -1,11 +1,9 @@
-import { stokes } from '../assets/assets.index';
-
 export type PubCardProps = {
   title: string;
   date: string;
   text: string;
   link: string;
-  imgSrc: string;
+  imgElement: JSX.IntrinsicElements['img'];
 };
 
 export const content: PubCardProps[] = [
@@ -14,21 +12,21 @@ export const content: PubCardProps[] = [
     date: 'March 28, 2022',
     text: 'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality.',
     link: '',
-    imgSrc: stokes,
-  },
+  } as PubCardProps,
   {
     title: 'COVID-19 and excess mortality in the United States: A county-level analysis',
     date: 'March 28, 2022',
     text: 'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality.',
     link: '',
-    imgSrc: stokes,
-  },
+  } as PubCardProps,
   {
     title:
       'Association of Health Care Factors With Excess Deaths Not Assigned to COVID-19 in the U.S.',
     date: 'March 28, 2022',
     text: 'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality.',
     link: '',
-    imgSrc: stokes,
-  },
+  } as PubCardProps,
 ];
+
+export const text_content =
+  'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality throughout the US. We are an interdisciplinary team of public health researchers, demographers, and statisticians who are investigating';
