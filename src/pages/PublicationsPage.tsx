@@ -7,7 +7,7 @@ import { content, PubCardProps, text_content } from '../content/PublicationsPage
 
 import styles from '../styles/PublicationsPage.module.less';
 
-const PubCard: React.FC<PubCardProps> = (props) => {
+export const PubCard: React.FC<PubCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
       <div style={{ flex: 1.25, alignItems: 'center' }}>{props.imgElement}</div>
