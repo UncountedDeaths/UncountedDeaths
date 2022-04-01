@@ -2,14 +2,14 @@ import { Space, Typography } from 'antd';
 import React from 'react';
 import { stokes } from '../assets/assets.index';
 import ContentLayout from '../components/ContentLayout';
-import { content, text_content } from '../content/MediasPageContent';
+import { content, text_content } from '../content/MediaPageContent';
 
-import styles from '../styles/MediasPage.module.less';
+import styles from '../styles/MediaPage.module.less';
 import { PubCard } from './PublicationsPage';
 
-const MediasPage: React.FC = () => {
+const MediaPage: React.FC = () => {
   return (
-    <ContentLayout title="MEDIAS">
+    <ContentLayout title="MEDIA">
       <div className={styles.mediastarttext}>
         <Typography.Text>{text_content}</Typography.Text>
       </div>
@@ -22,4 +22,4 @@ const MediasPage: React.FC = () => {
   );
 };
 
-export default MediasPage;
+export default MediaPage;

@@ -104,8 +104,8 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       setSelected([`${InternalRoutes.PARTNERS.key}`]);
     } else if (location.pathname === InternalRoutes.TRACKER.path) {
       setSelected([`${InternalRoutes.TRACKER.key}`]);
-    } else if (location.pathname === InternalRoutes.MEDIAS.path) {
-      setSelected([`${InternalRoutes.MEDIAS.key}`]);
+    } else if (location.pathname === InternalRoutes.MEDIA.path) {
+      setSelected([`${InternalRoutes.MEDIA.key}`]);
     }
   }, [location.pathname]);
   return (
@@ -145,14 +145,14 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         Publications
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.MEDIAS.key}
+        key={InternalRoutes.MEDIA.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.MEDIAS.path);
-          setSelected([`${InternalRoutes.MEDIAS.key}`]);
+          navigate(InternalRoutes.MEDIA.path);
+          setSelected([`${InternalRoutes.MEDIA.key}`]);
         }}
       >
-        Medias
+        Media
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TEAM.key}

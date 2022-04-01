@@ -12,7 +12,7 @@ import OurTeamPage from './OurTeamPage';
 import FAQPage from './FAQPage';
 import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
-import MediasPage from './MediasPage';
+import MediaPage from './MediaPage';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -34,7 +34,7 @@ export const Main: React.FC = () => {
           <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />}></Route>
           <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />}></Route>
           <Route path={InternalRoutes.FAQ.path} element={<FAQPage />}></Route>
-          <Route path={InternalRoutes.MEDIAS.path} element={<MediasPage />}></Route>
+          <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />}></Route>
           <Route path="/" element={<Page404 />}>
             {/* <Page404 /> */}
           </Route>
