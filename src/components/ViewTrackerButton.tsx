@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from '../styles/LandingPage.module.less';
 import { useNavigate } from 'react-router-dom';
 import { InternalRoutes } from '../routes';

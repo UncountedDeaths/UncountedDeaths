@@ -2,7 +2,6 @@ import React from 'react';
 import { Collapse, Typography } from 'antd';
 import '../styles/FAQ.less';
 import { FAQ_data } from '../content/FAQContent';
-import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 
 const FAQ: React.FC = () => {
   return (
