@@ -16,7 +16,8 @@ import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import { MemberProfile } from '../components/teamMember';
-import ViewTrackerButton from '../components/ViewTrackerButton'
+import ViewTrackerButton from '../components/ViewTrackerButton';
+import FAQ from '../components/FAQ';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -24,23 +25,17 @@ export const LandingPage: React.FC = () => {
       <Space direction="vertical" size={150}>
         <Row>
           <Col>
-            
             <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
-              <p className={styles.LandingPageOverlayText}>
-
-                <div className={styles.UnderlineBlockWrapper}>
-                  <strong>Millions</strong>
-                  <div className={styles.UnderlineBlock}></div>
-                </div> of deaths from COVID-19 are underreported.
-                
-                <div className={styles.ButtonWrapper}>
-                  <ViewTrackerButton content="View excess death tracker"></ViewTrackerButton>
-                </div>
-
-              </p>
-
-            
-
+            <p className={styles.LandingPageOverlayText}>
+              <div className={styles.UnderlineBlockWrapper}>
+                <strong>Millions</strong>
+                <div className={styles.UnderlineBlock}></div>
+              </div>{' '}
+              of deaths from COVID-19 are underreported.
+              <div className={styles.ButtonWrapper}>
+                <ViewTrackerButton content="View excess death tracker"></ViewTrackerButton>
+              </div>
+            </p>
           </Col>
         </Row>
         <Row>
