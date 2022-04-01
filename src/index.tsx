@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/themes.less';
 import * as serviceWorker from './serviceWorker';
 import { Main } from './pages/MasterPage';
 import { BrowserRouter } from 'react-router-dom';
