@@ -12,7 +12,7 @@ module.exports = override(
     lessOptions: {
       javascriptEnabled: true,
       modifyVars: {
-        '@primary-color': '#74C4E8',
+        '@primary-color': '#0b688a',
         '@font-size-base': '16px',
         '@text-color': '#292929',
         '@layout-body-background': '#fffff',

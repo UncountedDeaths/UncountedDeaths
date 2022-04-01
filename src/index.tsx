@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/themes.less';
 import * as serviceWorker from './serviceWorker';
 import { Main } from './pages/MasterPage';
 import { BrowserRouter } from 'react-router-dom';
@@ -17,16 +18,7 @@ ReactDOM.render(
 
 WebFont.load({
   google: {
-    families: [
-      'Martel Sans:300,400,700',
-      'sans-serif',
-      'Playfair Display',
-      'serif',
-      'Montserrat:300,600,800',
-      'sans-serif',
-      'Roboto:400,600,800',
-      'sans-serif',
-    ],
+    families: ['Open Sans:300,400,700', 'sans-serif'],
   },
 });
 

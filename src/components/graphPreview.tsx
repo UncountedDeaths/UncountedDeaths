@@ -43,9 +43,12 @@ export const GraphPreview: React.FC<Props> = (props: Props) => {
         mask={true}
         onCancel={() => setIsOpen(false)}
         footer={null}
-        children={ModalContent(props)}
-        closeIcon={<CircleClose style={{ width: '2.5rem', height: '2.5rem', marginTop: '.75rem' }} />}
-      />
+        closeIcon={
+          <CircleClose style={{ width: '2.5rem', height: '2.5rem', marginTop: '.75rem' }} />
+        }
+      >
+        <ModalContent {...props} />
+      </Modal>
       <div className={styles.Box} ref={target} onClick={() => setIsOpen(true)}>
         {isHovering ? RenderHoverState(props) : RenderRestingState(props)}
       </div>

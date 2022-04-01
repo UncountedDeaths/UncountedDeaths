@@ -1,0 +1,44 @@
+.ourteampage {
+  width: 100vw;
+  text-align: center;
+  padding: 10%;
+}
+
+.teampagedivider {
+    border-top: 9px solid @primary-color;
+}
+
+.myteamtitle {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10%;
+  > h1 {
+    color: @primary-color;
+  }
+}
+
+.ourteampage_member {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ourteampage_avatar {
+  box-shadow: 4px 4px 28px 0 rgba(0, 0, 0, 0.12);
+  margin-right: 8%;
+  flex-shrink: 0;
+}
+
+.ourteampage_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  > h3 {
+    color: @primary-color;
+  }
+  > span {
+    color: #373737;
+  }
+}

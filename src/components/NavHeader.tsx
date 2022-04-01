@@ -110,7 +110,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     <Menu
       mode={inline ? 'inline' : 'horizontal'}
       selectedKeys={selected}
-      style={{ justifyContent: 'right', width: '100%' }}
+      className={styles.MenuBar}
     >
       <Menu.Item
         key={InternalRoutes.HOME.key}

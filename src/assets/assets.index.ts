@@ -8,15 +8,14 @@ export { default as landingPage2 } from './landing_page/landing_page_img_2.png';
 /**
  * Profile Photos
  */
-export { default as placeholder } from './profilePhotos/placeholder.jpg'; 
-export { default as elif} from './profilePhotos/Elif.jpg'
-export { default as mikas} from './profilePhotos/Mikas.jpg'
-export { default as rafeya} from './profilePhotos/Rafeya.jpg'
-export { default as steele} from './profilePhotos/Steele.png'
-export { default as stokes} from './profilePhotos/Stokes.jpg'
-export { default as syl} from './profilePhotos/Syl.jpg'
-export { default as wubin} from './profilePhotos/Wubin.jpg'
-
+export { default as placeholder } from './profilePhotos/placeholder.jpg';
+export { default as elif } from './profilePhotos/Elif.jpg';
+export { default as mikas } from './profilePhotos/Mikas.jpg';
+export { default as rafeya } from './profilePhotos/Rafeya.jpg';
+export { default as steele } from './profilePhotos/Steele.png';
+export { default as stokes } from './profilePhotos/Stokes.jpg';
+export { default as syl } from './profilePhotos/Syl.jpg';
+export { default as wubin } from './profilePhotos/Wubin.jpg';
 
 /**
  * Social Icons
@@ -31,7 +30,7 @@ export { ReactComponent as CircleEmail } from './social/circle_email.svg';
  */
 
 export { ReactComponent as Logo } from './LOGO.svg';
-export { default as BULogo } from './bu-wordmark.jpg';
+export { default as BULogo } from './bu_wordmark.svg';
 
 /**
  * Component assets

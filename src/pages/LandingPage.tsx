@@ -127,6 +127,11 @@ export const LandingPage: React.FC = () => {
           />
         </Col>
       </Row>
+      <Row>
+        <Col span={24}>
+          <FAQ />
+        </Col>
+      </Row>
     </Layout.Content>
   );
 };

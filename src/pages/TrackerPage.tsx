@@ -1,15 +1,22 @@
 import React from 'react';
 import { Row, Col, Layout, Typography, Space } from 'antd';
-import styles from '../styles/TrackerPage.module.less';
 import * as Content from '../content/TrackerPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
+import TableauView from '../components/TableauView';
 
 export const TrackerPage: React.FC = () => {
   return (
     <Layout.Content>
-      <Row>
-        <p>A chart will go here</p>
+      <Row justify="center">
+        <Typography>
+          <Title level={2}>Excess Death Tracker - Interactive Map</Title>
+        </Typography>
+      </Row>
+      <Row justify="center">
+        <Col span={24}>
+          <TableauView />
+        </Col>
       </Row>
       <Space direction="vertical" size={75}>
         <Row>

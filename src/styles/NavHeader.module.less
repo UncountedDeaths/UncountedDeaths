@@ -23,21 +23,21 @@
   width: 100vw;
   display: flex;
   align-items: center;
+  padding: 0 3em 0 3em;
 
 
 }
 
 .MenuBar {
-  // @media only screen and (max-width: @mobile-cutoff) {
-  //   font-size: @mobile-font-size;
-  //   padding: 1vw;
-  //   float: left;
-  //   display: block;
-  // }
-  padding-right: 5vw;
-  font-size: 1rem;
-  margin-left: auto;
-  width: 100vw;
+  @media only screen and (max-width: @mobile-cutoff) {
+    font-size: @mobile-font-size;
+    padding: 1vw;
+    float: left;
+    display: block;
+  }
+  justify-content: right;
+  width: 100%;
+  font-size: 1.25rem;
 
 }
 
@@ -54,10 +54,11 @@
     display: none;
   }
   margin-left: 1vw;
-  width: calc(2rem + 3vw);
-  height: calc(3rem + 1.5vw);
+  width: 8.93rem;
+  // height: calc(3rem + 1.5vw);
   //padding: 1rem;
   margin-right: auto;
+  padding-top: 1%;
   transition: all .2s ease-in-out;
 }
 
