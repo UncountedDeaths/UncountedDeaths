@@ -6,10 +6,12 @@ type ContentLayoutProps = {
   title: string;
 };
 
+export const CustomDivider: React.FC = () => <Divider className={styles.contentlayoutdivider} />;
+
 const ContentLayout: React.FC<ContentLayoutProps> = (props) => {
   return (
     <div className={styles.contentlayoutcontainer}>
-      <Divider className={styles.contentlayoutdivider} />
+      <CustomDivider />
       <div className={styles.contentlayouttitlecontainer}>
         <Typography.Title>{props.title}</Typography.Title>
       </div>
