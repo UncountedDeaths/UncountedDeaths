@@ -1,9 +1,9 @@
 import React from 'react';
 import { Collapse, Typography } from 'antd';
 import '../styles/FAQ.less';
-import { FAQ_data } from '../content/FAQContent';
+import { IFAQ } from '../content/FAQContent';
 
-const FAQ: React.FC = () => {
+const FAQ: React.FC<{ data: IFAQ[] }> = (props) => {
   return (
     <div className="faq-container">
       <Collapse
@@ -20,7 +20,7 @@ const FAQ: React.FC = () => {
         }
         expandIconPosition="right"
       >
-        {FAQ_data.map((f, i) => (
+        {props.data.map((f, i) => (
           <Collapse.Panel
             className={`faq-collapse-panel-${i}`}
             key={i}
