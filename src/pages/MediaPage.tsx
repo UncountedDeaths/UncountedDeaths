@@ -4,7 +4,7 @@ import ContentLayout from '../components/ContentLayout';
 import { content, text_content } from '../content/MediaPageContent';
 
 import styles from '../styles/MediaPage.module.less';
-import { PubCard } from './PublicationsPage';
+import { ContentCard } from './PublicationsPage';
 
 const MediaPage: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const MediaPage: React.FC = () => {
       </div>
       <Space direction="vertical" size="large">
         {content.map((c) => (
-          <PubCard key={c.title} {...c} />
+          <ContentCard key={c.title} {...c} />
         ))}
       </Space>
     </ContentLayout>

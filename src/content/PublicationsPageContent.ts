@@ -1,4 +1,4 @@
-export type PubCardProps = {
+export type ContentCardProps = {
   title: string;
   date: string;
   text: string;
@@ -6,7 +6,7 @@ export type PubCardProps = {
   imgSrc: string;
 };
 
-export const content: PubCardProps[] = [
+export const content: ContentCardProps[] = [
   {
     title:
       'Association of Health Care Factors With Excess Deaths Not Assigned to COVID-19 in the US',

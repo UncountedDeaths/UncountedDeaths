@@ -1,9 +1,9 @@
-import { PubCardProps } from './PublicationsPageContent';
+import { ContentCardProps } from './PublicationsPageContent';
 
 export const text_content =
   'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality throughout the US. We are an interdisciplinary team of public health researchers, demographers, and statisticians who are investigating';
 
-export const content: PubCardProps[] = [
+export const content: ContentCardProps[] = [
   {
     title: "What One Million Covid Dead Mean for the U.S.'s future",
     date: 'March 29, 2022',

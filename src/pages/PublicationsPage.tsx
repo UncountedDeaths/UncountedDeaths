@@ -2,11 +2,11 @@ import { ArrowRightOutlined } from '@ant-design/icons';
 import { Space, Typography } from 'antd';
 import React from 'react';
 import ContentLayout from '../components/ContentLayout';
-import { content, PubCardProps, text_content } from '../content/PublicationsPageContent';
+import { content, ContentCardProps, text_content } from '../content/PublicationsPageContent';
 
 import styles from '../styles/PublicationsPage.module.less';
 
-export const PubCard: React.FC<PubCardProps> = (props) => {
+export const ContentCard: React.FC<ContentCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
       <div style={{ flex: 1.25, alignItems: 'center' }}>
@@ -40,7 +40,7 @@ export const PublicationsPage: React.FC = () => {
       </div>
       <Space direction="vertical" size="large">
         {content.map((c) => (
-          <PubCard key={c.title} {...c} />
+          <ContentCard key={c.title} {...c} />
         ))}
       </Space>
     </ContentLayout>
