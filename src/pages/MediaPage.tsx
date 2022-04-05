@@ -1,6 +1,5 @@
 import { Space, Typography } from 'antd';
 import React from 'react';
-import { stokes } from '../assets/assets.index';
 import ContentLayout from '../components/ContentLayout';
 import { content, text_content } from '../content/MediaPageContent';
 
@@ -15,7 +14,7 @@ const MediaPage: React.FC = () => {
       </div>
       <Space direction="vertical" size="large">
         {content.map((c) => (
-          <PubCard key={c.title} {...c} imgElement={<img src={stokes} />} />
+          <PubCard key={c.title} {...c} />
         ))}
       </Space>
     </ContentLayout>
