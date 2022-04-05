@@ -19,11 +19,13 @@ const MemberCard: React.FC<MemberCardProps> = (props) => {
 const OurTeamPage: React.FC = () => {
   return (
     <ContentLayout title="OUR TEAM">
-      <Space style={{ marginTop: '10%' }} size={80} direction="vertical">
-        {content.map((c) => (
-          <MemberCard key={c.imgSrc} {...c} />
-        ))}
-      </Space>
+      <div style={{ width: '100%', textAlign: 'center' }}>
+        <Space style={{ marginTop: '10%' }} size={80} direction="vertical">
+          {content.map((c) => (
+            <MemberCard key={c.imgSrc} {...c} />
+          ))}
+        </Space>
+      </div>
     </ContentLayout>
   );
 };
