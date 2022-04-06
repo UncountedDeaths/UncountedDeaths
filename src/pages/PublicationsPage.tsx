@@ -1,5 +1,5 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { Space, Typography } from 'antd';
+import { Typography } from 'antd';
 import React from 'react';
 import ContentLayout from '../components/ContentLayout';
 import { content, ContentCardProps, text_content } from '../content/PublicationsPageContent';
@@ -38,11 +38,11 @@ export const PublicationsPage: React.FC = () => {
       <div className={styles.pubstarttext}>
         <Typography.Text>{text_content}</Typography.Text>
       </div>
-      <Space direction="vertical" size="large">
+      <div className={styles.pubgridlayout}>
         {content.map((c) => (
           <ContentCard key={c.title} {...c} />
         ))}
-      </Space>
+      </div>
     </ContentLayout>
   );
 };

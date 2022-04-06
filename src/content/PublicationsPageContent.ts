@@ -4,6 +4,7 @@ export type ContentCardProps = {
   text: string;
   link: string;
   imgSrc: string;
+  isMobile?: boolean;
 };
 
 export const content: ContentCardProps[] = [

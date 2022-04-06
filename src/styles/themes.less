@@ -1,5 +1,19 @@
 @primary-color: #0b688a;
 
+//issue found:
+/*when code is compiled, less => css; therefore, variable can't be changed during runtime,
+so instead, @font-base-size is changed to 1rem and is changed according to font-size in html element
+*/
+html {
+  font-size: 16px
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 10px
+  }
+}
+
 // font size
 @font-medium-size: 1.6rem;
 @font-normal-size: 1.4rem;

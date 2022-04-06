@@ -3,8 +3,6 @@
 .pubcardcontainer {
   display: flex;
   flex-direction: row;
-  margin: @extra-large-size 0;
-
   > div {
     display: flex;
     flex-direction: column;
@@ -20,8 +18,8 @@
     > img {
       border-radius: 12px;
       box-shadow: 3px 6px 20px 5px #c9c9c9;
-      height: 250px;
-      width: 350px;
+      height: 75%;
+      max-width: 80%;
       object-fit: cover;
     }
   }
@@ -53,4 +51,28 @@
   text-align: start;
   font-size: @font-normal-size;
   margin-bottom: 12%;
+}
+
+.pubgridlayout {
+  display: grid;
+  grid-row-gap: 5rem;
+  grid-auto-rows: max-content;
+}
+
+@media screen and (max-width: 900px) {
+  .pubcardcontainer {
+    flex-direction: column;
+    > div {
+      > img {
+        width: 300px
+      }
+      >div {
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .pubgridlayout {
+    grid-row-gap: 2rem;
+  }
 }
