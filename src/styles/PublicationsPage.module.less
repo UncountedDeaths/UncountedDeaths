@@ -12,14 +12,13 @@
     > div {
       text-align: start;
       font-size: @font-normal-size;
-      margin: @normal-size 0;
     }
 
     > img {
       border-radius: 12px;
       box-shadow: 3px 6px 20px 5px #c9c9c9;
-      height: 75%;
-      max-width: 80%;
+      height: 320px;
+      max-width: 350px;
       object-fit: cover;
     }
   }
@@ -63,8 +62,10 @@
   .pubcardcontainer {
     flex-direction: column;
     > div {
+      margin: 1rem 0;
       > img {
-        width: 300px
+        height: 180px;
+        width: 250px
       }
       >div {
         line-height: 3rem;
@@ -73,6 +74,6 @@
   }
 
   .pubgridlayout {
-    grid-row-gap: 2rem;
+    grid-row-gap: 1rem;
   }
 }
