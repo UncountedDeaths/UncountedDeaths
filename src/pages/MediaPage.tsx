@@ -1,11 +1,11 @@
-import { Space, Typography } from 'antd';
+import { Typography } from 'antd';
 import React from 'react';
-import { stokes } from '../assets/assets.index';
 import ContentLayout from '../components/ContentLayout';
 import { content, text_content } from '../content/MediaPageContent';
 
+import pubStyles from '../styles/PublicationsPage.module.less';
 import styles from '../styles/MediaPage.module.less';
-import { PubCard } from './PublicationsPage';
+import { ContentCard } from './PublicationsPage';
 
 const MediaPage: React.FC = () => {
   return (
@@ -13,11 +13,11 @@ const MediaPage: React.FC = () => {
       <div className={styles.mediastarttext}>
         <Typography.Text>{text_content}</Typography.Text>
       </div>
-      <Space direction="vertical" size="large">
+      <div className={pubStyles.pubgridlayout}>
         {content.map((c) => (
-          <PubCard key={c.title} {...c} imgElement={<img src={stokes} />} />
+          <ContentCard key={c.title} {...c} />
         ))}
-      </Space>
+      </div>
     </ContentLayout>
   );
 };
