@@ -172,7 +172,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
           setSelected([`${InternalRoutes.RESOURCES.key}`]);
         }}
       >
-        FAQ
+        Resources
       </Menu.Item>
     </Menu>
   );
