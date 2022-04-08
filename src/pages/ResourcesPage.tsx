@@ -8,9 +8,9 @@ import * as Content from '../content/TrackerPageContent';
 
 import styles from '../styles/FAQPage.module.less';
 
-const FAQPage: React.FC = () => {
+const ResourcesPage: React.FC = () => {
   return (
-    <ContentLayout title="FREQUENTLY ASKED QUESTION">
+    <ContentLayout title="RESOURCES">
       <div className={styles.faqpagetext}>
         <div>
           <Title level={3} underline>
@@ -38,4 +38,4 @@ const FAQPage: React.FC = () => {
   );
 };
 
-export default FAQPage;
+export default ResourcesPage;
