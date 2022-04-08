@@ -34,10 +34,7 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
 
 export const PublicationsPage: React.FC = () => {
   return (
-    <ContentLayout title="PUBLICATIONS">
-      <div className={styles.pubstarttext}>
-        <Typography.Text>{text_content}</Typography.Text>
-      </div>
+    <ContentLayout title="PUBLICATIONS" text={text_content}>
       <div className={styles.pubgridlayout}>
         {content.map((c) => (
           <ContentCard key={c.title} {...c} />
