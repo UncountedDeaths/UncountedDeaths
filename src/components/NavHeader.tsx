@@ -94,8 +94,8 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
      */
     if (location.pathname === InternalRoutes.HOME.path) {
       setSelected([`${InternalRoutes.HOME.key}`]);
-    } else if (location.pathname === InternalRoutes.FAQ.path) {
-      setSelected([`${InternalRoutes.FAQ.key}`]);
+    } else if (location.pathname === InternalRoutes.RESOURCES.path) {
+      setSelected([`${InternalRoutes.RESOURCES.key}`]);
     } else if (location.pathname === InternalRoutes.TEAM.path) {
       setSelected([`${InternalRoutes.TEAM.key}`]);
     } else if (location.pathname === InternalRoutes.PUBLICATIONS.path) {
@@ -165,14 +165,14 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         Our Team
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.FAQ.key}
+        key={InternalRoutes.RESOURCES.key}
         className={styles.MenuItem}
         onClick={() => {
-          navigate(InternalRoutes.FAQ.path);
-          setSelected([`${InternalRoutes.FAQ.key}`]);
+          navigate(InternalRoutes.RESOURCES.path);
+          setSelected([`${InternalRoutes.RESOURCES.key}`]);
         }}
       >
-        FAQ
+        Resources
       </Menu.Item>
     </Menu>
   );

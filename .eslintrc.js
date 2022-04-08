@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'plugin:react-hooks/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   plugins: ['react', '@typescript-eslint', 'prettier'],
   env: {
     browser: true,
@@ -28,7 +33,7 @@ module.exports = {
         caughtErrorsIgnorePattern: '^_',
       },
     ],
-    'prettier/prettier': ['warn'],
+    'prettier/prettier': ['error'],
   },
   settings: {
     react: {

@@ -9,7 +9,7 @@ import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
 
 import OurTeamPage from './OurTeamPage';
-import FAQPage from './FAQPage';
+import ResourcesPage from './ResourcesPage';
 import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
@@ -33,7 +33,7 @@ export const Main: React.FC = () => {
           <Route path={InternalRoutes.TRACKER.path} element={<TrackerPage />}></Route>
           <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />}></Route>
           <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />}></Route>
-          <Route path={InternalRoutes.FAQ.path} element={<FAQPage />}></Route>
+          <Route path={InternalRoutes.RESOURCES.path} element={<ResourcesPage />}></Route>
           <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />}></Route>
           <Route path="/" element={<Page404 />}>
             {/* <Page404 /> */}

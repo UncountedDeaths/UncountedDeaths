@@ -7,7 +7,7 @@ export const InternalRoutes = {
   PARTNERS: { path: '/partners', key: 4 },
   ABOUT: { path: '/about', key: 5 },
   TRACKER: { path: '/tracker', key: 6 },
-  FAQ: { path: '/faq', key: 7 },
+  RESOURCES: { path: '/resources', key: 7 },
   PUBLICATIONS: { path: '/publications', key: 8 },
   MEDIA: { path: '/media', key: 9 },
   TEAM: { path: '/team', key: 10 },
