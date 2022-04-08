@@ -4,6 +4,7 @@ import styles from '../styles/ContentLayout.module.less';
 
 type ContentLayoutProps = {
   title: string;
+  text?: string;
 };
 
 const ContentLayout: React.FC<ContentLayoutProps> = (props) => {
@@ -13,6 +14,11 @@ const ContentLayout: React.FC<ContentLayoutProps> = (props) => {
       <div className={styles.contentlayouttitlecontainer}>
         <Typography.Title>{props.title}</Typography.Title>
       </div>
+      {props.text && (
+        <div className={styles.contentstarttext}>
+          <Typography.Text>{props.text}</Typography.Text>
+        </div>
+      )}
       {props.children}
     </div>
   );
