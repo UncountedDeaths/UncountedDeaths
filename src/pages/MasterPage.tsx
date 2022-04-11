@@ -7,12 +7,12 @@ import { LandingPage } from './LandingPage';
 import { Route, Routes } from 'react-router-dom';
 import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
-
 import OurTeamPage from './OurTeamPage';
 import ResourcesPage from './ResourcesPage';
 import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
+import { PersistentBanner } from '../components/PersistentBanner';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -21,6 +21,7 @@ import MediaPage from './MediaPage';
 export const Main: React.FC = () => {
   return (
     <Layout className={styles.MasterLayout}>
+      <PersistentBanner />
       <Layout.Header className={styles.MenuHeader}>
         <Header />
       </Layout.Header>
