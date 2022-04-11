@@ -9,6 +9,7 @@ import {
   ToolBoxImg,
 } from '../assets/assets.index';
 import styles from '../styles/ResourceCard.module.less';
+let a = 5;
 
 interface Props {
   Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
@@ -20,10 +21,10 @@ interface Props {
 export const ResourceCard: React.FC<Props> = (props: Props) => {
   const { Icon, title, body, linkText, link } = props;
   return (
-    <div className={styles.CardStyle}>
+      <div className={styles.CardStyle}>
       <Icon className={styles.CardIcon} />
       <div className={styles.CardTitle}>{title}</div>
-      <body className={styles.CardBody}>{body}</body>
+        <body className={styles.CardBody}>{body}</body>
       <a href={link} className={styles.CardLink}>
         {linkText}
       </a>
