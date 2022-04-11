@@ -20,6 +20,7 @@ interface Props {
 export const ResourceCard: React.FC<Props> = (props: Props) => {
   const { Icon, title, body, linkText, link } = props;
   const a = 5;
+  const b = 5;
   return (
       <div className={styles.CardStyle}>
       <Icon className={styles.CardIcon} />
