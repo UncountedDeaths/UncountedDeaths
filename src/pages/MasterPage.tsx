@@ -23,7 +23,7 @@ export const Main: React.FC = () => {
     <Layout className={styles.MasterLayout}>
       <PersistentBanner></PersistentBanner>
       {/* Persistent Banner Whitespace creates a whitespace the same size as the persistent banner */}
-      <PersistentBannerWhitespace></PersistentBannerWhitespace>
+      <PersistentBannerWhitespace />
 
       <Layout.Header className={styles.MenuHeader}>
         <Header />
