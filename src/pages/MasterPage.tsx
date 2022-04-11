@@ -21,7 +21,7 @@ import { PersistentBannerWhitespace, PersistentBanner } from '../components/Pers
 export const Main: React.FC = () => {
   return (
     <Layout className={styles.MasterLayout}>
-      <PersistentBanner></PersistentBanner>
+      <PersistentBanner />
       {/* Persistent Banner Whitespace creates a whitespace the same size as the persistent banner */}
       <PersistentBannerWhitespace />
 
