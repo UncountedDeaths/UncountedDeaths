@@ -15,17 +15,9 @@
   display: flex;
   align-items: center;
   padding: 0 3em 0 3em;
-
-
 }
 
 .MenuBar {
-  @media only screen and (max-width: @mobile-cutoff) {
-    font-size: @mobile-font-size;
-    padding: 1vw;
-    float: left;
-    display: block;
-  }
   justify-content: right;
   width: 100%;
   font-size: 1.25rem;
@@ -37,12 +29,6 @@
 }
 
 .MenuBarBlack {
-  @media only screen and (max-width: @mobile-cutoff) {
-    font-size: @mobile-font-size;
-    padding: 1vw;
-    float: left;
-    display: block;
-  }
   align-items: center;
   justify-content: right;
   width: 100%;
@@ -51,6 +37,28 @@
   border: transparent;
   height: @navbar-height;
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .MenuBarBlack {
+    background-color: white;
+    border: 1px solid white;
+    font-size: @mobile-font-size;
+    padding: 1vw;
+    float: left;
+    height: auto;
+    display: block;
+  }
+  .MenuBar {
+    background-color: white;
+    border: 1px solid white;
+    font-size: @mobile-font-size;
+    padding: 1vw;
+    float: left;
+    display: block;
+    height: auto;
+    color: black;
+  }
 }
 
 .MenuItem * {
