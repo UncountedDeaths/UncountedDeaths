@@ -1,9 +1,15 @@
 @import 'globalSettings.module.less';
+@import 'themes.less';
+
+@banner-height: calc(85vh + @navbar-height*2);
 
 .LandingPageFullWidthImagesContainer  { 
-    position: relative;
-    text-align: center;
+    min-height: 550px;
+    height: @banner-height;
     width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    margin: 0 -@screen-padding;
 }
 
 
@@ -28,16 +34,24 @@
     display: inline-block;
 }
 
+.landingpagebanner {
+    height: @banner-height;
+    min-height: 550px;
+    > div {
+        position: absolute;
+        top: @navbar-height + 5rem;
+    }
+}
+
+.landingpagecontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 @screen-padding;
+}
 
 // Needs to be changed
 .LandingPageOverlayText { 
-    position: absolute;
     margin: auto;
-    z-index: 100;
-    top: 7%;
-    right: 0;
-    left: 0;
-    width: 75.3vw;
     color: #ffffff;
     font-size: 3.644rem; 
     font-weight: 400;
@@ -71,11 +85,6 @@
     background-color: #3fcafc; 
 }
 
-.ButtonWrapper{
-    padding-top: 3rem;
-    display: block;
-}
-
 .ContentText { 
     line-height: 3.391rem;
     font-size: 1.625rem;
@@ -89,4 +98,10 @@
 .TeamProfileContainer { 
     padding-left: 5vw;
     padding-right: 5vw;
+}
+
+.contentbody {
+    > div {
+        margin: 8rem 0;
+    }
 }

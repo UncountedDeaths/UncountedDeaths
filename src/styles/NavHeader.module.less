@@ -1,17 +1,8 @@
 @import 'globalSettings.module.less';
+@import 'themes.less';
+
 @color: '#99999';
-.MenuHeader {
-  width: 100vw;
-  @media only screen and (max-width: @mobile-cutoff) {
-    padding: 1rem;
-  }
-  font-weight: 600;
-  padding: 2vmin;
-  padding-right: 5vw;
-  padding-bottom: 10vh;
-  align-items: right;
-  background-color: #fff;
-}
+
 .MenuCol {
   position: absolute;
   padding-right: 3rem;
@@ -38,7 +29,28 @@
   justify-content: right;
   width: 100%;
   font-size: 1.25rem;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  height: @navbar-height;
+  align-items: center;
+}
 
+.MenuBarBlack {
+  @media only screen and (max-width: @mobile-cutoff) {
+    font-size: @mobile-font-size;
+    padding: 1vw;
+    float: left;
+    display: block;
+  }
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: transparent;
+  height: @navbar-height;
+  color: black;
 }
 
 .MenuItem * {
