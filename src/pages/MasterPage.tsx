@@ -12,7 +12,7 @@ import ResourcesPage from './ResourcesPage';
 import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
-import { PersistentBannerWhitespace, PersistentBanner } from '../components/PersistentBanner';
+import { PersistentBanner } from '../components/PersistentBanner';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -22,9 +22,6 @@ export const Main: React.FC = () => {
   return (
     <Layout className={styles.MasterLayout}>
       <PersistentBanner />
-      {/* Persistent Banner Whitespace creates a whitespace the same size as the persistent banner */}
-      <PersistentBannerWhitespace />
-
       <Layout.Header className={styles.MenuHeader}>
         <Header />
       </Layout.Header>

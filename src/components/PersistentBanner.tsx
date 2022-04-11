@@ -2,13 +2,14 @@ import React from 'react';
 import * as Content from '../content/BannerContent';
 import styles from '../styles/PersistentBanner.module.less';
 import { NavLink } from 'react-router-dom';
+import { InternalRoutes } from '../routes';
 
 export const PersistentBanner: React.FC = () => {
   return (
     <div className={styles.banner}>
       <p>
         <strong>{Content.blue_text}</strong>{' '}
-        <NavLink to="/resources">
+        <NavLink to={InternalRoutes.RESOURCES.path}>
           <b>
             <u>{Content.hyperlink_text}</u>
           </b>
@@ -16,8 +17,4 @@ export const PersistentBanner: React.FC = () => {
       </p>
     </div>
   );
-};
-
-export const PersistentBannerWhitespace: React.FC = () => {
-  return <div className={styles.banner_whitespace} />;
 };
