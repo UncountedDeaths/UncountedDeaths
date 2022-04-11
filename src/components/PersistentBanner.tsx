@@ -19,5 +19,5 @@ export const PersistentBanner: React.FC = () => {
 };
 
 export const PersistentBannerWhitespace: React.FC = () => {
-  return <div className={styles.banner_whitespace} />
+  return <div className={styles.banner_whitespace} />;
 };
