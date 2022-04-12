@@ -36,7 +36,7 @@ export const LandingPage: React.FC = () => {
             <CustomTitle title="RECENT MEDIA" />
             <div className={cardStyles.pubgridlayout}>
               {mediaContent.slice(0, 2).map((mc) => (
-                <ContentCard key={mc.title} {...mc} />
+                <ContentCard key={mc.title} imgAligned="flex-start" {...mc} />
               ))}
             </div>
           </div>

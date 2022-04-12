@@ -9,7 +9,7 @@ import styles from '../styles/PublicationsPage.module.less';
 export const ContentCard: React.FC<ContentCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
-      <div style={{ flex: 1.25, alignItems: 'center' }}>
+      <div style={{ flex: props.imgAligned == 'center' ? 1.25 : 1, alignItems: props.imgAligned }}>
         <img
           src={props.imgSrc}
           onError={(t) => {
