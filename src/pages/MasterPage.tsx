@@ -21,8 +21,8 @@ import { PersistentBanner } from '../components/PersistentBanner';
 export const Main: React.FC = () => {
   return (
     <Layout className={styles.MasterLayout}>
-      <PersistentBanner />
       <Layout.Header className={styles.MenuHeader}>
+        <PersistentBanner />
         <Header />
       </Layout.Header>
       <Layout.Content className={styles.MasterContent}>

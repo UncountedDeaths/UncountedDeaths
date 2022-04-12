@@ -1,50 +1,55 @@
 import React from 'react';
-import { Row, Col, Layout, Typography, Space } from 'antd';
+import { Layout } from 'antd';
 import { landingPage1 } from '../assets/assets.index';
 import styles from '../styles/LandingPage.module.less';
+import cardStyles from '../styles/PublicationsPage.module.less';
 import * as Content from '../content/LandingPageContent';
-import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import ViewTrackerButton from '../components/ViewTrackerButton';
+import CustomTitle from '../components/CustomTitle';
+import { content as mediaContent } from '../content/MediaPageContent';
+import { ContentCard } from './PublicationsPage';
+import { content as pubContent } from '../content/PublicationsPageContent';
 
 export const LandingPage: React.FC = () => {
   return (
     <Layout.Content>
-      <Space direction="vertical" size={150}>
-        <Row>
-          <Col>
-            <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
+      <div className={styles.landingpagecontainer}>
+        <div className={styles.landingpagebanner}>
+          <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
+          <div>
             <div className={styles.LandingPageOverlayText}>
-              <p className={styles.OverlayTextMargin}>
-                <div className={styles.UnderlineBlockWrapper}>
-                  <strong>Millions</strong>
-                  <div className={styles.UnderlineBlock}></div>
-                </div>{' '}
-                of deaths from COVID-19 are underreported.
-              </p>
-              <div className={styles.LabDescription}>
-                <span>Millions of deaths from COVID-19 are</span>
+              <div className={styles.UnderlineBlockWrapper}>
+                <strong>Millions </strong>
+                <div className={styles.UnderlineBlock} /> of deaths from COVID-19 are underreported.
               </div>
-              <div className={styles.LabDescription}>
-                <span>underreported. Millions of deaths from COVID-19.</span>
-              </div>
-              <div className={styles.ButtonWrapper}>
-                <ViewTrackerButton content="View excess death tracker"></ViewTrackerButton>
-              </div>
+              <ViewTrackerButton content="View excess death tracker" />
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={6}></Col>
-          <Col span={12}>
-            <Typography>
-              <Title>{Content.what_we_do_header}</Title>
-              <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
-            </Typography>
-          </Col>
-          <Col span={6}></Col>
-        </Row>
-      </Space>
+          </div>
+        </div>
+        <div className={styles.contentbody}>
+          <div>
+            <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
+            <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
+          </div>
+          <div>
+            <CustomTitle title="RECENT MEDIA" />
+            <div className={cardStyles.pubgridlayout}>
+              {mediaContent.slice(0, 2).map((mc) => (
+                <ContentCard key={mc.title} imgAligned="flex-start" {...mc} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <CustomTitle title="PUBLICATIONS" />
+            <div className={cardStyles.pubgridlayout}>
+              {pubContent.slice(0, 2).map((pc) => (
+                <ContentCard key={pc.title} {...pc} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout.Content>
   );
 };

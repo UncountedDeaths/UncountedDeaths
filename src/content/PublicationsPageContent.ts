@@ -5,6 +5,7 @@ export type ContentCardProps = {
   link: string;
   imgSrc: string;
   isMobile?: boolean;
+  imgAligned?: 'flex-start' | 'center';
 };
 
 export const content: ContentCardProps[] = [
