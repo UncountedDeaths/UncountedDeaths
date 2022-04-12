@@ -6,7 +6,6 @@ import * as Content from '../content/LandingPageContent';
 import Title from 'antd/lib/typography/Title';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import ViewTrackerButton from '../components/ViewTrackerButton';
-import FAQ from '../components/FAQ';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -44,11 +43,6 @@ export const LandingPage: React.FC = () => {
           <Col span={6}></Col>
         </Row>
       </Space>
-      <Row>
-        <Col span={24}>
-          <FAQ />
-        </Col>
-      </Row>
     </Layout.Content>
   );
 };

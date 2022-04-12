@@ -43,3 +43,6 @@ export const content: MemberCardProps[] = [
     imgSrc: wubin,
   },
 ];
+
+export const text_content =
+  'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality throughout the US. We are an interdisciplinary team of public health researchers, demographers, and statisticians.';

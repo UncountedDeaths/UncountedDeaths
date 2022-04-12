@@ -1,53 +1,34 @@
 import React from 'react';
-import { Row, Col, Layout, Typography, Space } from 'antd';
-import * as Content from '../content/TrackerPageContent';
-import Title from 'antd/lib/typography/Title';
-import Paragraph from 'antd/lib/typography/Paragraph';
 import TableauView from '../components/TableauView';
+import * as Content from '../content/TrackerPageContent';
+import ContentLayout from '../components/ContentLayout';
+
+import styles from '../styles/TrackerPage.module.less';
+import { Typography } from 'antd';
+import CustomTitle from '../components/CustomTitle';
 
 export const TrackerPage: React.FC = () => {
   return (
-    <Layout.Content>
-      <Row justify="center">
-        <Typography>
-          <Title level={2}>Excess Death Tracker - Interactive Map</Title>
-        </Typography>
-      </Row>
-      <Row justify="center">
-        <Col span={24}>
-          <TableauView />
-        </Col>
-      </Row>
-      <Space direction="vertical" size={75}>
-        <Row>
-          <Col span={6}></Col>
-          <Col span={12}>
-            <Typography>
-              <Title level={5}>{Content.about_title}</Title>
-              <Title>{Content.about_1_title}</Title>
-              <Paragraph>{Content.about_1_body}</Paragraph>
-              <Title>{Content.about_2_title}</Title>
-              <Paragraph>{Content.about_2_body}</Paragraph>
-            </Typography>
-          </Col>
-          <Col span={6}></Col>
-        </Row>
-        <Row>
-          <Col span={6}></Col>
-          <Col span={12}>
-            <Typography>
-              <Title level={5}>{Content.key_terms_title}</Title>
-              <Title>{Content.term_1_title}</Title>
-              <Paragraph>{Content.term_2_body}</Paragraph>
-              <Title>{Content.term_2_title}</Title>
-              <Paragraph>{Content.term_2_body}</Paragraph>
-              <Title>{Content.term_3_title}</Title>
-              <Paragraph>{Content.term_3_body}</Paragraph>
-            </Typography>
-          </Col>
-          <Col span={6}></Col>
-        </Row>
-      </Space>
-    </Layout.Content>
+    <ContentLayout title="EXCESS DEATH TRACKER" text={Content.text_content} marginBottom={'3rem'}>
+      <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
+        <Typography.Text strong>{Content.description_tableau}</Typography.Text>
+      </div>
+      <TableauView />
+      <div className={styles.trackpagetext}>
+        <div className={styles.howtotext}>
+          <CustomTitle title={Content.how_to_title} />
+          <Typography.Paragraph>{Content.how_to_content}</Typography.Paragraph>
+        </div>
+        <div className={styles.trackkeyterms}>
+          <p>{Content.key_terms_title}</p>
+          <Typography.Title level={4}>{Content.term_1_title}</Typography.Title>
+          <Typography.Paragraph>{Content.term_2_body}</Typography.Paragraph>
+          <Typography.Title level={4}>{Content.term_2_title}</Typography.Title>
+          <Typography.Paragraph>{Content.term_2_body}</Typography.Paragraph>
+          <Typography.Title level={4}>{Content.term_3_title}</Typography.Title>
+          <Typography.Paragraph>{Content.term_3_body}</Typography.Paragraph>
+        </div>
+      </div>
+    </ContentLayout>
   );
 };

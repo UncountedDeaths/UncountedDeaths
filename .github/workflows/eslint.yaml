@@ -1,0 +1,24 @@
+name: ESLint Format and Style
+
+on:
+  pull_request:
+  push:
+    branches:
+      - react_transfer
+      - main
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci # or yarn install
+      - uses: sibiraj-s/action-eslint@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
+          eslint-args: '--ignore-path=.gitignore'
+          extensions: 'js,jsx,ts,tsx'
+          annotations: true

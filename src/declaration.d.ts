@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface TableauVizElement {
   'hide-tabs'?: boolean;
   toolbar?: 'top' | 'bottom' | 'hidden';

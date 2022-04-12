@@ -1,16 +1,23 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { Space, Typography } from 'antd';
+import { Typography } from 'antd';
 import React from 'react';
-import { stokes } from '../assets/assets.index';
 import ContentLayout from '../components/ContentLayout';
-import { content, PubCardProps, text_content } from '../content/PublicationsPageContent';
+import { content, ContentCardProps, text_content } from '../content/PublicationsPageContent';
 
 import styles from '../styles/PublicationsPage.module.less';
 
-export const PubCard: React.FC<PubCardProps> = (props) => {
+export const ContentCard: React.FC<ContentCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
-      <div style={{ flex: 1.25, alignItems: 'center' }}>{props.imgElement}</div>
+      <div style={{ flex: 1.25, alignItems: 'center' }}>
+        <img
+          src={props.imgSrc}
+          onError={(t) => {
+            t.currentTarget.onerror = null;
+            t.currentTarget.src = ''; // should be an error placeholder image
+          }}
+        />
+      </div>
       <div style={{ flex: 2, justifyContent: 'space-between' }}>
         <div style={{ margin: 0 }}>
           <Typography.Title level={3}>{props.title}</Typography.Title>
@@ -27,15 +34,12 @@ export const PubCard: React.FC<PubCardProps> = (props) => {
 
 export const PublicationsPage: React.FC = () => {
   return (
-    <ContentLayout title="PUBLICATIONS">
-      <div className={styles.pubstarttext}>
-        <Typography.Text>{text_content}</Typography.Text>
-      </div>
-      <Space direction="vertical" size="large">
+    <ContentLayout title="PUBLICATIONS" text={text_content}>
+      <div className={styles.pubgridlayout}>
         {content.map((c) => (
-          <PubCard key={c.title} {...c} imgElement={<img src={stokes} />} />
+          <ContentCard key={c.title} {...c} />
         ))}
-      </Space>
+      </div>
     </ContentLayout>
   );
 };

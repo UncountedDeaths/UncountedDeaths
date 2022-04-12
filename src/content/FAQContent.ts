@@ -30,3 +30,6 @@ export const FAQ_data: IFAQ[] = [
       'A death investigation system refers to the system used for assigning cause of death on the death certificates. In the US, this system varies from place to place, and sometimes involves a medical examiner or a coroner.',
   },
 ];
+
+export const text_content =
+  'This website features tools for identifying both patterns of county excess mortality throughout the United States and potential underreported COVID-19 deaths';
