@@ -7,14 +7,12 @@ import { InternalRoutes } from '../routes';
 export const PersistentBanner: React.FC = () => {
   return (
     <div className={styles.banner}>
-      <p>
-        <strong>{Content.blue_text}</strong>{' '}
-        <NavLink to={InternalRoutes.RESOURCES.path}>
-          <b>
-            <u>{Content.hyperlink_text}</u>
-          </b>
-        </NavLink>
-      </p>
+      <strong>{Content.blue_text}</strong> &nbsp;
+      <NavLink to={InternalRoutes.RESOURCES.path}>
+        <b>
+          <u>{Content.hyperlink_text}</u>
+        </b>
+      </NavLink>
     </div>
   );
 };
