@@ -23,8 +23,10 @@ export const LandingPage: React.FC = () => {
                 of deaths from COVID-19 are underreported.
               </p>
               <div className={styles.LabDescription}>
-                Millions of deaths from COVID-19 are underreported. Millions of deaths from COVID-19
-                are underreported.
+                <span>Millions of deaths from COVID-19 are</span>
+              </div>
+              <div className={styles.LabDescription}>
+                <span>underreported. Millions of deaths from COVID-19.</span>
               </div>
               <div className={styles.ButtonWrapper}>
                 <ViewTrackerButton content="View excess death tracker"></ViewTrackerButton>
