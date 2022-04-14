@@ -17,9 +17,12 @@ export const LandingPage: React.FC = () => {
         <img className={styles.LandingPageFullWidthImagesContainer} src={landingPage1} />
         <div>
           <div className={styles.LandingPageOverlayText}>
-            <div className={styles.UnderlineBlockWrapper}>
-              <strong>Millions </strong>
-              <div className={styles.UnderlineBlock} /> of deaths from COVID-19 are underreported.
+            <div>
+              <div className={styles.underlineoverlay}>
+                <strong>Millions</strong>
+                <span />
+              </div>
+              &nbsp;of deaths from COVID-19 are underreported.
             </div>
             <ViewTrackerButton content="View excess death tracker" />
           </div>

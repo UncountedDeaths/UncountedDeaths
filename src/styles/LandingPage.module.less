@@ -18,28 +18,15 @@
     width: 100%;
 }
 
-// The underline block underneath "Millions" in the text overlay
-.UnderlineBlock {
-    border-bottom: 0.89rem solid #3b9ec2;;
-    position: absolute;
-    display: inline;
-    width: 14rem;
-    left: 3rem;
-    top: 5.159rem;
-}
-
-// Wraps "Millions" and our underline to make sure they
-// Stay together 
-.UnderlineBlockWrapper{
-    display: inline-block;
-}
-
 .landingpagebanner {
     height: @banner-height;
     min-height: 550px;
+    position: relative;
     > div {
         position: absolute;
-        top: @navbar-height + 5rem;
+        display: flex;
+        height: 100%;
+        align-items: center;
     }
 }
 
@@ -53,36 +40,51 @@
 .LandingPageOverlayText { 
     margin: auto;
     color: #ffffff;
-    font-size: 3.644rem; 
+    font-size: 3.5rem; 
     font-weight: 400;
     text-align: left;
     line-height: 7.157rem;
     letter-spacing: 0.1rem;
+
+    button { 
+        background-color: #3b9ec2;
+        line-height: 2.15;
+        text-align: center;
+        font-size: 1.4rem; 
+        font-weight: bold;
+        color: #fff;
+        border: 0;
+        border-radius: 3rem;
+        height: 4.79542334076rem;
+        padding: 0 1rem;
+        transition-duration: 0.4s;
+    }
+
+    button:hover { 
+        background-color: #3fcafc; 
+    }
+
+    > div {
+        display: inline-block;
+    }
 }
 
-// Use strong to give first word emphasis 
-.LandingPageOverlayText strong{ 
+.underlineoverlay {
+   display: inline-flex;
+   position: relative; 
+   > strong { 
     color: #ffffff;
-    font-size: 4.063rem; 
+    font-size: 4rem; 
     font-weight: bold;
-}
-
-.LandingPageOverlayText button{ 
-    background-color: #3b9ec2;
-    line-height: 2.15;
-    text-align: center;
-    font-size: 1.4rem; 
-    font-weight: bold;
-    color: #fff;
-    border: 0;
-    border-radius: 3rem;
-    height: 4.79542334076rem;
-    padding: 0 1rem;
-    transition-duration: 0.4s;
-}
-
-.LandingPageOverlayText button:hover{ 
-    background-color: #3fcafc; 
+    line-height: 1;
+    }
+   > span {
+       position: absolute;
+       border-bottom: 0.5rem solid #3b9ec2;
+       width: 80%;
+       bottom: 0;
+       right: -0.3rem;
+   }
 }
 
 .ContentText { 
