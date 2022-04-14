@@ -10,10 +10,13 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
       <div
-        style={{
-          flex: props.imgAligned == 'flex-start' ? 1 : 1.25,
-          alignItems: props.imgAligned || 'center',
-        }}
+        style={
+          props.imgAligned == 'flex-start'
+            ? {
+                flex: 1,
+              }
+            : { flex: 1.25, alignItems: 'center' }
+        }
       >
         <img
           src={props.imgSrc}
