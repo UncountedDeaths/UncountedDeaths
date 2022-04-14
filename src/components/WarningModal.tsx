@@ -5,7 +5,7 @@ interface Props {
   isMobile: boolean;
 }
 
-export const WarningModal: React.FC<Props> = (props: Props) => {
+export const WarningModal: React.FC<Props> = (props) => {
   const { isMobile } = props;
   const [isVisible, setVisible] = useState(true);
   return (
