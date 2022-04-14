@@ -18,7 +18,6 @@
 }
 
 .MenuBar {
-  justify-content: right;
   width: 100%;
   font-size: 1.25rem;
   background-color: transparent;
@@ -26,16 +25,15 @@
   color: white;
   height: @navbar-height;
   align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  > li {
+    margin: 0 1rem;
+  }
 }
 
 .MenuBarBlack {
-  align-items: center;
-  justify-content: right;
-  width: 100%;
-  font-size: 1.25rem;
-  background-color: transparent;
-  border: transparent;
-  height: @navbar-height;
+  .MenuBar(); 
   color: black;
 }
 
@@ -45,19 +43,23 @@
     border: 1px solid white;
     font-size: @mobile-font-size;
     padding: 1vw;
-    float: left;
-    height: auto;
     display: block;
+    height: auto;
+    > li {
+      margin: 0;
+    }
   }
   .MenuBar {
     background-color: white;
     border: 1px solid white;
     font-size: @mobile-font-size;
     padding: 1vw;
-    float: left;
     display: block;
     height: auto;
     color: black;
+    > li {
+      margin: 0;
+    }
   }
 
   .MenuWrap {
@@ -65,10 +67,6 @@
       padding: 0 1rem;
     }
   }
-}
-
-.MenuItem * {
-  margin: 20px;
 }
 
 .MenuRow {

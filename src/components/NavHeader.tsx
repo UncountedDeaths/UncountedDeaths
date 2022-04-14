@@ -116,7 +116,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     >
       <Menu.Item
         key={InternalRoutes.HOME.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.HOME.path);
           setSelected([`${InternalRoutes.HOME.key}`]);
@@ -126,7 +125,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TRACKER.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.TRACKER.path);
           setSelected([`${InternalRoutes.TRACKER.key}`]);
@@ -136,7 +134,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.PUBLICATIONS.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.PUBLICATIONS.path);
           setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
@@ -146,7 +143,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.MEDIA.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.MEDIA.path);
           setSelected([`${InternalRoutes.MEDIA.key}`]);
@@ -156,7 +152,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TEAM.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.TEAM.path);
           setSelected([`${InternalRoutes.TEAM.key}`]);
@@ -166,7 +161,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.RESOURCES.path);
           setSelected([`${InternalRoutes.RESOURCES.key}`]);
