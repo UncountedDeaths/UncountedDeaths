@@ -5,13 +5,12 @@ import ContentLayout from '../components/ContentLayout';
 import styles from '../styles/TrackerPage.module.less';
 import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
-import { isMobile } from 'react-device-detect';
-import { WarningModal } from '../components/WarningModal';
+import WarningModal from '../components/WarningModal';
 
 export const TrackerPage: React.FC = () => {
   return (
     <ContentLayout title="EXCESS DEATH TRACKER" text={Content.text_content} marginBottom={'3rem'}>
-      <WarningModal isMobile={isMobile} />
+      <WarningModal />
       <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
         <Typography.Text strong>{Content.description_tableau}</Typography.Text>
       </div>

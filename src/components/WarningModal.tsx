@@ -1,30 +1,24 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
+import { isMobile } from 'react-device-detect';
 
-interface Props {
-  isMobile: boolean;
-}
-
-export const WarningModal: React.FC<Props> = (props: Props) => {
-  const { isMobile } = props;
-  const [isVisible, setVisible] = useState(true);
+const WarningModal: React.FC = () => {
+  const [isVisible, setVisible] = useState(isMobile);
   return (
-    <>
-      {isMobile ? (
-        <Modal
-          visible={isVisible}
-          title="Mobile Warning"
-          closable={true}
-          centered={true}
-          onCancel={() => setVisible(false)}
-          footer={null}
-        >
-          <p>
-            For the best experience we recommend viewing the excess death tracker on your desktop
-            device. We currently working to improve the mobile site.
-          </p>
-        </Modal>
-      ) : null}
-    </>
+    <Modal
+      visible={isVisible}
+      title="Mobile Warning"
+      closable={true}
+      centered={true}
+      onCancel={() => setVisible(false)}
+      footer={null}
+    >
+      <p>
+        For the best experience we recommend viewing the excess death tracker on your desktop
+        device. We currently working to improve the mobile site.
+      </p>
+    </Modal>
   );
 };
+
+export default WarningModal;
