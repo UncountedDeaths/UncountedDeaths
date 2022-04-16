@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
 import { isMobile } from 'react-device-detect';
+import styles from '../styles/WarningModal.module.less';
 
 const WarningModal: React.FC = () => {
   const [isVisible, setVisible] = useState(isMobile);
   return (
     <Modal
+      className={styles.Title}
       visible={isVisible}
       title="Mobile Warning"
       closable={true}
