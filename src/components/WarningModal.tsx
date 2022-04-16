@@ -15,7 +15,7 @@ const WarningModal: React.FC = () => {
     >
       <p>
         For the best experience we recommend viewing the excess death tracker on your desktop
-        device. We currently working to improve the mobile site.
+        device. We are currently working to improve the mobile site.
       </p>
     </Modal>
   );
