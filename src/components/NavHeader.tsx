@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
         onClick={() => navigate(InternalRoutes.HOME.path)}
         aria-label="Blue CRANE logo"
       />
-      {width < breakpoint ? (
+      {width <= breakpoint ? (
         <div style={{ margin: '0 auto' }}>
           <RenderMobileMenu />
         </div>

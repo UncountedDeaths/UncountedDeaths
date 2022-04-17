@@ -1,5 +1,5 @@
 @primary-color: #0b688a;
-
+@mobile-cutoff: 800px;
 //issue found:
 /*when code is compiled, less => css; therefore, variable can't be changed during runtime,
 so instead, @font-base-size is changed to 1rem and is changed according to font-size in html element
@@ -13,7 +13,13 @@ body {
   font-weight: 400;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: @mobile-cutoff) {
   html {
     font-size: 12px
   }

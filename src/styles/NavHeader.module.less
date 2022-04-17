@@ -25,11 +25,8 @@
   color: white;
   height: @navbar-height;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 2rem;
-  > li {
-    margin: 0 1rem;
-  }
 }
 
 .MenuBarBlack {
@@ -37,7 +34,7 @@
   color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: @mobile-cutoff) {
   .MenuBarBlack {
     background-color: white;
     border: 1px solid white;
