@@ -50,7 +50,7 @@ export const LandingPage: React.FC = () => {
             <CustomTitle title="PUBLICATIONS" />
             <div className={cardStyles.pubgridlayout}>
               {pubContent.slice(0, 2).map((pc) => (
-                <ContentCard key={pc.title} {...pc} />
+                <ContentCard key={pc.title} imgAligned="flex-start" {...pc} />
               ))}
             </div>
           </div>

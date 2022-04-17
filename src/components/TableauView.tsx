@@ -9,7 +9,7 @@ const TableauView: React.FC = () => {
         hide-tabs
         height="1325px"
         width="100%"
-        src="https://public.tableau.com/views/TestingCovidCountiesv0_19&#47;Dashboard1"
+        src="https://public.tableau.com/views/TestingCovidCountiesv0_20/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
       ></tableau-viz>
     </div>
   );
