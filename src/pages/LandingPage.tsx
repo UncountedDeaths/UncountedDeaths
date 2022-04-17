@@ -25,8 +25,6 @@ export const LandingPage: React.FC = () => {
               </div>
               <div className={styles.LabDescription}>
                 <span>Millions of deaths from COVID-19 are</span>
-              </div>
-              <div className={styles.LabDescription}>
                 <span>underreported. Millions of deaths from COVID-19.</span>
               </div>
               <ViewTrackerButton content="View excess death tracker" />
