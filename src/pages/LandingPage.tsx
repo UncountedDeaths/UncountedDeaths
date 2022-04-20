@@ -24,8 +24,8 @@ export const LandingPage: React.FC = () => {
                 <div className={styles.UnderlineBlock} /> of deaths from COVID-19 are underreported.
               </div>
               <div className={styles.LabDescription}>
-                <span>Millions of deaths from COVID-19 are</span>
-                <span>underreported. Millions of deaths from COVID-19.</span>
+                <span>As many as 180,000 deaths have gone</span>
+                <span>uncounted across the US during the Covid-19 pandemic.</span>
               </div>
               <ViewTrackerButton content="View excess death tracker" />
             </div>
