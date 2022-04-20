@@ -11,10 +11,9 @@
 }
 
 .MenuWrap {
-  width: 100vw;
   display: flex;
+  padding: 0.5rem 3rem;
   align-items: center;
-  padding: 0 3em 0 3em;
 }
 
 .MenuBar {
@@ -23,10 +22,11 @@
   background-color: transparent;
   border: transparent;
   color: white;
-  height: @navbar-height;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 2rem;
+  justify-content: right;
+  > li {
+    margin: 0 0 0 2rem;
+    padding: 0;
+  }
 }
 
 .MenuBarBlack {
@@ -74,12 +74,7 @@
   @media only screen and (max-width: @mobile-cutoff) {
     display: none;
   }
-  margin-left: 1vw;
   width: 8.93rem;
-  // height: calc(3rem + 1.5vw);
-  //padding: 1rem;
-  margin-right: auto;
-  padding-top: 1%;
   transition: all .2s ease-in-out;
 }
 

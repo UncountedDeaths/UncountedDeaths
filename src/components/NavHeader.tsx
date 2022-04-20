@@ -22,11 +22,11 @@ export const Header: React.FC = () => {
         aria-label="Blue CRANE logo"
       />
       {width <= breakpoint ? (
-        <div style={{ margin: '0 auto' }}>
+        <div style={{ margin: '0 auto', textAlign: 'center' }}>
           <RenderMobileMenu />
         </div>
       ) : (
-        <RenderMenu inline={false} />
+        <RenderMenu />
       )}
     </div>
   );
@@ -42,7 +42,7 @@ const RenderMobileMenu: React.FC = () => {
     <Popover
       content={
         <div onClick={() => setVisible(false)}>
-          <RenderMenu inline={true} />
+          <RenderMenu inline />
         </div>
       }
       visible={isVisible}
@@ -72,7 +72,7 @@ const useViewport = () => {
 };
 
 interface MenuProps {
-  inline: boolean;
+  inline?: boolean;
 }
 /**
  * A FC to render the menu based on the passed parameter
