@@ -24,4 +24,4 @@ export const description_tableau =
 export const how_to_title = 'How to make the most out of this tool';
 
 export const how_to_content =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa augue, porttitor id sem et, vulputate tincidunt dui. Vestibulum vitae quam vitae urna egestas condimentum vel eget mi. Fusce eu varius ex. Maecenas accumsan vestibulum nibh nec laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus.';
+  'The above maps show the overall impact of Covid-19 and the degree of underreporting for each county across the US. Use them to explore how Covid-19 has manifested differently across regions. What has the impact been in your home county? Are there places where Covid-19’s impact is hidden?';
