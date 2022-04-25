@@ -1,7 +1,13 @@
 import { Avatar, TabPaneProps, Tabs, Typography } from 'antd';
 import React from 'react';
 import ContentLayout from '../components/ContentLayout';
-import { content, MemberCardProps, text_content } from '../content/OurTeamContent';
+import {
+  content,
+  collaboratorContent,
+  mediaContent,
+  MemberCardProps,
+  text_content,
+} from '../content/OurTeamContent';
 import styles from '../styles/OurTeamPage.module.less';
 
 const MemberCard: React.FC<MemberCardProps> = (props) => {
@@ -35,12 +41,24 @@ const tabs: (TabPaneProps & Key)[] = [
   {
     key: '2',
     tab: <p className={styles.titletabpane}>Collaborators</p>,
-    children: <div>Collaborators</div>,
+    children: (
+      <div className={styles.teamcardsgrid}>
+        {collaboratorContent.map((m) => (
+          <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
+        ))}
+      </div>
+    ),
   },
   {
     key: '3',
     tab: <p className={styles.titletabpane}>Media Partners</p>,
-    children: <div>Media Partners</div>,
+    children: (
+      <div className={styles.teamcardsgrid}>
+        {mediaContent.map((m) => (
+          <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
+        ))}
+      </div>
+    ),
   },
   {
     key: '4',

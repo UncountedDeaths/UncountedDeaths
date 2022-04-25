@@ -1,4 +1,13 @@
-import { elif, mikas, rafeya, steele, stokes, syl, wubin } from '../assets/assets.index';
+import {
+  elif,
+  mikas,
+  placeholder,
+  rafeya,
+  steele,
+  stokes,
+  syl,
+  wubin,
+} from '../assets/assets.index';
 
 export interface MemberCardProps {
   title: string;
@@ -39,8 +48,62 @@ export const content: MemberCardProps[] = [
   },
   {
     title: 'Wubin Xie',
-    subtitle: 'Postdoctoral Associate',
+    subtitle:
+      'Senior Research Scientist, Department of Global Health, Boston University School of Public Health',
     imgSrc: wubin,
+  },
+  {
+    title: 'Elaine Nsoesie',
+    subtitle:
+      'Assistant Professor, Department of Global Health, Boston University School of Public Health',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Dielle Lundberg',
+    subtitle: 'Research Fellow in Global Health',
+    imgSrc: placeholder,
+  },
+];
+
+export const collaboratorContent: MemberCardProps[] = [
+  {
+    title: 'Irma Elo',
+    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Anneliese Luck',
+    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Eugenio Paglino',
+    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Samuel Preston',
+    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
+    imgSrc: placeholder,
+  },
+];
+
+export const mediaContent: MemberCardProps[] = [
+  {
+    title: 'Derick Kravitz',
+    subtitle:
+      "Project Lead, Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Dillon Bergin',
+    subtitle: 'Senior Journalism Fellow',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Betsy Ladyzhets',
+    subtitle: 'Senior Journalism Fellow',
+    imgSrc: placeholder,
   },
 ];
 
