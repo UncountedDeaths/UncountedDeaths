@@ -9,10 +9,10 @@ import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
 import OurTeamPage from './OurTeamPage';
 import ResourcesPage from './ResourcesPage';
-import { MainFooter } from '../components/Footer';
 import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
+import { BULogo } from '../assets/assets.index';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -43,7 +43,7 @@ export const Main: React.FC = () => {
       </Layout.Content>
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
-        <MainFooter />
+        <img src={BULogo} className={styles.FooterLogo} />
       </Layout.Footer>
     </Layout>
   );

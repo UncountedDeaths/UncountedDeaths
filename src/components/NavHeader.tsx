@@ -21,12 +21,12 @@ export const Header: React.FC = () => {
         onClick={() => navigate(InternalRoutes.HOME.path)}
         aria-label="Blue CRANE logo"
       />
-      {width < breakpoint ? (
-        <div style={{ margin: '0 auto' }}>
+      {width <= breakpoint ? (
+        <div style={{ margin: '0 auto', textAlign: 'center' }}>
           <RenderMobileMenu />
         </div>
       ) : (
-        <RenderMenu inline={false} />
+        <RenderMenu />
       )}
     </div>
   );
@@ -42,7 +42,7 @@ const RenderMobileMenu: React.FC = () => {
     <Popover
       content={
         <div onClick={() => setVisible(false)}>
-          <RenderMenu inline={true} />
+          <RenderMenu inline />
         </div>
       }
       visible={isVisible}
@@ -72,7 +72,7 @@ const useViewport = () => {
 };
 
 interface MenuProps {
-  inline: boolean;
+  inline?: boolean;
 }
 /**
  * A FC to render the menu based on the passed parameter
@@ -116,7 +116,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     >
       <Menu.Item
         key={InternalRoutes.TRACKER.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.TRACKER.path);
           setSelected([`${InternalRoutes.TRACKER.key}`]);
@@ -126,7 +125,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.PUBLICATIONS.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.PUBLICATIONS.path);
           setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
@@ -136,7 +134,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.MEDIA.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.MEDIA.path);
           setSelected([`${InternalRoutes.MEDIA.key}`]);
@@ -146,7 +143,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TEAM.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.TEAM.path);
           setSelected([`${InternalRoutes.TEAM.key}`]);
@@ -156,7 +152,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
-        className={styles.MenuItem}
         onClick={() => {
           navigate(InternalRoutes.RESOURCES.path);
           setSelected([`${InternalRoutes.RESOURCES.key}`]);

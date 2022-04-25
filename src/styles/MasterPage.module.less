@@ -4,8 +4,6 @@
 
 .MasterLayout {
   width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -21,12 +19,12 @@
   display: flex;
   background-color: transparent;
   align-items: center;
-  margin: 0 auto;
 }
 
 .MasterFooter {
   background-color: #DBDBDB;
   text-align: center;
+  width: 100vw;
 }
 
 .MasterFooterText {
@@ -34,13 +32,15 @@
 }
 
 .MenuHeader {
-  width: 100%;
   font-weight: normal;
   padding: 0;
   background-color: transparent;
   position: absolute;
   z-index: 100;
   height: @navbar-height;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .MenuCol {
