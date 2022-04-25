@@ -115,16 +115,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       className={selected.includes('1') ? styles.MenuBar : styles.MenuBarBlack}
     >
       <Menu.Item
-        key={InternalRoutes.HOME.key}
-        className={styles.MenuItem}
-        onClick={() => {
-          navigate(InternalRoutes.HOME.path);
-          setSelected([`${InternalRoutes.HOME.key}`]);
-        }}
-      >
-        Home
-      </Menu.Item>
-      <Menu.Item
         key={InternalRoutes.TRACKER.key}
         className={styles.MenuItem}
         onClick={() => {
