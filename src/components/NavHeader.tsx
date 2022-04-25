@@ -114,6 +114,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       selectedKeys={selected}
       className={selected.includes('1') ? styles.MenuBar : styles.MenuBarBlack}
     >
+      <Menu.Item
         key={InternalRoutes.TRACKER.key}
         onClick={() => {
           navigate(InternalRoutes.TRACKER.path);
