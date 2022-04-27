@@ -9,6 +9,7 @@ import CustomTitle from '../components/CustomTitle';
 import { content as mediaContent } from '../content/MediaPageContent';
 import { ContentCard } from './PublicationsPage';
 import { content as pubContent } from '../content/PublicationsPageContent';
+import { isMobile } from 'react-device-detect';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ export const LandingPage: React.FC = () => {
           <CustomTitle title="RECENT MEDIA" />
           <div className={cardStyles.pubgridlayout}>
             {mediaContent.slice(0, 2).map((mc) => (
-              <ContentCard key={mc.title} imgAligned="flex-start" {...mc} />
+              <ContentCard key={mc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...mc} />
             ))}
           </div>
         </div>
@@ -45,7 +46,7 @@ export const LandingPage: React.FC = () => {
           <CustomTitle title="PUBLICATIONS" />
           <div className={cardStyles.pubgridlayout}>
             {pubContent.slice(0, 2).map((pc) => (
-              <ContentCard key={pc.title} imgAligned="flex-start" {...pc} />
+              <ContentCard key={pc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...pc} />
             ))}
           </div>
         </div>

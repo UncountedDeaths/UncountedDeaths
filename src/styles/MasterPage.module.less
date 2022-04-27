@@ -3,15 +3,12 @@
 @import 'themes.less';
 
 .MasterLayout {
-  width: 100vw;
   padding: 0;
 }
 
 .FooterLogo {
-  display: flex;
-  align-items: left;
   padding: 1.25rem;
-  width: 48rem;
+  max-width: 60%;
 }
 
 .MasterContent {
@@ -23,8 +20,8 @@
 
 .MasterFooter {
   background-color: #DBDBDB;
-  text-align: center;
-  width: 100vw;
+  display: flex;
+  align-items: flex-start;
 }
 
 .MasterFooterText {
@@ -40,7 +37,7 @@
   height: @navbar-height;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 
 .MenuCol {

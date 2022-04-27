@@ -26,7 +26,7 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
           }}
         />
       </div>
-      <div style={{ flex: 2, justifyContent: 'space-between' }}>
+      <div className={styles.pubcardtext}>
         <div style={{ margin: 0 }}>
           <Typography.Title level={3}>{props.title}</Typography.Title>
           <Typography.Text className={styles.pubcarddate}>{props.date}</Typography.Text>
