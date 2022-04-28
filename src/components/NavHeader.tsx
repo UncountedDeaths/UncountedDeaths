@@ -22,7 +22,6 @@ export const Header: React.FC = () => {
         onClick={() => navigate(InternalRoutes.HOME.path)}
         aria-label="CEID Logo"
       />
-      {console.log(location.pathname)}
       {width <= breakpoint ? (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
           <RenderMobileMenu />
