@@ -12,15 +12,17 @@ import { useThrottle } from '@react-hook/throttle';
  */
 export const Header: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { width } = useViewport();
   const breakpoint = 800;
   return (
     <div className={styles.MenuWrap}>
       <Logo
-        className={styles.Logo}
+        className={location.pathname == InternalRoutes.HOME.path ? styles.LogoWhite : styles.Logo}
         onClick={() => navigate(InternalRoutes.HOME.path)}
-        aria-label="Blue CRANE logo"
+        aria-label="CEID Logo"
       />
+      {console.log(location.pathname)}
       {width <= breakpoint ? (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
           <RenderMobileMenu />
