@@ -13,6 +13,7 @@ import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
+import { Link } from 'react-router-dom';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -43,7 +44,9 @@ export const Main: React.FC = () => {
       </Layout.Content>
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
-        <img src={BULogo} className={styles.FooterLogo} />
+        <a href="https://www.bu.edu/ceid/" target="_blank" rel="noreferrer">
+          <BULogo className={styles.FooterLogo} />
+        </a>
       </Layout.Footer>
     </Layout>
   );
