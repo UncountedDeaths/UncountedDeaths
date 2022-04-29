@@ -13,7 +13,6 @@ import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
-import { Link } from 'react-router-dom';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
