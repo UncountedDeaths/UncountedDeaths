@@ -3,8 +3,8 @@ import { Menu, Popover, Button } from 'antd';
 import styles from '../styles/NavHeader.module.less';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { InternalRoutes } from '../routes';
-import { ReactComponent as Logo } from '../assets/LOGO.svg';
 import { useThrottle } from '@react-hook/throttle';
+import { Logo, LogoWhite } from '../assets/assets.index';
 
 /**
  * Top level component for rendering the nav bar with logo and menu
@@ -17,11 +17,20 @@ export const Header: React.FC = () => {
   const breakpoint = 800;
   return (
     <div className={styles.MenuWrap}>
-      <Logo
-        className={location.pathname == InternalRoutes.HOME.path ? styles.LogoWhite : styles.Logo}
-        onClick={() => navigate(InternalRoutes.HOME.path)}
-        aria-label="CEID Logo"
-      />
+      {location.pathname == InternalRoutes.HOME.path ? (
+        <LogoWhite
+          className={styles.Logo}
+          onClick={() => navigate(InternalRoutes.HOME.path)}
+          aria-label="CEID Logo"
+        />
+      ) : (
+        <Logo
+          className={styles.Logo}
+          onClick={() => navigate(InternalRoutes.HOME.path)}
+          aria-label="CEID Logo"
+        />
+      )}
+
       {width <= breakpoint ? (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
           <RenderMobileMenu />
