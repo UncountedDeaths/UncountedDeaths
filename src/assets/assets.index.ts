@@ -30,7 +30,7 @@ export { ReactComponent as CircleEmail } from './social/circle_email.svg';
  */
 
 export { ReactComponent as Logo } from './LOGO.svg';
-export { default as BULogo } from './bu_wordmark.svg';
+export { ReactComponent as BULogo } from './bu_wordmark.svg';
 
 /**
  * Component assets
