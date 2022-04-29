@@ -20,10 +20,10 @@ export const LandingPage: React.FC = () => {
           <div className={styles.LandingPageOverlayText}>
             <div>
               <div className={styles.underlineoverlay}>
-                <strong>Millions</strong>
+                <strong>180,000+</strong>
                 <span />
               </div>
-              &nbsp;of deaths from COVID-19 are underreported.
+              &nbsp;deaths have gone uncounted across the US during the Covid-19 pandemic.
             </div>
             <ViewTrackerButton content="View excess death tracker" />
           </div>
