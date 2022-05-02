@@ -122,7 +122,9 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     <Menu
       mode={inline ? 'inline' : 'horizontal'}
       selectedKeys={selected}
-      className={selected.includes('1') ? styles.MenuBar : styles.MenuBarBlack}
+      className={
+        location.pathname == InternalRoutes.HOME.path ? styles.MenuBar : styles.MenuBarBlack
+      }
     >
       <Menu.Item
         key={InternalRoutes.TRACKER.key}

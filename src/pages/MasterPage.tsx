@@ -43,9 +43,7 @@ export const Main: React.FC = () => {
       </Layout.Content>
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
-        <a href="https://www.bu.edu/ceid/" target="_blank" rel="noreferrer">
-          <BULogo className={styles.FooterLogo} />
-        </a>
+        <BULogo className={styles.FooterLogo} href="https://www.bu.edu/ceid/" target="_blank" />
       </Layout.Footer>
     </Layout>
   );
