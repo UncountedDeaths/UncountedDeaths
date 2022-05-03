@@ -29,9 +29,9 @@ export { ReactComponent as CircleEmail } from './social/circle_email.svg';
  * Logos and other branding
  */
 
-export { ReactComponent as Logo } from './LOGO.svg';
+export { ReactComponent as Logo } from './BU_CEID_Color.svg';
 export { ReactComponent as BULogo } from './bu_wordmark.svg';
-export { ReactComponent as LogoWhite } from './logo_white.svg';
+export { ReactComponent as LogoWhite } from './BU_CEID_White.svg';
 
 /**
  * Component assets

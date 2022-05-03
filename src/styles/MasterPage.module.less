@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+.MasterContentNotHome { 
+  &:extend(.MasterContent);
+  padding-top: 3rem;
+}
+
 .MasterFooter {
   background-color: #DBDBDB;
   display: flex;
@@ -32,8 +37,8 @@
 }
 
 .MenuHeader {
-  font-weight: normal;
   padding: 0;
+  font-weight: normal;
   background-color: transparent;
   position: absolute;
   z-index: 100;
