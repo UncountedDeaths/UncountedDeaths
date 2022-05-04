@@ -8,7 +8,7 @@ export { default as landingPage2 } from './landing_page/landing_page_img_2.png';
 /**
  * Profile Photos
  */
-export { default as placeholder } from './profilePhotos/placeholder.jpg';
+export { default as placeholder } from './profilePhotos/placeholder.svg';
 export { default as elif } from './profilePhotos/Elif.jpg';
 export { default as mikas } from './profilePhotos/Mikas.jpg';
 export { default as rafeya } from './profilePhotos/Rafeya.jpg';
@@ -29,9 +29,9 @@ export { ReactComponent as CircleEmail } from './social/circle_email.svg';
  * Logos and other branding
  */
 
-export { ReactComponent as Logo } from './LOGO.svg';
-export { default as BULogo } from './bu_wordmark.svg';
-export { default as BUCeid } from './bu_ceid.png';
+export { ReactComponent as Logo } from './BU_CEID_Color.svg';
+export { ReactComponent as BULogo } from './bu_wordmark.svg';
+export { ReactComponent as LogoWhite } from './BU_CEID_White.svg';
 
 /**
  * Component assets

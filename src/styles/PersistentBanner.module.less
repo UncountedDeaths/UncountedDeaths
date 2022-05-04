@@ -2,7 +2,7 @@
 
 .banner {
     position: relative;
-    background: #fff;
+    background: #0B688A;
     width: 100%;
     z-index: 101;
     text-align: center;
@@ -14,7 +14,7 @@
 
     // The color of the link text 
     a {
-        color: black;
+        color: white;
     }
 
     strong {
@@ -22,11 +22,11 @@
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: @mobile-cutoff){
     .banner {
         display: block;
         height: auto;
-        line-height: 21px;
+        line-height: 1.5rem;
         padding: 1rem;
     }
 }

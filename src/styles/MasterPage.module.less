@@ -3,17 +3,12 @@
 @import 'themes.less';
 
 .MasterLayout {
-  width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
   padding: 0;
 }
 
 .FooterLogo {
-  display: flex;
-  align-items: left;
   padding: 1.25rem;
-  width: 48rem;
+  max-width: 60%;
 }
 
 .MasterContent {
@@ -21,13 +16,20 @@
   display: flex;
   background-color: transparent;
   align-items: center;
-  margin: 0 auto;
+}
+
+.MasterContentNotHome { 
+  &:extend(.MasterContent);
+  padding-top: 3rem;
 }
 
 .MasterFooter {
-  background-color: #dbdbdb;
-  text-align: center;
-  height: 31.25rem;
+  background-color: #DBDBDB;
+  display: flex;
+  align-items: flex-start;
+  :hover { 
+    transform: scale(1.01);
+  }
 }
 
 .MasterFooterText {
@@ -40,13 +42,15 @@
 }
 
 .MenuHeader {
-  width: 100%;
-  font-weight: normal;
   padding: 0;
+  font-weight: normal;
   background-color: transparent;
   position: absolute;
   z-index: 100;
   height: @navbar-height;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .MenuCol {

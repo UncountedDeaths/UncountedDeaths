@@ -10,10 +10,13 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
   return (
     <div className={styles.pubcardcontainer}>
       <div
-        style={{
-          flex: props.imgAligned == 'flex-start' ? 1 : 1.25,
-          alignItems: props.imgAligned || 'center',
-        }}
+        style={
+          props.imgAligned == 'flex-start'
+            ? {
+                flex: 1,
+              }
+            : { flex: 1.25, alignItems: 'center' }
+        }
       >
         <img
           src={props.imgSrc}
@@ -23,7 +26,7 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
           }}
         />
       </div>
-      <div style={{ flex: 2, justifyContent: 'space-between' }}>
+      <div className={styles.pubcardtext}>
         <div style={{ margin: 0 }}>
           <Typography.Title level={3}>{props.title}</Typography.Title>
           <Typography.Text className={styles.pubcarddate}>{props.date}</Typography.Text>

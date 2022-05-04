@@ -1,0 +1,31 @@
+@import './themes.less';
+
+.faqpagetext {
+  text-align: start;
+  font-size: @font-normal-size;
+  margin-bottom: 12%;
+}
+
+.resourcestabs {
+  > div {
+    > div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.titletabpane {
+font-size: @font-medium-size;
+margin: 0;
+}
+
+@media screen and (max-width: @mobile-cutoff) {
+  .resourcestabs {
+    > div {
+      > div {
+        justify-content: start;
+      }
+    }
+  }
+}

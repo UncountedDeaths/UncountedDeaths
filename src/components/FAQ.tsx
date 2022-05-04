@@ -26,7 +26,14 @@ const FAQ: React.FC<{ data: IFAQ[] }> = (props) => {
             key={i}
             header={<Typography.Title level={5}>{f.title}</Typography.Title>}
           >
-            <Typography.Text className="faq-collapse-content">{f.content}</Typography.Text>
+            {/* This allows us to support either plain text or some child element if something "fancier" is required. */}
+            {typeof f.content === 'string' ? (
+              <Typography.Text className="faq-collapse-content">{f.content}</Typography.Text>
+            ) : (
+              <div className="faq-collapse-content">
+                <f.content />
+              </div>
+            )}
           </Collapse.Panel>
         ))}
       </Collapse>
