@@ -6,6 +6,7 @@ import styles from '../styles/TrackerPage.module.less';
 import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
 import WarningModal from '../components/WarningModal';
+import IframeResizer from 'iframe-resizer-react';
 
 export const TrackerPage: React.FC = () => {
   return (
@@ -14,7 +15,11 @@ export const TrackerPage: React.FC = () => {
       <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
         <Typography.Text strong>{Content.description_tableau}</Typography.Text>
       </div>
-      <TableauView />
+      <IframeResizer
+        log
+        src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
+        style={{ width: '1px', minWidth: '100%', border: 'none' }}
+      />
       <div className={styles.trackpagetext}>
         <div className={styles.howtotext}>
           <CustomTitle title={Content.how_to_title} />
