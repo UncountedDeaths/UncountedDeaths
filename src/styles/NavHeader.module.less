@@ -26,6 +26,12 @@
   > li {
     margin: 0 0 0 2rem;
     padding: 0;
+    @media only screen and (max-width: 1100px) {
+      margin: 0 0 0 0.5rem;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin: 0 0 0 0;
+    }
   }
 }
 
@@ -75,6 +81,7 @@
     display: none;
   }
   width: 14rem;
+  min-width: 8rem;
   transition: all .2s ease-in-out;
 }
 
