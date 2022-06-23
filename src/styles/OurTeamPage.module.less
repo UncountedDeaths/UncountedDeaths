@@ -23,12 +23,15 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .ourteampage_avatar {
   box-shadow: 4px 4px 28px 0 rgba(0, 0, 0, 0.12);
   margin-right: 8%;
   flex-shrink: 0;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 .ourteampage_text {
@@ -47,7 +50,7 @@
 
 .teamcardsgrid {
   display: grid;
-  gap: @big-size @extra-large-size;
+  gap: @big-size 0;
   justify-content: stretch;
   align-items: stretch;
   grid-auto-columns: 20%;
