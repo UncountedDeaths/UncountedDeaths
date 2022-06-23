@@ -13,7 +13,7 @@ import styles from '../styles/OurTeamPage.module.less';
 const MemberCard: React.FC<MemberCardProps> = (props) => {
   return (
     <div className={styles.ourteampage_member}>
-      <Avatar className={styles.ourteampage_avatar} size={150} src={props.imgSrc} />
+      <Avatar className={styles.ourteampage_avatar} src={props.imgSrc} />
       <div className={styles.ourteampage_text}>
         <Typography.Title level={3}>{props.title}</Typography.Title>
         <Typography.Text>{props.subtitle}</Typography.Text>
