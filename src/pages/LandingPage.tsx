@@ -30,10 +30,6 @@ export const LandingPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.contentbody}>
-        <div>
-          <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
-          <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
-        </div>
         <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
           <Typography.Text strong>{TrackerPageContent.description_tableau}</Typography.Text>
         </div>
@@ -42,6 +38,10 @@ export const LandingPage: React.FC = () => {
           src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
           style={{ width: '1px', minWidth: '100%', border: 'none' }}
         />
+        <div>
+          <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
+          <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
+        </div>
         <div className={styles.trackpagetext}>
           <div className={styles.howtotext}>
             <CustomTitle title={TrackerPageContent.how_to_title} />
