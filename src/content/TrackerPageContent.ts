@@ -1,13 +1,16 @@
 export const key_terms_title = 'MEASURE: KEY TERMS';
-export const term_1_title = 'Excess mortality';
+export const term_1_title = 'Excess Death Rates';
 export const term_1_body =
-  'Excess mortality refers to differences in mortality relative to what would have been expected in the absense of the COVID-19 pandemic. These estimates provide a useful measure of the total mortality burden associated with COVID-19.';
-export const term_2_title = 'Proportion unassigned to COVID-19';
+  'Excess death rates refer to the number of deaths that occurred over a period of time (such as the year 2020 or 2021) beyond the number of deaths that were typically expected based on pre-pandemic trends in mortality. When excess death rates are negative, this suggests that mortality was lower than expected. This measure is expressed in deaths per 100,000 residents.';
+export const term_2_title = 'Covid-19 Death Rates';
 export const term_2_body =
-  'The proportion unassigned to COVID-19 is the percent of excess deaths without COVID-19 included on their death certificates. Excess deaths not assigned to COVID-19 could represent COVID-19 deaths that were misclassified to other causes or deaths that were indirectly related to the pandemic.';
-export const term_3_title = 'Death investigation system';
+  'Covid-19 death rates refer to the number of deaths that had Covid-19 listed as an underlying cause on death certificates. This measure is expressed in deaths per 100,000 residents.';
+export const term_3_title = 'Potential Under-Counting';
 export const term_3_body =
-  'A death investigation system refers to the system used for assigning cause of death on the death certificates. In the US, this system varies from place to place, and sometimes involves a medical examiner or a coroner.';
+  'Potential under-counting refers to the extent to which Covid-19 death rates represent a complete account of excess death rates. If Covid-19 mortality only accounted for 80% of excess mortality, this suggests that up to 20% of Covid-19 deaths went uncounted. Some of these excess deaths not assigned to Covid-19 may be deaths indirectly related to the social, economic and health system consequences of the pandemic, but prior research indicates that most are uncounted Covid-19 deaths.';
+export const term_4_title = 'Types of Death Certifiers';
+export const term_4_body =
+  'Death investigation systems vary by state and county across the United States. States either have a medical examiner system, a coroner system, or a mixture of both. Counties either have a medical examiner, a coroner, a sheriff-coroner, or a justice of the peace. Coroners are elected, have limited medical training, and may be more likely to under-count Covid-19 deaths according to investigative reporting.';
 export const about_title = 'About';
 export const about_1_title = 'Excess Death Tracker';
 export const about_1_body = 'Something goes here...';
