@@ -7,6 +7,7 @@ import {
   mediaContent,
   MemberCardProps,
   text_content,
+  designContent,
 } from '../content/OurTeamContent';
 import styles from '../styles/OurTeamPage.module.less';
 
@@ -63,7 +64,13 @@ const tabs: (TabPaneProps & Key)[] = [
   {
     key: '4',
     tab: <p className={styles.titletabpane}>Design / Engineering</p>,
-    children: <div>Design / Engineering</div>,
+    children: (
+      <div className={styles.teamcardsgrid}>
+        {designContent.map((m) => (
+          <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
+        ))}
+      </div>
+    ),
   },
 ];
 

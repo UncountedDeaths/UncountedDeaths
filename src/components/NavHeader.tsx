@@ -133,16 +133,16 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
           setSelected([`${InternalRoutes.TRACKER.key}`]);
         }}
       >
-        Excess Death Tracker
+        Tracker
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.PUBLICATIONS.key}
+        key={InternalRoutes.TEAM.key}
         onClick={() => {
-          navigate(InternalRoutes.PUBLICATIONS.path);
-          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
+          navigate(InternalRoutes.TEAM.path);
+          setSelected([`${InternalRoutes.TEAM.key}`]);
         }}
       >
-        Publications
+        Team
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.MEDIA.key}
@@ -154,14 +154,15 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         Media
       </Menu.Item>
       <Menu.Item
-        key={InternalRoutes.TEAM.key}
+        key={InternalRoutes.PUBLICATIONS.key}
         onClick={() => {
-          navigate(InternalRoutes.TEAM.path);
-          setSelected([`${InternalRoutes.TEAM.key}`]);
+          navigate(InternalRoutes.PUBLICATIONS.path);
+          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
         }}
       >
-        Our Team
+        Publications
       </Menu.Item>
+
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
         onClick={() => {
@@ -169,7 +170,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
           setSelected([`${InternalRoutes.RESOURCES.key}`]);
         }}
       >
-        Resources
+        FAQs
       </Menu.Item>
     </Menu>
   );

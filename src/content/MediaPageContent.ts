@@ -1,7 +1,7 @@
 import { ContentCardProps } from './PublicationsPageContent';
 
 export const text_content =
-  'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality throughout the US. We are an interdisciplinary team of public health researchers, demographers, and statisticians who are investigating';
+  'Our team is collaborating with investigative reporters and other media stakeholders who are using our data to examine patterns of excess mortality and under-counting of Covid-19 deaths in specific communities across the United States.';
 
 export const content: ContentCardProps[] = [
   {
