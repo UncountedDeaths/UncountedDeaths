@@ -116,8 +116,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       setSelected([`${InternalRoutes.TRACKER.key}`]);
     } else if (location.pathname === InternalRoutes.MEDIA.path) {
       setSelected([`${InternalRoutes.MEDIA.key}`]);
-    } else if (location.pathname === InternalRoutes.ABOUT.path) {
-      setSelected([`${InternalRoutes.ABOUT.key}`]);
     }
   }, [location.pathname]);
   return (
