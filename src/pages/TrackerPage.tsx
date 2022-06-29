@@ -5,7 +5,7 @@ import styles from '../styles/TrackerPage.module.less';
 import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
 import WarningModal from '../components/WarningModal';
-import IframeResizer from 'iframe-resizer-react';
+import TableauView from '../components/TableauView';
 
 export const TrackerPage: React.FC = () => {
   return (
@@ -14,11 +14,7 @@ export const TrackerPage: React.FC = () => {
       <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
         <Typography.Text strong>{Content.description_tableau}</Typography.Text>
       </div>
-      <IframeResizer
-        log
-        src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
-        style={{ width: '1px', minWidth: '100%', border: 'none' }}
-      />
+      <TableauView />
       <div className={styles.trackpagetext}>
         <div className={styles.howtotext}>
           <CustomTitle title={Content.how_to_title} />
@@ -27,11 +23,13 @@ export const TrackerPage: React.FC = () => {
         <div className={styles.trackkeyterms}>
           <p>{Content.key_terms_title}</p>
           <Typography.Title level={4}>{Content.term_1_title}</Typography.Title>
-          <Typography.Paragraph>{Content.term_2_body}</Typography.Paragraph>
+          <Typography.Paragraph>{Content.term_1_body}</Typography.Paragraph>
           <Typography.Title level={4}>{Content.term_2_title}</Typography.Title>
           <Typography.Paragraph>{Content.term_2_body}</Typography.Paragraph>
           <Typography.Title level={4}>{Content.term_3_title}</Typography.Title>
           <Typography.Paragraph>{Content.term_3_body}</Typography.Paragraph>
+          <Typography.Title level={4}>{Content.term_4_title}</Typography.Title>
+          <Typography.Paragraph>{Content.term_4_body}</Typography.Paragraph>
         </div>
       </div>
     </ContentLayout>

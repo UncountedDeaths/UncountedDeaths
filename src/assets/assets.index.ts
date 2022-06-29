@@ -15,6 +15,19 @@ export { default as steele } from './profilePhotos/Steele.png';
 export { default as stokes } from './profilePhotos/Stokes.jpg';
 export { default as syl } from './profilePhotos/Syl.jpg';
 export { default as wubin } from './profilePhotos/Wubin.jpg';
+export { default as lundberg } from './profilePhotos/lundberg.jpeg';
+export { default as nsoesie } from './profilePhotos/nsoesie.png';
+export { default as zhou } from './profilePhotos/zhou.jpeg';
+export { default as elo } from './profilePhotos/elo.jpeg';
+export { default as preston } from './profilePhotos/preston.jpeg';
+export { default as paglino } from './profilePhotos/paglino.jpeg';
+export { default as luck } from './profilePhotos/luck.jpeg';
+export { default as kravitz } from './profilePhotos/kravitz.jpeg';
+export { default as bergin } from './profilePhotos/bergin.jpeg';
+export { default as ladyzhets } from './profilePhotos/ladyzhets.jpeg';
+export { default as bayly } from './profilePhotos/bayly.jpeg';
+export { default as saucy } from './profilePhotos/saucy.jpeg';
+export { default as augustine } from './profilePhotos/augustine.jpeg';
 
 /**
  * Logos and other branding

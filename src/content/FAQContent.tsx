@@ -9,78 +9,96 @@ export interface IFAQ {
 
 export const FAQ_Death_Cert_Data: IFAQ[] = [
   {
-    title: 'What is a death certificate',
+    title: 'What is a death certificate?',
     content:
-      "Death certificates are used nationally as legal documents recording a person's time of death, location of death, and cause of death. There are multiple components to a death certificate, required to be completed by a medical certifier and a funeral director. The medical certifier is responsible for completing the majority of the certificate including the essential “Cause-of-Death” section. Death certificates are meant to accurately report mortality statistics and serve as a legal document in arranging funerals, ratifying wills, and taking necessary steps in bureaucratically declaring the end of a life.",
+      "Death certificates are legal documents that record a person's time of death, location of death, and cause of death. There are multiple components to a death certificate, required to be completed by a medical certifier and a funeral director. The medical certifier is responsible for completing the majority of the certificate including the essential “Cause-of-Death” section. Death certificates are meant to accurately report mortality statistics and serve as a legal document in arranging funerals, ratifying wills, and taking necessary steps in bureaucratically declaring the end of a life.",
   },
   {
-    title: 'What is included as a cause of death and how is it listed on the death certificate?',
+    title: 'How is Covid-19 listed on the death certificate?',
     content: () => (
       <>
-        Death Certificates contain a “Cause-of-Death” section which consists of{' '}
-        <Typography.Link href="https://www.cdc.gov/nchs/data/dvs/blue_form.pdf">
-          2 parts.
-        </Typography.Link>
-        <ul>
-          <li>
-            Part 1 identifies the direct event directly resulting in death including any underlying
-            causes of death.
-          </li>
-          <li>
-            Part 2 reports other significant diseases, conditions, or injuries which may have
-            contributed to the death but did not directly result in death.
-          </li>
-          <li>
-            Example: A person or patient dies due to a "heart attack". Part 1 will list the direct
-            chain of events and conditions resulting in death, this might include: "Cardiac Arrest"
-            or "Cardiovascular Disease". Part 2 will list other relevant conditions that may have
-            indirectly contributed to death such as "Diabetes."
-          </li>
-        </ul>
+        The cause-of-death section on a death certificate includes 2 parts. Part 1 identifies the
+        direct event directly resulting in death including any underlying causes of death. Part 2
+        reports other significant diseases, conditions, or injuries which may have contributed to
+        the death but did not directly result in death. {''}{' '}
+        <Typography.Link href="https://www.cdc.gov/nchs/data/nvss/vsrg/vsrg03-508.pdf">
+          CDC guidelines
+        </Typography.Link>{' '}
+        {''} state that any death where Covid-19 contributed should have Covid-19 listed on the
+        death certificate. In most cases where Covid-19 contributed to a death, Covid-19 is listed
+        as the underlying cause of death.
       </>
     ),
   },
   {
-    title: 'How is COVID-19 listed as a cause of death?',
-    content:
-      'Throughout the COVID-19 pandemic the CDC advised certifiers to include COVID-19 as an underlying cause of death in Part 1. Unique codes were added to death certificates to identify COVID-19 as the cause rather than other respiratory infections. ',
-  },
-  {
     title: 'Who ensures death certificates are accurate?',
     content:
-      'The cause of death is reported by a “medical certifier” who ultimately signs-off on the certificate to indicate their endorsement and professional opinion on the cause of death. Although this person is responsible for accurately investigating, identifying, and reporting causes of death each state defines its own guidelines and requirements for who the “medical certifier” can be. See more in the Medicolegal Death Investigation section.',
+      'The cause of death is reported by a “medical certifier” who signs-off on the certificate to indicate their endorsement and professional opinion on the cause of death. Although this person is responsible for accurately investigating, identifying, and reporting causes of death each state defines its own guidelines and requirements for who the “medical certifier” can be. This includes a medical examiner, coroner, sheriff-coroner, or justice of the peace. More details are available in the Death Investigation System section. ',
   },
   {
     title: 'What guidelines exist nationally for death certification?',
-    content:
-      'In such decentralized systems it is difficult to quickly disseminate and enforce standardized reporting guidelines. At several stages throughout the COVID-19 pandemic period guidelines were defined, published, and refined by the CDC to encourage more explicit, confident, and standardized criteria for attributing a death to COVID-19.Most recently the Council of State and Territorial Epidemiologists (CTSE), in partnership with the CDC, have published refined guidelines to attributing a death to COVID-19. Which now includes a 30-day window prior to death in which COVID-19 symptoms or laboratory results must be confirmed.',
+    content: () => (
+      <>
+        The death investigation system in the United States is highly decentralized, meaning it is
+        difficult to quickly disseminate and enforce standardized reporting guidelines during a
+        public health emergency such as a pandemic. At several stages throughout the COVID-19
+        pandemic, the CDC defined, published, and refined guidelines to encourage more standardized
+        criteria for attributing a death to COVID-19. Most recently the Council of State and
+        Territorial Epidemiologists (CTSE), in partnership with the CDC, have published refined
+        guidelines to attributing a death to COVID-19. These establish that any death that occured
+        within 30-day of Covid-19 symptoms or a positive test should be attributed to Covid-19.
+        Further details about these guidelines are available {''}
+        <Typography.Link href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/pdfs/pdfs2/20211222_interim-guidance.pdf">
+          here.
+        </Typography.Link>
+      </>
+    ),
   },
 ];
 
 export const FAQ_Medicolegal_Data: IFAQ[] = [
   {
-    title: 'What is the Medicolegal Death Investigation system?',
-    content:
-      'Medicolegal Death Investigation or MDI is the official system responsible for investigating, certifying, and reporting deaths throughout the US. This function is essential in gathering national mortality statistics important to informing and guiding public policy.',
-  },
-  {
-    title: 'What are the different MDI systems in the United States?',
+    title: 'What is the medicolegal death investigation (MDI) system?',
     content: () => (
       <>
-        <Typography.Text>
-          Medicolegal Death Investigation or MDI is the official system responsible for
-          investigating, certifying, and reporting deaths throughout the US. This function is
-          essential in gathering national mortality statistics important to informing and guiding
-          public policy.
-        </Typography.Text>
+        The Medicolegal Death Investigation system or MDI is the official system responsible for
+        investigating, certifying, and reporting deaths throughout the US. This function is
+        essential in gathering national mortality statistics important to informing and guiding
+        public policy. Further details about the death investigation system are available {''}
+        <Typography.Link href="https://www.cdc.gov/phlp/publications/topic/coroner.html">
+          here.
+        </Typography.Link>
+      </>
+    ),
+  },
+  {
+    title: 'What are the different types of death certifiers in the United States?',
+    content: () => (
+      <>
         <Row>
           <Col span={2}></Col>
           <Col span={22}>
             {/* TODO: Fix this and make it less hacky */}
-            <div style={{ padding: '2rem' }} />
+
             <FAQ data={Sub_FAQ_MDI_Systems} />
           </Col>
         </Row>
+      </>
+    ),
+  },
+  {
+    title: 'What reforms are needed to the death investigation system?',
+    content: () => (
+      <>
+        In 2009, the National Academies of Sciences, Engineering, and Medicine produced {''}
+        <Typography.Link href="https://nap.nationalacademies.org/read/12589/chapter/11">
+          detailed recommendations
+        </Typography.Link>
+        {''} about how to reform the death investigation system. Some proposed changes include
+        allocating federal funding to convert coroner systems into medical examiner systems and
+        train new forensic pathologists, establishing a national working group that would advance
+        best practices in death certification and provide guidance during pandemics and other public
+        health emergencies, and requiring that all death certifiers are accredited.
       </>
     ),
   },
@@ -98,7 +116,7 @@ export const Sub_FAQ_MDI_Systems: IFAQ[] = [
       'A coroner is elected by the general population and is not required to be medically trained or board certified. They do not perform any post-mortem examinations or diagnostic tests but are in charge of identifying a body, notifying the next of kin, and arranging a death certificate.',
   },
   {
-    title: 'Sheriff Coroner',
+    title: 'Sheriff-Coroner',
     content:
       'A sheriff-coroner is an elected position. A sheriff-coroner is a sheriff (responsible for keeping the peace and attending courts) who also assumes the roles and responsibilities of a coroner (responsible for examining and determining the cause of all deaths). ',
   },
@@ -107,193 +125,92 @@ export const Sub_FAQ_MDI_Systems: IFAQ[] = [
     content:
       'Primarily found in Texas, a justice of the peace is a minor judicial official who performs duties like issuing warrants or conducting marriages. In Texas (where each county is legally required to have between 1 and 8 justices of the peace), a justice of the peace is also required to assume the duties of a coroner if the county does not have a medical examiner. ',
   },
-  {
-    title: 'State versus County',
-    content:
-      'Refers to the degree of centralization of the MDI system in each county. A centralized system is more likely to enforce standardization and may fill in resource gaps between counties. ',
-  },
 ];
 
 export const FAQ_FEMA_FAQ_Data: IFAQ[] = [
   {
-    title: 'Who is eligible?',
+    title: 'What is the FEMA funeral assistance program?',
     content: () => (
       <>
-        <ul>
-          <li>You are a: US Citizen, Non-citizen national, or qualified non-citizen</li>
-          <li>Death occurred in the US on or after Jan. 20, 2020.</li>
-          <li>The death was attributed to COVID-19 </li>
-          <li>ou are responsible for the funeral expenses</li>
-        </ul>
+        The Federal Emergency Management Agency (FEMA) launched a funeral assistance program to
+        offer financial support to individuals who have lost loved ones to Covid-19 in April 2021.
+        Applicants are eligible to receive up to $9,000 per deceased applicant and up to $35,500 per
+        application. As of June 2022, eligibility criteria for the program state that a death
+        certificate is required showing that a death was caused by or likely the result of Covid-19.
+        Further details about the program are available {''}
+        <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance">
+          here.
+        </Typography.Link>
       </>
     ),
   },
   {
-    title: 'What costs are eligible for coverage?',
+    title: 'Who is eligible for financial assistance?',
     content: () => (
       <>
-        <ul>
-          <li>
-            Funeral services (cremation, transfer of remains, casket/urn, burial plot,
-            headstone/marker, clergy, ceremony, funeral home expense)
-          </li>
-          <li>Costs associated in producing death certificates</li>
-          <li>Costs due to local or state ordinances</li>
-          <li>Transportation for up to two to identify the person who died</li>
-        </ul>
+        Applicants must be responsible for the funeral costs of a person who died from Covid-19. As
+        of June 2022, eligibility criteria for the program state that a death certificate is
+        required showing that a death was caused by or likely the result of Covid-19. Further
+        details about the eligibility criteria are available {''}
+        <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance#eligible">
+          here.
+        </Typography.Link>
       </>
     ),
   },
   {
-    title: 'What are the requirements for applying?',
+    title: 'What costs does the program cover?',
     content: () => (
       <>
-        <Typography.Text>
-          A copy of an official death certificate which must identify:
-        </Typography.Text>
-        <ul>
-          <li>The death occurred in the US</li>
-          <li>Occurred after January 20, 2020</li>
-          <li>Was attributed to COVID-19</li>
-        </ul>
-        <Typography.Text>
-          A signed funeral home contract, invoice, receipts, or other expense documentation which
-          includes:
-        </Typography.Text>
-        <ul>
-          <li>
-            Your name (person covering the cost) indicating you are the one responsible for some or
-            all of the cost.
-          </li>
-          <li>Date indicating the expense was incurred after January 20, 2020</li>
-          <li>Name of the deceased for which funeral service is being covered.</li>
-          <li>Item-by-item costs for service</li>
-        </ul>
+        The FEMA funeral assistance program covers funeral costs including funeral services,
+        cremation, burial plots, and transportation. A full list of covered costs is available {''}
+        <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance">
+          here.
+        </Typography.Link>
       </>
     ),
   },
   {
-    title: 'What is the application process?',
+    title: 'How do you apply for the program?',
     content: () => (
       <>
-        <Typography.Text>
-          Please visit the FEMA website by clicking{' '}
-          <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance">
-            here{' '}
-          </Typography.Link>
-          for more in-depth guidance. <br />
-        </Typography.Text>
-        <ul>
-          <li>
-            To apply you are required to call a toll-free number (844-684-6333) between 9am - 9pm
-            Eastern Time. Multilingual Services are available. You are not able to apply online.
-          </li>
-          <li>
-            Be prepared to provide a FEMA representative with:
-            <ul>
-              <li>Your date of birth and Social Security number</li>
-              <li>The date of birth and Social Security number of deceased individual</li>
-              <li>Your current mailing address and telephone number</li>
-              <li>The address of where the deceased died</li>
-              <li>
-                If applicable, any insurance policies the deceased had which covers burial or
-                funeral expenses
-              </li>
-              <li>
-                If applicable, documentation of any additional funeral support (donations, CARES Act
-                grants, state assistance, etc…)
-              </li>
-              <li>
-                For funds to be delivered via direct deposit please be prepared to provide the
-                routing and account number of a checking or savings account in your name.
-              </li>
-            </ul>
-          </li>
-          <li>
-            Following the phone application the FEMA representative will provide you with an
-            application number, be prepared to record this for your records
-            <ul>
-              <li>
-                You may use this application number to create an account on:
-                <Typography.Link href="www.disasterassistance.gov">
-                  www.disasterassistance.gov
-                </Typography.Link>
-                to follow application process
-              </li>
-            </ul>
-          </li>
-          <li>
-            Submit the required supporting documents (death certificate, invoices of expenses,
-            receipts, funeral home contracts). There are 3 ways to submit these documents:
-            <ul>
-              <li>Upload directly or scanned copies via disasterassistance.gov account</li>
-              <li>Via Fax to 855-261-3452</li>
-              <li>Via Mail to: P.O. Box 10001, Hyattsville, MD 20782</li>
-            </ul>
-          </li>
-        </ul>
+        To apply for funeral assistance, call FEMA at 844-684-633 on Monday through Friday from 9 am
+        to 9 pm Eastern Time. FEMA estimates that the application process will take 20 minutes to
+        complete. Applicants are then required to submit supporting documentation online or via fax
+        or mail. Applications take up to 45 days for an eligibility decision to be made. Further
+        details about the application process are available {''}
+        <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance#work">
+          here.
+        </Typography.Link>
       </>
     ),
   },
   {
-    title: 'What is the expected waiting time?',
+    title: 'What barriers exist for receiving FEMA funeral assistance?',
     content: () => (
       <>
-        <ul>
-          <li>
-            Once FEMA receives required documentation it takes about 45 days for an eligibility
-            decision to be made.
-          </li>
-          <li>
-            If your application is approved for COVID-19 Funeral Assistance funds will be either
-            sent via a Department of Treasury Check or via direct deposit. Funds usually arrive
-            within days of approval.
-          </li>
-          <li>You will receive a notification letter.</li>
-        </ul>
+        As of June 2022, eligibility criteria for the program state that a death certificate is
+        required showing that a death was caused by or likely the result of Covid-19. {''}
+        <Typography.Link href="https://www.cdc.gov/mmwr/volumes/70/wr/mm7015a4.htm">
+          Prior research
+        </Typography.Link>
+        {''} on the true mortality impact of the Covid-19 pandemic has found that up to 25% of
+        deaths attributable to the pandemic in the United States have not been assigned to Covid-19
+        on death certificates. This suggests that many people who have incurred funeral costs
+        because of the Covid-19 pandemic are unable to benefit from this program and that the
+        current eligibility criteria pose a barrier for receiving FEMA funeral assistance.
       </>
     ),
   },
   {
-    title: 'What are some common challenges?',
+    title: 'How do you amend an error on a death certificate?',
     content: () => (
       <>
-        <ul>
-          <li>
-            The main obstacle which is a reality for over 100,000 Americans is that COVID-19 was
-            never formally recognized as an underlying cause of death on their death certificate.
-            <ul>
-              <li>Please see the next section of how to amend death certificates.</li>
-            </ul>
-          </li>
-          <li>
-            Other{' '}
-            <Typography.Link href="https://www.fema.gov/disaster/coronavirus/economic/funeral-assistance/faq">
-              Frequently Asked Questions from FEMA
-            </Typography.Link>
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: 'Amending Errors on Death Certificates',
-    content: () => (
-      <>
-        <ul>
-          <li>
-            It is possible to have death certificates amended! But it is highly specific to each
-            state's jurisdiction and MDI system. Every state has its own regulations, guidelines,
-            and procedures for amending a death certificate.
-          </li>
-          <ul>
-            <li>
-              Please refer to your state’s guidelines, requirements, and procedures in applying for
-              a Death Certificate Amendment. We have done our best to provide links to these
-              guidelines for most states here.
-            </li>
-          </ul>
-        </ul>
+        It is possible to have a death certificate amended if there is documentation supporting a
+        cause of death that differs from what is listed. The process, however, differs for each
+        state and each type of death certifier. We are currently developing a resource guide that
+        will provide links and information to assist with the process of amending your death
+        certificate in each state.
       </>
     ),
   },
@@ -301,6 +218,3 @@ export const FAQ_FEMA_FAQ_Data: IFAQ[] = [
 
 export const FAQ_FEMA_SubHeader_Text =
   'If you need assistance covering the cost of a COVID-19 funeral you may be eligible to apply for up to $9,000 in assistance through FEMA.';
-
-export const text_content =
-  'This website features tools for identifying both patterns of county excess mortality throughout the United States and potential under-reported COVID-19 deaths';

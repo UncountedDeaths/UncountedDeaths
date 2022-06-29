@@ -50,11 +50,13 @@ export const LandingPage: React.FC = () => {
           <div className={styles.trackkeyterms}>
             <p>{TrackerPageContent.key_terms_title}</p>
             <Typography.Title level={4}>{TrackerPageContent.term_1_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
+            <Typography.Paragraph>{TrackerPageContent.term_1_body}</Typography.Paragraph>
             <Typography.Title level={4}>{TrackerPageContent.term_2_title}</Typography.Title>
             <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
             <Typography.Title level={4}>{TrackerPageContent.term_3_title}</Typography.Title>
             <Typography.Paragraph>{TrackerPageContent.term_3_body}</Typography.Paragraph>
+            <Typography.Title level={4}>{TrackerPageContent.term_4_title}</Typography.Title>
+            <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
           </div>
         </div>
         <div>
