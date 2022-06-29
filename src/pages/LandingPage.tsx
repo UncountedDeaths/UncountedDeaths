@@ -16,7 +16,7 @@ export const LandingPage: React.FC = () => {
   return (
     <div className={styles.landingpagecontainer}>
       <div className={styles.landingpagebanner}>
-        <div className={styles.LandingPageFullWidthImagesContainer}></div>
+        <div className={styles.LandingPageFullWidthImagesContainer} />
         <div>
           <div className={styles.LandingPageOverlayText}>
             <div>
@@ -30,13 +30,13 @@ export const LandingPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.contentbody}>
-        <div style={{ fontSize: '1.2rem', marginBottom: '4rem' }}>
+        <div>
           <Typography.Text strong>{TrackerPageContent.description_tableau}</Typography.Text>
         </div>
         <IframeResizer
           log
           src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
-          style={{ width: '1px', minWidth: '100%', border: 'none' }}
+          className={styles.appIFrame}
         />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
