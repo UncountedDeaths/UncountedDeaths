@@ -6,7 +6,7 @@ import styles from '../styles/TrackerPage.module.less';
 import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
 import WarningModal from '../components/WarningModal';
-import NivoTSPlot from '../components/TimeSeriesPlots';
+import NivoTSPlot from '../components/NivoTimeSeriesPlot';
 
 export const TrackerPage: React.FC = () => {
   return (
