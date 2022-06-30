@@ -10,8 +10,11 @@ import { content as mediaContent } from '../content/MediaPageContent';
 import { ContentCard } from './PublicationsPage';
 import { content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
+import { useNavigate } from 'react-router-dom';
+import { InternalRoutes } from '../routes';
 
 export const LandingPage: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.landingpagecontainer}>
       <div className={styles.landingpagebanner}>
@@ -36,7 +39,7 @@ export const LandingPage: React.FC = () => {
             {Content.what_we_do_body}
             <br></br>
             <br></br>
-            <a href="/about">Learn more</a> about the project.
+            <a onClick={() => navigate(InternalRoutes.ABOUT.path)}>Learn more</a> about the project.
           </Paragraph>
         </div>
         <div>
@@ -45,7 +48,7 @@ export const LandingPage: React.FC = () => {
             {Content.who_we_are_body}
             <br></br>
             <br></br>
-            <a href="/team">Learn more</a> about us.
+            <a onClick={() => navigate(InternalRoutes.TEAM.path)}>Learn more</a> about us.
           </Paragraph>
         </div>
         <div>

@@ -8,17 +8,18 @@ import {
 import CustomTitle from '../components/CustomTitle';
 import IframeResizer from 'iframe-resizer-react';
 import { Typography } from 'antd';
+import styles from '../styles/AboutPage.module.less';
 const AboutPage: React.FC = () => {
   return (
     <ContentLayout title="ABOUT">
-      <div style={{ fontSize: '1.2rem' }}>
+      <div className={styles.Content}>
         <Typography.Text>{about_page_head}</Typography.Text>
       </div>
 
       <br></br>
       <br></br>
-      <CustomTitle title={'Impacts'} />
-      <div style={{ fontSize: '1.2rem' }}>
+      <CustomTitle title="Impacts" />
+      <div className={styles.Content}>
         {about_page_subhead}
         <br></br>
         <br></br>
@@ -42,8 +43,8 @@ const AboutPage: React.FC = () => {
         </ol>
       </div>
       <br></br>
-      <CustomTitle title={'Who We Are'} />
-      <div style={{ fontSize: '1.2rem' }}>
+      <CustomTitle title="Who We Are" />
+      <div className={styles.Content}>
         {about_page_support} <br></br>
         <br></br>
         <a href="/team">Learn more</a> about us.
@@ -51,7 +52,7 @@ const AboutPage: React.FC = () => {
       <div id="contact">
         <br></br>
         <br></br>
-        <CustomTitle title={'Contact Us'} />
+        <CustomTitle title="Contact Us" />
       </div>
       <IframeResizer
         log
@@ -65,7 +66,7 @@ const AboutPage: React.FC = () => {
         }}
       />
       <div>
-        <CustomTitle title={'Stay up to Date on the Project'} />
+        <CustomTitle title="Stay up to Date on the Project" />
       </div>
     </ContentLayout>
   );
