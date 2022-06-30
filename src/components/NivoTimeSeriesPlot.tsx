@@ -24,7 +24,7 @@ const NivoTSPlot: React.FC = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'transportation',
+          legend: 'date',
           legendOffset: 36,
           legendPosition: 'middle',
         }}
@@ -32,7 +32,7 @@ const NivoTSPlot: React.FC = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'count',
+          legend: 'deaths',
           legendOffset: -40,
           legendPosition: 'middle',
         }}
@@ -71,7 +71,7 @@ const NivoTSPlot: React.FC = () => {
             ],
           },
         ]}
-        animate={false}
+        animate={true}
       />
     </div>
   );
