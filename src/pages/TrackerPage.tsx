@@ -7,6 +7,7 @@ import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
 import WarningModal from '../components/WarningModal';
 import NivoTSPlot from '../components/NivoTimeSeriesPlot';
+import RechartsTSPlot from '../components/RechartsTimeSeriesPlot';
 
 export const TrackerPage: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ export const TrackerPage: React.FC = () => {
         </div>
       </div>
       <NivoTSPlot />
+      <RechartsTSPlot />
     </ContentLayout>
   );
 };
