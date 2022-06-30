@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveLine } from '@nivo/line';
-import { nivodata } from '../content/TimeSeriesData.ts';
+import { nivodata } from '../content/TimeSeriesData';
 import styles from '../styles/TimeSeriesPlots.module.less';
 
 const NivoTSPlot: React.FC = () => {
