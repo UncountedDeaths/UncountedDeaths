@@ -1,13 +1,13 @@
 import React from 'react';
 import { ResponsiveLine } from '@nivo/line';
-import { data } from '../content/TimeSeriesData';
+import { nivodata } from '../content/TimeSeriesData.ts';
 import styles from '../styles/TimeSeriesPlots.module.less';
 
 const NivoTSPlot: React.FC = () => {
   return (
     <div className={styles.TimeSeriesViewBox}>
       <ResponsiveLine
-        data={data}
+        data={nivodata}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{ type: 'point' }}
         yScale={{
