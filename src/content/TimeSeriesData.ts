@@ -1,271 +1,271 @@
 export const nivodata = [
   {
-    id: 'japan',
+    id: 'Autaga',
     color: 'hsl(107, 70%, 50%)',
     data: [
       {
-        x: 'plane',
-        y: 29,
+        date: '1/1/2021',
+        deaths: 99,
       },
       {
-        x: 'helicopter',
-        y: 109,
+        date: '2/1/2021',
+        deaths: 61,
       },
       {
-        x: 'boat',
-        y: 183,
+        date: '3/1/2021',
+        deaths: 53,
       },
       {
-        x: 'train',
-        y: 271,
+        date: '4/1/2021',
+        deaths: 40,
       },
       {
-        x: 'subway',
-        y: 242,
+        date: '5/1/2021',
+        deaths: 60,
       },
       {
-        x: 'bus',
-        y: 234,
+        date: '6/1/2021',
+        deaths: 45,
       },
       {
-        x: 'car',
-        y: 138,
+        date: '7/1/2021',
+        deaths: 44,
       },
       {
-        x: 'moto',
-        y: 192,
+        date: '8/1/2021',
+        deaths: 79,
       },
       {
-        x: 'bicycle',
-        y: 165,
+        date: '9/1/2021',
+        deaths: 72,
       },
       {
-        x: 'horse',
-        y: 295,
+        date: '10/1/2021',
+        deaths: 46,
       },
       {
-        x: 'skateboard',
-        y: 48,
+        date: '11/1/2021',
+        deaths: 48,
       },
       {
-        x: 'others',
-        y: 129,
-      },
-    ],
-  },
-  {
-    id: 'france',
-    color: 'hsl(190, 70%, 50%)',
-    data: [
-      {
-        x: 'plane',
-        y: 80,
-      },
-      {
-        x: 'helicopter',
-        y: 258,
-      },
-      {
-        x: 'boat',
-        y: 295,
-      },
-      {
-        x: 'train',
-        y: 9,
-      },
-      {
-        x: 'subway',
-        y: 87,
-      },
-      {
-        x: 'bus',
-        y: 138,
-      },
-      {
-        x: 'car',
-        y: 232,
-      },
-      {
-        x: 'moto',
-        y: 296,
-      },
-      {
-        x: 'bicycle',
-        y: 149,
-      },
-      {
-        x: 'horse',
-        y: 223,
-      },
-      {
-        x: 'skateboard',
-        y: 24,
-      },
-      {
-        x: 'others',
-        y: 182,
+        date: '12/1/2021',
+        deaths: 60,
       },
     ],
   },
   {
-    id: 'us',
-    color: 'hsl(48, 70%, 50%)',
+    id: 'Baldwin',
+    color: 'hsl(107, 70%, 50%)',
     data: [
       {
-        x: 'plane',
-        y: 209,
+        date: '1/1/2021',
+        deaths: 307,
       },
       {
-        x: 'helicopter',
-        y: 116,
+        date: '2/1/2021',
+        deaths: 245,
       },
       {
-        x: 'boat',
-        y: 292,
+        date: '3/1/2021',
+        deaths: 231,
       },
       {
-        x: 'train',
-        y: 267,
+        date: '4/1/2021',
+        deaths: 225,
       },
       {
-        x: 'subway',
-        y: 179,
+        date: '5/1/2021',
+        deaths: 233,
       },
       {
-        x: 'bus',
-        y: 289,
+        date: '6/1/2021',
+        deaths: 214,
       },
       {
-        x: 'car',
-        y: 134,
+        date: '7/1/2021',
+        deaths: 256,
       },
       {
-        x: 'moto',
-        y: 244,
+        date: '8/1/2021',
+        deaths: 417,
       },
       {
-        x: 'bicycle',
-        y: 270,
+        date: '9/1/2021',
+        deaths: 277,
       },
       {
-        x: 'horse',
-        y: 220,
+        date: '10/1/2021',
+        deaths: 242,
       },
       {
-        x: 'skateboard',
-        y: 38,
+        date: '11/1/2021',
+        deaths: 225,
       },
       {
-        x: 'others',
-        y: 165,
+        date: '12/1/2021',
+        deaths: 224,
       },
     ],
   },
   {
-    id: 'germany',
-    color: 'hsl(125, 70%, 50%)',
+    id: 'Barbour',
+    color: 'hsl(107, 70%, 50%)',
     data: [
       {
-        x: 'plane',
-        y: 149,
+        date: '1/1/2021',
+        deaths: 41,
       },
       {
-        x: 'helicopter',
-        y: 130,
+        date: '2/1/2021',
+        deaths: 27,
       },
       {
-        x: 'boat',
-        y: 4,
+        date: '3/1/2021',
+        deaths: 33,
       },
       {
-        x: 'train',
-        y: 23,
+        date: '4/1/2021',
+        deaths: 40,
       },
       {
-        x: 'subway',
-        y: 153,
+        date: '5/1/2021',
+        deaths: 27,
       },
       {
-        x: 'bus',
-        y: 89,
+        date: '6/1/2021',
+        deaths: 19,
       },
       {
-        x: 'car',
-        y: 106,
+        date: '7/1/2021',
+        deaths: 30,
       },
       {
-        x: 'moto',
-        y: 59,
+        date: '8/1/2021',
+        deaths: 33,
       },
       {
-        x: 'bicycle',
-        y: 97,
+        date: '9/1/2021',
+        deaths: 21,
       },
       {
-        x: 'horse',
-        y: 295,
+        date: '10/1/2021',
+        deaths: 40,
       },
       {
-        x: 'skateboard',
-        y: 41,
+        date: '11/1/2021',
+        deaths: 33,
       },
       {
-        x: 'others',
-        y: 72,
+        date: '12/1/2021',
+        deaths: 29,
       },
     ],
   },
   {
-    id: 'norway',
-    color: 'hsl(78, 70%, 50%)',
+    id: 'Bibb',
+    color: 'hsl(107, 70%, 50%)',
     data: [
       {
-        x: 'plane',
-        y: 80,
+        date: '1/1/2021',
+        deaths: 34,
       },
       {
-        x: 'helicopter',
-        y: 159,
+        date: '2/1/2021',
+        deaths: 22,
       },
       {
-        x: 'boat',
-        y: 67,
+        date: '3/1/2021',
+        deaths: 23,
       },
       {
-        x: 'train',
-        y: 247,
+        date: '4/1/2021',
+        deaths: 19,
       },
       {
-        x: 'subway',
-        y: 265,
+        date: '5/1/2021',
+        deaths: 32,
       },
       {
-        x: 'bus',
-        y: 208,
+        date: '6/1/2021',
+        deaths: 20,
       },
       {
-        x: 'car',
-        y: 83,
+        date: '7/1/2021',
+        deaths: 27,
       },
       {
-        x: 'moto',
-        y: 219,
+        date: '8/1/2021',
+        deaths: 38,
       },
       {
-        x: 'bicycle',
-        y: 93,
+        date: '9/1/2021',
+        deaths: 32,
       },
       {
-        x: 'horse',
-        y: 215,
+        date: '10/1/2021',
+        deaths: 34,
       },
       {
-        x: 'skateboard',
-        y: 247,
+        date: '11/1/2021',
+        deaths: 24,
       },
       {
-        x: 'others',
-        y: 268,
+        date: '12/1/2021',
+        deaths: 34,
+      },
+    ],
+  },
+  {
+    id: 'Blount',
+    color: 'hsl(107, 70%, 50%)',
+    data: [
+      {
+        date: '1/1/2021',
+        deaths: 98,
+      },
+      {
+        date: '2/1/2021',
+        deaths: 53,
+      },
+      {
+        date: '3/1/2021',
+        deaths: 59,
+      },
+      {
+        date: '4/1/2021',
+        deaths: 61,
+      },
+      {
+        date: '5/1/2021',
+        deaths: 69,
+      },
+      {
+        date: '6/1/2021',
+        deaths: 59,
+      },
+      {
+        date: '7/1/2021',
+        deaths: 69,
+      },
+      {
+        date: '8/1/2021',
+        deaths: 78,
+      },
+      {
+        date: '9/1/2021',
+        deaths: 85,
+      },
+      {
+        date: '10/1/2021',
+        deaths: 71,
+      },
+      {
+        date: '11/1/2021',
+        deaths: 73,
+      },
+      {
+        date: '12/1/2021',
+        deaths: 66,
       },
     ],
   },
