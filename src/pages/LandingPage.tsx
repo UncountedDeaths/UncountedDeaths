@@ -32,7 +32,21 @@ export const LandingPage: React.FC = () => {
       <div className={styles.contentbody}>
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
-          <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
+          <Paragraph className={styles.ContentText}>
+            {Content.what_we_do_body}
+            <br></br>
+            <br></br>
+            <a href="/about">Learn more</a> about the project.
+          </Paragraph>
+        </div>
+        <div>
+          <CustomTitle title={Content.who_we_are_header.toUpperCase()} />
+          <Paragraph className={styles.ContentText}>
+            {Content.who_we_are_body}
+            <br></br>
+            <br></br>
+            <a href="/team">Learn more</a> about us.
+          </Paragraph>
         </div>
         <div>
           <CustomTitle title="RECENT MEDIA" />

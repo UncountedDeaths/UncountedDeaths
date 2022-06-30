@@ -13,6 +13,7 @@ import { InternalRoutes } from '../routes';
 import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
+import AboutPage from './AboutPage';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -42,6 +43,7 @@ export const Main: React.FC = () => {
           <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />}></Route>
           <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />}></Route>
           <Route path={InternalRoutes.RESOURCES.path} element={<ResourcesPage />}></Route>
+          <Route path={InternalRoutes.ABOUT.path} element={<AboutPage />}></Route>
           <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />}></Route>
           <Route path="/" element={<Page404 />}>
             {/* <Page404 /> */}
@@ -51,6 +53,24 @@ export const Main: React.FC = () => {
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
         <BULogo className={styles.FooterLogo} href="https://www.bu.edu/ceid/" target="_blank" />
+        {/*
+          <p>
+            This project is made possible through a collaboration between researchers at the Boston
+            University School of Public Health and the University of Pennsylvania with support from
+            the Boston University Center for Emerging Infectious Disease Policy & Research (CEID),
+            BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.
+          </p>
+        */}
+        <p>&emsp;</p>
+        <a className={styles.FooterText} href="/About#contact">
+          Contact Us
+        </a>
+        <p>
+          <b>&ensp; | &ensp;</b>
+        </p>
+        <a className={styles.FooterTextTwo} href="https://twitter.com/vitalstatsintegrity">
+          Follow Us on Twitter
+        </a>
       </Layout.Footer>
     </Layout>
   );

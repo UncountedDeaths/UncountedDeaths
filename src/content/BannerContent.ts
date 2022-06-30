@@ -1,2 +1,2 @@
 export const hyperlink_text =
-  'Read our FAQ to learn more about eligibility for financial assistance.';
+  'Have you lost someone to Covid-19? Learn about eligibility for financial assistance.';

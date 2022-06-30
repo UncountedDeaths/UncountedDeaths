@@ -116,6 +116,8 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       setSelected([`${InternalRoutes.TRACKER.key}`]);
     } else if (location.pathname === InternalRoutes.MEDIA.path) {
       setSelected([`${InternalRoutes.MEDIA.key}`]);
+    } else if (location.pathname === InternalRoutes.ABOUT.path) {
+      setSelected([`${InternalRoutes.ABOUT.key}`]);
     }
   }, [location.pathname]);
   return (
@@ -133,16 +135,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
           setSelected([`${InternalRoutes.TRACKER.key}`]);
         }}
       >
-        Excess Death Tracker
-      </Menu.Item>
-      <Menu.Item
-        key={InternalRoutes.PUBLICATIONS.key}
-        onClick={() => {
-          navigate(InternalRoutes.PUBLICATIONS.path);
-          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
-        }}
-      >
-        Publications
+        Tracker
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.MEDIA.key}
@@ -154,13 +147,31 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         Media
       </Menu.Item>
       <Menu.Item
+        key={InternalRoutes.PUBLICATIONS.key}
+        onClick={() => {
+          navigate(InternalRoutes.PUBLICATIONS.path);
+          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
+        }}
+      >
+        Publications
+      </Menu.Item>
+      <Menu.Item
+        key={InternalRoutes.ABOUT.key}
+        onClick={() => {
+          navigate(InternalRoutes.ABOUT.path);
+          setSelected([`${InternalRoutes.ABOUT.key}`]);
+        }}
+      >
+        About
+      </Menu.Item>
+      <Menu.Item
         key={InternalRoutes.TEAM.key}
         onClick={() => {
           navigate(InternalRoutes.TEAM.path);
           setSelected([`${InternalRoutes.TEAM.key}`]);
         }}
       >
-        Our Team
+        Team
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
@@ -169,7 +180,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
           setSelected([`${InternalRoutes.RESOURCES.key}`]);
         }}
       >
-        Resources
+        FAQs
       </Menu.Item>
     </Menu>
   );
