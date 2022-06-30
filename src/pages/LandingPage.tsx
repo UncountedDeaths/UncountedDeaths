@@ -11,6 +11,8 @@ import { isMobile } from 'react-device-detect';
 import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography } from 'antd';
+import NavigationButton from '../components/NavigationButton';
+import { InternalRoutes } from '../routes';
 
 export const LandingPage: React.FC = () => {
   return (
@@ -59,21 +61,29 @@ export const LandingPage: React.FC = () => {
             <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
           </div>
         </div>
-        <div>
+        <div className={styles.cardSection}>
           <CustomTitle title="RECENT MEDIA" />
           <div className={cardStyles.pubgridlayout}>
             {mediaContent.slice(0, 2).map((mc) => (
               <ContentCard key={mc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...mc} />
             ))}
           </div>
+          <NavigationButton
+            content={Content.view_more_media}
+            navigationPath={InternalRoutes.MEDIA.path}
+          />
         </div>
-        <div>
+        <div className={styles.cardSection}>
           <CustomTitle title="PUBLICATIONS" />
           <div className={cardStyles.pubgridlayout}>
             {pubContent.slice(0, 2).map((pc) => (
               <ContentCard key={pc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...pc} />
             ))}
           </div>
+          <NavigationButton
+            content={Content.view_more_publications}
+            navigationPath={InternalRoutes.PUBLICATIONS.path}
+          />
         </div>
       </div>
     </div>
