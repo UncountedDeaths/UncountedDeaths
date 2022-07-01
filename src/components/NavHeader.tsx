@@ -4,7 +4,7 @@ import styles from '../styles/NavHeader.module.less';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { InternalRoutes } from '../routes';
 import { useThrottle } from '@react-hook/throttle';
-import { Logo, LogoWhite } from '../assets/assets.index';
+import { Logo } from '../assets/assets.index';
 
 /**
  * Top level component for rendering the nav bar with logo and menu
@@ -12,24 +12,15 @@ import { Logo, LogoWhite } from '../assets/assets.index';
  */
 export const Header: React.FC = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const { width } = useViewport();
   const breakpoint = 800;
   return (
     <div className={styles.MenuWrap}>
-      {location.pathname == InternalRoutes.HOME.path ? (
-        <LogoWhite
-          className={styles.Logo}
-          onClick={() => navigate(InternalRoutes.HOME.path)}
-          aria-label="CEID Logo"
-        />
-      ) : (
-        <Logo
-          className={styles.Logo}
-          onClick={() => navigate(InternalRoutes.HOME.path)}
-          aria-label="CEID Logo"
-        />
-      )}
+      <Logo
+        className={styles.Logo}
+        onClick={() => navigate(InternalRoutes.HOME.path)}
+        aria-label="CEID Logo"
+      />
 
       {width <= breakpoint ? (
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
@@ -112,8 +103,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
     } else if (location.pathname === InternalRoutes.PARTNERS.path) {
       setSelected([`${InternalRoutes.PARTNERS.key}`]);
-    } else if (location.pathname === InternalRoutes.TRACKER.path) {
-      setSelected([`${InternalRoutes.TRACKER.key}`]);
     } else if (location.pathname === InternalRoutes.MEDIA.path) {
       setSelected([`${InternalRoutes.MEDIA.key}`]);
     }
@@ -126,15 +115,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         location.pathname == InternalRoutes.HOME.path ? styles.MenuBar : styles.MenuBarBlack
       }
     >
-      <Menu.Item
-        key={InternalRoutes.TRACKER.key}
-        onClick={() => {
-          navigate(InternalRoutes.TRACKER.path);
-          setSelected([`${InternalRoutes.TRACKER.key}`]);
-        }}
-      >
-        Tracker
-      </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TEAM.key}
         onClick={() => {
@@ -162,7 +142,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       >
         Publications
       </Menu.Item>
-
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
         onClick={() => {

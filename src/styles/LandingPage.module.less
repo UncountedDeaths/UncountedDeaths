@@ -40,7 +40,7 @@
 // Needs to be changed
 .LandingPageOverlayText { 
     margin: auto;
-    color: #ffffff;
+    color: #000000;
     font-size: 3.5rem; 
     font-weight: 400;
     text-align: left;
@@ -74,7 +74,7 @@
    display: inline-flex;
    position: relative; 
    > strong { 
-    color: #ffffff;
+    color: #000;
     font-size: 4rem; 
     font-weight: bold;
     line-height: 1;
@@ -108,6 +108,38 @@
 .contentbody {
     > div {
         margin: 6rem 0;
+    }
+    > div:first-child {
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.appIFrame {
+    width: 1px;
+    min-width: 100%;
+    border: none;
+}
+
+.cardSection {
+    display: flex;
+    flex-direction: column;
+
+    .navigationButton {
+        font-size: @font-medium-size;
+        font-weight: 600;
+        align-self: center;
+        margin-top: 2rem;
+        background: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 0;
+        border-radius: 0.5rem;    
+        border-bottom: 4px solid #3b9ec2;
+
+        &:hover {
+        background-color: #eee;
+        }
     }
 }
 
