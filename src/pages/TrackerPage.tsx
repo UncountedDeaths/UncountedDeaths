@@ -1,11 +1,11 @@
 import React from 'react';
-import TableauView from '../components/TableauView';
 import * as Content from '../content/TrackerPageContent';
 import ContentLayout from '../components/ContentLayout';
 import styles from '../styles/TrackerPage.module.less';
 import { Typography } from 'antd';
 import CustomTitle from '../components/CustomTitle';
 import WarningModal from '../components/WarningModal';
+import TableauView from '../components/TableauView';
 
 export const TrackerPage: React.FC = () => {
   return (
