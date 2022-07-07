@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/LandingPage.module.less';
 import cardStyles from '../styles/PublicationsPage.module.less';
+import resourcesStyles from '../styles/PublicationsPage.module.less';
 import * as Content from '../content/LandingPageContent';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import CustomTitle from '../components/CustomTitle';
@@ -10,9 +11,53 @@ import { content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
 import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
-import { Typography } from 'antd';
+import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
+
+type Key = {
+  key: string;
+};
+
+const tabs: (TabPaneProps & Key)[] = [
+  {
+    key: '1',
+    tab: <p className={resourcesStyles.titletabpane}>National Dashboard</p>,
+    children: (
+      <>
+        <div className={styles.nationalDashboard}>
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/5ab0H/1/"
+          />
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/lApr0/4/"
+          />
+        </div>
+      </>
+    ),
+  },
+  {
+    key: '2',
+    tab: <p className={resourcesStyles.titletabpane}>State Dashboard</p>,
+    children: (
+      <>
+        <div className={styles.stateDashboard} />
+      </>
+    ),
+  },
+];
+
+const Dashboard: React.FC = () => {
+  return (
+    <Tabs className={styles.dashboardTabs} defaultActiveKey="1">
+      {tabs.map((t) => (
+        <Tabs.TabPane {...t} key={t.key} />
+      ))}
+    </Tabs>
+  );
+};
 
 export const LandingPage: React.FC = () => {
   return (
@@ -32,14 +77,15 @@ export const LandingPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.contentbody}>
-        <div>
+        {/* <div>
           <Typography.Text strong>{TrackerPageContent.description_tableau}</Typography.Text>
         </div>
         <IframeResizer
           log
           src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
           className={styles.appIFrame}
-        />
+        /> */}
+        <Dashboard />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
           <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
