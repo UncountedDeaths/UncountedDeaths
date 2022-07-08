@@ -19,7 +19,6 @@ import AboutPage from './AboutPage';
  * are rendered here. Plus, the react router lives here!
  */
 export const Main: React.FC = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   return (
     <Layout className={styles.MasterLayout}>
@@ -27,13 +26,7 @@ export const Main: React.FC = () => {
         <PersistentBanner />
         <Header />
       </Layout.Header>
-      <Layout.Content
-        className={
-          location.pathname == InternalRoutes.HOME.path
-            ? styles.MasterContent
-            : styles.MasterContentNotHome
-        }
-      >
+      <Layout.Content className={styles.MasterContent}>
         {/* We put a router directly here so that it only has to re-load the contents
         of the page, not the entire thing! 
          */}
