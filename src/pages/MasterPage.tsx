@@ -43,10 +43,8 @@ export const Main: React.FC = () => {
           <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />} />
           <Route path={InternalRoutes.RESOURCES.path} element={<ResourcesPage />} />
           <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />} />
-          <Route path={InternalRoutes.ABOUT.path} element={<AboutPage />}></Route>
-          <Route path="/" element={<Page404 />}>
-            {/* <Page404 /> */}
-          </Route>
+          <Route path={InternalRoutes.ABOUT.path} element={<AboutPage />} />
+          <Route path="/" element={<Page404 />} />
         </Routes>
       </Layout.Content>
       {/* Don't render the footer on the home page */}

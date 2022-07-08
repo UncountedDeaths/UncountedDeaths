@@ -6,7 +6,7 @@ import Paragraph from 'antd/lib/typography/Paragraph';
 import CustomTitle from '../components/CustomTitle';
 import { content as mediaContent } from '../content/MediaPageContent';
 import { ContentCard } from './PublicationsPage';
-import { content as pubContent } from '../content/PublicationsPageContent';
+import { content, content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
 import { useNavigate } from 'react-router-dom';
 import IframeResizer from 'iframe-resizer-react';
@@ -63,21 +63,11 @@ export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.landingpagecontainer}>
-      <div className={styles.landingpagebanner}>
-        <div className={styles.LandingPageFullWidthImagesContainer} />
-        <div>
-          <div className={styles.LandingPageOverlayText}>
-            <div>
-              <div className={styles.underlineoverlay}>
-                <strong>180,000+</strong>
-                <span />
-              </div>
-              &nbsp;deaths have gone uncounted across the US during the Covid-19 pandemic.
-            </div>
-          </div>
-        </div>
-      </div>
       <div className={styles.contentbody}>
+        <div>
+          <CustomTitle title={Content.title_text} />
+          <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
+        </div>
         <Dashboard />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
