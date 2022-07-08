@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Layout, Row } from 'antd';
+import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { TrackerPage } from '../pages/TrackerPage';
@@ -14,7 +14,6 @@ import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
 import AboutPage from './AboutPage';
-import { isMobile } from 'react-device-detect';
 
 /**
  * This component represents the main part of the website. The header, footer, and content

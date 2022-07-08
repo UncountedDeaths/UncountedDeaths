@@ -1,5 +1,4 @@
 import React from 'react';
-import TableauView from '../components/TableauView';
 import * as Content from '../content/TrackerPageContent';
 import ContentLayout from '../components/ContentLayout';
 import styles from '../styles/TrackerPage.module.less';
