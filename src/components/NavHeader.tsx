@@ -113,10 +113,19 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     <Menu
       mode={inline ? 'inline' : 'horizontal'}
       selectedKeys={selected}
-      className={
-        location.pathname == InternalRoutes.HOME.path ? styles.MenuBar : styles.MenuBarBlack
-      }
+      className={styles.MenuBar}
     >
+      {inline && (
+        <Menu.Item
+          key={InternalRoutes.HOME.key}
+          onClick={() => {
+            navigate(InternalRoutes.HOME.path);
+            setSelected([`${InternalRoutes.HOME.key}`]);
+          }}
+        >
+          Home
+        </Menu.Item>
+      )}
       <Menu.Item
         key={InternalRoutes.TEAM.key}
         onClick={() => {
@@ -126,6 +135,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       >
         Team
       </Menu.Item>
+
       <Menu.Item
         key={InternalRoutes.MEDIA.key}
         onClick={() => {

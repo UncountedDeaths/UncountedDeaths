@@ -8,7 +8,7 @@ import { content as mediaContent } from '../content/MediaPageContent';
 import { ContentCard } from './PublicationsPage';
 import { content, content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography, Tabs, TabPaneProps } from 'antd';
