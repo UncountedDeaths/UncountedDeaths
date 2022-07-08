@@ -1,12 +1,25 @@
 import {
   elif,
+  lundberg,
   mikas,
-  placeholder,
+  nsoesie,
   rafeya,
   steele,
   stokes,
   syl,
   wubin,
+  zhou,
+  elo,
+  preston,
+  paglino,
+  luck,
+  kravitz,
+  bergin,
+  ladyzhets,
+  bayly,
+  saucy,
+  augustine,
+  placeholder,
 } from '../assets/assets.index';
 
 export interface MemberCardProps {
@@ -17,74 +30,88 @@ export interface MemberCardProps {
 
 export const content: MemberCardProps[] = [
   {
-    title: 'Andrew Stokes, PhD',
-    subtitle: 'Assistant Professor in Global Health at BU',
+    title: 'Andrew C. Stokes, PhD',
+    subtitle:
+      'Assistant Professor in the Department of Global Health at Boston University School of Public Health',
     imgSrc: stokes,
   },
   {
-    title: 'Steele Myrick',
-    subtitle: "Biostatistics Master's Student",
-    imgSrc: steele,
+    title: 'Dielle Lundberg, MPH',
+    subtitle:
+      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Integrity Project',
+    imgSrc: lundberg,
   },
   {
-    title: 'Sylvia Lutze',
-    subtitle: "Applied Biostatistics Master's Student",
-    imgSrc: syl,
+    title: 'Elaine Nsoesie, PhD',
+    subtitle:
+      'Assistant Professor in the Department of Global Health at Boston University School of Public Health and Assistant Director of Research at Boston University Center for Antiracist Research',
+    imgSrc: nsoesie,
   },
   {
-    title: 'Rafeya Raquib',
-    subtitle: "Applied Biostatistics Master's Student",
+    title: 'Rafeya Raquib, MS',
+    subtitle:
+      'Research Fellow in the Department of Global Health at Boston University School of Public Health',
     imgSrc: rafeya,
   },
   {
-    title: 'Elif Coskun',
-    subtitle: "Master's in Public Health Student",
-    imgSrc: elif,
-  },
-  {
-    title: 'Mikas Hansen, PhD',
-    subtitle: 'MS/MPH Student in Medical Sciences and Global Health',
-    imgSrc: mikas,
-  },
-  {
-    title: 'Wubin Xie',
+    title: 'Wubin Xie, PhD',
     subtitle:
-      'Senior Research Scientist, Department of Global Health, Boston University School of Public Health',
+      'Senior Research Scientist in the Department of Global Health at Boston University School of Public Health',
     imgSrc: wubin,
   },
   {
-    title: 'Elaine Nsoesie',
+    title: 'Zhenwei Zhou, PhD',
     subtitle:
-      'Assistant Professor, Department of Global Health, Boston University School of Public Health',
-    imgSrc: placeholder,
+      'Senior Research Scientist in the Department of Global Health at Boston University School of Public Health',
+    imgSrc: zhou,
   },
   {
-    title: 'Dielle Lundberg',
-    subtitle: 'Research Fellow in Global Health',
-    imgSrc: placeholder,
+    title: 'Mikas Hansen, PhD',
+    subtitle:
+      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
+    imgSrc: mikas,
+  },
+  {
+    title: 'Sylvia Lutze',
+    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: syl,
+  },
+  {
+    title: 'Elif Coskun',
+    subtitle: 'MPH Student at Boston University School of Public Health',
+    imgSrc: elif,
+  },
+  {
+    title: 'Steele Myrick',
+    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: steele,
   },
 ];
 
 export const collaboratorContent: MemberCardProps[] = [
   {
-    title: 'Irma Elo',
-    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
-    imgSrc: placeholder,
+    title: 'Irma Elo, PhD',
+    subtitle:
+      'Professor and Chair in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
+    imgSrc: elo,
   },
   {
-    title: 'Anneliese Luck',
-    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
-    imgSrc: placeholder,
+    title: 'Anneliese Luck, MPP',
+    subtitle:
+      'Doctoral Student in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
+    imgSrc: luck,
   },
   {
-    title: 'Eugenio Paglino',
-    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
-    imgSrc: placeholder,
+    title: 'Eugenio Paglino, MSc',
+    subtitle:
+      'Doctoral Student in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
+    imgSrc: paglino,
   },
   {
-    title: 'Samuel Preston',
-    subtitle: 'Department of Sociology and Population Studies Center, University of Pennsylvania',
-    imgSrc: placeholder,
+    title: 'Samuel H. Preston, PhD',
+    subtitle:
+      'Professor in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
+    imgSrc: preston,
   },
 ];
 
@@ -92,20 +119,49 @@ export const mediaContent: MemberCardProps[] = [
   {
     title: 'Derick Kravitz',
     subtitle:
-      "Project Lead, Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
-    imgSrc: placeholder,
+      "Project Lead and Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
+    imgSrc: kravitz,
   },
   {
     title: 'Dillon Bergin',
-    subtitle: 'Senior Journalism Fellow',
-    imgSrc: placeholder,
+    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
+    imgSrc: bergin,
   },
   {
     title: 'Betsy Ladyzhets',
-    subtitle: 'Senior Journalism Fellow',
+    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
+    imgSrc: ladyzhets,
+  },
+];
+
+export const designContent: MemberCardProps[] = [
+  {
+    title: 'Ian Saucy',
+    subtitle: 'Software Engineering Solutions Engineer at Boston University Spark!',
+    imgSrc: saucy,
+  },
+  {
+    title: 'Erica Augustine',
+    subtitle:
+      'Project Manager of the Vital Statistics Integrity Project and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
+    imgSrc: augustine,
+  },
+  {
+    title: 'Minkyo Seo',
+    subtitle: 'Undergraduate Intern at Boston University Spark!',
     imgSrc: placeholder,
+  },
+  {
+    title: 'Aykerim',
+    subtitle: 'Undergraduate Intern at Boston University Spark!',
+    imgSrc: placeholder,
+  },
+  {
+    title: 'Henry Bayly',
+    subtitle: 'Doctoral Student in Biostatistics at Boston University School of Public Health',
+    imgSrc: bayly,
   },
 ];
 
 export const text_content =
-  'Our team is dedicated to investigating and evaluating discrepencies in COVID-19 mortality throughout the US. We are an interdisciplinary team of public health researchers, demographers, and statisticians.';
+  'This project was made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.';

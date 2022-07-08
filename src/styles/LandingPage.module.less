@@ -37,14 +37,14 @@
 }
 
 // Needs to be changed
-.LandingPageOverlayText {
-  margin: auto;
-  color: #ffffff;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 7.157rem;
-  letter-spacing: 0.1rem;
+.LandingPageOverlayText { 
+    margin: auto;
+    color: #000000;
+    font-size: 3.5rem; 
+    font-weight: 400;
+    text-align: left;
+    line-height: 7.157rem;
+    letter-spacing: 0.1rem;
 
   button {
     background-color: #3b9ec2;
@@ -70,11 +70,11 @@
 }
 
 .underlineoverlay {
-  display: inline-flex;
-  position: relative;
-  > strong {
-    color: #ffffff;
-    font-size: 4rem;
+   display: inline-flex;
+   position: relative; 
+   > strong { 
+    color: #000;
+    font-size: 4rem; 
     font-weight: bold;
     line-height: 1;
     z-index: 55;
@@ -105,15 +105,48 @@
 }
 
 .contentbody {
-  > div {
-    margin: 6rem 0;
-  }
+    > div {
+        margin: 6rem 0;
+    }
+    > div:first-child {
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
 }
 
-@media screen and (max-width: @mobile-cutoff) {
-  .LandingPageOverlayText {
-    font-size: 2.5rem;
-  }
+.appIFrame {
+    width: 1px;
+    min-width: 100%;
+    border: none;
+}
+
+.cardSection {
+    display: flex;
+    flex-direction: column;
+
+    .navigationButton {
+        font-size: @font-medium-size;
+        font-weight: 600;
+        align-self: center;
+        margin-top: 2rem;
+        background: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 0;
+        border-radius: 0.5rem;    
+        border-bottom: 4px solid #3b9ec2;
+
+        &:hover {
+        background-color: #eee;
+        }
+    }
+}
+
+@media screen and (max-width: @mobile-cutoff){
+    .LandingPageOverlayText {
+        font-size: 2.5rem;
+        
+    }
 
   .UnderlineBlockWrapper strong {
     font-size: 2.5rem;

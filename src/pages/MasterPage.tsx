@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
-import { TrackerPage } from '../pages/TrackerPage';
 import { LandingPage } from './LandingPage';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Page404 } from './404Page';
@@ -39,13 +38,12 @@ export const Main: React.FC = () => {
         of the page, not the entire thing! 
          */}
         <Routes>
-          <Route path={InternalRoutes.HOME.path} element={<LandingPage />}></Route>
-          <Route path={InternalRoutes.TRACKER.path} element={<TrackerPage />}></Route>
-          <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />}></Route>
-          <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />}></Route>
-          <Route path={InternalRoutes.RESOURCES.path} element={<ResourcesPage />}></Route>
+          <Route path={InternalRoutes.HOME.path} element={<LandingPage />} />
+          <Route path={InternalRoutes.PUBLICATIONS.path} element={<PublicationsPage />} />
+          <Route path={InternalRoutes.TEAM.path} element={<OurTeamPage />} />
+          <Route path={InternalRoutes.RESOURCES.path} element={<ResourcesPage />} />
+          <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />} />
           <Route path={InternalRoutes.ABOUT.path} element={<AboutPage />}></Route>
-          <Route path={InternalRoutes.MEDIA.path} element={<MediaPage />}></Route>
           <Route path="/" element={<Page404 />}>
             {/* <Page404 /> */}
           </Route>
