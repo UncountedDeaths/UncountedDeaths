@@ -35,31 +35,14 @@
   }
 }
 
-.MenuBarBlack {
-  .MenuBar(); 
-  color: black;
-}
-
 @media screen and (max-width: @mobile-cutoff) {
-  .MenuBarBlack {
+  .MenuBar {
     background-color: white;
     border: 1px solid white;
     font-size: @mobile-font-size;
     padding: 1vw;
     display: block;
     height: auto;
-    > li {
-      margin: 0;
-    }
-  }
-  .MenuBar {
-    background-color: black;
-    border: 1px solid black;
-    font-size: @mobile-font-size;
-    padding: 1vw;
-    display: block;
-    height: auto;
-    color: black;
     > li {
       margin: 0;
     }
@@ -82,10 +65,10 @@
   }
   width: 14rem;
   min-width: 8rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.Logo:hover{
+.Logo:hover {
   transform: scale(1.1);
 }
 

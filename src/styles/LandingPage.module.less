@@ -1,7 +1,33 @@
 @import 'globalSettings.module.less';
 @import 'themes.less';
 
-@banner-height: calc(85vh + @navbar-height*2);
+@banner-height: calc(@navbar-height*2);
+
+.trackpagetext {
+  text-align: start;
+}
+
+.keytermscontainer {
+  padding-left: 2rem;
+}
+
+.trackkeyterms {
+  padding-left: 2rem;
+  > p {
+    font-weight: bold;
+    margin: 0;
+  }
+  > div {
+    font-size: @font-medium-size;
+  }
+}
+
+.howtotext {
+  > div {
+    font-size: @font-medium-size;
+  }
+  margin: 5rem 0;
+}
 
 .LandingPageFullWidthImagesContainer {
   min-height: 550px;
@@ -19,8 +45,8 @@
 
 .landingpagebanner {
   height: @banner-height;
-  min-height: 550px;
-  position: relative;
+  // min-height: 550px;
+  // position: relative;
   > div {
     position: absolute;
     display: flex;
@@ -34,6 +60,7 @@
   flex-direction: column;
   padding: 0 @screen-padding;
   overflow-x: hidden;
+  position: relative;
 }
 
 // Needs to be changed
@@ -90,8 +117,8 @@
 }
 
 .ContentText {
-  line-height: 3.391rem;
-  font-size: 1.625rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
 }
 
 .TeamProfileRow {
@@ -105,6 +132,7 @@
 }
 
 .contentbody {
+  margin-top: 5rem;
   > div {
     margin: 6rem 0;
   }
