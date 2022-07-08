@@ -37,14 +37,14 @@
 }
 
 // Needs to be changed
-.LandingPageOverlayText { 
-    margin: auto;
-    color: #000000;
-    font-size: 3.5rem; 
-    font-weight: 400;
-    text-align: left;
-    line-height: 7.157rem;
-    letter-spacing: 0.1rem;
+.LandingPageOverlayText {
+  margin: auto;
+  color: #000000;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 7.157rem;
+  letter-spacing: 0.1rem;
 
   button {
     background-color: #3b9ec2;
@@ -70,11 +70,11 @@
 }
 
 .underlineoverlay {
-   display: inline-flex;
-   position: relative; 
-   > strong { 
+  display: inline-flex;
+  position: relative;
+  > strong {
     color: #000;
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     z-index: 55;
@@ -105,48 +105,70 @@
 }
 
 .contentbody {
-    > div {
-        margin: 6rem 0;
-    }
-    > div:first-child {
-        font-size: 1.2rem;
-        margin-bottom: 4rem;
-    }
+  > div {
+    margin: 6rem 0;
+  }
+  > div:first-child {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .appIFrame {
-    width: 1px;
-    min-width: 100%;
-    border: none;
+  flex: 1;
+  height: calc(100vw / 2 * 0.75);
+  border: none;
+  padding: 1rem;
+  &:first-child {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .appIFrame {
+    height: calc(100vw / 2 * 0.85);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .appIFrame {
+    flex: none;
+    width: 100%;
+    height: calc(100vw * 0.8);
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .cardSection {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    .navigationButton {
-        font-size: @font-medium-size;
-        font-weight: 600;
-        align-self: center;
-        margin-top: 2rem;
-        background: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        border: 0;
-        border-radius: 0.5rem;    
-        border-bottom: 4px solid #3b9ec2;
+  .navigationButton {
+    font-size: @font-medium-size;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 2rem;
+    background: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid #3b9ec2;
 
-        &:hover {
-        background-color: #eee;
-        }
+    &:hover {
+      background-color: #eee;
     }
+  }
 }
 
-@media screen and (max-width: @mobile-cutoff){
-    .LandingPageOverlayText {
-        font-size: 2.5rem;
-        
-    }
+@media screen and (max-width: @mobile-cutoff) {
+  .LandingPageOverlayText {
+    font-size: 2.5rem;
+  }
 
   .UnderlineBlockWrapper strong {
     font-size: 2.5rem;
@@ -165,4 +187,30 @@
     flex-direction: column;
     padding: 0 1rem;
   }
+
+  .appIFrame {
+    height: 600px;
+  }
+}
+
+.dashboardTabs {
+  > div {
+    > div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.nationalDashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.titletabpane {
+  font-size: @font-medium-size;
+  margin: 0;
 }

@@ -11,9 +11,53 @@ import { isMobile } from 'react-device-detect';
 import { useNavigate } from 'react-router-dom';
 import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
-import { Typography } from 'antd';
+import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
+
+type Key = {
+  key: string;
+};
+
+const tabs: (TabPaneProps & Key)[] = [
+  {
+    key: '1',
+    tab: <p className={styles.titletabpane}>National Dashboard</p>,
+    children: (
+      <>
+        <div className={styles.nationalDashboard}>
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/5ab0H/1/"
+          />
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/lApr0/4/"
+          />
+        </div>
+      </>
+    ),
+  },
+  {
+    key: '2',
+    tab: <p className={styles.titletabpane}>State Dashboard</p>,
+    children: (
+      <>
+        <div className={styles.stateDashboard} />
+      </>
+    ),
+  },
+];
+
+const Dashboard: React.FC = () => {
+  return (
+    <Tabs className={styles.dashboardTabs} defaultActiveKey="1">
+      {tabs.map((t) => (
+        <Tabs.TabPane {...t} key={t.key} />
+      ))}
+    </Tabs>
+  );
+};
 
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -34,14 +78,7 @@ export const LandingPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.contentbody}>
-        <div>
-          <Typography.Text strong>{TrackerPageContent.description_tableau}</Typography.Text>
-        </div>
-        <IframeResizer
-          log
-          src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
-          className={styles.appIFrame}
-        />
+        <Dashboard />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
           <Paragraph className={styles.ContentText}>
