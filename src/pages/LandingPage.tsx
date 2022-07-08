@@ -66,7 +66,10 @@ export const LandingPage: React.FC = () => {
   return (
     <ContentLayout title={Content.title_text}>
       <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
-      <Dashboard />
+      <IframeResizer
+        src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
+        style={{ width: '1px', minWidth: '100%', border: 'none' }}
+      />
       <div className={styles.cardSection}>
         <div className={styles.howtotext}>
           <CustomTitle title={TrackerPageContent.how_to_title.toUpperCase()} />
