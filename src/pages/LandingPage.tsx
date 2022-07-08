@@ -77,14 +77,6 @@ export const LandingPage: React.FC = () => {
         </div>
       </div>
       <div className={styles.contentbody}>
-        {/* <div>
-          <Typography.Text strong>{TrackerPageContent.description_tableau}</Typography.Text>
-        </div>
-        <IframeResizer
-          log
-          src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
-          className={styles.appIFrame}
-        /> */}
         <Dashboard />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
