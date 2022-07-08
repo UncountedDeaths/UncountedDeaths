@@ -105,6 +105,8 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       setSelected([`${InternalRoutes.PARTNERS.key}`]);
     } else if (location.pathname === InternalRoutes.MEDIA.path) {
       setSelected([`${InternalRoutes.MEDIA.key}`]);
+    } else if (location.pathname === InternalRoutes.ABOUT.path) {
+      setSelected([`${InternalRoutes.ABOUT.key}`]);
     }
   }, [location.pathname]);
   return (
@@ -141,6 +143,15 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
         }}
       >
         Publications
+      </Menu.Item>
+      <Menu.Item
+        key={InternalRoutes.ABOUT.key}
+        onClick={() => {
+          navigate(InternalRoutes.ABOUT.path);
+          setSelected([`${InternalRoutes.ABOUT.key}`]);
+        }}
+      >
+        About
       </Menu.Item>
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}

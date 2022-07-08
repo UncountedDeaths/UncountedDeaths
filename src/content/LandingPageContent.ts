@@ -1,5 +1,9 @@
 export const what_we_do_header = 'What we do';
 export const what_we_do_body =
-  'The Uncounted Deaths Lab strives to inform the public and policy makers on the comprehensive toll of Covid-19 on local communities across the US. Through interactive maps and tools we aim to share our findings on the hidden death toll of Covid-19 in a manner easily accessible to all. This work aims to correct for underreporting in national mortality statistics, thereby guiding policy interventions to help the overlooked communities most affected by the pandemic.';
+  'The Vital Statistics Integrity Project strives to inform the public and policymakers about the true mortality impact of the Covid-19 impact on communities across the United States. Through peer-reviewed research, media collaborations, and public data dashboards, we seek to reveal the hidden death toll of the pandemic and inform public health policies that center health equity. Learn more about the project.';
 export const view_more_media = 'View more media';
 export const view_more_publications = 'View more publications';
+
+export const who_we_are_header = 'Who we are';
+export const who_we_are_body =
+  'This project is made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.';

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../styles/LandingPage.module.less';
 import cardStyles from '../styles/PublicationsPage.module.less';
-import resourcesStyles from '../styles/PublicationsPage.module.less';
 import * as Content from '../content/LandingPageContent';
 import Paragraph from 'antd/lib/typography/Paragraph';
 import CustomTitle from '../components/CustomTitle';
@@ -9,6 +8,7 @@ import { content as mediaContent } from '../content/MediaPageContent';
 import { ContentCard } from './PublicationsPage';
 import { content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
+import { useNavigate } from 'react-router-dom';
 import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography, Tabs, TabPaneProps } from 'antd';
@@ -22,7 +22,7 @@ type Key = {
 const tabs: (TabPaneProps & Key)[] = [
   {
     key: '1',
-    tab: <p className={resourcesStyles.titletabpane}>National Dashboard</p>,
+    tab: <p className={styles.titletabpane}>National Dashboard</p>,
     children: (
       <>
         <div className={styles.nationalDashboard}>
@@ -40,7 +40,7 @@ const tabs: (TabPaneProps & Key)[] = [
   },
   {
     key: '2',
-    tab: <p className={resourcesStyles.titletabpane}>State Dashboard</p>,
+    tab: <p className={styles.titletabpane}>State Dashboard</p>,
     children: (
       <>
         <div className={styles.stateDashboard} />
@@ -60,6 +60,7 @@ const Dashboard: React.FC = () => {
 };
 
 export const LandingPage: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.landingpagecontainer}>
       <div className={styles.landingpagebanner}>
@@ -80,7 +81,12 @@ export const LandingPage: React.FC = () => {
         <Dashboard />
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
-          <Paragraph className={styles.ContentText}>{Content.what_we_do_body}</Paragraph>
+          <Paragraph className={styles.ContentText}>
+            {Content.what_we_do_body}
+            <br></br>
+            <br></br>
+            <a onClick={() => navigate(InternalRoutes.ABOUT.path)}>Learn more</a> about the project.
+          </Paragraph>
         </div>
         <div className={styles.trackpagetext}>
           <div className={styles.howtotext}>
@@ -100,28 +106,57 @@ export const LandingPage: React.FC = () => {
           </div>
         </div>
         <div className={styles.cardSection}>
-          <CustomTitle title="RECENT MEDIA" />
-          <div className={cardStyles.pubgridlayout}>
-            {mediaContent.slice(0, 2).map((mc) => (
-              <ContentCard key={mc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...mc} />
-            ))}
+          <div>
+            <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
+            <Paragraph className={styles.ContentText}>
+              {Content.what_we_do_body}
+              <br></br>
+              <br></br>
+              <a onClick={() => navigate(InternalRoutes.ABOUT.path)}>Learn more</a> about the
+              project.
+            </Paragraph>
           </div>
-          <NavigationButton
-            content={Content.view_more_media}
-            navigationPath={InternalRoutes.MEDIA.path}
-          />
-        </div>
-        <div className={styles.cardSection}>
-          <CustomTitle title="PUBLICATIONS" />
-          <div className={cardStyles.pubgridlayout}>
-            {pubContent.slice(0, 2).map((pc) => (
-              <ContentCard key={pc.title} imgAligned={isMobile ? 'center' : 'flex-start'} {...pc} />
-            ))}
+          <div>
+            <CustomTitle title={Content.who_we_are_header.toUpperCase()} />
+            <Paragraph className={styles.ContentText}>
+              {Content.who_we_are_body}
+              <br></br>
+              <br></br>
+              <a onClick={() => navigate(InternalRoutes.TEAM.path)}>Learn more</a> about us.
+            </Paragraph>
           </div>
-          <NavigationButton
-            content={Content.view_more_publications}
-            navigationPath={InternalRoutes.PUBLICATIONS.path}
-          />
+          <div className={styles.cardSection}>
+            <CustomTitle title="RECENT MEDIA" />
+            <div className={cardStyles.pubgridlayout}>
+              {mediaContent.slice(0, 2).map((mc) => (
+                <ContentCard
+                  key={mc.title}
+                  imgAligned={isMobile ? 'center' : 'flex-start'}
+                  {...mc}
+                />
+              ))}
+            </div>
+            <NavigationButton
+              content={Content.view_more_media}
+              navigationPath={InternalRoutes.MEDIA.path}
+            />
+          </div>
+          <div className={styles.cardSection}>
+            <CustomTitle title="PUBLICATIONS" />
+            <div className={cardStyles.pubgridlayout}>
+              {pubContent.slice(0, 2).map((pc) => (
+                <ContentCard
+                  key={pc.title}
+                  imgAligned={isMobile ? 'center' : 'flex-start'}
+                  {...pc}
+                />
+              ))}
+            </div>
+            <NavigationButton
+              content={Content.view_more_publications}
+              navigationPath={InternalRoutes.PUBLICATIONS.path}
+            />
+          </div>
         </div>
       </div>
     </div>

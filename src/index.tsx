@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import { Main } from './pages/MasterPage';
 import { BrowserRouter } from 'react-router-dom';
 import WebFont from 'webfontloader';
+import ScrollToTop from './utils';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <ScrollToTop />
       <Main />
     </BrowserRouter>
   </React.StrictMode>,
