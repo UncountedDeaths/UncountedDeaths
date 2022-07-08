@@ -14,7 +14,9 @@ import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
-
+import { Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import menuState from '../components/stateCountyView';
 type Key = {
   key: string;
 };
@@ -43,7 +45,37 @@ const tabs: (TabPaneProps & Key)[] = [
     tab: <p className={resourcesStyles.titletabpane}>State Dashboard</p>,
     children: (
       <>
-        <div className={styles.stateDashboard} />
+        <div className={styles.dropButtons}>
+          <div className={styles.stateDrop}>
+            <Dropdown overlay={menuState} trigger={['click']}>
+              <a className="styles.ant-dropdown-menu" onClick={(e) => e.preventDefault()}>
+                Select State <DownOutlined />
+              </a>
+            </Dropdown>
+          </div>
+          <div className={styles.countyDrop}>
+            <Dropdown overlay={menuState} trigger={['click']}>
+              <a
+                role="button"
+                className="styles.ant-dropdown-menu"
+                onClick={(e) => e.preventDefault()}
+              >
+                Select County <DownOutlined />
+              </a>
+            </Dropdown>
+          </div>
+        </div>
+        <div className={styles.stateDashboard}>
+          <div className="stateViz"></div>
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/q9LZ6/3/"
+          />
+          <IframeResizer
+            className={styles.appIFrame}
+            src="https://datawrapper.dwcdn.net/EviBb/2/"
+          />
+        </div>
       </>
     ),
   },

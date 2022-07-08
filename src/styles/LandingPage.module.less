@@ -3,211 +3,235 @@
 
 @banner-height: calc(85vh + @navbar-height*2);
 
-.LandingPageFullWidthImagesContainer  { 
-    min-height: 550px;
-    height: @banner-height;
-    width: 100vw;
-    object-fit: cover;
-    position: absolute;
-    margin: 0 -@screen-padding;
+.LandingPageFullWidthImagesContainer {
+  min-height: 550px;
+  height: @banner-height;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  margin: 0 -@screen-padding;
 }
 
-
-.ImageStyle { 
-    filter: brightness(0.5);
-    width: 100%;
+.ImageStyle {
+  filter: brightness(0.5);
+  width: 100%;
 }
 
 .landingpagebanner {
-    height: @banner-height;
-    min-height: 550px;
-    position: relative;
-    > div {
-        position: absolute;
-        display: flex;
-        height: 100%;
-        align-items: center;
-    }
+  height: @banner-height;
+  min-height: 550px;
+  position: relative;
+  > div {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
 }
 
 .landingpagecontainer {
-    display: flex;
-    flex-direction: column;
-    padding: 0 @screen-padding;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 @screen-padding;
+  overflow-x: hidden;
 }
 
 // Needs to be changed
-.LandingPageOverlayText { 
-    margin: auto;
-    color: #000000;
-    font-size: 3.5rem; 
-    font-weight: 400;
-    text-align: left;
-    line-height: 7.157rem;
-    letter-spacing: 0.1rem;
+.LandingPageOverlayText {
+  margin: auto;
+  color: #000000;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 7.157rem;
+  letter-spacing: 0.1rem;
 
-    button { 
-        background-color: #3b9ec2;
-        line-height: 2.15;
-        text-align: center;
-        font-size: 1.4rem; 
-        font-weight: bold;
-        color: #fff;
-        border: 0;
-        border-radius: 3rem;
-        height: 4.79542334076rem;
-        padding: 0 1rem;
-        transition-duration: 0.4s;
-    }
+  button {
+    background-color: #3b9ec2;
+    line-height: 2.15;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 3rem;
+    height: 4.79542334076rem;
+    padding: 0 1rem;
+    transition-duration: 0.4s;
+  }
 
-    button:hover { 
-        background-color: #3fcafc; 
-    }
+  button:hover {
+    background-color: #3fcafc;
+  }
 
-    > div {
-        display: inline-block;
-    }
+  > div {
+    display: inline-block;
+  }
 }
 
 .underlineoverlay {
-   display: inline-flex;
-   position: relative; 
-   > strong { 
+  display: inline-flex;
+  position: relative;
+  > strong {
     color: #000;
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     z-index: 55;
-    }
-   > span {
-       position: absolute;
-       border-bottom: 0.8rem solid #3b9ec2;
-       width: 98.5%;
-       bottom: -0.1rem;
-       right: 0;
-       z-index: 50;
-   }
+  }
+  > span {
+    position: absolute;
+    border-bottom: 0.8rem solid #3b9ec2;
+    width: 98.5%;
+    bottom: -0.1rem;
+    right: 0;
+    z-index: 50;
+  }
 }
 
-.ContentText { 
-    line-height: 3.391rem;
-    font-size: 1.625rem;
+.ContentText {
+  line-height: 3.391rem;
+  font-size: 1.625rem;
 }
 
 .TeamProfileRow {
-    margin: 0 auto;
-    // display: table;
+  margin: 0 auto;
+  // display: table;
 }
 
-.TeamProfileContainer { 
-    padding-left: 5vw;
-    padding-right: 5vw;
+.TeamProfileContainer {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .contentbody {
-    > div {
-        margin: 6rem 0;
-    }
-    > div:first-child {
-        font-size: 1.2rem;
-        margin-bottom: 4rem;
-    }
+  > div {
+    margin: 6rem 0;
+  }
+  > div:first-child {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .appIFrame {
-    flex: 1;
-    height: calc(100vw / 2 * 0.75);
-    border: none;
-    padding: 1rem;
-    &:first-child {
-        margin-right: 2rem;
-        margin-bottom: 0;
-    }
+  flex: 1;
+  height: calc(100vw / 2 * 0.75);
+  border: none;
+  padding: 1rem;
+  &:first-child {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 2000px) {
-    .appIFrame {
-        height: calc(100vw / 2 * 0.85);
-    }
+  .appIFrame {
+    height: calc(100vw / 2 * 0.85);
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .appIFrame {
-        flex: none;
-        width: 100%;
-        height: calc(100vw * 0.80);
-        &:first-child {
-            margin-right: 0;
-            margin-bottom: 2rem;
-        }
+  .appIFrame {
+    flex: none;
+    width: 100%;
+    height: calc(100vw * 0.8);
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 2rem;
     }
+  }
 }
 
 .cardSection {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    .navigationButton {
-        font-size: @font-medium-size;
-        font-weight: 600;
-        align-self: center;
-        margin-top: 2rem;
-        background: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        border: 0;
-        border-radius: 0.5rem;    
-        border-bottom: 4px solid #3b9ec2;
+  .navigationButton {
+    font-size: @font-medium-size;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 2rem;
+    background: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid #3b9ec2;
 
-        &:hover {
-        background-color: #eee;
-        }
+    &:hover {
+      background-color: #eee;
     }
+  }
 }
 
-@media screen and (max-width: @mobile-cutoff){
-    .LandingPageOverlayText {
-        font-size: 2.5rem;
-        
-    }
+@media screen and (max-width: @mobile-cutoff) {
+  .LandingPageOverlayText {
+    font-size: 2.5rem;
+  }
 
-    .UnderlineBlockWrapper strong {
-        font-size: 2.5rem;
-    }
+  .UnderlineBlockWrapper strong {
+    font-size: 2.5rem;
+  }
 
-    .UnderlineBlock {
-        width: 8rem;
-    }
+  .UnderlineBlock {
+    width: 8rem;
+  }
 
-    .LandingPageFullWidthImagesContainer {
-        margin: 0 -1rem;
-    }
+  .LandingPageFullWidthImagesContainer {
+    margin: 0 -1rem;
+  }
 
-    .landingpagecontainer {
-        display: flex;
-        flex-direction: column;
-        padding: 0 1rem;
-    }
+  .landingpagecontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
 
-    .appIFrame {
-        height: 600px;
-    }
+  .appIFrame {
+    height: 600px;
+  }
 }
 
 .dashboardTabs {
-    >div {
-        >div {
-            display: flex;
-            justify-content: center;
-        }
+  > div {
+    > div {
+      display: flex;
+      justify-content: center;
     }
+  }
 }
 
 .nationalDashboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.stateDashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.stateDrop {
+  padding: 1rem;
+}
+.countyDrop {
+  padding: 1rem;
+}
+.dropButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.antDrop {
+  max-height: 100px;
+  overflow: auto;
 }
