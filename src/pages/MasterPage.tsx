@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Col, Layout, Row } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { TrackerPage } from '../pages/TrackerPage';
 import { LandingPage } from './LandingPage';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
 import OurTeamPage from './OurTeamPage';
@@ -14,6 +14,7 @@ import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
 import AboutPage from './AboutPage';
+import { isMobile } from 'react-device-detect';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -21,6 +22,7 @@ import AboutPage from './AboutPage';
  */
 export const Main: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   return (
     <Layout className={styles.MasterLayout}>
       <Layout.Header className={styles.MenuHeader}>
@@ -52,25 +54,15 @@ export const Main: React.FC = () => {
       </Layout.Content>
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
-        <BULogo className={styles.FooterLogo} href="https://www.bu.edu/ceid/" target="_blank" />
-        {/*
-          <p>
-            This project is made possible through a collaboration between researchers at the Boston
-            University School of Public Health and the University of Pennsylvania with support from
-            the Boston University Center for Emerging Infectious Disease Policy & Research (CEID),
-            BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.
-          </p>
-        */}
-        <p>&emsp;</p>
-        <a className={styles.FooterText} href="/About#contact">
-          Contact Us
-        </a>
-        <p>
-          <b>&ensp; | &ensp;</b>
-        </p>
-        <a className={styles.FooterTextTwo} href="https://twitter.com/vitalstatsintegrity">
-          Follow Us on Twitter
-        </a>
+        <BULogo href="https://www.bu.edu/ceid/" target="_blank" className={styles.FooterLogo} />
+        <div className={styles.FooterTextContainer}>
+          <a className={styles.FooterText} onClick={() => navigate(InternalRoutes.ABOUT.path)}>
+            Contact Us
+          </a>
+          <a className={styles.FooterText} href="https://twitter.com/vitalstatsintegrity">
+            Follow Us on Twitter
+          </a>
+        </div>
       </Layout.Footer>
     </Layout>
   );

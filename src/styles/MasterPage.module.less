@@ -7,19 +7,32 @@
 }
 
 .FooterLogo {
-  padding: 1.25rem;
   max-width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .FooterLogo {
+    max-width: 100%;
+    margin: auto;
+  }
+  .MasterFooter {
+    flex-flow: column;
+  }
+  .FooterTextContainer {
+    margin: auto;
+  }
+}
+
+.FooterTextContainer {
+  justify-content: flex-end;
 }
 .FooterText {
   line-height: 6.25em;
-  padding-left: 18em;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 p {
-  line-height: 6.25em;
-}
-
-.FooterTextTwo {
   line-height: 6.25em;
 }
 
@@ -38,14 +51,12 @@ p {
 .MasterFooter {
   background-color: #dbdbdb;
   display: flex;
-  align-items: flex-start;
-  :hover {
-    transform: scale(1.01);
-  }
-}
-
-.MasterFooterText {
-  color: #ffff;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  // :hover {
+  //   transform: scale(1.01);
+  // }
 }
 
 .MenuHeader {
