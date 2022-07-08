@@ -14,6 +14,7 @@ import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
+import CustomSmallTitle from '../components/CustomSmallTitle';
 
 type Key = {
   key: string;
@@ -69,33 +70,26 @@ export const LandingPage: React.FC = () => {
           <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
         </div>
         <Dashboard />
-        <div>
-          <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
-          <Paragraph className={styles.ContentText}>
-            {Content.what_we_do_body}
-            <br></br>
-            <br></br>
-            <a onClick={() => navigate(InternalRoutes.ABOUT.path)}>Learn more</a> about the project.
-          </Paragraph>
-        </div>
-        <div className={styles.trackpagetext}>
-          <div className={styles.howtotext}>
-            <CustomTitle title={TrackerPageContent.how_to_title} />
-            <Typography.Paragraph>{TrackerPageContent.how_to_content}</Typography.Paragraph>
-          </div>
-          <div className={styles.trackkeyterms}>
-            <p>{TrackerPageContent.key_terms_title}</p>
-            <Typography.Title level={4}>{TrackerPageContent.term_1_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_1_body}</Typography.Paragraph>
-            <Typography.Title level={4}>{TrackerPageContent.term_2_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
-            <Typography.Title level={4}>{TrackerPageContent.term_3_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_3_body}</Typography.Paragraph>
-            <Typography.Title level={4}>{TrackerPageContent.term_4_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
-          </div>
-        </div>
         <div className={styles.cardSection}>
+          <div className={styles.howtotext}>
+            <CustomTitle title={TrackerPageContent.how_to_title.toUpperCase()} />
+            <Paragraph className={styles.ContentText}>
+              {TrackerPageContent.how_to_content}
+            </Paragraph>
+          </div>
+          <div className={styles.keytermscontainer}>
+            <CustomSmallTitle title={TrackerPageContent.key_terms_title} />
+            <div className={styles.trackkeyterms}>
+              <Typography.Title level={5}>{TrackerPageContent.term_1_title}</Typography.Title>
+              <Typography.Paragraph>{TrackerPageContent.term_1_body}</Typography.Paragraph>
+              <Typography.Title level={5}>{TrackerPageContent.term_2_title}</Typography.Title>
+              <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
+              <Typography.Title level={5}>{TrackerPageContent.term_3_title}</Typography.Title>
+              <Typography.Paragraph>{TrackerPageContent.term_3_body}</Typography.Paragraph>
+              <Typography.Title level={5}>{TrackerPageContent.term_4_title}</Typography.Title>
+              <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
+            </div>
+          </div>
           <div>
             <CustomTitle title={Content.what_we_do_header.toUpperCase()} />
             <Paragraph className={styles.ContentText}>
