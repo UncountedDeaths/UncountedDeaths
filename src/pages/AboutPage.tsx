@@ -50,6 +50,7 @@ const AboutPage: React.FC = () => {
         <a href="/team">Learn more</a> about us.
       </div>
       <div id="contact">
+        <a id="contact"></a>
         <br></br>
         <br></br>
         <CustomTitle title="Contact Us" />
@@ -66,7 +67,7 @@ const AboutPage: React.FC = () => {
         }}
       />
       <div>
-        <CustomTitle title="Stay up to Date on the Project" />
+        <CustomTitle title="Follow the Project on Twitter" />
       </div>
     </ContentLayout>
   );

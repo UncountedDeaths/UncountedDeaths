@@ -3,7 +3,7 @@ import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { LandingPage } from './LandingPage';
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
 import OurTeamPage from './OurTeamPage';
@@ -13,6 +13,7 @@ import MediaPage from './MediaPage';
 import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
 import AboutPage from './AboutPage';
+import { Link } from 'react-router-dom';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -44,9 +45,13 @@ export const Main: React.FC = () => {
       <Layout.Footer className={styles.MasterFooter}>
         <BULogo href="https://www.bu.edu/ceid/" target="_blank" className={styles.FooterLogo} />
         <div className={styles.FooterTextContainer}>
-          <a className={styles.FooterText} onClick={() => navigate(InternalRoutes.ABOUT.path)}>
+          <Link
+            className={styles.FooterText}
+            to={{ pathname: InternalRoutes.ABOUT.path, hash: '#contact' }}
+          >
             Contact Us
-          </a>
+          </Link>
+          {/* <a onClick={() => navigate(InternalRoutes.ABOUT.path)}></a> */}
           <a className={styles.FooterText} href="https://twitter.com/vitalstatsintegrity">
             Follow Us on Twitter
           </a>
