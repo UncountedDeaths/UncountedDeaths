@@ -6,7 +6,7 @@
 }
 
 .contentlayoutdivider {
-    border-top: 9px solid @primary-color;
+  border-top: 9px solid @primary-color;
 }
 
 .contentlayouttitlecontainer {
@@ -15,6 +15,11 @@
   > h1 {
     color: @primary-color;
   }
+}
+
+.contentlayouttitlecontainer_centered {
+  &:extend(.contentlayouttitlecontainer all);
+  justify-content: center;
 }
 
 .contentstarttext {

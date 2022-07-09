@@ -6,6 +6,7 @@ type ContentLayoutProps = {
   title: string;
   text?: string;
   marginBottom?: string;
+  center?: boolean;
 };
 
 export const CustomDivider: React.FC = () => <Divider className={styles.contentlayoutdivider} />;
@@ -14,7 +15,13 @@ const ContentLayout: React.FC<ContentLayoutProps> = (props) => {
   return (
     <div className={styles.contentlayoutcontainer}>
       <CustomDivider />
-      <div className={styles.contentlayouttitlecontainer}>
+      <div
+        className={
+          props.center
+            ? styles.contentlayouttitlecontainer_centered
+            : styles.contentlayouttitlecontainer
+        }
+      >
         <Typography.Title>{props.title}</Typography.Title>
       </div>
       {props.text && (

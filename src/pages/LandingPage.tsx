@@ -64,29 +64,23 @@ const Dashboard: React.FC = () => {
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <ContentLayout title={Content.title_text}>
+    <ContentLayout title={Content.title_text} center={true}>
       <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
       <IframeResizer
         src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
         style={{ width: '1px', minWidth: '100%', border: 'none' }}
       />
       <div className={styles.cardSection}>
-        <div className={styles.howtotext}>
-          <CustomTitle title={TrackerPageContent.how_to_title.toUpperCase()} />
-          <Paragraph className={styles.ContentText}>{TrackerPageContent.how_to_content}</Paragraph>
-        </div>
-        <div className={styles.keytermscontainer}>
-          <CustomSmallTitle title={TrackerPageContent.key_terms_title} />
-          <div className={styles.trackkeyterms}>
-            <Typography.Title level={5}>{TrackerPageContent.term_1_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_1_body}</Typography.Paragraph>
-            <Typography.Title level={5}>{TrackerPageContent.term_2_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
-            <Typography.Title level={5}>{TrackerPageContent.term_3_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_3_body}</Typography.Paragraph>
-            <Typography.Title level={5}>{TrackerPageContent.term_4_title}</Typography.Title>
-            <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
-          </div>
+        <CustomTitle title={TrackerPageContent.key_terms_title} />
+        <div className={styles.trackkeyterms}>
+          <Typography.Title level={5}>{TrackerPageContent.term_1_title}</Typography.Title>
+          <Typography.Paragraph>{TrackerPageContent.term_1_body}</Typography.Paragraph>
+          <Typography.Title level={5}>{TrackerPageContent.term_2_title}</Typography.Title>
+          <Typography.Paragraph>{TrackerPageContent.term_2_body}</Typography.Paragraph>
+          <Typography.Title level={5}>{TrackerPageContent.term_3_title}</Typography.Title>
+          <Typography.Paragraph>{TrackerPageContent.term_3_body}</Typography.Paragraph>
+          <Typography.Title level={5}>{TrackerPageContent.term_4_title}</Typography.Title>
+          <Typography.Paragraph>{TrackerPageContent.term_4_body}</Typography.Paragraph>
         </div>
         <div>
           <CustomTitle title={Content.what_we_do_header.toUpperCase()} />

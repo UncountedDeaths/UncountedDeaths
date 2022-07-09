@@ -76,7 +76,7 @@ const tabs: (TabPaneProps & Key)[] = [
 
 const OurTeamPage: React.FC = () => {
   return (
-    <ContentLayout title="OUR TEAM" text={text_content}>
+    <ContentLayout title="TEAM" text={text_content}>
       <Tabs className={styles.ourteamtabs} defaultActiveKey="1">
         {tabs.map((t) => (
           <Tabs.TabPane {...t} key={t.key} />
