@@ -19,6 +19,14 @@ export const content: ContentCardProps[] = [
   },
   {
     title:
+      '“Pandemic of the unvaccinated”? At midlife, white people are less vaccinated but still at less risk of Covid-19 mortality in Minnesota',
+    date: 'March 8, 2022',
+    text: 'Recent research underscores the exceptionally young age distribution of Covid-19 deaths in the United States compared with international peers. We show that the high level of Covid mortality at midlife ages (45–64) is deeply intertwined with continuing racial inequality in Covid-19 mortality...',
+    link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8923115/?utm_source=Chrome&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1faJNdFX7yLjGwqLern1ecvN56cHqWd4_KPNrthXtjwBb6ukQG&fc=20200716093347&ff=20220318030229&v=2.17.6',
+    imgSrc: 'https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/pmc-logo-share.png?_=0',
+  },
+  {
+    title:
       'COVID-19 mortality and excess mortality among working-age Californians, by occupational sector: March 2020 through November 2021',
     date: 'February 15, 2022',
     text: 'During the first year of the pandemic, essential workers faced higher rates of SARS-CoV-2 infection and COVID-19 mortality than non-essential workers. It is unknown whether disparities in pandemic-related mortality across occupational sectors have continued to occur, amidst SARS-CoV-2 variants and vaccine availability.',
@@ -58,15 +66,6 @@ export const content: ContentCardProps[] = [
     text: 'Coronavirus Disease 2019 (COVID-19) excess deaths refer to increases in mortality over what would normally have been expected in the absence of the COVID-19 pandemic. Several prior studies have calculated excess deaths in the United States...',
     link: 'https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003571',
     imgSrc: 'https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image.png',
-  },
-
-  {
-    title:
-      '“Pandemic of the unvaccinated”? At midlife, white people are less vaccinated but still at less risk of Covid-19 mortality in Minnesota',
-    date: 'March 8, 2021',
-    text: 'Recent research underscores the exceptionally young age distribution of Covid-19 deaths in the United States compared with international peers. We show that the high level of Covid mortality at midlife ages (45–64) is deeply intertwined with continuing racial inequality in Covid-19 mortality...',
-    link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8923115/?utm_source=Chrome&utm_medium=rss&utm_campaign=pubmed-2&utm_content=1faJNdFX7yLjGwqLern1ecvN56cHqWd4_KPNrthXtjwBb6ukQG&fc=20200716093347&ff=20220318030229&v=2.17.6',
-    imgSrc: 'https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/pmc-logo-share.png?_=0',
   },
 ];
 

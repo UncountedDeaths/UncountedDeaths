@@ -115,17 +115,24 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       selectedKeys={selected}
       className={styles.MenuBar}
     >
-      {inline && (
-        <Menu.Item
-          key={InternalRoutes.HOME.key}
-          onClick={() => {
-            navigate(InternalRoutes.HOME.path);
-            setSelected([`${InternalRoutes.HOME.key}`]);
-          }}
-        >
-          Home
-        </Menu.Item>
-      )}
+      <Menu.Item
+        key={InternalRoutes.HOME.key}
+        onClick={() => {
+          navigate(InternalRoutes.HOME.path);
+          setSelected([`${InternalRoutes.HOME.key}`]);
+        }}
+      >
+        Home
+      </Menu.Item>
+      <Menu.Item
+        key={InternalRoutes.ABOUT.key}
+        onClick={() => {
+          navigate(InternalRoutes.ABOUT.path);
+          setSelected([`${InternalRoutes.ABOUT.key}`]);
+        }}
+      >
+        About
+      </Menu.Item>
       <Menu.Item
         key={InternalRoutes.TEAM.key}
         onClick={() => {
@@ -154,15 +161,7 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
       >
         Publications
       </Menu.Item>
-      <Menu.Item
-        key={InternalRoutes.ABOUT.key}
-        onClick={() => {
-          navigate(InternalRoutes.ABOUT.path);
-          setSelected([`${InternalRoutes.ABOUT.key}`]);
-        }}
-      >
-        About
-      </Menu.Item>
+
       <Menu.Item
         key={InternalRoutes.RESOURCES.key}
         onClick={() => {
