@@ -3,7 +3,7 @@ import { Layout } from 'antd';
 import { Header } from '../components/NavHeader';
 import styles from '../styles/MasterPage.module.less';
 import { LandingPage } from './LandingPage';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Page404 } from './404Page';
 import { PublicationsPage } from './PublicationsPage';
 import OurTeamPage from './OurTeamPage';
@@ -20,7 +20,6 @@ import { Link } from 'react-router-dom';
  * are rendered here. Plus, the react router lives here!
  */
 export const Main: React.FC = () => {
-  const navigate = useNavigate();
   return (
     <Layout className={styles.MasterLayout}>
       <Layout.Header className={styles.MenuHeader}>
@@ -52,7 +51,7 @@ export const Main: React.FC = () => {
             Contact Us
           </Link>
           {/* <a onClick={() => navigate(InternalRoutes.ABOUT.path)}></a> */}
-          <a className={styles.FooterText} href="https://twitter.com/vitalstatsintegrity">
+          <a className={styles.FooterText} href="https://twitter.com/vitalstatsinteg">
             Follow Us on Twitter
           </a>
         </div>
