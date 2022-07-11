@@ -56,14 +56,15 @@ const AboutPage: React.FC = () => {
         <CustomTitle title="Contact Us" />
       </div>
       <IframeResizer
-        log
-        src="https://form.jotform.com/221793942892166"
+        loading="eager"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSftYCuwx8ynwr_W3IQhVAAw47F21nG3vhClcvROz6R9z6c6MA/viewform?embedded=true"
         style={{
           width: '1px',
           minWidth: '100%',
           border: 'none',
           minHeight: '100%',
           height: '50em',
+          alignSelf: 'flex-start',
         }}
       />
       <div>

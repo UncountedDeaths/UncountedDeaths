@@ -14,7 +14,6 @@ import * as TrackerPageContent from '../content/TrackerPageContent';
 import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
-import CustomSmallTitle from '../components/CustomSmallTitle';
 import ContentLayout from '../components/ContentLayout';
 
 type Key = {
