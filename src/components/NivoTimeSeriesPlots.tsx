@@ -24,7 +24,7 @@ const NivoTSPlot: React.FC = () => {
         yFormat=" >-.2f"
         axisBottom={{
           format: '%b %Y',
-          tickValues: 'every 1 month',
+          tickValues: 'every 6 month',
           legend: 'date',
           legendOffset: 36,
           legendPosition: 'middle',
