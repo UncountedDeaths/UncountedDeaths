@@ -1,29 +1,30 @@
 import React from 'react';
-import { ResponsiveLine } from '@nivo/line';
+import { Line } from '@nivo/line';
 import { Autaga } from '../content/AutagaTimeSeriesData';
 import styles from '../styles/TimeSeriesPlots.module.less';
 
 const NivoTSPlot: React.FC = () => {
   return (
     <div className={styles.TimeSeriesViewBox}>
-      <ResponsiveLine
+      <Line
         data={Autaga}
+        height={350}
+        width={5000}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-        xScale={{ type: 'point' }}
+        xScale={{
+          type: 'time',
+          format: '%m/%d/%Y',
+          precision: 'month',
+          useUTC: false,
+        }}
+        xFormat="time:%m/%d/%Y"
         yScale={{
           type: 'linear',
-          min: 'auto',
-          max: 'auto',
-          stacked: false,
-          reverse: false,
         }}
         yFormat=" >-.2f"
-        axisTop={null}
-        axisRight={null}
         axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
-          tickRotation: 0,
+          format: '%b %Y',
+          tickValues: 'every 1 month',
           legend: 'date',
           legendOffset: 36,
           legendPosition: 'middle',
