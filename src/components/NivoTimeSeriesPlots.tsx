@@ -8,7 +8,7 @@ const NivoTSPlot: React.FC = () => {
     <div className={styles.TimeSeriesViewBox}>
       <ResponsiveLine
         data={Autaga}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+        margin={{ top: 50, bottom: 50, left: 22 }}
         xScale={{
           type: 'time',
           format: '%m/%d/%Y',
@@ -31,9 +31,6 @@ const NivoTSPlot: React.FC = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'deaths',
-          legendOffset: -40,
-          legendPosition: 'middle',
         }}
         enableGridX={false}
         colors={{ scheme: 'set1' }}
@@ -46,11 +43,11 @@ const NivoTSPlot: React.FC = () => {
         useMesh={true}
         legends={[
           {
-            anchor: 'right',
-            direction: 'column',
+            anchor: 'top',
+            direction: 'row',
             justify: false,
-            translateX: 100,
-            translateY: 0,
+            translateX: -160,
+            translateY: -50,
             itemsSpacing: 0,
             itemDirection: 'left-to-right',
             itemWidth: 80,
