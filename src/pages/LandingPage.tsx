@@ -15,6 +15,7 @@ import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
 import ContentLayout from '../components/ContentLayout';
+import NivoTSPlot from '../components/NivoTimeSeriesPlots';
 
 type Key = {
   key: string;
@@ -66,6 +67,7 @@ export const LandingPage: React.FC = () => {
     <ContentLayout title={Content.title_text} center={true}>
       <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
       <Dashboard />
+      <NivoTSPlot />
       <div className={styles.cardSection}>
         <CustomTitle title={TrackerPageContent.key_terms_title} />
         <div className={styles.trackkeyterms}>
