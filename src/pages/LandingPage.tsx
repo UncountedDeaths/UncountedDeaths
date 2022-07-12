@@ -45,7 +45,9 @@ const tabs: (TabPaneProps & Key)[] = [
     tab: <p className={styles.titletabpane}>State Dashboard</p>,
     children: (
       <>
-        <div className={styles.stateDashboard} />
+        <div className={styles.stateDashboard}>
+          <NivoTSPlot />
+        </div>
       </>
     ),
   },
@@ -67,7 +69,6 @@ export const LandingPage: React.FC = () => {
     <ContentLayout title={Content.title_text} center={true}>
       <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
       <Dashboard />
-      <NivoTSPlot />
       <div className={styles.cardSection}>
         <CustomTitle title={TrackerPageContent.key_terms_title} />
         <div className={styles.trackkeyterms}>
