@@ -1,15 +1,13 @@
 import React from 'react';
-import { Line } from '@nivo/line';
+import { ResponsiveLine } from '@nivo/line';
 import { Autaga } from '../content/AutagaTimeSeriesData';
 import styles from '../styles/TimeSeriesPlots.module.less';
 
 const NivoTSPlot: React.FC = () => {
   return (
     <div className={styles.TimeSeriesViewBox}>
-      <Line
+      <ResponsiveLine
         data={Autaga}
-        height={350}
-        width={5000}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
         xScale={{
           type: 'time',
