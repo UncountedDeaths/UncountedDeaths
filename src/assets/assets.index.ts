@@ -33,6 +33,6 @@ export { default as augustine } from './profilePhotos/augustine.jpeg';
  * Logos and other branding
  */
 
-export { ReactComponent as Logo } from './BU_CEID_Color.svg';
+export { ReactComponent as Logo } from './vitalstatsinteg_logo.svg';
 export { ReactComponent as BULogo } from './bu_wordmark.svg';
 export { ReactComponent as LogoWhite } from './BU_CEID_White.svg';
