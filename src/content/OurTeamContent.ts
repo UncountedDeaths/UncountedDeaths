@@ -154,7 +154,7 @@ export const designContent: MemberCardProps[] = [
     imgSrc: minkyo,
   },
   {
-    title: 'Aykerim Dussikenova',
+    title: 'Aigerim Dussikenova',
     subtitle: 'Graduate Intern at Boston University Spark!',
     imgSrc: aigerim,
   },
