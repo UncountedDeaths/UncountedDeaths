@@ -3098,7 +3098,7 @@ const countyData = {
     'Whatcom',
     'Yakima',
   ],
-  ['West Virgnia']: [
+  ['West Virginia']: [
     'Select County',
     'Barbour',
     'Pocahontas',
