@@ -16,7 +16,7 @@ import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
 import CustomSmallTitle from '../components/CustomSmallTitle';
 import ContentLayout from '../components/ContentLayout';
-
+import Menu from '../components/stateDash';
 type Key = {
   key: string;
 };
@@ -45,7 +45,7 @@ const tabs: (TabPaneProps & Key)[] = [
     tab: <p className={styles.titletabpane}>State Dashboard</p>,
     children: (
       <>
-        <div className={styles.stateDashboard} />
+        <Menu />
       </>
     ),
   },
