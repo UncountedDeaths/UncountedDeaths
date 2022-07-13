@@ -24,16 +24,24 @@ const Menu: React.FC = () => {
   return (
     <>
       <div className={styles.dropDowns}>
-        <Select defaultValue="Alabama" style={{ width: 170 }} onChange={handleStateChange}>
-          {stateData.map((state) => (
-            <Option key={state}>{state}</Option>
-          ))}
-        </Select>
-        <Select style={{ width: 170 }} value={counties as CountyName} onChange={onSecondCityChange}>
-          {states.map((state) => (
-            <Option key={state}>{state}</Option>
-          ))}
-        </Select>
+        <div className={styles.stateDrop}>
+          <Select defaultValue="Alabama" style={{ width: 170 }} onChange={handleStateChange}>
+            {stateData.map((state) => (
+              <Option key={state}>{state}</Option>
+            ))}
+          </Select>
+        </div>
+        <div className={styles.countyDrop}>
+          <Select
+            style={{ width: 170 }}
+            value={counties as CountyName}
+            onChange={onSecondCityChange}
+          >
+            {states.map((state) => (
+              <Option key={state}>{state}</Option>
+            ))}
+          </Select>
+        </div>
       </div>
       <div className={styles.stateDashboard}>
         <div className="stateViz"></div>
