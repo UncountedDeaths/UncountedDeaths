@@ -19,7 +19,9 @@ import {
   bayly,
   saucy,
   augustine,
-  placeholder,
+  aigerim,
+  matthew,
+  minkyo,
 } from '../assets/assets.index';
 
 export interface MemberCardProps {
@@ -149,17 +151,22 @@ export const designContent: MemberCardProps[] = [
   {
     title: 'Minkyo Seo',
     subtitle: 'Undergraduate Intern at Boston University Spark!',
-    imgSrc: placeholder,
+    imgSrc: minkyo,
   },
   {
-    title: 'Aykerim',
-    subtitle: 'Undergraduate Intern at Boston University Spark!',
-    imgSrc: placeholder,
+    title: 'Aigerim Dussikenova',
+    subtitle: 'Graduate Intern at Boston University Spark!',
+    imgSrc: aigerim,
   },
   {
     title: 'Henry Bayly',
     subtitle: 'Doctoral Student in Biostatistics at Boston University School of Public Health',
     imgSrc: bayly,
+  },
+  {
+    title: 'Matthew Henriksen',
+    subtitle: 'Undergraduate Intern at Boston University Spark!',
+    imgSrc: matthew,
   },
 ];
 

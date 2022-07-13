@@ -28,6 +28,9 @@ export { default as ladyzhets } from './profilePhotos/ladyzhets.jpeg';
 export { default as bayly } from './profilePhotos/bayly.jpeg';
 export { default as saucy } from './profilePhotos/saucy.jpeg';
 export { default as augustine } from './profilePhotos/augustine.jpeg';
+export { default as matthew } from './profilePhotos/matthew.jpeg';
+export { default as aigerim } from './profilePhotos/aigerim.jpeg';
+export { default as minkyo } from './profilePhotos/minkyo.jpeg';
 
 /**
  * Logos and other branding
