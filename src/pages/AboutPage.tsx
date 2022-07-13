@@ -9,6 +9,8 @@ import CustomTitle from '../components/CustomTitle';
 import IframeResizer from 'iframe-resizer-react';
 import { Typography } from 'antd';
 import styles from '../styles/AboutPage.module.less';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
+
 const AboutPage: React.FC = () => {
   return (
     <ContentLayout title="ABOUT">
@@ -69,6 +71,15 @@ const AboutPage: React.FC = () => {
       />
       <div>
         <CustomTitle title="Follow the Project on Twitter" />
+        <div className={styles.twitterWidgetContainer}>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="vitalstatsinteg"
+            autoHeight
+            noHeader
+            options={{ width: 800 }}
+          />
+        </div>
       </div>
     </ContentLayout>
   );
