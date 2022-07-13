@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import countyData from '../content/stateDashContent';
 import { stateData } from '../content/stateDashContent';
 const { Option } = Select;
-import styles from '../styles/LandingPage.module.less';
+import styles from '../styles/stateDash.module.less';
 import IframeResizer from 'iframe-resizer-react';
 
 type CountyName = keyof typeof countyData;
@@ -24,14 +24,14 @@ const Menu: React.FC = () => {
   return (
     <>
       <div className={styles.dropDowns}>
-        <div className={styles.stateDrop}>
+        <div className={styles.bothDrop}>
           <Select defaultValue="Alabama" style={{ width: 170 }} onChange={handleStateChange}>
             {stateData.map((state) => (
               <Option key={state}>{state}</Option>
             ))}
           </Select>
         </div>
-        <div className={styles.countyDrop}>
+        <div className={styles.bothDrop}>
           <Select
             style={{ width: 170 }}
             value={counties as CountyName}
@@ -44,7 +44,6 @@ const Menu: React.FC = () => {
         </div>
       </div>
       <div className={styles.stateDashboard}>
-        <div className="stateViz"></div>
         <IframeResizer className={styles.appIFrame} src="https://datawrapper.dwcdn.net/q9LZ6/3/" />
         <IframeResizer className={styles.appIFrame} src="https://datawrapper.dwcdn.net/EviBb/2/" />
       </div>
