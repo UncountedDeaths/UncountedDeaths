@@ -15,6 +15,7 @@ import { Typography, Tabs, TabPaneProps } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
 import ContentLayout from '../components/ContentLayout';
+import NivoTSPlot from '../components/NivoTimeSeriesPlots';
 import Menu from '../components/stateDash';
 type Key = {
   key: string;
@@ -44,7 +45,10 @@ const tabs: (TabPaneProps & Key)[] = [
     tab: <p className={styles.titletabpane}>State Dashboard</p>,
     children: (
       <>
-        <Menu />
+        <div className={styles.stateDashboard}>
+          <Menu />
+          <NivoTSPlot />
+        </div>
       </>
     ),
   },
