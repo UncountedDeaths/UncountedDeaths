@@ -23,10 +23,11 @@ export const Header: React.FC = () => {
  */
 const RenderMobileMenu: React.FC = () => {
   const [isVisible, setVisible] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <HamburgerIcon className={styles.MobileMenuButton} onClick={() => setVisible(!isVisible)} />
-      <Logo className={styles.Logo} />
+      <Logo className={styles.Logo} onClick={() => navigate(InternalRoutes.HOME.path)} />
       <Drawer
         visible={isVisible}
         placement="left"
