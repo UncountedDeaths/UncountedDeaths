@@ -12,7 +12,9 @@ import { useScreenWidth } from '../utils';
  */
 export const Header: React.FC = () => {
   const { isMobile } = useScreenWidth();
-  return <div className={styles.MenuWrap}>{isMobile ? <RenderMobileMenu /> : <RenderMenu />}</div>;
+  return (
+    <div className={styles.MenuWrap}>{isMobile ? <RenderMobileMenu /> : <RenderDesktopMenu />}</div>
+  );
 };
 
 /**
@@ -36,6 +38,20 @@ const RenderMobileMenu: React.FC = () => {
           <RenderMenu inline />
         </div>
       </Drawer>
+    </>
+  );
+};
+
+const RenderDesktopMenu: React.FC = () => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <Logo
+        className={styles.Logo}
+        onClick={() => navigate(InternalRoutes.HOME.path)}
+        aria-label="Vital Statistics Integrity Project Logo"
+      />
+      <RenderMenu />
     </>
   );
 };
@@ -79,11 +95,6 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
   }, [location.pathname]);
   return (
     <>
-      <Logo
-        className={styles.Logo}
-        onClick={() => navigate(InternalRoutes.HOME.path)}
-        aria-label="Vital Statistics Integrity Project Logo"
-      />
       <Menu
         mode={inline ? 'inline' : 'horizontal'}
         selectedKeys={selected}
