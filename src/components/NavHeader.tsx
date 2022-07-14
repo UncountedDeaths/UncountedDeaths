@@ -1,36 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, Popover, Button } from 'antd';
+import { Menu, Drawer } from 'antd';
 import styles from '../styles/NavHeader.module.less';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { InternalRoutes } from '../routes';
-import { useThrottle } from '@react-hook/throttle';
-import { Logo } from '../assets/assets.index';
+import { HamburgerIcon, Logo } from '../assets/assets.index';
+import { useScreenWidth } from '../utils';
 
 /**
  * Top level component for rendering the nav bar with logo and menu
  * CSS hides the logo on widths < 800 along with a mobile menu getting rendered at those sizes
  */
 export const Header: React.FC = () => {
-  const navigate = useNavigate();
-  const { width } = useViewport();
-  const breakpoint = 800;
-  return (
-    <div className={styles.MenuWrap}>
-      <Logo
-        className={styles.Logo}
-        onClick={() => navigate(InternalRoutes.HOME.path)}
-        aria-label="CEID Logo"
-      />
-
-      {width <= breakpoint ? (
-        <div style={{ margin: '0 auto', textAlign: 'center' }}>
-          <RenderMobileMenu />
-        </div>
-      ) : (
-        <RenderMenu />
-      )}
-    </div>
-  );
+  const { isMobile } = useScreenWidth();
+  return <div className={styles.MenuWrap}>{isMobile ? <RenderMobileMenu /> : <RenderMenu />}</div>;
 };
 
 /**
@@ -40,36 +22,22 @@ export const Header: React.FC = () => {
 const RenderMobileMenu: React.FC = () => {
   const [isVisible, setVisible] = useState(false);
   return (
-    <Popover
-      content={
+    <>
+      <HamburgerIcon className={styles.MobileMenuButton} onClick={() => setVisible(!isVisible)} />
+      <Logo className={styles.Logo} />
+      <Drawer
+        visible={isVisible}
+        placement="left"
+        onClose={() => {
+          setVisible(!isVisible);
+        }}
+      >
         <div onClick={() => setVisible(false)}>
           <RenderMenu inline />
         </div>
-      }
-      visible={isVisible}
-      trigger="click"
-    >
-      <Button type="primary" onClick={() => setVisible(!isVisible)}>
-        Menu
-      </Button>
-    </Popover>
+      </Drawer>
+    </>
   );
-};
-/**
- * A simple hook to watch the viewport size so that we can render a different menu
- * based on the screen size. We use a throttled hook to keep the browser from over-rendering
- */
-const useViewport = () => {
-  const [width, setWidth] = useThrottle(window.innerWidth, 10);
-
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleWindowResize);
-    return () => window.removeEventListener('resize', handleWindowResize);
-  }, [setWidth]);
-
-  // Return the width so we can use it in our components
-  return { width };
 };
 
 interface MenuProps {
@@ -110,67 +78,74 @@ const RenderMenu: React.FC<MenuProps> = (props: MenuProps) => {
     }
   }, [location.pathname]);
   return (
-    <Menu
-      mode={inline ? 'inline' : 'horizontal'}
-      selectedKeys={selected}
-      className={styles.MenuBar}
-    >
-      <Menu.Item
-        key={InternalRoutes.HOME.key}
-        onClick={() => {
-          navigate(InternalRoutes.HOME.path);
-          setSelected([`${InternalRoutes.HOME.key}`]);
-        }}
+    <>
+      <Logo
+        className={styles.Logo}
+        onClick={() => navigate(InternalRoutes.HOME.path)}
+        aria-label="Vital Statistics Integrity Project Logo"
+      />
+      <Menu
+        mode={inline ? 'inline' : 'horizontal'}
+        selectedKeys={selected}
+        className={styles.MenuBar}
       >
-        Home
-      </Menu.Item>
-      <Menu.Item
-        key={InternalRoutes.ABOUT.key}
-        onClick={() => {
-          navigate(InternalRoutes.ABOUT.path);
-          setSelected([`${InternalRoutes.ABOUT.key}`]);
-        }}
-      >
-        About
-      </Menu.Item>
-      <Menu.Item
-        key={InternalRoutes.TEAM.key}
-        onClick={() => {
-          navigate(InternalRoutes.TEAM.path);
-          setSelected([`${InternalRoutes.TEAM.key}`]);
-        }}
-      >
-        Team
-      </Menu.Item>
+        <Menu.Item
+          key={InternalRoutes.HOME.key}
+          onClick={() => {
+            navigate(InternalRoutes.HOME.path);
+            setSelected([`${InternalRoutes.HOME.key}`]);
+          }}
+        >
+          Home
+        </Menu.Item>
+        <Menu.Item
+          key={InternalRoutes.ABOUT.key}
+          onClick={() => {
+            navigate(InternalRoutes.ABOUT.path);
+            setSelected([`${InternalRoutes.ABOUT.key}`]);
+          }}
+        >
+          About
+        </Menu.Item>
+        <Menu.Item
+          key={InternalRoutes.TEAM.key}
+          onClick={() => {
+            navigate(InternalRoutes.TEAM.path);
+            setSelected([`${InternalRoutes.TEAM.key}`]);
+          }}
+        >
+          Team
+        </Menu.Item>
 
-      <Menu.Item
-        key={InternalRoutes.MEDIA.key}
-        onClick={() => {
-          navigate(InternalRoutes.MEDIA.path);
-          setSelected([`${InternalRoutes.MEDIA.key}`]);
-        }}
-      >
-        Media
-      </Menu.Item>
-      <Menu.Item
-        key={InternalRoutes.PUBLICATIONS.key}
-        onClick={() => {
-          navigate(InternalRoutes.PUBLICATIONS.path);
-          setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
-        }}
-      >
-        Publications
-      </Menu.Item>
+        <Menu.Item
+          key={InternalRoutes.MEDIA.key}
+          onClick={() => {
+            navigate(InternalRoutes.MEDIA.path);
+            setSelected([`${InternalRoutes.MEDIA.key}`]);
+          }}
+        >
+          Media
+        </Menu.Item>
+        <Menu.Item
+          key={InternalRoutes.PUBLICATIONS.key}
+          onClick={() => {
+            navigate(InternalRoutes.PUBLICATIONS.path);
+            setSelected([`${InternalRoutes.PUBLICATIONS.key}`]);
+          }}
+        >
+          Publications
+        </Menu.Item>
 
-      <Menu.Item
-        key={InternalRoutes.RESOURCES.key}
-        onClick={() => {
-          navigate(InternalRoutes.RESOURCES.path);
-          setSelected([`${InternalRoutes.RESOURCES.key}`]);
-        }}
-      >
-        FAQs
-      </Menu.Item>
-    </Menu>
+        <Menu.Item
+          key={InternalRoutes.RESOURCES.key}
+          onClick={() => {
+            navigate(InternalRoutes.RESOURCES.path);
+            setSelected([`${InternalRoutes.RESOURCES.key}`]);
+          }}
+        >
+          FAQs
+        </Menu.Item>
+      </Menu>
+    </>
   );
 };

@@ -39,3 +39,8 @@ export { default as minkyo } from './profilePhotos/minkyo.jpeg';
 export { ReactComponent as Logo } from './vitalstatsinteg_logo.svg';
 export { ReactComponent as BULogo } from './bu_wordmark.svg';
 export { ReactComponent as LogoWhite } from './BU_CEID_White.svg';
+
+/**
+ * Icons etc
+ */
+export { ReactComponent as HamburgerIcon } from './menu.svg';
