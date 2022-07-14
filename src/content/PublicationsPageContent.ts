@@ -73,7 +73,7 @@ export const content: ContentCardProps[] = [
     date: 'May 17, 2022',
     text: 'Official Covid-19 death counts have underestimated the mortality impact of the Covid-19 pandemic in the United States. Excess mortality, which compares observed deaths to deaths expected in the absence of the pandemic, is a useful measure for...',
     link: 'https://www.medrxiv.org/content/10.1101/2022.04.23.22274192v3',
-    imgSrc: '../assets/national_county-min.png',
+    imgSrc: '../assets/national_county-min_1.jpeg',
   },
   {
     title:
@@ -81,7 +81,7 @@ export const content: ContentCardProps[] = [
     date: 'April 18, 2022',
     text: 'A small body of epidemiological research suggests that working in an essential sector is a risk factor for SARS-CoV-2 infection or subsequent disease or mortality. However, there is limited evidence to date on the US, or on how the risks associated with...',
     link: 'https://www.medrxiv.org/content/10.1101/2022.03.29.22273085v2',
-    imgSrc: '../assets/industry_occupation-min.png',
+    imgSrc: '../assets/industry_occupation-min_1.jpeg',
   },
   {
     title:
@@ -89,7 +89,7 @@ export const content: ContentCardProps[] = [
     date: 'June 8, 2022',
     text: 'Excess mortality has exceeded reported deaths from Covid-19 during the pandemic. This gap may be attributable to deaths that occurred among individuals with undiagnosed Covid-19 infections or indirect consequences of the pandemic response such as...',
     link: 'https://academic.oup.com/pnasnexus/article/1/3/pgac079/6604394?login=false',
-    imgSrc: '../assets/california_PNAS-min.png',
+    imgSrc: '../assets/california_PNAS-min.jpeg',
   },
 ];
 
