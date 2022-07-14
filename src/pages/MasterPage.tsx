@@ -14,17 +14,19 @@ import { PersistentBanner } from '../components/PersistentBanner';
 import { BULogo } from '../assets/assets.index';
 import AboutPage from './AboutPage';
 import { Link } from 'react-router-dom';
+import { useScreenWidth } from '../utils';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
  * are rendered here. Plus, the react router lives here!
  */
 export const Main: React.FC = () => {
+  const { isMobile } = useScreenWidth();
   return (
     <Layout className={styles.MasterLayout}>
       <Layout.Header className={styles.MenuHeader}>
-        <PersistentBanner />
-        <Header />
+        {isMobile ? <Header /> : <PersistentBanner />}
+        {isMobile ? <PersistentBanner /> : <Header />}
       </Layout.Header>
       <Layout.Content className={styles.MasterContent}>
         {/* We put a router directly here so that it only has to re-load the contents
@@ -50,7 +52,6 @@ export const Main: React.FC = () => {
           >
             Contact Us
           </Link>
-          {/* <a onClick={() => navigate(InternalRoutes.ABOUT.path)}></a> */}
           <a className={styles.FooterText} href="https://twitter.com/vitalstatsinteg">
             Follow Us on Twitter
           </a>
