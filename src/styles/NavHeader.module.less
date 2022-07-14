@@ -3,6 +3,17 @@
 
 @color: '#99999';
 
+.MobileMenuButton {
+  // background-color: white;
+  // border: none;
+  // :hover {
+  //   background-color: red;
+  // }
+  width: 3rem;
+  height: 3rem;
+  color: green;
+}
+
 .MenuCol {
   position: absolute;
   padding-right: 3rem;
@@ -11,9 +22,13 @@
 }
 
 .MenuWrap {
+  width: 100%;
   display: flex;
   padding: 1rem 3rem;
   align-items: center;
+  @media screen and (max-width: @mobile-cutoff) {
+    justify-content: flex-start;
+  }
 }
 
 .MenuBar {
@@ -23,6 +38,9 @@
   border: transparent;
   color: black;
   justify-content: right;
+  @media screen and (max-width: 800px) {
+    justify-content: left;
+  }
   > li {
     margin: 0 0 0 2rem;
     padding: 0;
@@ -61,7 +79,9 @@
 
 .Logo {
   @media only screen and (max-width: @mobile-cutoff) {
-    display: none;
+    align-items: center;
+    margin: 0 auto;
+    // width: 50rem;
   }
   width: 14rem;
   min-width: 8rem;

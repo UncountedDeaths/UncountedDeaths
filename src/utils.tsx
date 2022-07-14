@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import React from 'react';
+import { useThrottle } from '@react-hook/throttle';
 
 /**
  *
@@ -27,4 +28,24 @@ export const ScrollToHash = () => {
     }
   });
   return <></>;
+};
+
+export function useScreenWidth() {
+  const viewport = useViewport();
+  const isMobile = viewport.width < 800;
+  const width = viewport.width;
+  return { width, isMobile };
+}
+
+const useViewport = () => {
+  const [width, setWidth] = useThrottle(window.innerWidth, 10);
+
+  React.useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
+  }, [setWidth]);
+
+  // Return the width so we can use it in our components
+  return { width };
 };
