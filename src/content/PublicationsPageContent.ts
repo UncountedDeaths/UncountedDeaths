@@ -9,6 +9,7 @@ export type ContentCardProps = {
 };
 import img1 from '../assets/national_county-min_1.jpeg';
 import img2 from '../assets/california_PNAS-min.jpeg';
+import img3 from '../assets/industry_occupation-min_1.jpeg';
 
 export const content: ContentCardProps[] = [
   {
@@ -83,7 +84,7 @@ export const content: ContentCardProps[] = [
     date: 'April 18, 2022',
     text: 'A small body of epidemiological research suggests that working in an essential sector is a risk factor for SARS-CoV-2 infection or subsequent disease or mortality. However, there is limited evidence to date on the US, or on how the risks associated with...',
     link: 'https://www.medrxiv.org/content/10.1101/2022.03.29.22273085v2',
-    imgSrc: img2,
+    imgSrc: img3,
   },
   {
     title:
