@@ -10,7 +10,7 @@ export const term_3_body =
   'Potential under-counting refers to the extent to which Covid-19 death rates represent a complete account of excess death rates. If Covid-19 mortality only accounted for 80% of excess mortality, this suggests that up to 20% of Covid-19 deaths went uncounted. Some of these excess deaths not assigned to Covid-19 may be deaths indirectly related to the social, economic and health system consequences of the pandemic, but prior research indicates that most are uncounted Covid-19 deaths.';
 export const term_4_title = 'Death Investigation System';
 export const term_4_body =
-  'Death investigation systems vary by state and county across the United States. States either have a medical examiner system, a coroner system, or a mixture of both. Counties either have a medical examiner, a coroner, a sheriff-coroner, or a justice of the peace. Coroners are elected, have limited medical training, and may be more likely to under-count Covid-19 deaths according to investigative reporting.';
+  'Death investigation systems vary by state and county across the United States. States either have a medical examiner system, a coroner system, or a mixture of both. Counties either have a medical examiner, a coroner, a sheriff-coroner, or a justice of the peace. Coroners are elected and have limited medical training, whereas medical examiners are typically forensic pathologists.';
 export const about_title = 'About';
 export const about_1_title = 'Excess Death Tracker';
 export const about_1_body = 'Something goes here...';

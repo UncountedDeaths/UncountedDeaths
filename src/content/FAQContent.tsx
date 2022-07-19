@@ -215,6 +215,3 @@ export const FAQ_FEMA_FAQ_Data: IFAQ[] = [
     ),
   },
 ];
-
-export const FAQ_FEMA_SubHeader_Text =
-  'If you need assistance covering the cost of a COVID-19 funeral you may be eligible to apply for up to $9,000 in assistance through FEMA.';
