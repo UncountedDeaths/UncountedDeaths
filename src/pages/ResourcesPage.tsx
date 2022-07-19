@@ -1,4 +1,3 @@
-import { Typography } from 'antd';
 import Tabs, { TabPaneProps } from 'antd/lib/tabs';
 import React from 'react';
 import ContentLayout from '../components/ContentLayout';
