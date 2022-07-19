@@ -4,7 +4,6 @@ import ContentLayout from '../components/ContentLayout';
 import {
   content,
   collaboratorContent,
-  mediaContent,
   alumniContent,
   MemberCardProps,
   text_content,
@@ -53,17 +52,6 @@ const tabs: (TabPaneProps & Key)[] = [
   },
   {
     key: '3',
-    tab: <p className={styles.titletabpane}>Media Partners</p>,
-    children: (
-      <div className={styles.teamcardsgrid}>
-        {mediaContent.map((m) => (
-          <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
-        ))}
-      </div>
-    ),
-  },
-  {
-    key: '4',
     tab: <p className={styles.titletabpane}>Design / Engineering</p>,
     children: (
       <div className={styles.teamcardsgrid}>
@@ -74,7 +62,7 @@ const tabs: (TabPaneProps & Key)[] = [
     ),
   },
   {
-    key: '5',
+    key: '4',
     tab: <p className={styles.titletabpane}>Alumni</p>,
     children: (
       <div className={styles.teamcardsgrid}>
