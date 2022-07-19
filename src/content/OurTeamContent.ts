@@ -13,9 +13,6 @@ import {
   preston,
   paglino,
   luck,
-  kravitz,
-  bergin,
-  ladyzhets,
   bayly,
   saucy,
   augustine,
@@ -93,25 +90,6 @@ export const collaboratorContent: MemberCardProps[] = [
     subtitle:
       'Professor in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
     imgSrc: preston,
-  },
-];
-
-export const mediaContent: MemberCardProps[] = [
-  {
-    title: 'Derick Kravitz',
-    subtitle:
-      "Project Lead and Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
-    imgSrc: kravitz,
-  },
-  {
-    title: 'Dillon Bergin',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: bergin,
-  },
-  {
-    title: 'Betsy Ladyzhets',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: ladyzhets,
   },
 ];
 
