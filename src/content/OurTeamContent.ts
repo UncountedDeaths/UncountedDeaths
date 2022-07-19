@@ -171,4 +171,4 @@ export const designContent: MemberCardProps[] = [
 ];
 
 export const text_content =
-  'This project was made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.';
+  "This project is made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, the W. K. Kellogg Foundation, and the National Institute on Aging. The views expressed on this website are those of the lab's investigators and do not necessarily reflect the views of the research sponsors.";
