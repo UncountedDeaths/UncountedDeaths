@@ -67,27 +67,6 @@ export const content: MemberCardProps[] = [
       'Senior Research Scientist in the Department of Global Health at Boston University School of Public Health',
     imgSrc: zhou,
   },
-  {
-    title: 'Mikas Hansen, PhD',
-    subtitle:
-      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
-    imgSrc: mikas,
-  },
-  {
-    title: 'Sylvia Lutze',
-    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: syl,
-  },
-  {
-    title: 'Elif Coskun',
-    subtitle: 'MPH Student at Boston University School of Public Health',
-    imgSrc: elif,
-  },
-  {
-    title: 'Steele Myrick',
-    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: steele,
-  },
 ];
 
 export const collaboratorContent: MemberCardProps[] = [
@@ -170,5 +149,29 @@ export const designContent: MemberCardProps[] = [
   },
 ];
 
+export const alumniContent: MemberCardProps[] = [
+  {
+    title: 'Mikas Hansen, PhD',
+    subtitle:
+      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
+    imgSrc: mikas,
+  },
+  {
+    title: 'Sylvia Lutze',
+    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: syl,
+  },
+  {
+    title: 'Elif Coskun',
+    subtitle: 'MPH Student at Boston University School of Public Health',
+    imgSrc: elif,
+  },
+  {
+    title: 'Steele Myrick',
+    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: steele,
+  },
+];
+
 export const text_content =
-  "This project is made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, the W. K. Kellogg Foundation, and the National Institute on Aging. The views expressed on this website are those of the lab's investigators and do not necessarily reflect the views of the research sponsors.";
+  'This project was made possible through a collaboration between researchers at the Boston University School of Public Health and the University of Pennsylvania with support from the Boston University Center for Emerging Infectious Disease Policy & Research (CEID), BU Spark!, the Robert Wood Johnson Foundation, and the W. K. Kellogg Foundation.';
