@@ -5,6 +5,7 @@ import {
   content,
   collaboratorContent,
   mediaContent,
+  alumniContent,
   MemberCardProps,
   text_content,
   designContent,
@@ -67,6 +68,17 @@ const tabs: (TabPaneProps & Key)[] = [
     children: (
       <div className={styles.teamcardsgrid}>
         {designContent.map((m) => (
+          <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
+        ))}
+      </div>
+    ),
+  },
+  {
+    key: '5',
+    tab: <p className={styles.titletabpane}>Alumni</p>,
+    children: (
+      <div className={styles.teamcardsgrid}>
+        {alumniContent.map((m) => (
           <MemberCard key={m.title} title={m.title} subtitle={m.subtitle} imgSrc={m.imgSrc} />
         ))}
       </div>
