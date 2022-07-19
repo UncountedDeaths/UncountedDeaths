@@ -6,7 +6,6 @@ import FAQ from '../components/FAQ';
 import {
   FAQ_Death_Cert_Data,
   FAQ_FEMA_FAQ_Data,
-  FAQ_FEMA_SubHeader_Text,
   FAQ_Medicolegal_Data,
 } from '../content/FAQContent';
 import styles from '../styles/ResourcesPage.module.less';
@@ -21,10 +20,6 @@ const tabs: (TabPaneProps & Key)[] = [
     tab: <p className={styles.titletabpane}>FEMA: Funeral Assistance</p>,
     children: (
       <>
-        <div style={{ padding: '0.5rem' }} />
-        <Typography.Text style={{ alignContent: 'center' }}>
-          {FAQ_FEMA_SubHeader_Text}
-        </Typography.Text>
         <div style={{ padding: '1rem' }} />
         <FAQ data={FAQ_FEMA_FAQ_Data} />
       </>
