@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
           </li>
           <li>
             Raise public awareness about the under-counting of Covid-19 deaths and the need for
-            reforms to the U.S. death investigation system such as eliminating coroners,
+            reforms to the U.S. death investigation system,
           </li>
           <li>
             Increase the number of families who receive FEMA funeral assistance benefits by

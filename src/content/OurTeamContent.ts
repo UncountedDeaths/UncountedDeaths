@@ -13,9 +13,6 @@ import {
   preston,
   paglino,
   luck,
-  kravitz,
-  bergin,
-  ladyzhets,
   bayly,
   saucy,
   augustine,
@@ -67,27 +64,6 @@ export const content: MemberCardProps[] = [
       'Senior Research Scientist in the Department of Global Health at Boston University School of Public Health',
     imgSrc: zhou,
   },
-  {
-    title: 'Mikas Hansen, PhD',
-    subtitle:
-      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
-    imgSrc: mikas,
-  },
-  {
-    title: 'Sylvia Lutze',
-    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: syl,
-  },
-  {
-    title: 'Elif Coskun',
-    subtitle: 'MPH Student at Boston University School of Public Health',
-    imgSrc: elif,
-  },
-  {
-    title: 'Steele Myrick',
-    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: steele,
-  },
 ];
 
 export const collaboratorContent: MemberCardProps[] = [
@@ -114,25 +90,6 @@ export const collaboratorContent: MemberCardProps[] = [
     subtitle:
       'Professor in the Department of Sociology and Population Studies Center at the University of Pennsylvania',
     imgSrc: preston,
-  },
-];
-
-export const mediaContent: MemberCardProps[] = [
-  {
-    title: 'Derick Kravitz',
-    subtitle:
-      "Project Lead and Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
-    imgSrc: kravitz,
-  },
-  {
-    title: 'Dillon Bergin',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: bergin,
-  },
-  {
-    title: 'Betsy Ladyzhets',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: ladyzhets,
   },
 ];
 
@@ -167,6 +124,30 @@ export const designContent: MemberCardProps[] = [
     title: 'Matthew Henriksen',
     subtitle: 'Undergraduate Intern at Boston University Spark!',
     imgSrc: matthew,
+  },
+];
+
+export const alumniContent: MemberCardProps[] = [
+  {
+    title: 'Mikas Hansen, PhD',
+    subtitle:
+      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
+    imgSrc: mikas,
+  },
+  {
+    title: 'Sylvia Lutze',
+    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: syl,
+  },
+  {
+    title: 'Elif Coskun',
+    subtitle: 'MPH Student at Boston University School of Public Health',
+    imgSrc: elif,
+  },
+  {
+    title: 'Steele Myrick',
+    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: steele,
   },
 ];
 
