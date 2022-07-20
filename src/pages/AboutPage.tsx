@@ -74,7 +74,7 @@ const AboutPage: React.FC = () => {
         <div className={styles.twitterWidgetContainer}>
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName="vitalstatsinteg"
+            screenName="vitalstatslab"
             autoHeight
             noHeader
             options={{ width: 800 }}
