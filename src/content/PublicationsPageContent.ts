@@ -1,5 +1,6 @@
 export type ContentCardProps = {
   title: string;
+  author?: string;
   date: string;
   text: string;
   link: string;
