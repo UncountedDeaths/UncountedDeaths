@@ -29,7 +29,7 @@ export const content: ContentCardProps[] = [
     text: 'Excess mortality has exceeded reported deaths from Covid-19 during the pandemic. This gap may be attributable to deaths that occurred among individuals with undiagnosed Covid-19 infections or indirect consequences of the pandemic response such as interruptions in medical care; distinguishing these possibilities has implications for public health responses.',
     link: 'https://doi.org/10.1093/pnasnexus/pgac079',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/8ee68b7a-1ed5-4d6c-7176-bc3fdf60bd00/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/c99dd6fc-2f7a-4e15-db51-a072c841a400/public',
   },
   {
     title: 'Missing Americans: Early Death in the United States, 1933-2021',
@@ -39,7 +39,7 @@ export const content: ContentCardProps[] = [
     text: 'We assessed how many U.S. deaths would have been averted each year, 1933-2021, if U.S. age-specific mortality rates had equaled those of other wealthy nations. The annual number of excess deaths in the U.S. increased steadily beginning in the late 1970s, reaching 626,353 in 2019.',
     link: 'https://www.medrxiv.org/content/10.1101/2022.06.29.22277065v1',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/75cdd6c9-3a35-4dd6-c4df-fa9b1e66bc00/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/4379b09d-6816-4203-3ad6-7104f6ddb500/public',
   },
   {
     title:
@@ -59,7 +59,7 @@ export const content: ContentCardProps[] = [
     text: "Despite a growing body of literature focused on racial/ethnic disparities in Covid-19 mortality, few previous studies have examined the pandemic's impact on 2020 cause-specific mortality by race and ethnicity. This paper documents changes in mortality by underlying cause of death and race/ethnicity between 2019 and 2020.",
     link: 'https://doi.org/10.1016/j.ssmph.2021.101012',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/eddb11d1-e140-4437-7874-504616a6dc00/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/a679b0dc-fbf4-452c-5e3b-e6ea3b8c4400/public',
   },
   {
     title:
@@ -102,7 +102,7 @@ export const content: ContentCardProps[] = [
     text: 'During the first year of the pandemic, essential workers faced higher rates of SARS-CoV-2 infection and COVID-19 mortality than non-essential workers. It is unknown whether disparities in pandemic-related mortality across occupational sectors have continued to occur, amidst SARS-CoV-2 variants and vaccine availability.',
     link: 'https://www.medrxiv.org/content/10.1101/2022.02.14.22270958v1',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/083c442b-6b15-463a-4aab-8d9f07ebc300/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/30427697-8d68-4370-368b-04fed1c6b100/public',
   },
   {
     title:
@@ -112,7 +112,7 @@ export const content: ContentCardProps[] = [
     text: 'The COVID-19 pandemic in the U.S. has been largely monitored using death certificates containing reference to COVID-19. However, prior analyses reveal that a significant percentage of excess deaths associated with the pandemic were not directly assigned to COVID-19.',
     link: 'https://doi.org/10.1016/j.ssmph.2021.101021',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/474e5b65-b180-4528-f6bf-5d275f42ce00/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/c9bd2dc9-9c23-45f2-a675-706047e81100/public',
   },
   {
     title:
@@ -122,7 +122,7 @@ export const content: ContentCardProps[] = [
     text: 'Approximately 20% of excess deaths in the US in 2020 were not reflected in COVID-19 death counts. These excess deaths included deaths caused by COVID-19 but not assigned to it as well as indirect deaths from other causes associated with delays in health care and the social and economic consequences of the pandemic.',
     link: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2783986',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/a15e7546-f534-4b8c-d4e9-c776b0780500/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/8f268e33-5b20-4bdd-60e2-efb773a3de00/public',
   },
   {
     title:
