@@ -18,7 +18,7 @@ export const content: ContentCardProps[] = [
     text: 'COVID-19 has disproportionately affected racial and ethnic minority groups in the US. However, estimating the full effects of the pandemic on health disparities should account for other causes of death, including external causes.2 We estimated racial and ethnic disparities in excess deaths from external causes (homicide, suicide, transportation, and drug overdoses) from March through December 2020.',
     link: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2791682',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/e08e5fca-9de5-4033-6252-cd349b88d900/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/12a3aa26-fda1-4d78-79b3-9e273679a000/public',
   },
   {
     title:
@@ -59,7 +59,7 @@ export const content: ContentCardProps[] = [
     text: "Despite a growing body of literature focused on racial/ethnic disparities in Covid-19 mortality, few previous studies have examined the pandemic's impact on 2020 cause-specific mortality by race and ethnicity. This paper documents changes in mortality by underlying cause of death and race/ethnicity between 2019 and 2020.",
     link: 'https://doi.org/10.1016/j.ssmph.2021.101012',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/a679b0dc-fbf4-452c-5e3b-e6ea3b8c4400/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/08861e70-ab11-4897-13e9-e1d73ef99300/public',
   },
   {
     title:
@@ -91,7 +91,7 @@ export const content: ContentCardProps[] = [
     text: 'A small body of epidemiological research suggests that working in an essential sector is a risk factor for SARS-CoV-2 infection or subsequent disease or mortality. However, there is limited evidence to date on the US, or on how the risks associated with essential work differ across demographic subgroups defined by age, sex, and race/ethnicity.',
     link: 'https://www.medrxiv.org/content/10.1101/2022.03.29.22273085v2',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/6d6b5e96-2f85-491a-6b8d-3094f53aa200/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/6b79c5c1-0007-4b7e-e5c2-590b65eb9f00/public',
   },
   {
     title:
@@ -141,7 +141,7 @@ export const content: ContentCardProps[] = [
     text: 'Coronavirus Disease 2019 (COVID-19) excess deaths refer to increases in mortality over what would normally have been expected in the absence of the COVID-19 pandemic. Several prior studies have calculated excess deaths in the United States but were limited to the national or state level, precluding an examination of area-level variation in excess mortality and excess deaths not assigned to COVID-19.',
     link: 'https://doi.org/10.1371/journal.pmed.1003571',
     imgSrc:
-      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/c7112b68-5102-45b4-90ad-f48d83556a00/public',
+      'https://imagedelivery.net/TAwaCWi-w4YvJ7p6xuj9Jg/fb635411-2718-44b9-dce7-dff3d18b0100/public',
   },
 ];
 
