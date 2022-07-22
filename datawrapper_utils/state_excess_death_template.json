@@ -1,0 +1,155 @@
+{
+    "language": "en-US",
+    "theme": "datawrapper-data",
+    "forkable": false,
+    "metadata": {
+        "data": {
+            "changes": [],
+            "transpose": false,
+            "vertical-header": true,
+            "horizontal-header": true,
+            "column-format": {
+                "NAME": {
+                    "type": "auto"
+                },
+                "FIPSCode": {
+                    "type": "text"
+                }
+            },
+            "external-data": "&{DATA_URL}&",
+            "upload-method": "external-data",
+            "external-metadata": null,
+            "use-datawrapper-cdn": true
+        },
+        "describe": {
+            "source-name": "Github",
+            "source-url": "https://github.com/UncountedDeaths/UncountedDeathsData",
+            "intro": "Click Below to Toggle the Year: <br><br>\n\n<span style=\"line-height:30px\">\n\n<a target=\"_self\" href=\"https://datawrapper.dwcdn.net/&{OTHER_ID}&/\" style=\"background:#429ddd; padding:1px 6px; border-radius:5px; color:#ffffff; font-weight:400; box-shadow:0px 0px 7px 2px rgba(0,0,0,0.07); cursor:pointer;\"> &{OTHER_YEAR}& </a> &nbsp;",
+            "byline": "",
+            "aria-description": "",
+            "number-format": "-",
+            "number-divisor": 0,
+            "number-append": "",
+            "number-prepend": "",
+            "hide-title": false
+        },
+        "visualize": {
+            "dark-mode-invert": true,
+            "highlighted-series": [],
+            "highlighted-values": [],
+            "sharing": {
+                "enabled": false
+            },
+            "labels": {
+                "max": 1,
+                "type": "places",
+                "places": [],
+                "enabled": false
+            },
+            "legend": {
+                "size": 155,
+                "title": "Per 100,000 Residents",
+                "labels": "ranges",
+                "enabled": true,
+                "reverse": false,
+                "labelMax": "high",
+                "labelMin": "low",
+                "position": "mt",
+                "hideItems": [],
+                "offsetTop": 0,
+                "offsetLeft": 0,
+                "interactive": false,
+                "labelCenter": "medium",
+                "labelFormat": "0.00",
+                "orientation": "vertical",
+                "customLabels": []
+            },
+            "basemap": "&{FULL_STATE}&-counties",
+            "tooltip": {
+                "body": "{{ FORMAT(exccdr&{YEAR}&, \"0.00\") }} Deaths per 100,000",
+                "title": "{{ countyname }}",
+                "sticky": true,
+                "enabled": true
+            },
+            "zoomable": true,
+            "map-align": "center",
+            "colorscale": {
+                "map": {},
+                "mode": "continuous",
+                "stops": "equidistant",
+                "colors": [
+                    {
+                        "color": "#cff7f6",
+                        "position": 0
+                    },
+                    {
+                        "color": "#b1dbd9",
+                        "position": 0.25
+                    },
+                    {
+                        "color": "#68b0bf",
+                        "position": 0.5
+                    },
+                    {
+                        "color": "#3479a2",
+                        "position": 0.75
+                    },
+                    {
+                        "color": "#002d62",
+                        "position": 1
+                    }
+                ],
+                "palette": 0,
+                "rangeMax": "",
+                "rangeMin": "",
+                "stopCount": 5,
+                "customStops": [],
+                "rangeCenter": "",
+                "categoryOrder": [],
+                "interpolation": "equidistant",
+                "categoryLabels": {}
+            },
+            "max-height": 650,
+            "map-padding": 1,
+            "map-key-attr": "GEOID",
+            "map-type-set": true,
+            "chart-type-set": true,
+            "min-label-zoom": 1,
+            "zoom-button-pos": "tr",
+            "map-label-format": "0,0.[00]",
+            "text-annotations": [],
+            "range-annotations": [],
+            "hide-empty-regions": false,
+            "avoid-label-overlap": true
+        },
+        "axes": {
+            "keys": "FIPSCode",
+            "values": "excCDR&{YEAR}&"
+        },
+        "publish": {
+            "embed-width": 600,
+            "embed-height": 565,
+            "blocks": {
+                "logo": {
+                    "enabled": false
+                },
+                "embed": false,
+                "download-pdf": false,
+                "download-svg": false,
+                "get-the-data": false,
+                "download-image": false
+            },
+            "export-pdf": {},
+
+            "autoDarkMode": false,
+            "chart-height": 423
+        },
+        "annotate": {
+            "notes": ""
+        },
+        "custom": {}
+    },
+    "title": "<span class=\"block-inner\">Excess Mortality Rates for &{FULL_STATE_LABEL}&: &{YEAR}&</span>",
+    "type": "d3-maps-choropleth",
+    "folderId": &{FOLDER_ID}&
+}
