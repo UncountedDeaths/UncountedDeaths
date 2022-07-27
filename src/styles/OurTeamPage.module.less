@@ -73,7 +73,13 @@
 .titletabpane {
   font-size: @font-medium-size;
   margin: 0;
-  padding: @extra-small-size @extra-large-size;
+  padding: @extra-small-size @big-size;
+}
+
+@media screen and (max-width: 1024px) {
+  .titletabpane {
+    padding: @extra-small-size @small-size;
+  }
 }
 
 @media screen and (max-width: @mobile-cutoff) {
@@ -101,5 +107,9 @@
         justify-content: start;
       }
     }
+  }
+
+  .titletabpane {
+    padding: 0;
   }
 }
