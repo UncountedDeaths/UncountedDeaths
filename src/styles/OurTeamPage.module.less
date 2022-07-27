@@ -51,13 +51,14 @@
 
 .teamcardsgrid {
   display: grid;
-  gap: @big-size @extra-large-size;
+  gap: @extra-large-size @extra-large-size;
   justify-content: stretch;
   align-items: stretch;
   grid-auto-columns: 20%;
   grid-auto-flow: row;
   grid-template-columns: 50% 50%;
   padding-right: 3%;
+  padding-top: @normal-size;
 }
 
 .ourteamtabs {
@@ -72,6 +73,7 @@
 .titletabpane {
   font-size: @font-medium-size;
   margin: 0;
+  padding: @extra-small-size @extra-large-size;
 }
 
 @media screen and (max-width: @mobile-cutoff) {
