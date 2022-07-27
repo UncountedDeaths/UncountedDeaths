@@ -18,18 +18,29 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
             : { flex: 1.25, alignItems: 'center' }
         }
       >
-        <img
-          src={props.imgSrc}
-          onError={(t) => {
-            t.currentTarget.onerror = null;
-            t.currentTarget.src = ''; // should be an error placeholder image
-          }}
-        />
+        <a href={props.link}>
+          <img
+            src={props.imgSrc}
+            onError={(t) => {
+              t.currentTarget.onerror = null;
+              t.currentTarget.src = ''; // should be an error placeholder image
+            }}
+          />
+        </a>
       </div>
       <div className={styles.pubcardtext}>
         <div style={{ margin: 0 }}>
-          <Typography.Title level={3}>{props.title}</Typography.Title>
-          <Typography.Text className={styles.pubcarddate}>{props.date}</Typography.Text>
+          <a href={props.link}>
+            <Typography.Title level={4}>{props.title}</Typography.Title>
+          </a>
+          <div>
+            {props.author && props.author.length > 0 && (
+              <Typography.Text className={styles.pubcarddate}>
+                {props.author + ' \u2022 '}
+              </Typography.Text>
+            )}
+            <Typography.Text className={styles.pubcarddate}>{props.date}</Typography.Text>
+          </div>
         </div>
         <Typography.Paragraph>{props.text}</Typography.Paragraph>
         <a href={props.link}>

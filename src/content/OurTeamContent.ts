@@ -37,7 +37,7 @@ export const content: MemberCardProps[] = [
   {
     title: 'Dielle Lundberg, MPH',
     subtitle:
-      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Integrity Project',
+      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Lab',
     imgSrc: lundberg,
   },
   {
@@ -102,7 +102,7 @@ export const designContent: MemberCardProps[] = [
   {
     title: 'Erica Augustine',
     subtitle:
-      'Project Manager of the Vital Statistics Integrity Project and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
+      'Project Manager of the Vital Statistics Lab and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
     imgSrc: augustine,
   },
   {

@@ -52,7 +52,7 @@ export const Main: React.FC = () => {
           >
             Contact Us
           </Link>
-          <a className={styles.FooterText} href="https://twitter.com/vitalstatsinteg">
+          <a className={styles.FooterText} href="https://twitter.com/vitalstatslab">
             Follow Us on Twitter
           </a>
         </div>
