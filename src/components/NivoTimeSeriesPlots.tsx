@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResponsiveLine } from '@nivo/line';
+import { ResponsiveLine, PointTooltip, PointTooltipProps } from '@nivo/line';
 import { Autaga } from '../content/AutagaTimeSeriesData';
 import styles from '../styles/TimeSeriesPlots.module.less';
 
@@ -68,7 +68,25 @@ const NivoTSPlot: React.FC = () => {
           },
         ]}
         animate={true}
+        tooltip={CustomTooltip}
       />
+    </div>
+  );
+};
+
+const CustomTooltip: PointTooltip = ({ point }: PointTooltipProps) => {
+  const { serieId, serieColor } = point;
+  const { xFormatted, yFormatted } = point.data;
+  const serie = serieId === 'expDeaths' ? 'Exp. Deaths' : 'Deaths';
+  return (
+    <div className={styles.CustomTooltipContainer} style={{ color: serieColor }}>
+      {/* <div style={{ height: 8, width: '80%', alignSelf: 'center', color: serieColor }}></div> */}
+      <span>
+        Date: <strong>{xFormatted}</strong>
+      </span>
+      <span>
+        {serie}: <strong>{yFormatted}</strong>
+      </span>
     </div>
   );
 };
