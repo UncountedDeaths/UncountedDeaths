@@ -5,12 +5,50 @@ export const text_content =
 
 export const content: ContentCardProps[] = [
   {
-    title: "What One Million Covid Dead Mean for the U.S.'s future",
+    title: 'During the Omicron Wave, Death Rates Soared for older people.',
+    date: 'May 31, 2022',
+    text: 'Last year, people 65 and older died from Covid at lower rates than in previous waves. But with Omicron and waning immunity, death rates rose again.',
+    link: 'https://www.nytimes.com/2022/05/31/health/omicron-deaths-age-65-elderly.html',
+    imgSrc:
+      'https://static01.nyt.com/newsgraphics/2022/05/10/omicron-elderly/719365138e6965811e1f8a42217fc762f6fb68af/omicron-per-100k-Artboard_1.png',
+    author: 'The New York times',
+  },
+  {
+    title: 'Death certificates reveal that US hit grim COVID milestone.',
+    date: 'May 16, 2022',
+    text: 'When the U.S. hit 1 million COVID-19 deaths on Monday, the news was driven by a government tally derived from death certificates.',
+    link: 'https://apnews.com/article/covid-science-health-pandemics-centers-for-disease-control-and-prevention-8964acf84814e1d4d6971ce13c4af7ef',
+    imgSrc:
+      'https://storage.googleapis.com/afs-prod/media/1cf3c2233bc24dd7b2f65ad93f51aea3/600.jpeg',
+    author: 'Associated Press',
+  },
+  {
+    title:
+      'BU professor: True death toll of COVID-19 pandemic could now be as high as 1.22 million in United States.',
+    date: 'May 5, 2022',
+    text: 'A Boston University professor estimated Thursday that the death toll from the COVID-19 pandemic in the United States could now be as high as 1.22 million, substantially higher than the nearly 1 million that official counts are approaching.',
+    link: 'https://www.bostonglobe.com/2022/05/05/nation/bu-professor-true-death-toll-covid-19-pandemic-could-now-be-high-122-million-united-states/',
+    imgSrc:
+      'https://bostonglobe-prod.cdn.arcpublishing.com/resizer/MwY7NF-RJ0sWn74x94XITsibAMc=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/BTMX75IXHSNFO66UR6VFEJZ6QY.jpg',
+    author: 'Boston Globe',
+  },
+  {
+    title: "What One Million COVID Dead mean for the U.S.'s Future",
     date: 'March 29, 2022',
-    text: 'The country is about to reach an unthinkably grim milestone. Nearly 200,000 children have lost parents, many more elderly have been killed, and family well-being has been ripped apart',
+    text: 'The country has reached an unthinkably grim milestone. Nearly 200,000 children have lost parents, many more elderly have been killed, and family well-being has been ripped apart',
     link: 'https://www.scientificamerican.com/article/what-one-million-covid-dead-mean-for-the-u-s-s-future/',
     imgSrc:
-      'https://static.scientificamerican.com/sciam/cache/file/76A6F13E-B613-42DE-9C033AEF7DC68791.jpg',
+      'https://static.scientificamerican.com/sciam/cache/file/76A6F13E-B613-42DE-9C033AEF7DC68791_source.jpg?w=590&h=800&F2561F8C-A13A-4BF7-8555DC14ED8B3566',
+    author: 'Scientific American',
+  },
+  {
+    title: 'How did this many deaths become normal?',
+    date: 'March 8, 2022',
+    text: 'The United States reported more deaths from COVID-19 last Friday than deaths from Hurricane Katrina, more on any two recent weekdays than deaths during the 9/11 terrorist attacks, more last month than deaths from flu in a bad season, and more in two years than deaths from HIV during the four decades of the AIDS epidemic.',
+    link: 'https://www.theatlantic.com/health/archive/2022/03/covid-us-death-rate/626972/',
+    imgSrc:
+      'https://cdn.theatlantic.com/thumbor/Dkcus6oxI-J4SXxkVqOMU4mLbjc=/0x0:2500x1406/2048x1152/media/img/2022/03/07/GettyImages_1230421868/original.jpg',
+    author: 'The Atlantic',
   },
   {
     title: "Uncovering COVID-19's Hidden Deaths in the United States",
