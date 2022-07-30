@@ -7,6 +7,7 @@ const NivoTSPlot: React.FC = () => {
   return (
     <div className={styles.TimeSeriesViewBox}>
       <ResponsiveLine
+        curve="natural"
         data={Autaga}
         margin={{ top: 50, bottom: 50, left: 22 }}
         xScale={{
