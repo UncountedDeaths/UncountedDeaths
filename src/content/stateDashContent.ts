@@ -3267,3 +3267,10 @@ export const stateData = [
   'Wisconsin',
   'Wyoming',
 ].sort();
+
+export const dataTypes = [
+  'Excess Death Rates',
+  'Covid-19 Death Rates',
+  'Potential Undercounting',
+  'Medical Death Investigation System',
+];
