@@ -3268,6 +3268,22 @@ export const stateData = [
   'Wyoming',
 ].sort();
 
+export const dataLinks = {
+  'Excess Death Rates': [
+    'https://datawrapper.dwcdn.net/BJ7PN/',
+    'https://datawrapper.dwcdn.net/UrD9D/',
+  ],
+  'Covid-19 Death Rates': [
+    'https://datawrapper.dwcdn.net/E5zKi/',
+    'https://datawrapper.dwcdn.net/jYuD6/',
+  ],
+  'Potential Undercounting': [
+    'https://datawrapper.dwcdn.net/Otwmm/',
+    'https://datawrapper.dwcdn.net/HXhjy/',
+  ],
+  'Medical Death Investigation System': ['https://datawrapper.dwcdn.net/OLxLq/'],
+};
+
 export const dataTypes = [
   'Excess Death Rates',
   'Covid-19 Death Rates',
