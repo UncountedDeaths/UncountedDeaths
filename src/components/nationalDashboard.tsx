@@ -23,19 +23,14 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 };
 
 const NationalDashboard: React.FC = () => {
-  const [dataType, setDataType] = useState(dataSources[0]);
+  const [dataType, setDataType] = useState<DataSourceType>(dataSources[0]);
 
-  const handleDataTypeChange = (dataType: string) => {
-    let newDataType: DataSourceType | null = null;
+  const handleDataTypeChange = (dataTypeId: string) => {
     for (let i = 0; i < dataSources.length; i++) {
-      if (dataSources[i].id === dataType) {
-        newDataType = dataSources[i];
+      if (dataSources[i].id === dataTypeId) {
+        setDataType(dataSources[i]);
         break;
       }
-    }
-
-    if (newDataType) {
-      setDataType(newDataType);
     }
   };
 
@@ -43,8 +38,8 @@ const NationalDashboard: React.FC = () => {
     <div className={styles.dashboardTab}>
       <DashboardControls onChange={handleDataTypeChange} />
       <div className={styles.nationalDashboard}>
-        <IframeResizer className={styles.appIFrame} src={dataType.source[0]} />
-        <IframeResizer className={styles.appIFrame} src={dataType.source[1]} />
+        <IframeResizer className={styles.appIFrame} src={dataType.sources[0]} />
+        <IframeResizer className={styles.appIFrame} src={dataType.sources[1]} />
       </div>
     </div>
   );
