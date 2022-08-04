@@ -6,7 +6,7 @@ const { Option } = Select;
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
 
-import NivoTSPlot from '../components/NivoTimeSeriesPlots';
+import NivoTSPlot from './NivoTimeSeriesPlots';
 
 type CountyName = keyof typeof countyData;
 
@@ -31,6 +31,10 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 const CountyDashboard: React.FC = () => {
   const [currState, setCurrState] = useState(stateData[0]);
   const [currCounty, setCurrCounty] = useState(countyData[stateData[0] as CountyName][0]);
+  // should change when currState is updated. Shows map of counties in a state
+  const [stateCountiesDashURL] = useState('https://datawrapper.dwcdn.net/q9LZ6/3/');
+  // should change when currCounty is updated. Shows map of a county
+  const [countiesDashURL] = useState('https://datawrapper.dwcdn.net/EviBb/2/');
 
   const handleStateChange = (value: CountyName) => {
     setCurrState(value);
@@ -42,11 +46,6 @@ const CountyDashboard: React.FC = () => {
   };
 
   const stateCounties = countyData[currState as CountyName];
-
-  // should change when currState is updated. Shows map of counties in a state
-  const stateCountiesDashboardURL = 'https://datawrapper.dwcdn.net/q9LZ6/3/';
-  // should change when currCounty is updated. Shows map of a county
-  const countiesDashboardURL = 'https://datawrapper.dwcdn.net/EviBb/2/';
 
   return (
     <div className={styles.dashboardTab}>
@@ -69,11 +68,11 @@ const CountyDashboard: React.FC = () => {
       <div className={styles.stateDashboard}>
         <IframeResizer
           className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-          src={stateCountiesDashboardURL}
+          src={stateCountiesDashURL}
         />
         <IframeResizer
           className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-          src={countiesDashboardURL}
+          src={countiesDashURL}
         />
       </div>
       <NivoTSPlot />
