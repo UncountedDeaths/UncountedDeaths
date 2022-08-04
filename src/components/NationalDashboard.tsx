@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
 import { Select } from 'antd';
-import { DataSourceType, dataSources } from '../content/NationalDashboard';
+import { DataSourceType, dataSources } from '../content/nationalDashboard';
 
 const { Option } = Select;
 type ControlsPropsType = {
