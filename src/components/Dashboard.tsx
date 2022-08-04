@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, TabPaneProps } from 'antd';
-import CountyDashboard from './countyDashboard';
-import NationalDashboard from './nationalDashboard';
+import CountyDashboard from './CountyDashboard';
+import NationalDashboard from './NationalDashboard';
 import styles from '../styles/dashboard.module.less';
 type Key = {
   key: string;
