@@ -122,20 +122,29 @@ FOLDER_ID = ID of folder this should belong in. Must be set to folder ID or `nul
 """
 if __name__ == '__main__':
     # map2020 = create_base_graph()
-    map2020 = "XcJm8"
-    map2021 = "QXCkz"
-    settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
-                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-                                 "/ExcessDeathRates/Alabama.csv",
-                     "OTHER_YEAR": "2021",
-                     "OTHER_ID": map2021, "FOLDER_ID": "111267"}
-    settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
-                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-                                 "/ExcessDeathRates/Alabama.csv",
-                     "OTHER_YEAR": "2020",
-                     "OTHER_ID": map2020, "FOLDER_ID": "111267"}
+    data_sources = [{"name": "source-1", "url": "url-test"}, {"name": "source-2", "url": "source-url-2"}]
+    single_state = {"state": "state-name", "sources": data_sources}
+    master_output = []
+    master_output.append(single_state)
+    single_state = {"state": "state-name-2", "sources": data_sources}
+    master_output.append(single_state)
+    with open("state_output.json", 'w') as f:
+        json.dump(master_output, f, indent=4)
 
-    with open('./state_excess_death_template.json', 'r') as f:
-        template = f.read()
-    apply_graph_settings(map2020, template, settings_2020)
-    apply_graph_settings(map2021, template, settings_2021)
+    # map2020 = "XcJm8"
+    # map2021 = "QXCkz"
+    # settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
+    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+    #                              "/ExcessDeathRates/Alabama.csv",
+    #                  "OTHER_YEAR": "2021",
+    #                  "OTHER_ID": map2021, "FOLDER_ID": "111267"}
+    # settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
+    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+    #                              "/ExcessDeathRates/Alabama.csv",
+    #                  "OTHER_YEAR": "2020",
+    #                  "OTHER_ID": map2020, "FOLDER_ID": "111267"}
+    #
+    # with open('./state_excess_death_template.json', 'r') as f:
+    #     template = f.read()
+    # apply_graph_settings(map2020, template, settings_2020)
+    # apply_graph_settings(map2021, template, settings_2021)
