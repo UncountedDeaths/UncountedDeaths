@@ -16,7 +16,7 @@
                     "type": "text"
                 }
             },
-            "external-data": "&{DATA_URL}&",
+            "external-data": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/MDI/&{FULL_STATE_LABEL}&.csv",
             "upload-method": "external-data",
             "external-metadata": null,
             "use-datawrapper-cdn": true
@@ -24,7 +24,7 @@
         "describe": {
             "source-name": "Github",
             "source-url": "https://github.com/UncountedDeaths/UncountedDeathsData",
-            "intro": "Excess mortality is a tool for assessing the true mortality impact of the pandemic by comparing deaths occurring during the pandemic to what we would expect based on pre-pandemic trends",
+            "intro": "",
             "byline": "",
             "aria-description": "",
             "number-format": "-",
@@ -41,14 +41,14 @@
                 "enabled": false
             },
             "labels": {
-                "max": 24,
+                "max": 1,
                 "type": "places",
                 "places": [],
                 "enabled": false
             },
             "legend": {
                 "size": 155,
-                "title": "Per 100,000 Residents",
+                "title": "",
                 "labels": "ranges",
                 "enabled": true,
                 "reverse": false,
@@ -58,14 +58,15 @@
                 "hideItems": [],
                 "offsetTop": 0,
                 "offsetLeft": 0,
-                "interactive": true,
+                "interactive": false,
                 "labelCenter": "medium",
-                "labelFormat": "0",
-                "orientation": "vertical"
+                "labelFormat": "0.00%",
+                "orientation": "vertical",
+                "customLabels": []
             },
             "basemap": "&{FULL_STATE}&-counties",
             "tooltip": {
-                "body": "{{ FORMAT(exccdr&{YEAR}&, \"0.00\") }} Deaths per 100,000",
+                "body": "{{ mditype }}",
                 "title": "{{ countyname }}",
                 "sticky": true,
                 "enabled": true
@@ -73,54 +74,44 @@
             "zoomable": true,
             "map-align": "center",
             "colorscale": {
-                "map": {},
-                "mode": "discrete",
-                "stops": "pretty",
+                "map": {
+                    "Coroner": "#09bb9f",
+                    "Medical Examiner": "#18a1cd"
+                },
+                "mode": "continuous",
+                "stops": "equidistant",
                 "colors": [
                     {
-                        "color": "#ffffcc",
+                        "color": "#002d62",
                         "position": 0
                     },
                     {
-                        "color": "#c7e9b4",
-                        "position": 0.2
+                        "color": "#3479a2",
+                        "position": 0.25
                     },
                     {
-                        "color": "#7fcdbb",
-                        "position": 0.4
+                        "color": "#68b0bf",
+                        "position": 0.5
                     },
                     {
-                        "color": "#41b6c4",
-                        "position": 0.6
+                        "color": "#b1dbd9",
+                        "position": 0.75
                     },
                     {
-                        "color": "#2c7fb8",
-                        "position": 0.8
-                    },
-                    {
-                        "color": "#253494",
+                        "color": "#cff7f6",
                         "position": 1
                     }
                 ],
                 "palette": 0,
-                "rangeMax": "9363",
-                "rangeMin": "-1121",
+                "rangeMax": "",
+                "rangeMin": "",
                 "stopCount": 5,
-                "customStops": [
-                    null,
-                    0,
-                    2000,
-                    4000,
-                    6000,
-                    8000,
-                    null,
-                    "",
-                    ""
-                ],
+                "customStops": [],
                 "rangeCenter": "",
                 "categoryOrder": [],
                 "interpolation": "equidistant",
-                "categoryLabels": {}
+                "categoryLabels": {},
+                "excludeFromKey": []
             },
             "max-height": 650,
             "map-padding": 1,
@@ -138,11 +129,11 @@
         },
         "axes": {
             "keys": "FIPSCode",
-            "values": "excCDR&{YEAR}&"
+            "values": "mditype"
         },
         "publish": {
             "embed-width": 600,
-            "embed-height": 521,
+            "embed-height": 459,
             "blocks": {
                 "logo": {
                     "enabled": false
@@ -156,7 +147,7 @@
             "export-pdf": {},
             "export-svg": null,
             "autoDarkMode": false,
-            "chart-height": 410
+            "chart-height": 392
         },
         "annotate": {
             "notes": ""
@@ -164,7 +155,7 @@
         "custom": {}
     },
     "organizationId": null,
-    "title": "<span class=\"block-inner\">Excess Mortality Rates for &{FULL_STATE_LABEL}&: &{YEAR}&</span>",
+    "title": "<span class=\"block-inner\">Death Investigation Systems for &{FULL_STATE_LABEL}&</span>",
     "type": "d3-maps-choropleth",
     "folderId": "&{FOLDER_ID}&"
 }

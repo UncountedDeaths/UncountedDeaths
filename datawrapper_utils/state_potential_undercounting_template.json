@@ -16,7 +16,7 @@
                     "type": "text"
                 }
             },
-            "external-data": "&{DATA_URL}&",
+            "external-data": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/UnderReporting/&{FULL_STATE_LABEL}&.csv",
             "upload-method": "external-data",
             "external-metadata": null,
             "use-datawrapper-cdn": true
@@ -24,7 +24,7 @@
         "describe": {
             "source-name": "Github",
             "source-url": "https://github.com/UncountedDeaths/UncountedDeathsData",
-            "intro": "Excess mortality is a tool for assessing the true mortality impact of the pandemic by comparing deaths occurring during the pandemic to what we would expect based on pre-pandemic trends",
+            "intro": "Potential under-counting refers to the extent to which Covid-19 death rates represent a complete account of excess death rates",
             "byline": "",
             "aria-description": "",
             "number-format": "-",
@@ -60,12 +60,13 @@
                 "offsetLeft": 0,
                 "interactive": true,
                 "labelCenter": "medium",
-                "labelFormat": "0",
-                "orientation": "vertical"
+                "labelFormat": "0.00",
+                "orientation": "vertical",
+                "customLabels": []
             },
             "basemap": "&{FULL_STATE}&-counties",
             "tooltip": {
-                "body": "{{ FORMAT(exccdr&{YEAR}&, \"0.00\") }} Deaths per 100,000",
+                "body": "\n{{pounderrep&{YEAR}& == 0 ? 'No Potential Under-Counting': FORMAT(pounderrep&{YEAR}&*100, \"0.00%\") }}\n",
                 "title": "{{ countyname }}",
                 "sticky": true,
                 "enabled": true
@@ -103,8 +104,8 @@
                     }
                 ],
                 "palette": 0,
-                "rangeMax": "9363",
-                "rangeMin": "-1121",
+                "rangeMax": "1",
+                "rangeMin": "0",
                 "stopCount": 5,
                 "customStops": [
                     null,
@@ -138,7 +139,7 @@
         },
         "axes": {
             "keys": "FIPSCode",
-            "values": "excCDR&{YEAR}&"
+            "values": "pounderrep&{YEAR}&"
         },
         "publish": {
             "embed-width": 600,
@@ -164,7 +165,8 @@
         "custom": {}
     },
     "organizationId": null,
-    "title": "<span class=\"block-inner\">Excess Mortality Rates for &{FULL_STATE_LABEL}&: &{YEAR}&</span>",
+    "title": "<span class=\"block-inner\">Potential Undercounting for &{FULL_STATE_LABEL}&: &{YEAR}&</span>",
     "type": "d3-maps-choropleth",
     "folderId": "&{FOLDER_ID}&"
+
 }
