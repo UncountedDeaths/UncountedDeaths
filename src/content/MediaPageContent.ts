@@ -4,6 +4,15 @@ export const text_content =
   'Our team is collaborating with investigative reporters and other media stakeholders who are using our data to examine patterns of excess mortality and under-counting of Covid-19 deaths in specific communities across the United States.';
 
 export const content: ContentCardProps[] = [
+   {
+    title: 'In Rural America, Covid Hits Black and Hispanic People Hardest.',
+    date: 'July 28, 2022',
+    text: 'At the peak of the Omicron wave, Covid killed Black Americans in rural areas at a rate roughly 34 percent higher than it did white people. The coronavirus pandemic walloped rural America last year, precipitating a surge of deaths among white residents as the virus inflamed longstanding health deficits there.',
+    link: 'https://www.nytimes.com/2022/07/28/health/covid-deaths-black-hispanic-rural.html',
+    imgSrc:
+      'https://static01.nyt.com/newsgraphics/2022/05/10/omicron-elderly/719365138e6965811e1f8a42217fc762f6fb68af/omicron-per-100k-Artboard_1.png',
+    author: 'The New York Times',
+  },
   {
     title: 'During the Omicron Wave, Death Rates Soared for older people.',
     date: 'May 31, 2022',
