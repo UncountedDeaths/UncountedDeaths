@@ -108,9 +108,18 @@ def create_single_graph(settings: Dict[str, str], template_path: str) -> str:
     return map_id
 
 
+def publish_graph(id: str) -> str:
+    url = f'https://api.datawrapper.de/v3/charts/{id}/publish'
+    token = os.environ['token']
+    headers = {'Authorization': f'Bearer {token}', "Accept": "*/*"}
+    response = requests.post(url, headers=headers)
+    print(response.json())
+    return response.json()['url']
+
+
 """
 Replace Keys
-FULL_STATE_Label = Full State Name for label
+FULL_STATE_LABEL = Full State Name for label
 FULL_STATE = state for datawrapper purposes. Must match the datawrapper map classes
 Year = yyyy
 DATA_URL = full data url to csv file
@@ -122,29 +131,45 @@ FOLDER_ID = ID of folder this should belong in. Must be set to folder ID or `nul
 """
 if __name__ == '__main__':
     # map2020 = create_base_graph()
-    data_sources = [{"name": "source-1", "url": "url-test"}, {"name": "source-2", "url": "source-url-2"}]
-    single_state = {"state": "state-name", "sources": data_sources}
-    master_output = []
-    master_output.append(single_state)
-    single_state = {"state": "state-name-2", "sources": data_sources}
-    master_output.append(single_state)
-    with open("state_output.json", 'w') as f:
-        json.dump(master_output, f, indent=4)
+    # data_sources = [{"name": "source-1", "url": "url-test"}, {"name": "source-2", "url": "source-url-2"}]
+    # single_state = {"state": "state-name", "sources": data_sources}
+    # master_output = []
+    # master_output.append(single_state)
+    # single_state = {"state": "state-name-2", "sources": data_sources}
+    # master_output.append(single_state)
+    # with open("state_output.json", 'w') as f:
+    #     json.dump(master_output, f, indent=4)
 
-    # map2020 = "XcJm8"
-    # map2021 = "QXCkz"
-    # settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
-    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-    #                              "/ExcessDeathRates/Alabama.csv",
-    #                  "OTHER_YEAR": "2021",
-    #                  "OTHER_ID": map2021, "FOLDER_ID": "111267"}
-    # settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
-    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-    #                              "/ExcessDeathRates/Alabama.csv",
-    #                  "OTHER_YEAR": "2020",
-    #                  "OTHER_ID": map2020, "FOLDER_ID": "111267"}
-    #
-    # with open('./state_excess_death_template.json', 'r') as f:
-    #     template = f.read()
-    # apply_graph_settings(map2020, template, settings_2020)
+    template_files = ['./state_mdi_template.json', './state_death_rates_template.json',
+                      './state_potential_undercounting_template.json', './state_excess_mortality_template.json']
+    years = ["2020", "2021"]
+    with open('./states.txt', 'r') as f:
+        state_labels = f.read()
+
+    dw_states = state_labels
+    dw_states = [state.lower() for state in dw_states]
+    dw_states = [state.replace(' ', '-') for state in dw_states]
+
+
+    for state_label, state in zip(state_labels, dw_states):
+        for graph in template_files:
+
+
+
+    map2020 = "XcJm8"
+    map2021 = "QXCkz"
+    settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
+                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+                                 "/ExcessDeathRates/Alabama.csv",
+                     "FOLDER_ID": "111267"}
+    settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
+                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+                                 "/ExcessDeathRates/Alabama.csv",
+                     "FOLDER_ID": "111267"}
+
+    with open('./state_mdi_template.json', 'r') as f:
+        template = f.read()
+    apply_graph_settings(map2020, template, settings_2020)
+    publish_graph(map2020)
     # apply_graph_settings(map2021, template, settings_2021)
+    # publish_graph(map2021)
