@@ -13,9 +13,6 @@ import {
   preston,
   paglino,
   luck,
-  kravitz,
-  bergin,
-  ladyzhets,
   bayly,
   saucy,
   augustine,
@@ -40,7 +37,7 @@ export const content: MemberCardProps[] = [
   {
     title: 'Dielle Lundberg, MPH',
     subtitle:
-      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Integrity Project',
+      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Lab',
     imgSrc: lundberg,
   },
   {
@@ -66,27 +63,6 @@ export const content: MemberCardProps[] = [
     subtitle:
       'Senior Research Scientist in the Department of Global Health at Boston University School of Public Health',
     imgSrc: zhou,
-  },
-  {
-    title: 'Mikas Hansen, PhD',
-    subtitle:
-      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
-    imgSrc: mikas,
-  },
-  {
-    title: 'Sylvia Lutze',
-    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: syl,
-  },
-  {
-    title: 'Elif Coskun',
-    subtitle: 'MPH Student at Boston University School of Public Health',
-    imgSrc: elif,
-  },
-  {
-    title: 'Steele Myrick',
-    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
-    imgSrc: steele,
   },
 ];
 
@@ -117,25 +93,6 @@ export const collaboratorContent: MemberCardProps[] = [
   },
 ];
 
-export const mediaContent: MemberCardProps[] = [
-  {
-    title: 'Derick Kravitz',
-    subtitle:
-      "Project Lead and Instructor for the Columbia Journalism School's Stabile Center for Investigative Journalism",
-    imgSrc: kravitz,
-  },
-  {
-    title: 'Dillon Bergin',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: bergin,
-  },
-  {
-    title: 'Betsy Ladyzhets',
-    subtitle: 'Senior Journalism Fellow at MuckRock and the Brown Institute for Media Innovation',
-    imgSrc: ladyzhets,
-  },
-];
-
 export const designContent: MemberCardProps[] = [
   {
     title: 'Ian Saucy',
@@ -145,7 +102,7 @@ export const designContent: MemberCardProps[] = [
   {
     title: 'Erica Augustine',
     subtitle:
-      'Project Manager of the Vital Statistics Integrity Project and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
+      'Project Manager of the Vital Statistics Lab and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
     imgSrc: augustine,
   },
   {
@@ -167,6 +124,30 @@ export const designContent: MemberCardProps[] = [
     title: 'Matthew Henriksen',
     subtitle: 'Undergraduate Intern at Boston University Spark!',
     imgSrc: matthew,
+  },
+];
+
+export const alumniContent: MemberCardProps[] = [
+  {
+    title: 'Mikas Hansen, PhD',
+    subtitle:
+      'MS/MPH Student in Medical Sciences and Global Health at Boston University School of Public Health',
+    imgSrc: mikas,
+  },
+  {
+    title: 'Sylvia Lutze',
+    subtitle: "Applied Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: syl,
+  },
+  {
+    title: 'Elif Coskun',
+    subtitle: 'MPH Student at Boston University School of Public Health',
+    imgSrc: elif,
+  },
+  {
+    title: 'Steele Myrick',
+    subtitle: "Biostatistics Master's Student at Boston University School of Public Health",
+    imgSrc: steele,
   },
 ];
 
