@@ -9,60 +9,12 @@ import { ContentCard } from './PublicationsPage';
 import { content as pubContent } from '../content/PublicationsPageContent';
 import { isMobile } from 'react-device-detect';
 import { useNavigate } from 'react-router-dom';
-import IframeResizer from 'iframe-resizer-react';
 import * as TrackerPageContent from '../content/TrackerPageContent';
-import { Typography, Tabs, TabPaneProps } from 'antd';
+import { Typography } from 'antd';
 import NavigationButton from '../components/NavigationButton';
 import { InternalRoutes } from '../routes';
 import ContentLayout from '../components/ContentLayout';
-import NivoTSPlot from '../components/NivoTimeSeriesPlots';
-import Menu from '../components/stateDash';
-type Key = {
-  key: string;
-};
-
-const tabs: (TabPaneProps & Key)[] = [
-  {
-    key: '1',
-    tab: <p className={styles.titletabpane}>National Dashboard</p>,
-    children: (
-      <>
-        <div className={styles.nationalDashboard}>
-          <IframeResizer
-            className={styles.appIFrame}
-            src="https://datawrapper.dwcdn.net/5ab0H/1/"
-          />
-          <IframeResizer
-            className={styles.appIFrame}
-            src="https://datawrapper.dwcdn.net/lApr0/4/"
-          />
-        </div>
-      </>
-    ),
-  },
-  {
-    key: '2',
-    tab: <p className={styles.titletabpane}>State Dashboard</p>,
-    children: (
-      <>
-        <div className={styles.stateDashboard}>
-          <Menu />
-          <NivoTSPlot />
-        </div>
-      </>
-    ),
-  },
-];
-
-const Dashboard: React.FC = () => {
-  return (
-    <Tabs className={styles.dashboardTabs} defaultActiveKey="1">
-      {tabs.map((t) => (
-        <Tabs.TabPane {...t} key={t.key} />
-      ))}
-    </Tabs>
-  );
-};
+import Dashboard from '../components/Dashboard';
 
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();

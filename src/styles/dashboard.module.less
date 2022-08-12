@@ -1,0 +1,119 @@
+@import 'globalSettings.module.less';
+@import 'themes.less';
+
+.appIFrame {
+  flex: 1;
+  height: calc(100vw / 2 * 0.75);
+  border: none;
+  padding: 1rem;
+  &:first-child {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+.appIFrameSmall {
+}
+
+@media screen and (max-width: 2000px) {
+  .appIFrame {
+    height: calc(100vw / 2 * 0.85);
+  }
+  .appIFrameSmall {
+    height: calc(100vw / 2 * 0.75);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .appIFrame {
+    flex: none;
+    width: 100%;
+    height: calc(100vw * 0.8);
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  .appIFrameSmall {
+    height: calc(100vw * 0.6);
+  }
+}
+
+@media screen and (max-width: @mobile-cutoff) {
+  .appIFrame {
+    height: 600px;
+  }
+}
+
+.dashboardTabs {
+  > div {
+    > div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.dashboardTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.nationalDashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: inherit;
+}
+
+.nationalDashboardControl {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.nationalDashboardControlLabel {
+  font-size: @font-medium-size;
+  font-weight: 700;
+  padding-right: 2rem;
+}
+
+.stateDashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.stateDashboardControl {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.stateDashboardControlLabel {
+  font-size: @font-large-size;
+  font-weight: 700;
+}
+
+.titletabpane {
+  font-size: @font-medium-size;
+  margin: 0;
+}
+
+.dropDowns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
