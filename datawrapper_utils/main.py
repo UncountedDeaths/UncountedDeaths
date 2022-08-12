@@ -7,6 +7,7 @@ from __future__ import annotations
 import os
 from enum import Enum
 from typing import Dict, Tuple
+import csv
 
 import requests
 import json
@@ -47,7 +48,7 @@ def apply_graph_settings(id: str, settings_template: str, settings: Dict[str, st
         new_settings = new_settings.replace(replace_key, value)
     r = requests.patch(BASE_URL + "charts/" + id, json=json.loads(new_settings), headers=headers)
     if r.status_code > 299:
-        raise Exception("Failed to perform action, aborting")
+        raise Exception(r.json())
 
 
 def get_graph_settings(chart_id: str):
@@ -140,36 +141,71 @@ if __name__ == '__main__':
     # with open("state_output.json", 'w') as f:
     #     json.dump(master_output, f, indent=4)
 
-    template_files = ['./state_mdi_template.json', './state_death_rates_template.json',
-                      './state_potential_undercounting_template.json', './state_excess_mortality_template.json']
+    template_files = ['./state_excess_mortality_template.json', './state_death_rates_template.json',
+                      './state_potential_undercounting_template.json', './state_mdi_template.json',
+                      ]
     years = ["2020", "2021"]
+    source_names = ["Excess Mortality", "Covid Death Rates", "Potential Undercounting", "Death Investigation Systems"]
+    base_data_urls = ["https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/ExcessDeathRates/",
+                      "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/CovidDeathRates/",
+                      "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/UnderReporting/",
+                      "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/MDI/"]
+    folders = ['113530', '113531', '113532', '113533']
     with open('./states.txt', 'r') as f:
-        state_labels = f.read()
+        state_labels = []
+        reader = csv.reader(f)
+        for row in reader:
+            state_labels.append(row[0])
 
     dw_states = state_labels
+    print([state for state in state_labels])
     dw_states = [state.lower() for state in dw_states]
     dw_states = [state.replace(' ', '-') for state in dw_states]
+    print(dw_states)
+    count = 0
+    with open('./state_excess_mortality_output.json', 'r') as f:
+        generated_data = json.load(f)
+
+    for template_file, name, folder, base_data_url in zip(template_files, source_names, folders, base_data_urls):
+        if count > 0:
+            break
+        master_output = []
+        with open(template_file, 'r') as f:
+            template_string = f.read()
+        for state_label, state, generated in zip(state_labels, dw_states, generated_data):
+            sources = []
+            for year in years:
+                print(f'Creating graph {state}, {year}, {name}')
+                settings = {"FULL_STATE_LABEL": state_label, "FULL_STATE": state, "YEAR": year,
+                            "DATA_URL": base_data_url + state_label + '.csv',
+                            "FOLDER_ID": folder}
+                id = generated['sources'][int(list(year)[-1])]['id']
+                apply_graph_settings(id, template_string, settings)
+                url = publish_graph(id)
+                single_source = {'name': name, 'url': url, 'id': id}
+                sources.append(single_source)
+            single_state = {'state': state, 'sources': sources}
+            master_output.append(single_state)
+        output_file_name = template_file.replace('template', 'output')
+        with open(output_file_name, 'w') as f:
+            json.dump(master_output, f, indent=4)
+        count = count + 1
 
 
-    for state_label, state in zip(state_labels, dw_states):
-        for graph in template_files:
-
-
-
-    map2020 = "XcJm8"
-    map2021 = "QXCkz"
-    settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
-                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-                                 "/ExcessDeathRates/Alabama.csv",
-                     "FOLDER_ID": "111267"}
-    settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
-                     "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
-                                 "/ExcessDeathRates/Alabama.csv",
-                     "FOLDER_ID": "111267"}
-
-    with open('./state_mdi_template.json', 'r') as f:
-        template = f.read()
-    apply_graph_settings(map2020, template, settings_2020)
-    publish_graph(map2020)
+    # map2020 = "XcJm8"
+    # map2021 = "QXCkz"
+    # settings_2020 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2020",
+    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+    #                              "/ExcessDeathRates/Alabama.csv",
+    #                  "FOLDER_ID": "111267"}
+    # settings_2021 = {"FULL_STATE_LABEL": "Alabama", "FULL_STATE": "alabama", "YEAR": "2021",
+    #                  "DATA_URL": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main"
+    #                              "/ExcessDeathRates/Alabama.csv",
+    #                  "FOLDER_ID": "111267"}
+    #
+    # with open('./state_mdi_template.json', 'r') as f:
+    #     template = f.read()
+    # apply_graph_settings(map2020, template, settings_2020)
+    # publish_graph(map2020)
     # apply_graph_settings(map2021, template, settings_2021)
     # publish_graph(map2021)
