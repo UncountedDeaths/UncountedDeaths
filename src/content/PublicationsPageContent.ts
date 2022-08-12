@@ -1,6 +1,6 @@
 export type ContentCardProps = {
   title: string;
-  journal: string;
+  journal?: string;
   author?: string;
   date: string;
   text: string;
@@ -14,7 +14,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Geographic and Temporal Patterns in Covid-19 Mortality by Race and Ethnicity in the United States from March 2020 to February 2022',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author: 'Lundberg DJ, Cho A, Raquib RV, Nsoesie EO, Wrigley-Field E, Stokes AC',
     date: 'July, 2022',
     text: 'Prior research has established that American Indian, Alaska Native, Black, Hispanic, and Pacific Islander populations in the United States have experienced substantially higher mortality rates from Covid-19 compared to non-Hispanic white residents during the first year of the pandemic. What remains less clear is how mortality rates have changed for each of these racial/ethnic groups during 2021, given the increasing prevalence of vaccination.',
@@ -25,7 +25,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Racial and Ethnic Disparities in Estimated Excess Mortality From External Causes in the US, March to December 2020',
-    journal:'JAMA Internal Medicine',
+    journal: 'JAMA Internal Medicine',
     author: 'Chen R, Aschmann HE, Chen YH, Glymour MM, Bibbins-Domingo K, Stokes AC, Kiang MV',
     date: 'July, 2022',
     text: 'COVID-19 has disproportionately affected racial and ethnic minority groups in the US. However, estimating the full effects of the pandemic on health disparities should account for other causes of death, including external causes.2 We estimated racial and ethnic disparities in excess deaths from external causes (homicide, suicide, transportation, and drug overdoses) from March through December 2020.',
@@ -36,7 +36,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Excess natural-cause deaths in California by cause and setting: March 2020 through February 2021',
-    journal:'PNAS Nexus',
+    journal: 'PNAS Nexus',
     author:
       'Chen YH, Stokes AC, Aschmann HE, Chen R, DeVost S, Kiang MV, Koliwad S, Riley AR, Glymour MM, Bibbins-Domingo K',
     date: 'July, 2022',
@@ -47,7 +47,7 @@ export const content: ContentCardProps[] = [
   },
   {
     title: 'Missing Americans: Early Death in the United States, 1933-2021',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author:
       'Bor J, Stokes AC, Raifman J, Venkataramani A, Bassett MT, Himmelstein D, Woolhandler S',
     date: 'June, 2022',
@@ -59,7 +59,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       '“Pandemic of the unvaccinated”? At midlife, white people are less vaccinated but still at less risk of Covid-19 mortality in Minnesota.',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author: 'Wrigley-Field E, Berry KM, Stokes AC, Leider JP',
     date: 'June, 2022',
     text: 'Recent research underscores the exceptionally young age distribution of Covid-19 deaths in the United States compared with international peers. This brief characterizes how high levels of Covid mortality at midlife ages (45–64) are deeply intertwined with continuing racial inequity in Covid-19 mortality.',
@@ -70,7 +70,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'The unequal burden of the Covid-19 pandemic: Capturing racial/ethnic disparities in US cause-specific mortality',
-    journal:'SSM - Population Health',
+    journal: 'SSM - Population Health',
     author: 'Luck AN, Preston SH, Elo IT, Stokes AC',
     date: 'June, 2022',
     text: "Despite a growing body of literature focused on racial/ethnic disparities in Covid-19 mortality, few previous studies have examined the pandemic's impact on 2020 cause-specific mortality by race and ethnicity. This paper documents changes in mortality by underlying cause of death and race/ethnicity between 2019 and 2020.",
@@ -81,7 +81,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Excess all-cause mortality across counties in the United States, March 2020 to December 2021',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author:
       'Paglino E, Lundberg DJ, Cho A, Wasserman JA, Raquib R, Luck AN, Hempstead K, Bor J, Elo IT, Preston SH, Stokes AC',
     date: 'May, 2022',
@@ -93,7 +93,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Evaluation of Age Patterns of COVID-19 Mortality by Race and Ethnicity From March 2020 to October 2021 in the US',
-    journal:'JAMA Network Open',
+    journal: 'JAMA Network Open',
     author: 'Elo IT, Luck A, Stokes AC, Hempstead K, Xie W, Preston SH',
     date: 'May, 2022',
     text: 'The disproportionate burden of COVID-19 mortality among older adults during the early stages of the pandemic is well documented.However, little is known about associations between subsequent developments (eg, vaccine availability) and the age pattern of mortality. In this study, we examined changes in age-specific COVID-19 mortality rates by sex and by race and ethnicity.',
@@ -104,7 +104,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'COVID-19 mortality among working-age Americans in 46 states, by industry and occupation',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author:
       'Chen YH, Chen R, Charpignon ML, Kiang MV, Riley AR, Glymour MM, Bibbins-Domingo K, Stokes AC',
     date: 'April, 2022',
@@ -116,7 +116,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'COVID-19 mortality and excess mortality among working-age Californians, by occupational sector: March 2020 through November 2021',
-    journal:'medRxiv',
+    journal: 'medRxiv',
     author:
       'Chen YH, Riley AR, Duchowny KA, Aschmann HE, Chen R, Kiang MV, Mooney A, Stokes AC, Glymour MM, Bibbins-Domingo K',
     date: 'February, 2022',
@@ -128,7 +128,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'County-level estimates of excess mortality associated with COVID-19 in the United States',
-    journal:'SSM - Population Health',
+    journal: 'SSM - Population Health',
     author: 'Ackley CA, Lundberg DJ, Ma L, Elo IT, Preston SH, Stokes AC',
     date: 'January, 2022',
     text: 'The COVID-19 pandemic in the U.S. has been largely monitored using death certificates containing reference to COVID-19. However, prior analyses reveal that a significant percentage of excess deaths associated with the pandemic were not directly assigned to COVID-19.',
@@ -139,7 +139,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Association of Health Care Factors With Excess Deaths Not Assigned to COVID-19 in the US',
-    journal:'JAMA Network Open',
+    journal: 'JAMA Network Open',
     author: 'Stokes AC, Lundberg DJ, Bor J, Elo IT, Hempstead K, Preston SH',
     date: 'September, 2021',
     text: 'Approximately 20% of excess deaths in the US in 2020 were not reflected in COVID-19 death counts. These excess deaths included deaths caused by COVID-19 but not assigned to it as well as indirect deaths from other causes associated with delays in health care and the social and economic consequences of the pandemic.',
@@ -150,7 +150,7 @@ export const content: ContentCardProps[] = [
   {
     title:
       'Excess Deaths During the COVID-19 Pandemic: Implications for US Death Investigation Systems',
-    journal:'American Journal of Public Health',
+    journal: 'American Journal of Public Health',
     author: 'Stokes AC, Lundberg DJ, Bor J, Bibbins-Domingo K',
     date: 'April, 2021',
     text: 'Quality death investigation is a critical piece of an effective public health system. When a person dies, a coroner, medical examiner, or health professional with knowledge of the decedent’s medical conditions fills out the death certificate. Accurate cause-of-death ascertainment has broad implications for understanding the burden of disease throughout the United States.',
@@ -160,7 +160,7 @@ export const content: ContentCardProps[] = [
   },
   {
     title: 'COVID-19 and excess mortality in the United States: A county-level analysis',
-    journal:'PLOS Medicine',
+    journal: 'PLOS Medicine',
     author: 'Stokes AC, Lundberg DJ, Elo IT, Hempstead K, Bor J, Preston SH',
     date: 'May, 2021',
     text: 'Coronavirus Disease 2019 (COVID-19) excess deaths refer to increases in mortality over what would normally have been expected in the absence of the COVID-19 pandemic. Several prior studies have calculated excess deaths in the United States but were limited to the national or state level, precluding an examination of area-level variation in excess mortality and excess deaths not assigned to COVID-19.',

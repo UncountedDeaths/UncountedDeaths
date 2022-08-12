@@ -4,7 +4,7 @@ export const text_content =
   'Our team is collaborating with investigative reporters and other media stakeholders who are using our data to examine patterns of excess mortality and under-counting of Covid-19 deaths in specific communities across the United States.';
 
 export const content: ContentCardProps[] = [
-   {
+  {
     title: 'In Rural America, Covid Hits Black and Hispanic People Hardest.',
     date: 'July 28, 2022',
     text: 'At the peak of the Omicron wave, Covid killed Black Americans in rural areas at a rate roughly 34 percent higher than it did white people. The coronavirus pandemic walloped rural America last year, precipitating a surge of deaths among white residents as the virus inflamed longstanding health deficits there.',
@@ -94,7 +94,7 @@ export const content: ContentCardProps[] = [
     link: 'https://www.usatoday.com/story/news/nation/2021/12/09/covid-death-count-america-cdc/6435124001/',
     imgSrc:
       'https://www.gannett-cdn.com/presto/2021/12/09/USAT/7411b682-b008-4bce-bda9-b4742a3611ee-AP_APTOPIX_Virus_Outbreak-Race.jpg?crop=2862,1610,x0,y210&width=2862&height=1610&format=pjpg&auto=webp',
-     author: 'USA Today',
+    author: 'USA Today',
   },
   {
     title: "The Pandemic's Hidden Toll Is Revealed in Excess Death Counts",
@@ -115,7 +115,7 @@ export const content: ContentCardProps[] = [
       'https://static.scientificamerican.com/sciam/cache/file/841E857B-3A82-4CF2-9217CD3085E205BA.jpg',
     author: 'Scientific American',
   },
-     {
+  {
     title: "Excess Deaths Reveal the Pandemic's Hidden Toll in Some U.S. Counties",
     date: 'June 2, 2021',
     text: 'A detailed analysis suggests that COVID deaths and other pandemic-related mortality may have been significantly undercounted in the rural South and West',
@@ -149,7 +149,7 @@ export const content: ContentCardProps[] = [
     link: 'https://www.texasobserver.org/how-flawed-death-investigations-can-leave-texas-covid-19-deaths-uncounted/',
     imgSrc:
       'https://www.texasobserver.org/wp-content/uploads/2021/03/AP_20149802823665-759x492.jpg',
-     author: 'Texas Observer',
+    author: 'Texas Observer',
   },
   {
     title: 'Is Pro-Trump Bias Leading Some US Counties to Lowball Covid-19 Deaths?',

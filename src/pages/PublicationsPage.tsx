@@ -39,6 +39,11 @@ export const ContentCard: React.FC<ContentCardProps> = (props) => {
                 {props.author + ' \u2022 '}
               </Typography.Text>
             )}
+            {props.journal && props.journal.length > 0 && (
+              <Typography.Text className={styles.pubcarddate}>
+                {props.journal + ' \u2022 '}
+              </Typography.Text>
+            )}
             <Typography.Text className={styles.pubcarddate}>{props.date}</Typography.Text>
           </div>
         </div>
