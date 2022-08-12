@@ -6,8 +6,6 @@ const { Option } = Select;
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
 
-import NivoTSPlot from './NivoTimeSeriesPlots';
-
 type CountyName = keyof typeof countyData;
 
 type ControlsPropsType = {
@@ -75,7 +73,6 @@ const CountyDashboard: React.FC = () => {
           src={countiesDashURL}
         />
       </div>
-      <NivoTSPlot />
     </div>
   );
 };

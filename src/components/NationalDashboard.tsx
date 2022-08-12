@@ -2,20 +2,28 @@ import React, { useState } from 'react';
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
 import { Select } from 'antd';
-import { DataSourceType, dataSources } from '../content/nationalDashboard';
+import national_charts from '../data/national_charts.json';
+import { IGraphSet } from '../data/interfaces';
 
 const { Option } = Select;
 type ControlsPropsType = {
   onChange: (dataType: string) => void;
+  dataSet: IGraphSet[];
 };
 
 const DashboardControls: React.FC<ControlsPropsType> = (props) => {
   return (
     <div className={styles.nationalDashboardControl}>
       <p className={styles.nationalDashboardControlLabel}>Data types: </p>
-      <Select defaultValue={dataSources[0].id} onChange={props.onChange}>
-        {dataSources.map((dataType) => (
-          <Option key={dataType.id}>{dataType.name}</Option>
+      <Select
+        onChange={props.onChange}
+        defaultValue={props.dataSet[0].graph_type}
+        style={{ width: 300 }}
+      >
+        {props.dataSet.map((dataType, index) => (
+          <Option key={dataType.graph_type} value={index}>
+            {dataType.graph_type}
+          </Option>
         ))}
       </Select>
     </div>
@@ -23,24 +31,25 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 };
 
 const NationalDashboard: React.FC = () => {
-  const [dataType, setDataType] = useState<DataSourceType>(dataSources[0]);
+  const graphs: IGraphSet[] = national_charts;
+  const [currGraph, setCurrGraph] = useState<JSX.Element[]>(
+    graphs[0].graphs.map((graph) => (
+      <IframeResizer key={graph.url} className={styles.appIFrame} src={graph.url} />
+    ))
+  );
 
-  const handleDataTypeChange = (dataTypeId: string) => {
-    for (let i = 0; i < dataSources.length; i++) {
-      if (dataSources[i].id === dataTypeId) {
-        setDataType(dataSources[i]);
-        break;
-      }
-    }
+  const onChange = (value: string) => {
+    setCurrGraph(
+      graphs[parseInt(value)].graphs.map((graph) => (
+        <IframeResizer key={graph.url} className={styles.appIFrame} src={graph.url} />
+      ))
+    );
   };
 
   return (
     <div className={styles.dashboardTab}>
-      <DashboardControls onChange={handleDataTypeChange} />
-      <div className={styles.nationalDashboard}>
-        <IframeResizer className={styles.appIFrame} src={dataType.sources[0]} />
-        <IframeResizer className={styles.appIFrame} src={dataType.sources[1]} />
-      </div>
+      <DashboardControls onChange={onChange} dataSet={national_charts} />
+      <div className={styles.nationalDashboard}>{currGraph}</div>
     </div>
   );
 };
