@@ -28,7 +28,6 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 
 const CountyDashboard: React.FC = () => {
   const [currState, setCurrState] = useState(stateData[0]);
-  const [currCounty, setCurrCounty] = useState(countyData[stateData[0] as CountyName][0]);
   // should change when currState is updated. Shows map of counties in a state
   const [stateCountiesDashURL] = useState('https://datawrapper.dwcdn.net/q9LZ6/3/');
   // should change when currCounty is updated. Shows map of a county
@@ -36,11 +35,6 @@ const CountyDashboard: React.FC = () => {
 
   const handleStateChange = (value: CountyName) => {
     setCurrState(value);
-    setCurrCounty(countyData[value][0]);
-  };
-
-  const handleCountyChange = (value: CountyName) => {
-    setCurrCounty(value);
   };
 
   const stateCounties = countyData[currState as CountyName];
@@ -52,11 +46,7 @@ const CountyDashboard: React.FC = () => {
           <DashboardControls onStateChange={handleStateChange} />
         </div>
         <div className={styles.bothDrop}>
-          <Select
-            style={{ width: 170 }}
-            value={currCounty as CountyName}
-            onChange={handleCountyChange}
-          >
+          <Select style={{ width: 170 }}>
             {stateCounties.map((county) => (
               <Option key={county}>{county}</Option>
             ))}
