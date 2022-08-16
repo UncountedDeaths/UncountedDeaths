@@ -163,5 +163,17 @@
       { "name": " Massachusetts ", "abbr": " MA ", "value": 0.0 },
       { "name": " Utah ", "abbr": " UT ", "value": 0.0 }
     ]
+  },
+  {
+    "bars": [
+      { "name": " c ", "abbr": " Centralized state medical examiner office ", "value": 17.0 },
+      {
+        "name": " c ",
+        "abbr": " County-based mixture of medical examiner and coroner offices ",
+        "value": 16.0
+      },
+      { "name": " c ", "abbr": " County/district-based coroner offices ", "value": 12.0 },
+      { "name": " c ", "abbr": " County/district-based medical examiner offices ", "value": 6.0 }
+    ]
   }
 ]
