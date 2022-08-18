@@ -13,4 +13,3 @@ export interface IStateGraphSet {
   state: string;
   sources: IGraph[];
 }
-
