@@ -8,6 +8,6 @@ export async function onRequestGet(context) {
     next, // used for middleware or to fetch assets
     data, // arbitrary space for passing data between middlewares
   } = context;
-  const value = await env.KV.get('alabama', { type: 'text' });
-  return new Response(value == null ? 'nothing' : value);
+  const value = await env.KV.get(params.state, { type: 'json' });
+  return new Response(value);
 }
