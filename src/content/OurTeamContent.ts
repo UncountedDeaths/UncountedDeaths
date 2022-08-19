@@ -100,12 +100,6 @@ export const designContent: MemberCardProps[] = [
     imgSrc: saucy,
   },
   {
-    title: 'Erica Augustine',
-    subtitle:
-      'Project Manager of the Vital Statistics Lab and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
-    imgSrc: augustine,
-  },
-  {
     title: 'Minkyo Seo',
     subtitle: 'Undergraduate Intern at Boston University Spark!',
     imgSrc: minkyo,

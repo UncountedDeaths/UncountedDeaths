@@ -8,7 +8,9 @@ export interface barsInterface {
   name: string;
   abbr: string;
   value: number;
+  select: string
 }
+
 export interface barTest {
   bars: barsInterface[];
 }
