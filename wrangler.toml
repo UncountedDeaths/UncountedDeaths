@@ -1,3 +1,4 @@
 name = "vital-stats"
 kv_namespaces = [
-{ binding = "VitalStats", id = "77d0f259d35f4d7a9ea464eefbbcd7ca", preview_id = "800183af4f1c4da6b47ce529ef96a1e9"}]
+{ binding = "VitalStats", id = "77d0f259d35f4d7a9ea464eefbbcd7ca", preview_id = "800183af4f1c4da6b47ce529ef96a1e9"}
+]
