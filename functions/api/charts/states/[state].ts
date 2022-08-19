@@ -8,8 +8,6 @@ export async function onRequestGet(context) {
     next, // used for middleware or to fetch assets
     data, // arbitrary space for passing data between middlewares
   } = context;
-  const value = await env.VitalStats.get('TEST', { type: 'text' });
-  await env.VitalStats.put('react', 'testing');
-  console.log(value);
+  const value = await env.KV.VitalStats.get('alabama', { type: 'text' });
   return new Response(value == null ? 'nothing' : value);
 }
