@@ -10,7 +10,13 @@ type ControlsPropsType = {
 };
 
 interface StateCharts {
-  charts: Chart[];
+  charts: ChartType[];
+  state: string;
+}
+
+interface ChartType {
+  chart_name: string;
+  sources: Chart[];
 }
 
 interface Chart {
@@ -35,8 +41,9 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 
 const CountyDashboard: React.FC = () => {
   const [currState, setCurrState] = useState(stateData[0]);
-  const [currChartSet, setCurrChartSet] = useState([]);
+  const [currChartSet, setCurrChartSet] = useState<StateCharts | undefined>(undefined);
   const [isError, setIsError] = useState(false);
+  const [currChartType, setCurrCharType] = useState<number>(0);
   useEffect(() => {
     const fetchData = async (state: string) => {
       const state_key = state.toLowerCase().replaceAll(' ', '-');
@@ -45,9 +52,6 @@ const CountyDashboard: React.FC = () => {
         setIsError(true);
         return;
       }
-      const body = await res.json();
-      console.log(body);
-      console.log(res);
       setCurrChartSet(await res.json());
       setIsError(false);
     };
@@ -55,37 +59,43 @@ const CountyDashboard: React.FC = () => {
     fetchData(currState).catch(console.error);
   }, [currState]);
 
-  // should change when currState is updated. Shows map of counties in a state
-  const [stateCountiesDashURL] = useState('https://datawrapper.dwcdn.net/q9LZ6/3/');
-  // should change when currCounty is updated. Shows map of a county
-  const [countiesDashURL] = useState('https://datawrapper.dwcdn.net/EviBb/2/');
-
   const handleStateChange = (value: string) => {
     setCurrState(value);
+  };
+
+  const handleChartTypeChange = (idx: number) => {
+    setCurrCharType(idx);
   };
 
   return (
     <div className={styles.dashboardTab}>
       <div className={styles.dropDowns}>
         <DashboardControls onStateChange={handleStateChange} />
-        <Select className={styles.stateDashboardControl}>
-          {currChartSet.map((chart: Chart) => (
-            <Option key={chart.id}>{chart.name}</Option>
-          ))}
+        <Select className={styles.stateDashboardControl} onSelect={handleChartTypeChange}>
+          {currChartSet &&
+            currChartSet.charts.map((chart_type: ChartType, idx) => (
+              <Option key={idx}>{chart_type.chart_name}</Option>
+            ))}
         </Select>
       </div>
       {isError ? (
-        <p>Sorry there was an error</p>
+        <p>Sorry there was an error loading the charts. Please refresh</p>
       ) : (
         <div className={styles.stateDashboard}>
           <IframeResizer
             className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-            src={stateCountiesDashURL}
+            src={currChartSet && currChartSet.charts[currChartType].sources[0].url}
           />
-          <IframeResizer
-            className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-            src={countiesDashURL}
-          />
+          {currChartSet != undefined && currChartSet.charts[currChartType].sources.length > 1 ? (
+            <>
+              <IframeResizer
+                className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
+                src={currChartSet.charts[currChartType].sources[1].url}
+              />
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       )}
     </div>
