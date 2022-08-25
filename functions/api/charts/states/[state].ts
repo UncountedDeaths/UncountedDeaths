@@ -9,5 +9,5 @@ export async function onRequestGet(context) {
     data, // arbitrary space for passing data between middlewares
   } = context;
   const value = await env.KV.get(params.state, { type: 'json' });
-  return new Response(value);
+  return new Response(JSON.stringify(value));
 }
