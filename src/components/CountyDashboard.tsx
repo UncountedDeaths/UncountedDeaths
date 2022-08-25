@@ -45,6 +45,9 @@ const CountyDashboard: React.FC = () => {
         setIsError(true);
         return;
       }
+      const body = await res.json();
+      console.log(body);
+      console.log(res);
       setCurrChartSet(await res.json());
       setIsError(false);
     };
