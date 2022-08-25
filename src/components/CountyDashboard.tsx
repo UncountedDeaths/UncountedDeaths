@@ -1,23 +1,30 @@
 import { Select } from 'antd';
-import React, { useState } from 'react';
-import countyData from '../content/stateDashContent';
+import React, { useEffect, useState } from 'react';
 import { stateData } from '../content/stateDashContent';
 const { Option } = Select;
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
 
-type CountyName = keyof typeof countyData;
-
 type ControlsPropsType = {
-  onStateChange: (state: CountyName) => void;
+  onStateChange: (state: string) => void;
 };
+
+interface StateCharts {
+  charts: Chart[];
+}
+
+interface Chart {
+  name: string;
+  url: string;
+  id: string;
+}
 
 const DashboardControls: React.FC<ControlsPropsType> = (props) => {
   return (
     <Select
-      defaultValue="Alabama"
+      defaultValue={stateData[0]}
       className={styles.stateDashboardControl}
-      onChange={props.onStateChange}
+      onSelect={props.onStateChange}
     >
       {stateData.map((state) => (
         <Option key={state}>{state}</Option>
@@ -28,41 +35,56 @@ const DashboardControls: React.FC<ControlsPropsType> = (props) => {
 
 const CountyDashboard: React.FC = () => {
   const [currState, setCurrState] = useState(stateData[0]);
+  const [currChartSet, setCurrChartSet] = useState([]);
+  const [isError, setIsError] = useState(false);
+  useEffect(() => {
+    const fetchData = async (state: string) => {
+      const state_key = state.toLowerCase().replaceAll(' ', '-');
+      const res = await fetch(`/api/charts/states/${state_key}`);
+      if (res.status != 200) {
+        setIsError(true);
+        return;
+      }
+      setCurrChartSet(await res.json());
+      setIsError(false);
+    };
+
+    fetchData(currState).catch(console.error);
+  }, [currState]);
+
   // should change when currState is updated. Shows map of counties in a state
   const [stateCountiesDashURL] = useState('https://datawrapper.dwcdn.net/q9LZ6/3/');
   // should change when currCounty is updated. Shows map of a county
   const [countiesDashURL] = useState('https://datawrapper.dwcdn.net/EviBb/2/');
 
-  const handleStateChange = (value: CountyName) => {
+  const handleStateChange = (value: string) => {
     setCurrState(value);
   };
-
-  const stateCounties = countyData[currState as CountyName];
 
   return (
     <div className={styles.dashboardTab}>
       <div className={styles.dropDowns}>
-        <div className={styles.bothDrop}>
-          <DashboardControls onStateChange={handleStateChange} />
-        </div>
-        <div className={styles.bothDrop}>
-          <Select style={{ width: 170 }}>
-            {stateCounties.map((county) => (
-              <Option key={county}>{county}</Option>
-            ))}
-          </Select>
-        </div>
+        <DashboardControls onStateChange={handleStateChange} />
+        <Select className={styles.stateDashboardControl}>
+          {currChartSet.map((chart: Chart) => (
+            <Option key={chart.id}>{chart.name}</Option>
+          ))}
+        </Select>
       </div>
-      <div className={styles.stateDashboard}>
-        <IframeResizer
-          className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-          src={stateCountiesDashURL}
-        />
-        <IframeResizer
-          className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
-          src={countiesDashURL}
-        />
-      </div>
+      {isError ? (
+        <p>Sorry there was an error</p>
+      ) : (
+        <div className={styles.stateDashboard}>
+          <IframeResizer
+            className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
+            src={stateCountiesDashURL}
+          />
+          <IframeResizer
+            className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
+            src={countiesDashURL}
+          />
+        </div>
+      )}
     </div>
   );
 };
