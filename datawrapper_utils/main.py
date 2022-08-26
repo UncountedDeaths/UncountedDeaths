@@ -5,12 +5,31 @@
 from __future__ import annotations
 
 import os
+from collections import defaultdict
 from enum import Enum
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List
 import csv
 
 import requests
 import json
+from typing import TypedDict
+
+
+class ChartSet(TypedDict):
+    name: str
+    id: str
+    url: str
+
+
+class ChartVersion(TypedDict):
+    chart_name: str
+    sources: list[ChartSet]
+
+
+class StateCharts(TypedDict):
+    state: str
+    charts: list[ChartVersion]
+
 
 BASE_URL = "https://api.datawrapper.de/v3/"
 
@@ -163,34 +182,35 @@ if __name__ == '__main__':
     dw_states = [state.replace(' ', '-') for state in dw_states]
     print(dw_states)
     count = 0
-    with open('./state_excess_mortality_output.json', 'r') as f:
-        generated_data = json.load(f)
+
+    master: dict[str, StateCharts] = {}
+    for state in dw_states:
+        master[state] = {"state": state, "charts": []}
 
     for template_file, name, folder, base_data_url in zip(template_files, source_names, folders, base_data_urls):
-        if count > 0:
-            break
-        master_output = []
+        for state in dw_states:
+            chart_type: ChartVersion = {"name": name, "sources": []}
+            master[state]["charts"].append(chart_type)
+        # master_output = []
         with open(template_file, 'r') as f:
             template_string = f.read()
-        for state_label, state, generated in zip(state_labels, dw_states, generated_data):
-            sources = []
+        for state_label, state in zip(state_labels, dw_states):
             for year in years:
                 print(f'Creating graph {state}, {year}, {name}')
                 settings = {"FULL_STATE_LABEL": state_label, "FULL_STATE": state, "YEAR": year,
                             "DATA_URL": base_data_url + state_label + '.csv',
                             "FOLDER_ID": folder}
-                id = generated['sources'][int(list(year)[-1])]['id']
+                id = create_base_graph()
                 apply_graph_settings(id, template_string, settings)
                 url = publish_graph(id)
                 single_source = {'name': name, 'url': url, 'id': id}
-                sources.append(single_source)
-            single_state = {'state': state, 'sources': sources}
-            master_output.append(single_state)
-        output_file_name = template_file.replace('template', 'output')
-        with open(output_file_name, 'w') as f:
-            json.dump(master_output, f, indent=4)
+                master.get(state)["charts"][-1]["sources"].append(single_source)
+            # single_state = {'state': state, 'sources': sources}
+            # master_output.append(single_state)
         count = count + 1
 
+    with open("output.json", 'w') as f:
+        json.dump(master, f, indent=4)
 
     # map2020 = "XcJm8"
     # map2021 = "QXCkz"

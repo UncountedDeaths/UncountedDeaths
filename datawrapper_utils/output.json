@@ -1,0 +1,483 @@
+{
+    "alabama": {
+        "state": "alabama",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/zx3Wq/9/",
+                        "id": "zx3Wq"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/u6fpp/4/",
+                        "id": "u6fpp"
+                    }
+                ]
+            }
+        ]
+    },
+    "alaska": {
+        "state": "alaska",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/kwdiF/4/",
+                        "id": "kwdiF"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/dziTC/4/",
+                        "id": "dziTC"
+                    }
+                ]
+            }
+        ]
+    },
+    "arizona": {
+        "state": "arizona",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "arkansas": {
+        "state": "arkansas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "california": {
+        "state": "california",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "colorado": {
+        "state": "colorado",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "connecticut": {
+        "state": "connecticut",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "delaware": {
+        "state": "delaware",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "dc": {
+        "state": "dc",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "florida": {
+        "state": "florida",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "georgia": {
+        "state": "georgia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "hawaii": {
+        "state": "hawaii",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "idaho": {
+        "state": "idaho",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "illinois": {
+        "state": "illinois",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "indiana": {
+        "state": "indiana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "iowa": {
+        "state": "iowa",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "kansas": {
+        "state": "kansas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "kentucky": {
+        "state": "kentucky",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "louisiana": {
+        "state": "louisiana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "maine": {
+        "state": "maine",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "maryland": {
+        "state": "maryland",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "massachusetts": {
+        "state": "massachusetts",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "michigan": {
+        "state": "michigan",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "minnesota": {
+        "state": "minnesota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "mississippi": {
+        "state": "mississippi",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "missouri": {
+        "state": "missouri",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "montana": {
+        "state": "montana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "nebraska": {
+        "state": "nebraska",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "nevada": {
+        "state": "nevada",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "new-hampshire": {
+        "state": "new-hampshire",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "new-jersey": {
+        "state": "new-jersey",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "new-mexico": {
+        "state": "new-mexico",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "new-york": {
+        "state": "new-york",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "north-carolina": {
+        "state": "north-carolina",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "north-dakota": {
+        "state": "north-dakota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "ohio": {
+        "state": "ohio",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "oklahoma": {
+        "state": "oklahoma",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "oregon": {
+        "state": "oregon",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "pennsylvania": {
+        "state": "pennsylvania",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "rhode-island": {
+        "state": "rhode-island",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "south-carolina": {
+        "state": "south-carolina",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "south-dakota": {
+        "state": "south-dakota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "tennessee": {
+        "state": "tennessee",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "texas": {
+        "state": "texas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "utah": {
+        "state": "utah",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "vermont": {
+        "state": "vermont",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "virginia": {
+        "state": "virginia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "washington": {
+        "state": "washington",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "west-virginia": {
+        "state": "west-virginia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "wisconsin": {
+        "state": "wisconsin",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    },
+    "wyoming": {
+        "state": "wyoming",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": []
+            }
+        ]
+    }
+}
