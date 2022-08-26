@@ -73,8 +73,12 @@ const CountyDashboard: React.FC = () => {
         <DashboardControls onStateChange={handleStateChange} />
         <Select className={styles.stateDashboardControl} onSelect={handleChartTypeChange}>
           {currChartSet &&
-            currChartSet.charts.map((chart_type: ChartType, idx) => (
-              <Option key={idx} title={chart_type.chart_name} labe={chart_type.chart_name}>
+            currChartSet.charts.map((chart_type: ChartType) => (
+              <Option
+                key={chart_type.chart_name}
+                title={chart_type.chart_name}
+                labe={chart_type.chart_name}
+              >
                 {chart_type.chart_name}
               </Option>
             ))}
