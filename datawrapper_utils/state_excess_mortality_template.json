@@ -1,0 +1,170 @@
+{
+    "language": "en-US",
+    "theme": "datawrapper-data",
+    "forkable": false,
+    "metadata": {
+        "data": {
+            "changes": [],
+            "transpose": false,
+            "vertical-header": true,
+            "horizontal-header": true,
+            "column-format": {
+                "NAME": {
+                    "type": "auto"
+                },
+                "FIPSCode": {
+                    "type": "text"
+                }
+            },
+            "external-data": "&{DATA_URL}&",
+            "upload-method": "external-data",
+            "external-metadata": null,
+            "use-datawrapper-cdn": true
+        },
+        "describe": {
+            "source-name": "Github",
+            "source-url": "https://github.com/UncountedDeaths/UncountedDeathsData",
+            "intro": "Excess mortality is a tool for assessing the true mortality impact of the pandemic by comparing deaths occurring during the pandemic to what we would expect based on pre-pandemic trends",
+            "byline": "",
+            "aria-description": "",
+            "number-format": "-",
+            "number-divisor": 0,
+            "number-append": "",
+            "number-prepend": "",
+            "hide-title": false
+        },
+        "visualize": {
+            "dark-mode-invert": true,
+            "highlighted-series": [],
+            "highlighted-values": [],
+            "sharing": {
+                "enabled": false
+            },
+            "labels": {
+                "max": 24,
+                "type": "places",
+                "places": [],
+                "enabled": false
+            },
+            "legend": {
+                "size": 155,
+                "title": "Per 100,000 Residents",
+                "labels": "ranges",
+                "enabled": true,
+                "reverse": false,
+                "labelMax": "high",
+                "labelMin": "low",
+                "position": "mt",
+                "hideItems": [],
+                "offsetTop": 0,
+                "offsetLeft": 0,
+                "interactive": true,
+                "labelCenter": "medium",
+                "labelFormat": "0",
+                "orientation": "vertical"
+            },
+            "basemap": "&{FULL_STATE}&-counties",
+            "tooltip": {
+                "body": "{{ FORMAT(exccdr&{YEAR}&, \"0.00\") }} Deaths per 100,000",
+                "title": "{{ countyname }}",
+                "sticky": true,
+                "enabled": true
+            },
+            "zoomable": true,
+            "map-align": "center",
+            "colorscale": {
+                "map": {},
+                "mode": "discrete",
+                "stops": "pretty",
+                "colors": [
+                    {
+                        "color": "#ffffcc",
+                        "position": 0
+                    },
+                    {
+                        "color": "#c7e9b4",
+                        "position": 0.2
+                    },
+                    {
+                        "color": "#7fcdbb",
+                        "position": 0.4
+                    },
+                    {
+                        "color": "#41b6c4",
+                        "position": 0.6
+                    },
+                    {
+                        "color": "#2c7fb8",
+                        "position": 0.8
+                    },
+                    {
+                        "color": "#253494",
+                        "position": 1
+                    }
+                ],
+                "palette": 0,
+                "rangeMax": "9363",
+                "rangeMin": "-1121",
+                "stopCount": 5,
+                "customStops": [
+                    null,
+                    0,
+                    2000,
+                    4000,
+                    6000,
+                    8000,
+                    null,
+                    "",
+                    ""
+                ],
+                "rangeCenter": "",
+                "categoryOrder": [],
+                "interpolation": "equidistant",
+                "categoryLabels": {}
+            },
+            "max-height": 650,
+            "map-padding": 1,
+            "map-key-attr": "GEOID",
+            "map-type-set": true,
+            "chart-type-set": true,
+            "max-map-height": 650,
+            "min-label-zoom": 1,
+            "zoom-button-pos": "tr",
+            "map-label-format": "0,0.[00]",
+            "text-annotations": [],
+            "range-annotations": [],
+            "hide-empty-regions": false,
+            "avoid-label-overlap": true
+        },
+        "axes": {
+            "keys": "FIPSCode",
+            "values": "excCDR&{YEAR}&"
+        },
+        "publish": {
+            "embed-width": 600,
+            "embed-height": 521,
+            "blocks": {
+                "logo": {
+                    "enabled": false
+                },
+                "embed": false,
+                "download-pdf": false,
+                "download-svg": false,
+                "get-the-data": false,
+                "download-image": false
+            },
+            "export-pdf": {},
+            "export-svg": null,
+            "autoDarkMode": false,
+            "chart-height": 410
+        },
+        "annotate": {
+            "notes": ""
+        },
+        "custom": {}
+    },
+    "organizationId": null,
+    "title": "<span class=\"block-inner\">Excess Mortality Rates for &{FULL_STATE_LABEL}&: &{YEAR}&</span>",
+    "type": "d3-maps-choropleth",
+    "folderId": "&{FOLDER_ID}&"
+}
