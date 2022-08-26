@@ -195,6 +195,7 @@ if __name__ == '__main__':
         with open(template_file, 'r') as f:
             template_string = f.read()
         for state_label, state in zip(state_labels, dw_states):
+            # TODO: Fix this because MDI does not have years, it's all the same
             for year in years:
                 print(f'Creating graph {state}, {year}, {name}')
                 settings = {"FULL_STATE_LABEL": state_label, "FULL_STATE": state, "YEAR": year,
