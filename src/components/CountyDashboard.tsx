@@ -4,6 +4,7 @@ import { stateData } from '../content/stateDashContent';
 const { Option } = Select;
 import styles from '../styles/dashboard.module.less';
 import IframeResizer from 'iframe-resizer-react';
+import { title } from 'process';
 
 type ControlsPropsType = {
   onStateChange: (state: string) => void;
@@ -15,7 +16,7 @@ interface StateCharts {
 }
 
 interface ChartType {
-  chart_name: string;
+  name: string;
   sources: Chart[];
 }
 
@@ -63,25 +64,27 @@ const CountyDashboard: React.FC = () => {
     setCurrState(value);
   };
 
-  const handleChartTypeChange = (idx: number) => {
-    setCurrCharType(idx);
+  const handleChartTypeChange = (idx: number | string) => {
+    setCurrCharType(idx as number);
   };
 
   return (
     <div className={styles.dashboardTab}>
       <div className={styles.dropDowns}>
         <DashboardControls onStateChange={handleStateChange} />
-        <Select className={styles.stateDashboardControl} onSelect={handleChartTypeChange}>
+        <Select
+          className={styles.stateDashboardControl}
+          onSelect={handleChartTypeChange}
+          value={currChartSet?.charts[currChartType].name}
+        >
           {currChartSet &&
-            currChartSet.charts.map((chart_type: ChartType) => (
-              <Option
-                key={chart_type.chart_name}
-                title={chart_type.chart_name}
-                labe={chart_type.chart_name}
-              >
-                {chart_type.chart_name}
-              </Option>
-            ))}
+            currChartSet.charts.map((chart_type: ChartType, idx) => {
+              return (
+                <Option key={idx} label={chart_type.name}>
+                  {chart_type.name}
+                </Option>
+              );
+            })}
         </Select>
       </div>
       {isError ? (
