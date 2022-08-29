@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://uncounteddeaths.org",
+  "proxy": "https://ian-dashboard-update.vital-stats.pages.dev/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@nivo/bump": "^0.79.1",

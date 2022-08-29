@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { stateData } from '../content/stateDashContent';
 const { Option } = Select;
 import styles from '../styles/dashboard.module.less';
-import IframeResizer from 'iframe-resizer-react';
-import { title } from 'process';
+import DWChart from './DWChart';
 
 type ControlsPropsType = {
   onStateChange: (state: string) => void;
@@ -91,15 +90,17 @@ const CountyDashboard: React.FC = () => {
         <p>Sorry there was an error loading the charts. Please refresh</p>
       ) : (
         <div className={styles.stateDashboard}>
-          <IframeResizer
-            className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
+          <DWChart
+            className={styles.appIFrame}
+            title={currChartSet && currChartSet.charts[currChartType].name}
             src={currChartSet && currChartSet.charts[currChartType].sources[0].url}
           />
           {currChartSet != undefined && currChartSet.charts[currChartType].sources.length > 1 ? (
             <>
-              <IframeResizer
-                className={[styles.appIFrame, styles.appIFrameSmall].join(' ')}
+              <DWChart
+                className={styles.appIFrame}
                 src={currChartSet.charts[currChartType].sources[1].url}
+                title={currChartSet && currChartSet.charts[currChartType].name}
               />
             </>
           ) : (
