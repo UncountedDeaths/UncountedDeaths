@@ -13,3 +13,13 @@ export interface IStateGraphSet {
   state: string;
   sources: IGraph[];
 }
+
+export interface barsInterface {
+  name: string;
+  abbr: string;
+  value: number;
+  select: string;
+}
+export interface barTest {
+  bars: barsInterface[];
+}

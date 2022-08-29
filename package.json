@@ -6,6 +6,7 @@
   "proxy": "https://ian-dashboard-update.vital-stats.pages.dev/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@ant-design/plots": "^1.2.1",
     "@nivo/bump": "^0.79.1",
     "@nivo/core": "^0.79.0",
     "@nivo/line": "^0.79.1",
