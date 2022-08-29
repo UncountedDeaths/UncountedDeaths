@@ -1,0 +1,3062 @@
+{
+    "alabama": {
+        "state": "alabama",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/JR7N9/1/",
+                        "id": "JR7N9"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/0oICl/1/",
+                        "id": "0oICl"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/goufD/1/",
+                        "id": "goufD"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/C6XqH/1/",
+                        "id": "C6XqH"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/GfF44/1/",
+                        "id": "GfF44"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/avYRn/1/",
+                        "id": "avYRn"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/Fd3Ju/1/",
+                        "id": "Fd3Ju"
+                    }
+                ]
+            }
+        ]
+    },
+    "alaska": {
+        "state": "alaska",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/sr9HS/1/",
+                        "id": "sr9HS"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/KIl6h/1/",
+                        "id": "KIl6h"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/CEZKB/1/",
+                        "id": "CEZKB"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/kq6yT/1/",
+                        "id": "kq6yT"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ISApG/1/",
+                        "id": "ISApG"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/1fBSh/1/",
+                        "id": "1fBSh"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/GSmu4/1/",
+                        "id": "GSmu4"
+                    }
+                ]
+            }
+        ]
+    },
+    "arizona": {
+        "state": "arizona",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/i5svc/1/",
+                        "id": "i5svc"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/HnsSz/1/",
+                        "id": "HnsSz"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Gz2Ec/1/",
+                        "id": "Gz2Ec"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/mkSW3/1/",
+                        "id": "mkSW3"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Y4rGo/1/",
+                        "id": "Y4rGo"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/9LoRO/1/",
+                        "id": "9LoRO"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/mxg7b/1/",
+                        "id": "mxg7b"
+                    }
+                ]
+            }
+        ]
+    },
+    "arkansas": {
+        "state": "arkansas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/WN4iG/1/",
+                        "id": "WN4iG"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/oecON/1/",
+                        "id": "oecON"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/MJe7H/1/",
+                        "id": "MJe7H"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/L6swX/1/",
+                        "id": "L6swX"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/tN0SI/1/",
+                        "id": "tN0SI"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ARstQ/1/",
+                        "id": "ARstQ"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/errDG/1/",
+                        "id": "errDG"
+                    }
+                ]
+            }
+        ]
+    },
+    "california": {
+        "state": "california",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/a63zI/1/",
+                        "id": "a63zI"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/P1Wae/1/",
+                        "id": "P1Wae"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/7Agbu/1/",
+                        "id": "7Agbu"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Wm7Px/1/",
+                        "id": "Wm7Px"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/d33qs/1/",
+                        "id": "d33qs"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/MTXVO/1/",
+                        "id": "MTXVO"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/8utsj/1/",
+                        "id": "8utsj"
+                    }
+                ]
+            }
+        ]
+    },
+    "colorado": {
+        "state": "colorado",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/O8NXg/1/",
+                        "id": "O8NXg"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/YP1rk/1/",
+                        "id": "YP1rk"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/xHPpm/1/",
+                        "id": "xHPpm"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/3qiyA/1/",
+                        "id": "3qiyA"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/xbi57/1/",
+                        "id": "xbi57"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ExKb1/1/",
+                        "id": "ExKb1"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/WfUFu/1/",
+                        "id": "WfUFu"
+                    }
+                ]
+            }
+        ]
+    },
+    "connecticut": {
+        "state": "connecticut",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/I7cZt/1/",
+                        "id": "I7cZt"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/E0oT5/1/",
+                        "id": "E0oT5"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/qK1ry/1/",
+                        "id": "qK1ry"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/1UQKj/1/",
+                        "id": "1UQKj"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/0ziHq/1/",
+                        "id": "0ziHq"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/lTSY8/1/",
+                        "id": "lTSY8"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/NxkcP/1/",
+                        "id": "NxkcP"
+                    }
+                ]
+            }
+        ]
+    },
+    "delaware": {
+        "state": "delaware",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/SiOW7/1/",
+                        "id": "SiOW7"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/OVw4q/1/",
+                        "id": "OVw4q"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/G5v2M/1/",
+                        "id": "G5v2M"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/K0izm/1/",
+                        "id": "K0izm"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ElehR/1/",
+                        "id": "ElehR"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Dkpus/1/",
+                        "id": "Dkpus"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/0YqFI/1/",
+                        "id": "0YqFI"
+                    }
+                ]
+            }
+        ]
+    },
+    "dc": {
+        "state": "dc",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/gNtXI/1/",
+                        "id": "gNtXI"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/BzOy3/1/",
+                        "id": "BzOy3"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/vmPkK/1/",
+                        "id": "vmPkK"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/jKms7/1/",
+                        "id": "jKms7"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Sc23H/1/",
+                        "id": "Sc23H"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/smAQe/1/",
+                        "id": "smAQe"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/SMHU7/1/",
+                        "id": "SMHU7"
+                    }
+                ]
+            }
+        ]
+    },
+    "florida": {
+        "state": "florida",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/dLagZ/1/",
+                        "id": "dLagZ"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/3RdqG/1/",
+                        "id": "3RdqG"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/k0PFT/1/",
+                        "id": "k0PFT"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/7LtUV/1/",
+                        "id": "7LtUV"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/qSLSs/1/",
+                        "id": "qSLSs"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/QLuK0/1/",
+                        "id": "QLuK0"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/MbmDB/1/",
+                        "id": "MbmDB"
+                    }
+                ]
+            }
+        ]
+    },
+    "georgia": {
+        "state": "georgia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/4jskF/1/",
+                        "id": "4jskF"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Me6fz/1/",
+                        "id": "Me6fz"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/E8aY8/1/",
+                        "id": "E8aY8"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/V8uMN/1/",
+                        "id": "V8uMN"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/1eOqo/1/",
+                        "id": "1eOqo"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/DaPEF/1/",
+                        "id": "DaPEF"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/uP7Mg/1/",
+                        "id": "uP7Mg"
+                    }
+                ]
+            }
+        ]
+    },
+    "hawaii": {
+        "state": "hawaii",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/uOdqV/1/",
+                        "id": "uOdqV"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/3Iutb/1/",
+                        "id": "3Iutb"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/vX1jQ/1/",
+                        "id": "vX1jQ"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/22K86/1/",
+                        "id": "22K86"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/XMEdA/1/",
+                        "id": "XMEdA"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/GxwU2/1/",
+                        "id": "GxwU2"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/VnG7G/1/",
+                        "id": "VnG7G"
+                    }
+                ]
+            }
+        ]
+    },
+    "idaho": {
+        "state": "idaho",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/8vk2y/1/",
+                        "id": "8vk2y"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/6hAKx/1/",
+                        "id": "6hAKx"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/0a0a2/1/",
+                        "id": "0a0a2"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/KAsUv/1/",
+                        "id": "KAsUv"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Ze6Br/1/",
+                        "id": "Ze6Br"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/tzATI/1/",
+                        "id": "tzATI"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/PD76O/1/",
+                        "id": "PD76O"
+                    }
+                ]
+            }
+        ]
+    },
+    "illinois": {
+        "state": "illinois",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/g1yTI/1/",
+                        "id": "g1yTI"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/g5UBF/1/",
+                        "id": "g5UBF"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/YH99B/1/",
+                        "id": "YH99B"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/MvqTU/1/",
+                        "id": "MvqTU"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ACnDi/1/",
+                        "id": "ACnDi"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/7ujyE/1/",
+                        "id": "7ujyE"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/wq4N6/1/",
+                        "id": "wq4N6"
+                    }
+                ]
+            }
+        ]
+    },
+    "indiana": {
+        "state": "indiana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/zDSJ4/1/",
+                        "id": "zDSJ4"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/NgkCO/1/",
+                        "id": "NgkCO"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/KI7Ry/1/",
+                        "id": "KI7Ry"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ggd7Z/1/",
+                        "id": "ggd7Z"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ND382/1/",
+                        "id": "ND382"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/DW2Aq/1/",
+                        "id": "DW2Aq"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/SBlKY/1/",
+                        "id": "SBlKY"
+                    }
+                ]
+            }
+        ]
+    },
+    "iowa": {
+        "state": "iowa",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/QSVI7/1/",
+                        "id": "QSVI7"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/xu2Xz/1/",
+                        "id": "xu2Xz"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/JdCMW/1/",
+                        "id": "JdCMW"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/WxSl2/1/",
+                        "id": "WxSl2"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/0Zpyw/1/",
+                        "id": "0Zpyw"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/6YQNy/1/",
+                        "id": "6YQNy"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/4IL7x/1/",
+                        "id": "4IL7x"
+                    }
+                ]
+            }
+        ]
+    },
+    "kansas": {
+        "state": "kansas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/9eSKn/1/",
+                        "id": "9eSKn"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/P6rlm/1/",
+                        "id": "P6rlm"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/bblVp/1/",
+                        "id": "bblVp"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/wE7rz/1/",
+                        "id": "wE7rz"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/NuVLl/1/",
+                        "id": "NuVLl"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Uaxgm/1/",
+                        "id": "Uaxgm"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/iqmrr/1/",
+                        "id": "iqmrr"
+                    }
+                ]
+            }
+        ]
+    },
+    "kentucky": {
+        "state": "kentucky",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/h2OIX/1/",
+                        "id": "h2OIX"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/p7j4i/1/",
+                        "id": "p7j4i"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/fVvpk/1/",
+                        "id": "fVvpk"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ce938/1/",
+                        "id": "ce938"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/bg44f/1/",
+                        "id": "bg44f"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Kovkr/1/",
+                        "id": "Kovkr"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/X9xOY/1/",
+                        "id": "X9xOY"
+                    }
+                ]
+            }
+        ]
+    },
+    "louisiana": {
+        "state": "louisiana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/hBb0i/1/",
+                        "id": "hBb0i"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/zgovi/1/",
+                        "id": "zgovi"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Fg7CS/1/",
+                        "id": "Fg7CS"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/k2Tp4/1/",
+                        "id": "k2Tp4"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/uxZg4/1/",
+                        "id": "uxZg4"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/r0OXA/1/",
+                        "id": "r0OXA"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/npBYc/1/",
+                        "id": "npBYc"
+                    }
+                ]
+            }
+        ]
+    },
+    "maine": {
+        "state": "maine",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/8hMXv/1/",
+                        "id": "8hMXv"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Qvapt/1/",
+                        "id": "Qvapt"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/FOXBe/1/",
+                        "id": "FOXBe"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/bQfi0/1/",
+                        "id": "bQfi0"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/E6lLE/1/",
+                        "id": "E6lLE"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/vYyQl/1/",
+                        "id": "vYyQl"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/weciu/1/",
+                        "id": "weciu"
+                    }
+                ]
+            }
+        ]
+    },
+    "maryland": {
+        "state": "maryland",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/KLKY0/1/",
+                        "id": "KLKY0"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/1C68F/1/",
+                        "id": "1C68F"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/1AYL9/1/",
+                        "id": "1AYL9"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/qF5gI/1/",
+                        "id": "qF5gI"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/gBcq7/1/",
+                        "id": "gBcq7"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/udz3v/1/",
+                        "id": "udz3v"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/FeECY/1/",
+                        "id": "FeECY"
+                    }
+                ]
+            }
+        ]
+    },
+    "massachusetts": {
+        "state": "massachusetts",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/nA7Iy/1/",
+                        "id": "nA7Iy"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/tI3uT/1/",
+                        "id": "tI3uT"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ARMEJ/1/",
+                        "id": "ARMEJ"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/yv8Wb/1/",
+                        "id": "yv8Wb"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/EJKT6/1/",
+                        "id": "EJKT6"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/1I3W3/1/",
+                        "id": "1I3W3"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/bQd5X/1/",
+                        "id": "bQd5X"
+                    }
+                ]
+            }
+        ]
+    },
+    "michigan": {
+        "state": "michigan",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/vzstb/1/",
+                        "id": "vzstb"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/9scSA/1/",
+                        "id": "9scSA"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/rNZsf/1/",
+                        "id": "rNZsf"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/dUzVc/1/",
+                        "id": "dUzVc"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/lAN3F/1/",
+                        "id": "lAN3F"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/QxZ2i/1/",
+                        "id": "QxZ2i"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/FUEIC/1/",
+                        "id": "FUEIC"
+                    }
+                ]
+            }
+        ]
+    },
+    "minnesota": {
+        "state": "minnesota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Js2s0/1/",
+                        "id": "Js2s0"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/On74m/1/",
+                        "id": "On74m"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/l2Njc/1/",
+                        "id": "l2Njc"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Rmzr0/1/",
+                        "id": "Rmzr0"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/8WhE2/1/",
+                        "id": "8WhE2"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/SKw0X/1/",
+                        "id": "SKw0X"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/yMubV/1/",
+                        "id": "yMubV"
+                    }
+                ]
+            }
+        ]
+    },
+    "mississippi": {
+        "state": "mississippi",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/o6sou/1/",
+                        "id": "o6sou"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/moI0y/1/",
+                        "id": "moI0y"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Uwtp3/1/",
+                        "id": "Uwtp3"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Fqm1T/1/",
+                        "id": "Fqm1T"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/UoWQr/1/",
+                        "id": "UoWQr"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/VnjmP/1/",
+                        "id": "VnjmP"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/Ld499/1/",
+                        "id": "Ld499"
+                    }
+                ]
+            }
+        ]
+    },
+    "missouri": {
+        "state": "missouri",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/APdjP/1/",
+                        "id": "APdjP"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/NADoY/1/",
+                        "id": "NADoY"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/iEBq2/1/",
+                        "id": "iEBq2"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/LMCSw/1/",
+                        "id": "LMCSw"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Bpl2H/1/",
+                        "id": "Bpl2H"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/zju6u/1/",
+                        "id": "zju6u"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/XfDsB/1/",
+                        "id": "XfDsB"
+                    }
+                ]
+            }
+        ]
+    },
+    "montana": {
+        "state": "montana",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/ODmhZ/1/",
+                        "id": "ODmhZ"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/06OdT/1/",
+                        "id": "06OdT"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/TDCJP/1/",
+                        "id": "TDCJP"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ytASD/1/",
+                        "id": "ytASD"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/vNosk/1/",
+                        "id": "vNosk"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/65IUW/1/",
+                        "id": "65IUW"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/GR4Od/1/",
+                        "id": "GR4Od"
+                    }
+                ]
+            }
+        ]
+    },
+    "nebraska": {
+        "state": "nebraska",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/yMmn5/1/",
+                        "id": "yMmn5"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/em07L/1/",
+                        "id": "em07L"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ZhhqR/1/",
+                        "id": "ZhhqR"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/oxvoS/1/",
+                        "id": "oxvoS"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/2ZPkn/1/",
+                        "id": "2ZPkn"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/hmuUK/1/",
+                        "id": "hmuUK"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/fMU2L/1/",
+                        "id": "fMU2L"
+                    }
+                ]
+            }
+        ]
+    },
+    "nevada": {
+        "state": "nevada",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/x3hQL/1/",
+                        "id": "x3hQL"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/eMBB0/1/",
+                        "id": "eMBB0"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/nBDQL/1/",
+                        "id": "nBDQL"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/uwO43/1/",
+                        "id": "uwO43"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/XA5em/1/",
+                        "id": "XA5em"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/2YvJc/1/",
+                        "id": "2YvJc"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/y1zy5/1/",
+                        "id": "y1zy5"
+                    }
+                ]
+            }
+        ]
+    },
+    "new-hampshire": {
+        "state": "new-hampshire",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/OoNXZ/1/",
+                        "id": "OoNXZ"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/sE245/1/",
+                        "id": "sE245"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ZLRd6/1/",
+                        "id": "ZLRd6"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/y8StY/1/",
+                        "id": "y8StY"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/m1ku6/1/",
+                        "id": "m1ku6"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/NY2AS/1/",
+                        "id": "NY2AS"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/2FXjt/1/",
+                        "id": "2FXjt"
+                    }
+                ]
+            }
+        ]
+    },
+    "new-jersey": {
+        "state": "new-jersey",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/xpsBw/1/",
+                        "id": "xpsBw"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/LxgaC/1/",
+                        "id": "LxgaC"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/RSpsv/1/",
+                        "id": "RSpsv"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Nwy6t/1/",
+                        "id": "Nwy6t"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/1l9AB/1/",
+                        "id": "1l9AB"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/z5VLq/1/",
+                        "id": "z5VLq"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/g8cOJ/1/",
+                        "id": "g8cOJ"
+                    }
+                ]
+            }
+        ]
+    },
+    "new-mexico": {
+        "state": "new-mexico",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/QGnhQ/1/",
+                        "id": "QGnhQ"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/0ITRC/1/",
+                        "id": "0ITRC"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/HWN3t/1/",
+                        "id": "HWN3t"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/5Pmdd/1/",
+                        "id": "5Pmdd"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/1d1zM/1/",
+                        "id": "1d1zM"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/CC5d3/1/",
+                        "id": "CC5d3"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/cWWhO/1/",
+                        "id": "cWWhO"
+                    }
+                ]
+            }
+        ]
+    },
+    "new-york": {
+        "state": "new-york",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/IgCxK/1/",
+                        "id": "IgCxK"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/GKrmB/1/",
+                        "id": "GKrmB"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/H28GV/1/",
+                        "id": "H28GV"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/h2HYW/1/",
+                        "id": "h2HYW"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/S5BCD/1/",
+                        "id": "S5BCD"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/88MnL/1/",
+                        "id": "88MnL"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/ukSpG/1/",
+                        "id": "ukSpG"
+                    }
+                ]
+            }
+        ]
+    },
+    "north-carolina": {
+        "state": "north-carolina",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/qMziJ/1/",
+                        "id": "qMziJ"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/xkIzO/1/",
+                        "id": "xkIzO"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/3iVRf/1/",
+                        "id": "3iVRf"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Sqav7/1/",
+                        "id": "Sqav7"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/eMsu1/1/",
+                        "id": "eMsu1"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/FY4JK/1/",
+                        "id": "FY4JK"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/ruzmz/1/",
+                        "id": "ruzmz"
+                    }
+                ]
+            }
+        ]
+    },
+    "north-dakota": {
+        "state": "north-dakota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/6I5dp/1/",
+                        "id": "6I5dp"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/2HjrA/1/",
+                        "id": "2HjrA"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/HDboW/1/",
+                        "id": "HDboW"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/43MJ6/1/",
+                        "id": "43MJ6"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/eskc4/1/",
+                        "id": "eskc4"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/8C3vI/1/",
+                        "id": "8C3vI"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/q41C3/1/",
+                        "id": "q41C3"
+                    }
+                ]
+            }
+        ]
+    },
+    "ohio": {
+        "state": "ohio",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/kZGEt/1/",
+                        "id": "kZGEt"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Lci3R/1/",
+                        "id": "Lci3R"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/7UrUa/1/",
+                        "id": "7UrUa"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/U2lgK/1/",
+                        "id": "U2lgK"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/CmWsa/1/",
+                        "id": "CmWsa"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/omhyM/1/",
+                        "id": "omhyM"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/K8l1C/1/",
+                        "id": "K8l1C"
+                    }
+                ]
+            }
+        ]
+    },
+    "oklahoma": {
+        "state": "oklahoma",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/25mCn/1/",
+                        "id": "25mCn"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/C0IsI/1/",
+                        "id": "C0IsI"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/J9tP3/1/",
+                        "id": "J9tP3"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/X9jQI/1/",
+                        "id": "X9jQI"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/gGra4/1/",
+                        "id": "gGra4"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/mi3Zo/1/",
+                        "id": "mi3Zo"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/qR6QV/1/",
+                        "id": "qR6QV"
+                    }
+                ]
+            }
+        ]
+    },
+    "oregon": {
+        "state": "oregon",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Id9ah/1/",
+                        "id": "Id9ah"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/E5u1x/1/",
+                        "id": "E5u1x"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/m6KFm/1/",
+                        "id": "m6KFm"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/q4LhR/1/",
+                        "id": "q4LhR"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/TXNwP/1/",
+                        "id": "TXNwP"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/n0DSv/1/",
+                        "id": "n0DSv"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/RJwJv/1/",
+                        "id": "RJwJv"
+                    }
+                ]
+            }
+        ]
+    },
+    "pennsylvania": {
+        "state": "pennsylvania",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/Gs1BE/1/",
+                        "id": "Gs1BE"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/eqKJQ/1/",
+                        "id": "eqKJQ"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/nloNL/1/",
+                        "id": "nloNL"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/hdGjD/1/",
+                        "id": "hdGjD"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/AG6Th/1/",
+                        "id": "AG6Th"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/6rFhS/1/",
+                        "id": "6rFhS"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/90mra/1/",
+                        "id": "90mra"
+                    }
+                ]
+            }
+        ]
+    },
+    "rhode-island": {
+        "state": "rhode-island",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/iQsT5/1/",
+                        "id": "iQsT5"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/ZNu2z/1/",
+                        "id": "ZNu2z"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/kO9zI/1/",
+                        "id": "kO9zI"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/S6FzI/1/",
+                        "id": "S6FzI"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/jZeWf/1/",
+                        "id": "jZeWf"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/nb62v/1/",
+                        "id": "nb62v"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/NNsjo/1/",
+                        "id": "NNsjo"
+                    }
+                ]
+            }
+        ]
+    },
+    "south-carolina": {
+        "state": "south-carolina",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/yFJPI/1/",
+                        "id": "yFJPI"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/C6q1U/1/",
+                        "id": "C6q1U"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/7f599/1/",
+                        "id": "7f599"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/UlyRF/1/",
+                        "id": "UlyRF"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/u0YgZ/1/",
+                        "id": "u0YgZ"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/YeTBF/1/",
+                        "id": "YeTBF"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/bGwzM/1/",
+                        "id": "bGwzM"
+                    }
+                ]
+            }
+        ]
+    },
+    "south-dakota": {
+        "state": "south-dakota",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/CJgZe/1/",
+                        "id": "CJgZe"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/olwkO/1/",
+                        "id": "olwkO"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/M1LSy/1/",
+                        "id": "M1LSy"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/jMoiD/1/",
+                        "id": "jMoiD"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/ltD2A/1/",
+                        "id": "ltD2A"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/zoRqO/1/",
+                        "id": "zoRqO"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/4yMOb/1/",
+                        "id": "4yMOb"
+                    }
+                ]
+            }
+        ]
+    },
+    "tennessee": {
+        "state": "tennessee",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/vH9y9/1/",
+                        "id": "vH9y9"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/wPM9t/1/",
+                        "id": "wPM9t"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/qd2aO/1/",
+                        "id": "qd2aO"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/VheoK/1/",
+                        "id": "VheoK"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/530Or/1/",
+                        "id": "530Or"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/sJYNw/1/",
+                        "id": "sJYNw"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/SJjwZ/1/",
+                        "id": "SJjwZ"
+                    }
+                ]
+            }
+        ]
+    },
+    "texas": {
+        "state": "texas",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/lhoFd/1/",
+                        "id": "lhoFd"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/8jK0N/1/",
+                        "id": "8jK0N"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/aRjyk/1/",
+                        "id": "aRjyk"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/3EP1f/1/",
+                        "id": "3EP1f"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/hy781/1/",
+                        "id": "hy781"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/92YKc/1/",
+                        "id": "92YKc"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/boo0y/1/",
+                        "id": "boo0y"
+                    }
+                ]
+            }
+        ]
+    },
+    "utah": {
+        "state": "utah",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/el8rr/1/",
+                        "id": "el8rr"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/pvi3A/1/",
+                        "id": "pvi3A"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/fVpx2/1/",
+                        "id": "fVpx2"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/05fnM/1/",
+                        "id": "05fnM"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/CWJd3/1/",
+                        "id": "CWJd3"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Trkgo/1/",
+                        "id": "Trkgo"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/dgrbm/1/",
+                        "id": "dgrbm"
+                    }
+                ]
+            }
+        ]
+    },
+    "vermont": {
+        "state": "vermont",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/iq896/1/",
+                        "id": "iq896"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/hO3uS/1/",
+                        "id": "hO3uS"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/4RLtP/1/",
+                        "id": "4RLtP"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/5UwYv/1/",
+                        "id": "5UwYv"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/EPYaK/1/",
+                        "id": "EPYaK"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/t6hkH/1/",
+                        "id": "t6hkH"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/ud9bD/1/",
+                        "id": "ud9bD"
+                    }
+                ]
+            }
+        ]
+    },
+    "virginia": {
+        "state": "virginia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/I8YeE/1/",
+                        "id": "I8YeE"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/aI5Nz/1/",
+                        "id": "aI5Nz"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/f67QU/1/",
+                        "id": "f67QU"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/Xz6JL/1/",
+                        "id": "Xz6JL"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/I2tsb/1/",
+                        "id": "I2tsb"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/K6jXz/1/",
+                        "id": "K6jXz"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/V3Hsa/1/",
+                        "id": "V3Hsa"
+                    }
+                ]
+            }
+        ]
+    },
+    "washington": {
+        "state": "washington",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/nNi7c/1/",
+                        "id": "nNi7c"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/qtdpX/1/",
+                        "id": "qtdpX"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/TiiHU/1/",
+                        "id": "TiiHU"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/p2khn/1/",
+                        "id": "p2khn"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/aVBGf/1/",
+                        "id": "aVBGf"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/Ckdf3/1/",
+                        "id": "Ckdf3"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/WLcAn/1/",
+                        "id": "WLcAn"
+                    }
+                ]
+            }
+        ]
+    },
+    "west-virginia": {
+        "state": "west-virginia",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/C6TSx/1/",
+                        "id": "C6TSx"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/sTPQM/1/",
+                        "id": "sTPQM"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/6csGV/1/",
+                        "id": "6csGV"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/ppZ8A/1/",
+                        "id": "ppZ8A"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/WaMJk/1/",
+                        "id": "WaMJk"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/FqwDb/1/",
+                        "id": "FqwDb"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/n3SlB/1/",
+                        "id": "n3SlB"
+                    }
+                ]
+            }
+        ]
+    },
+    "wisconsin": {
+        "state": "wisconsin",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/puZAu/1/",
+                        "id": "puZAu"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/V0m5H/1/",
+                        "id": "V0m5H"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/XIhYv/1/",
+                        "id": "XIhYv"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/G5Fp2/1/",
+                        "id": "G5Fp2"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/RezzF/1/",
+                        "id": "RezzF"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/VA7MW/1/",
+                        "id": "VA7MW"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/rlYZ4/1/",
+                        "id": "rlYZ4"
+                    }
+                ]
+            }
+        ]
+    },
+    "wyoming": {
+        "state": "wyoming",
+        "charts": [
+            {
+                "name": "Excess Mortality",
+                "sources": [
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/v9nhz/1/",
+                        "id": "v9nhz"
+                    },
+                    {
+                        "name": "Excess Mortality",
+                        "url": "https://datawrapper.dwcdn.net/D26D3/1/",
+                        "id": "D26D3"
+                    }
+                ]
+            },
+            {
+                "name": "Covid Death Rates",
+                "sources": [
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/mjZhG/1/",
+                        "id": "mjZhG"
+                    },
+                    {
+                        "name": "Covid Death Rates",
+                        "url": "https://datawrapper.dwcdn.net/RCqfm/1/",
+                        "id": "RCqfm"
+                    }
+                ]
+            },
+            {
+                "name": "Potential Undercounting",
+                "sources": [
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/u1Ppy/1/",
+                        "id": "u1Ppy"
+                    },
+                    {
+                        "name": "Potential Undercounting",
+                        "url": "https://datawrapper.dwcdn.net/uonVR/1/",
+                        "id": "uonVR"
+                    }
+                ]
+            },
+            {
+                "name": "Death Investigation Systems",
+                "sources": [
+                    {
+                        "name": "Death Investigation Systems",
+                        "url": "https://datawrapper.dwcdn.net/R9Iew/1/",
+                        "id": "R9Iew"
+                    }
+                ]
+            }
+        ]
+    }
+}

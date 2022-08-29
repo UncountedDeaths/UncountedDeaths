@@ -1,0 +1,49 @@
+[
+  {
+    "graph_type": "Excess Mortality",
+    "graphs": [
+      {
+        "year": "2020",
+        "url": "https://datawrapper.dwcdn.net/g01tG"
+      },
+      {
+        "year": "2021",
+        "url": "https://datawrapper.dwcdn.net/9XHiP"
+      }
+    ]
+  },
+  {
+    "graph_type": "Covid Death Rates",
+    "graphs": [
+      {
+        "year": "2020",
+        "url": "https://datawrapper.dwcdn.net/f5seJ"
+      },
+      {
+        "year": "2021",
+        "url": "https://datawrapper.dwcdn.net/8dCS5"
+      }
+    ]
+  },
+  {
+    "graph_type": "Potential Undercounting",
+    "graphs": [
+      {
+        "year": "2020",
+        "url": "https://datawrapper.dwcdn.net/uTCtN/"
+      },
+      {
+        "year": "2021",
+        "url": "https://datawrapper.dwcdn.net/UVczQ/"
+      }
+    ]
+  },
+  {
+    "graph_type": "Death Investigation Systems",
+    "graphs": [
+      {
+        "url": "https://datawrapper.dwcdn.net/rTpxp"
+      }
+    ]
+  }
+]

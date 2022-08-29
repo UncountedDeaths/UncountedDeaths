@@ -130,35 +130,6 @@
   }
 }
 
-.appIFrame {
-  flex: 1;
-  height: calc(100vw / 2 * 0.75);
-  border: none;
-  padding: 1rem;
-  &:first-child {
-    margin-right: 2rem;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 2000px) {
-  .appIFrame {
-    height: calc(100vw / 2 * 0.85);
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .appIFrame {
-    flex: none;
-    width: 100%;
-    height: calc(100vw * 0.8);
-    &:first-child {
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
-  }
-}
-
 .cardSection {
   display: flex;
   flex-direction: column;
@@ -209,24 +180,3 @@
   }
 }
 
-.dashboardTabs {
-  > div {
-    > div {
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
-.nationalDashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.titletabpane {
-  font-size: @font-medium-size;
-  margin: 0;
-}

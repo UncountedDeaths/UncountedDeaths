@@ -1,0 +1,161 @@
+{
+    "language": "en-US",
+    "theme": "datawrapper-data",
+    "forkable": false,
+    "metadata": {
+        "data": {
+            "changes": [],
+            "transpose": false,
+            "vertical-header": true,
+            "horizontal-header": true,
+            "column-format": {
+                "NAME": {
+                    "type": "auto"
+                },
+                "FIPSCode": {
+                    "type": "text"
+                }
+            },
+            "external-data": "https://raw.githubusercontent.com/UncountedDeaths/UncountedDeathsData/main/MDI/&{FULL_STATE_LABEL}&.csv",
+            "upload-method": "external-data",
+            "external-metadata": null,
+            "use-datawrapper-cdn": true
+        },
+        "describe": {
+            "source-name": "Github",
+            "source-url": "https://github.com/UncountedDeaths/UncountedDeathsData",
+            "intro": "",
+            "byline": "",
+            "aria-description": "",
+            "number-format": "-",
+            "number-divisor": 0,
+            "number-append": "",
+            "number-prepend": "",
+            "hide-title": false
+        },
+        "visualize": {
+            "dark-mode-invert": true,
+            "highlighted-series": [],
+            "highlighted-values": [],
+            "sharing": {
+                "enabled": false
+            },
+            "labels": {
+                "max": 1,
+                "type": "places",
+                "places": [],
+                "enabled": false
+            },
+            "legend": {
+                "size": 155,
+                "title": "",
+                "labels": "ranges",
+                "enabled": true,
+                "reverse": false,
+                "labelMax": "high",
+                "labelMin": "low",
+                "position": "mt",
+                "hideItems": [],
+                "offsetTop": 0,
+                "offsetLeft": 0,
+                "interactive": false,
+                "labelCenter": "medium",
+                "labelFormat": "0.00%",
+                "orientation": "vertical",
+                "customLabels": []
+            },
+            "basemap": "&{FULL_STATE}&-counties",
+            "tooltip": {
+                "body": "{{ mditype }}",
+                "title": "{{ countyname }}",
+                "sticky": true,
+                "enabled": true
+            },
+            "zoomable": true,
+            "map-align": "center",
+            "colorscale": {
+                "map": {
+                    "Coroner": "#09bb9f",
+                    "Medical Examiner": "#18a1cd"
+                },
+                "mode": "continuous",
+                "stops": "equidistant",
+                "colors": [
+                    {
+                        "color": "#002d62",
+                        "position": 0
+                    },
+                    {
+                        "color": "#3479a2",
+                        "position": 0.25
+                    },
+                    {
+                        "color": "#68b0bf",
+                        "position": 0.5
+                    },
+                    {
+                        "color": "#b1dbd9",
+                        "position": 0.75
+                    },
+                    {
+                        "color": "#cff7f6",
+                        "position": 1
+                    }
+                ],
+                "palette": 0,
+                "rangeMax": "",
+                "rangeMin": "",
+                "stopCount": 5,
+                "customStops": [],
+                "rangeCenter": "",
+                "categoryOrder": [],
+                "interpolation": "equidistant",
+                "categoryLabels": {},
+                "excludeFromKey": []
+            },
+            "max-height": 650,
+            "map-padding": 1,
+            "map-key-attr": "GEOID",
+            "map-type-set": true,
+            "chart-type-set": true,
+            "max-map-height": 650,
+            "min-label-zoom": 1,
+            "zoom-button-pos": "tr",
+            "map-label-format": "0,0.[00]",
+            "text-annotations": [],
+            "range-annotations": [],
+            "hide-empty-regions": false,
+            "avoid-label-overlap": true
+        },
+        "axes": {
+            "keys": "FIPSCode",
+            "values": "mditype"
+        },
+        "publish": {
+            "embed-width": 600,
+            "embed-height": 459,
+            "blocks": {
+                "logo": {
+                    "enabled": false
+                },
+                "embed": false,
+                "download-pdf": false,
+                "download-svg": false,
+                "get-the-data": false,
+                "download-image": false
+            },
+            "export-pdf": {},
+            "export-svg": null,
+            "autoDarkMode": false,
+            "chart-height": 392
+        },
+        "annotate": {
+            "notes": ""
+        },
+        "custom": {}
+    },
+    "organizationId": null,
+    "title": "<span class=\"block-inner\">Death Investigation Systems for &{FULL_STATE_LABEL}&</span>",
+    "type": "d3-maps-choropleth",
+    "folderId": "&{FOLDER_ID}&"
+}

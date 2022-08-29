@@ -113,7 +113,7 @@ export const Sub_FAQ_MDI_Systems: IFAQ[] = [
   {
     title: 'Coroner',
     content:
-      'A coroner is elected by the general population and is not required to be medically trained or board certified. They do not perform any post-mortem examinations or diagnostic tests but are in charge of identifying a body, notifying the next of kin, and arranging a death certificate.',
+      'A coroner is elected by the general population and is not required to be medically trained or board certified. They generally do not perform post-mortem examinations or diagnostic tests but are in charge of identifying a body, notifying the next of kin, and arranging a death certificate.',
   },
   {
     title: 'Sheriff-Coroner',
@@ -215,6 +215,3 @@ export const FAQ_FEMA_FAQ_Data: IFAQ[] = [
     ),
   },
 ];
-
-export const FAQ_FEMA_SubHeader_Text =
-  'If you need assistance covering the cost of a COVID-19 funeral you may be eligible to apply for up to $9,000 in assistance through FEMA.';
