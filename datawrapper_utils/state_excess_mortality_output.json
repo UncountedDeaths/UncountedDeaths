@@ -1,0 +1,767 @@
+[
+    {
+        "state": "alabama",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/zx3Wq/3/",
+                "id": "zx3Wq"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/u6fpp/2/",
+                "id": "u6fpp"
+            }
+        ]
+    },
+    {
+        "state": "alaska",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/kwdiF/2/",
+                "id": "kwdiF"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/dziTC/2/",
+                "id": "dziTC"
+            }
+        ]
+    },
+    {
+        "state": "arizona",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/2srUN/2/",
+                "id": "2srUN"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/9zi6K/2/",
+                "id": "9zi6K"
+            }
+        ]
+    },
+    {
+        "state": "arkansas",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/RM5Ai/2/",
+                "id": "RM5Ai"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/yX4LB/2/",
+                "id": "yX4LB"
+            }
+        ]
+    },
+    {
+        "state": "california",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/UiRwn/2/",
+                "id": "UiRwn"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/AGRwd/2/",
+                "id": "AGRwd"
+            }
+        ]
+    },
+    {
+        "state": "colorado",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Cm0MV/2/",
+                "id": "Cm0MV"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/TtME6/2/",
+                "id": "TtME6"
+            }
+        ]
+    },
+    {
+        "state": "connecticut",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/DPn9o/2/",
+                "id": "DPn9o"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/LKwb9/2/",
+                "id": "LKwb9"
+            }
+        ]
+    },
+    {
+        "state": "delaware",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/xKQov/2/",
+                "id": "xKQov"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/ZGyR4/2/",
+                "id": "ZGyR4"
+            }
+        ]
+    },
+    {
+        "state": "dc",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/QQ63K/2/",
+                "id": "QQ63K"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/SuLvo/2/",
+                "id": "SuLvo"
+            }
+        ]
+    },
+    {
+        "state": "florida",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/BRzUo/2/",
+                "id": "BRzUo"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/M7TNn/2/",
+                "id": "M7TNn"
+            }
+        ]
+    },
+    {
+        "state": "georgia",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/z23dn/2/",
+                "id": "z23dn"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/DuVOs/2/",
+                "id": "DuVOs"
+            }
+        ]
+    },
+    {
+        "state": "hawaii",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/wDtVQ/2/",
+                "id": "wDtVQ"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/C89Ac/2/",
+                "id": "C89Ac"
+            }
+        ]
+    },
+    {
+        "state": "idaho",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/ltqB4/2/",
+                "id": "ltqB4"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/yfNWn/2/",
+                "id": "yfNWn"
+            }
+        ]
+    },
+    {
+        "state": "illinois",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Aesvi/2/",
+                "id": "Aesvi"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/NLEos/2/",
+                "id": "NLEos"
+            }
+        ]
+    },
+    {
+        "state": "indiana",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/XHl50/2/",
+                "id": "XHl50"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/fc99q/2/",
+                "id": "fc99q"
+            }
+        ]
+    },
+    {
+        "state": "iowa",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/IidpR/2/",
+                "id": "IidpR"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/U3Qdu/2/",
+                "id": "U3Qdu"
+            }
+        ]
+    },
+    {
+        "state": "kansas",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/0Fefc/2/",
+                "id": "0Fefc"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/QSXuB/2/",
+                "id": "QSXuB"
+            }
+        ]
+    },
+    {
+        "state": "kentucky",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/CSnzV/2/",
+                "id": "CSnzV"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/TQ7vl/2/",
+                "id": "TQ7vl"
+            }
+        ]
+    },
+    {
+        "state": "louisiana",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/3AiLo/2/",
+                "id": "3AiLo"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/9jd5M/2/",
+                "id": "9jd5M"
+            }
+        ]
+    },
+    {
+        "state": "maine",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/KmEXM/2/",
+                "id": "KmEXM"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/ycxT2/2/",
+                "id": "ycxT2"
+            }
+        ]
+    },
+    {
+        "state": "maryland",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/588TQ/2/",
+                "id": "588TQ"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/S84fi/2/",
+                "id": "S84fi"
+            }
+        ]
+    },
+    {
+        "state": "massachusetts",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/wedQZ/2/",
+                "id": "wedQZ"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/zSOyB/2/",
+                "id": "zSOyB"
+            }
+        ]
+    },
+    {
+        "state": "michigan",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/apcD4/2/",
+                "id": "apcD4"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/gT2QH/2/",
+                "id": "gT2QH"
+            }
+        ]
+    },
+    {
+        "state": "minnesota",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/2kNWD/2/",
+                "id": "2kNWD"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Ta0gX/2/",
+                "id": "Ta0gX"
+            }
+        ]
+    },
+    {
+        "state": "mississippi",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/YG9TG/2/",
+                "id": "YG9TG"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/NFYi2/2/",
+                "id": "NFYi2"
+            }
+        ]
+    },
+    {
+        "state": "missouri",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/IwNer/2/",
+                "id": "IwNer"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/bb8zy/2/",
+                "id": "bb8zy"
+            }
+        ]
+    },
+    {
+        "state": "montana",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Erp15/2/",
+                "id": "Erp15"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/1rDkb/2/",
+                "id": "1rDkb"
+            }
+        ]
+    },
+    {
+        "state": "nebraska",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/vQySQ/2/",
+                "id": "vQySQ"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/YkAss/2/",
+                "id": "YkAss"
+            }
+        ]
+    },
+    {
+        "state": "nevada",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/gTlr1/2/",
+                "id": "gTlr1"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/aQv7y/2/",
+                "id": "aQv7y"
+            }
+        ]
+    },
+    {
+        "state": "new-hampshire",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/V6mZg/2/",
+                "id": "V6mZg"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/8mj5F/2/",
+                "id": "8mj5F"
+            }
+        ]
+    },
+    {
+        "state": "new-jersey",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/fYF7M/2/",
+                "id": "fYF7M"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/7WrU9/2/",
+                "id": "7WrU9"
+            }
+        ]
+    },
+    {
+        "state": "new-mexico",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/w7Slb/2/",
+                "id": "w7Slb"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/xCTMx/2/",
+                "id": "xCTMx"
+            }
+        ]
+    },
+    {
+        "state": "new-york",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/KmBNT/2/",
+                "id": "KmBNT"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/fET4e/2/",
+                "id": "fET4e"
+            }
+        ]
+    },
+    {
+        "state": "north-carolina",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/38zkk/2/",
+                "id": "38zkk"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/iYf3A/2/",
+                "id": "iYf3A"
+            }
+        ]
+    },
+    {
+        "state": "north-dakota",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/cwGZK/2/",
+                "id": "cwGZK"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/q5cu4/2/",
+                "id": "q5cu4"
+            }
+        ]
+    },
+    {
+        "state": "ohio",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/E2uC3/2/",
+                "id": "E2uC3"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/8YRjA/2/",
+                "id": "8YRjA"
+            }
+        ]
+    },
+    {
+        "state": "oklahoma",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/CNcEE/2/",
+                "id": "CNcEE"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Duas9/2/",
+                "id": "Duas9"
+            }
+        ]
+    },
+    {
+        "state": "oregon",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/9JsPa/2/",
+                "id": "9JsPa"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/zpLvY/2/",
+                "id": "zpLvY"
+            }
+        ]
+    },
+    {
+        "state": "pennsylvania",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/rZG1M/2/",
+                "id": "rZG1M"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/soakv/2/",
+                "id": "soakv"
+            }
+        ]
+    },
+    {
+        "state": "rhode-island",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/IeTef/2/",
+                "id": "IeTef"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/yUa2t/2/",
+                "id": "yUa2t"
+            }
+        ]
+    },
+    {
+        "state": "south-carolina",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/VP7Tp/2/",
+                "id": "VP7Tp"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/8vaXU/2/",
+                "id": "8vaXU"
+            }
+        ]
+    },
+    {
+        "state": "south-dakota",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/rGxUN/2/",
+                "id": "rGxUN"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/hklvh/2/",
+                "id": "hklvh"
+            }
+        ]
+    },
+    {
+        "state": "tennessee",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/kHFf4/2/",
+                "id": "kHFf4"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/GUZG3/2/",
+                "id": "GUZG3"
+            }
+        ]
+    },
+    {
+        "state": "texas",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/RUbJU/2/",
+                "id": "RUbJU"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/bO20F/2/",
+                "id": "bO20F"
+            }
+        ]
+    },
+    {
+        "state": "utah",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/mL1L9/2/",
+                "id": "mL1L9"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/QVBZU/2/",
+                "id": "QVBZU"
+            }
+        ]
+    },
+    {
+        "state": "vermont",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/ThdID/2/",
+                "id": "ThdID"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/sbUG8/2/",
+                "id": "sbUG8"
+            }
+        ]
+    },
+    {
+        "state": "virginia",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/BPTjW/2/",
+                "id": "BPTjW"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/pHZgB/2/",
+                "id": "pHZgB"
+            }
+        ]
+    },
+    {
+        "state": "washington",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/Hydo9/2/",
+                "id": "Hydo9"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/qQJpQ/2/",
+                "id": "qQJpQ"
+            }
+        ]
+    },
+    {
+        "state": "west-virginia",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/h8oEp/2/",
+                "id": "h8oEp"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/KWrMW/2/",
+                "id": "KWrMW"
+            }
+        ]
+    },
+    {
+        "state": "wisconsin",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/JRnn4/2/",
+                "id": "JRnn4"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/bGrTS/2/",
+                "id": "bGrTS"
+            }
+        ]
+    },
+    {
+        "state": "wyoming",
+        "sources": [
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/q6j05/2/",
+                "id": "q6j05"
+            },
+            {
+                "name": "Excess Mortality",
+                "url": "https://datawrapper.dwcdn.net/tAS0o/2/",
+                "id": "tAS0o"
+            }
+        ]
+    }
+]

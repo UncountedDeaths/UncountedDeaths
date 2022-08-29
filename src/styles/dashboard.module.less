@@ -3,7 +3,7 @@
 
 .appIFrame {
   flex: 1;
-  height: calc(100vw / 2 * 0.75);
+  width: 100%;
   border: none;
   padding: 1rem;
   &:first-child {
@@ -11,36 +11,10 @@
     margin-bottom: 0;
   }
 }
-.appIFrameSmall {
-}
-
-@media screen and (max-width: 2000px) {
-  .appIFrame {
-    height: calc(100vw / 2 * 0.85);
-  }
-  .appIFrameSmall {
-    height: calc(100vw / 2 * 0.75);
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .appIFrame {
-    flex: none;
-    width: 100%;
-    height: calc(100vw * 0.8);
-    &:first-child {
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
-  }
-  .appIFrameSmall {
-    height: calc(100vw * 0.6);
-  }
-}
 
 @media screen and (max-width: @mobile-cutoff) {
   .appIFrame {
-    height: 600px;
+    width: 100vw;
   }
 }
 
@@ -67,6 +41,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+  width: 100%;
   width: inherit;
 }
 

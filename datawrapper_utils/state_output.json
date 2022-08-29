@@ -1,0 +1,33 @@
+[
+  {
+    "state": "state-name",
+    "charts": [
+      {
+        "chart_name": "Chart Title",
+        "sources": [
+          {
+            "name": "source-1",
+            "url": "url-test"
+          },
+          {
+            "name": "source-2",
+            "url": "source-url-2"
+          }
+        ]
+      },
+      {
+        "chart_name": "Chart Title",
+        "sources": [
+          {
+            "name": "source-1",
+            "url": "url-test"
+          },
+          {
+            "name": "source-2",
+            "url": "source-url-2"
+          }
+        ]
+      }
+    ]
+  }
+]

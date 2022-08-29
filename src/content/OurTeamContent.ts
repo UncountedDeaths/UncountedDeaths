@@ -15,7 +15,6 @@ import {
   luck,
   bayly,
   saucy,
-  augustine,
   aigerim,
   matthew,
   minkyo,
@@ -98,12 +97,6 @@ export const designContent: MemberCardProps[] = [
     title: 'Ian Saucy',
     subtitle: 'Software Engineering Solutions Engineer at Boston University Spark!',
     imgSrc: saucy,
-  },
-  {
-    title: 'Erica Augustine',
-    subtitle:
-      'Project Manager of the Vital Statistics Lab and Communications and Outreach Associate at Boston University Center for Emerging Infectious Diseases Policy & Research',
-    imgSrc: augustine,
   },
   {
     title: 'Minkyo Seo',
