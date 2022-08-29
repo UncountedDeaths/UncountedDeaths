@@ -15,7 +15,6 @@ import {
   luck,
   bayly,
   saucy,
-  augustine,
   aigerim,
   matthew,
   minkyo,

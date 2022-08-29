@@ -8,6 +8,7 @@ type barData = {
 
 const DemoColumn: React.FC<barData> = (props) => {
   const data = props.data;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Legend: any = false;
   const config = {
     data,
@@ -15,6 +16,7 @@ const DemoColumn: React.FC<barData> = (props) => {
     xField: 'abbr',
     yField: 'value',
     seriesField: 'select',
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     color: ({ select }: any) => {
       if (select === 'selected') {
         return 'Red';

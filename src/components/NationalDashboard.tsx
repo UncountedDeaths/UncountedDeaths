@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/dashboard.module.less';
-import IframeResizer from 'iframe-resizer-react';
 import { Select } from 'antd';
 import national_charts from '../data/national_charts.json';
 import barchart2021 from '../data/barchart2021.json';
@@ -66,6 +65,7 @@ const NationalDashboard: React.FC = () => {
   };
   useEffect(() => {
     if (!loaded) return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     datawrapper.on('region.mouseenter', (event: any) => {
       //super ugly bit to have the chart re render based on hover
       //can be cleaned by adding property for and year
@@ -190,7 +190,7 @@ const NationalDashboard: React.FC = () => {
         }
       }
     });
-  }, [loaded]);
+  }, [loaded, barData2020, barData2021]);
   return (
     <>
       <div className={styles.dashboardTab}>
