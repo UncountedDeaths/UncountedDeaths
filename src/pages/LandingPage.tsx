@@ -21,7 +21,10 @@ export const LandingPage: React.FC = () => {
   return (
     <ContentLayout title={Content.title_text} center={true}>
       <Paragraph className={styles.ContentText}>{Content.title_body_text}</Paragraph>
-      <Dashboard />
+      <IframeResizer
+        src="https://mu0brt-zhenwei-zhou.shinyapps.io/covid_ex_app"
+        style={{ width: '1px', minWidth: '100%', border: 'none' }}
+      />
       <div className={styles.cardSection}>
         <CustomTitle title={TrackerPageContent.key_terms_title} />
         <div className={styles.trackkeyterms}>
