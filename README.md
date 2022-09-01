@@ -24,11 +24,11 @@ Styling is provided via `less` modules and type checked if you have VS Code.
 
 ### Deployment
 
-Deployment happens automatically via Github Actions when a push to `react_transfer` occurs. Changes are compiled then pushed to the hosting provider. We're currently using Cloudflare Pages for hosting.
+Deployment happens automatically via Github Actions when a push to `main` occurs. Changes are compiled then pushed to the hosting provider. We're currently using Cloudflare Pages for hosting.
 
 #### Staging Deployment
 
-If you open a PR to `react_transfer` a bot will comment within about 15min to provide a link to a staging preview of the website.
+If you open a PR a bot will comment within about 15min to provide a link to a staging preview of the website.
 
 ### VSCode Configurations Eslint + Prettier
 
@@ -46,19 +46,21 @@ The `.vscode/` is currently gitignored so that there will be no conflict between
 
 # Project Structure Overview
 
-This project has pages, those which have a URL route stored under `src/pages`. Components, of any kind live in `src/pages`. Assets, such as logos and images live in `src/assets`. Content for pages, such as copy, links to articles are (mostly) stored in `src/content/`. Some are embedded directly in pages but an attempt to no do that was made. `src/data` contains data used for charts and related data displays. Styles are stored in `src/styles/` and are mostly 1:1 for each page or component but isn't always the case. 
+This project has pages, those which have a URL route stored under `src/pages`. Components, of any kind live in `src/pages`. Assets, such as logos and images live in `src/assets`. Content for pages, such as copy, links to articles are (mostly) stored in `src/content/`. Some are embedded directly in pages but an attempt to no do that was made. `src/data` contains data used for charts and related data displays. Styles are stored in `src/styles/` and are mostly 1:1 for each page or component but isn't always the case.
 
 ## Hosting
 
-The website is hosted in Cloudflare pages under Andrew's email. He should have keys(2FA required). It is automatically deployed on pushes to the `main` branch. In addition, preview builds are made for all branches and PRs. 
+The website is hosted in Cloudflare pages under Andrew's email. He should have keys(2FA required). It is automatically deployed on pushes to the `main` branch. In addition, preview builds are made for all branches and PRs.
 
 ### Hosting Restrictions
 
-We use Cloudflare Zero Access to control access to the website and preview builds. Currently, anyone in the Github team on UncountedDeaths github organization(The one called "CEID Team") is allowed access to the website and preview builds. In addition, emails can be manually added directly on Cloudflare. You can add people to individual sub-domains, just the TLD or all domains. Check the various access control groups and applications on the Cloudflare Zero Access page. 
+We use Cloudflare Zero Access to control access to the website and preview builds. Currently, anyone in the Github team on UncountedDeaths github organization(The one called "CEID Team") is allowed access to the website and preview builds. In addition, emails can be manually added directly on Cloudflare. You can add people to individual sub-domains, just the TLD or all domains. Check the various access control groups and applications on the Cloudflare Zero Access page.
+
+If you want to open the website to everyone, add a bypass rule to the correct application that's just the main domain(not sub-domains) and set it to "Everyone"
 
 ### Serverless Functions
 
-The county dashboard `src/components/CountyDashboard.tsx` leverages Cloudflare serverless functions. It's being used an API "light". Simply it returns all the charts for a specific state so that we don't have to load an entire JSON file with this content(making initial website load slow). 
+The county dashboard `src/components/CountyDashboard.tsx` leverages Cloudflare serverless functions. It's being used an API "light". Simply it returns all the charts for a specific state so that we don't have to load an entire JSON file with this content(making initial website load slow).
 
 You can find the function in `/functions`. Docs can be found online with Cloudflare. Functions are related but different than Cloudflare workers.
 
@@ -70,10 +72,9 @@ There are multiple domain names, only one "added" to Cloudflare. The others can 
 
 Most images(all should be -- but we haven't gotten there) are stored in Cloudflare's image hosting service. This service optimizes images and delivers correctly sized and formatted images for each device. All images should be stored here.
 
-
 # Graphs and Charts
 
-Most charts were built using Datawrapper.de which generates graphs and provides an embed URL. Those graphs(all the ones of the nation or specific state) are serviced via a dynamic `iframe` that resizes based on the users browser window size. 
+Most charts were built using Datawrapper.de which generates graphs and provides an embed URL. Those graphs(all the ones of the nation or specific state) are serviced via a dynamic `iframe` that resizes based on the users browser window size.
 
 The bar graphs are custom and interact with events emitted by the datawrapper.de graphs.
 
@@ -95,14 +96,13 @@ All work should be done in feature branches in small increments and a pull reque
 
 In geneal, the website is in a good position, there are a few things that should be changed.
 
-1. The LESS files should be re-organized and simplified. Some files are shared across multiple components which is not a great idea. 
+1. The LESS files should be re-organized and simplified. Some files are shared across multiple components which is not a great idea.
 2. Some Media or Publication's on each respective pages use thumbnail images that are not stored in the Cloudflare Image CDN. THis should be changed and they should be uploaded to the cloudflare image service.
 3. The logo could be further optimized from it's current state.
 4. Add the ability to directly link to specific chart combinations.
 5. Improve the bar chart interaction. The basic version has been built but optimizations could be done to make it perform better -- especially on mobile devices.
-6. Setup a CMS(Content Management System). There is a lot of written content on the website and updating it via the files is not a great way to handle it. In addition, it increases the load on developers which could be better spent on new features. Thus, moving to a CMS would be a good idea and allow better control of written content by another team. 
+6. Setup a CMS(Content Management System). There is a lot of written content on the website and updating it via the files is not a great way to handle it. In addition, it increases the load on developers which could be better spent on new features. Thus, moving to a CMS would be a good idea and allow better control of written content by another team.
 7. Standardize file naming -- Not all files have the same name format.
-
 
 ## Project Bootstrapping
 
