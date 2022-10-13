@@ -12,6 +12,38 @@ export type ContentCardProps = {
 
 export const content: ContentCardProps[] = [
   {
+    title: 'Dynamics of racial disparities in all-cause mortality during the COVID-19 pandemic',
+    journal: 'Proceedings of the National Academy of Sciences',
+    author:
+      'Aschmann HE, Riley AR, Chen R, Chen YH, Bibbins-Domingo K, Stokes AC, Glymour MM, Kiang MV',
+    date: 'October, 2022',
+    text: 'As research documenting disparate impacts of COVID-19 by race and ethnicity grows, little attention has been given to dynamics in mortality disparities during the pandemic and whether changes in disparities persist. We estimate age-standardized monthly all-cause mortality in the United States from January 2018 through February 2022 for seven racial/ethnic populations. Using joinpoint regression, we quantify trends in race-specific rate ratios relative to non-Hispanic White mortality to examine the magnitude of pandemic-related shifts in mortality disparities. Prepandemic disparities were stable from January 2018 through February 2020. With the start of the pandemic, relative mortality disadvantages increased for American Indian or Alaska Native (AIAN), Native Hawaiian or other Pacific Islander (NHOPI), and Black individuals, and relative mortality advantages decreased for Asian and Hispanic groups.',
+    link: 'https://www.pnas.org/doi/abs/10.1073/pnas.2210941119',
+    imgSrc:
+      'https://www.pnas.org/cms/10.1073/pnas.2210941119/asset/70bd5c45-aaec-4259-bb06-890c2c1bcfb8/assets/images/large/pnas.2210941119fig01.jpg',
+  },
+  {
+    title:
+      'COVID-19 mortality and excess mortality among working-age residents in California, USA, by occupational sector: a longitudinal cohort analysis of mortality surveillance data',
+    journal: 'The Lancet Public Health',
+    author:
+      ' Chen YH, Riley AR, Duchowny KA, Aschmann HE, Chen R, Kiang MV, Mooney AC, Stokes AC, Glymour MM, Bibbins-Domingo K',
+    date: 'September, 2022',
+    text: 'During the first year of the COVID-19 pandemic, workers in essential sectors had higher rates of SARS-CoV-2 infection and COVID-19 mortality than those in non-essential sectors. It is unknown whether disparities in pandemic-related mortality across occupational sectors have continued to occur during the periods of SARS-CoV-2 variants and vaccine availability.',
+    link: 'https://www.sciencedirect.com/science/article/pii/S2468266722001918',
+    imgSrc: 'https://ars.els-cdn.com/content/image/1-s2.0-S2468266722001918-gr2.jpg',
+  },
+  {
+    title:
+      'Low vaccine booster rates are now a key factor in COVID-19 deaths–and racial disparities in booster rates persist',
+    journal: 'The Conversation',
+    author: 'Lundberg DJ, Raquib RV, Wrigley-Field E, Stokes AC',
+    date: 'August, 2022',
+    text: 'When COVID-19 vaccines first became available, public officials, community organizations and policymakers mobilized to get shots into arms. These efforts included significant investments in making vaccines accessible to Black, Hispanic, American Indian and Alaska Native populations. These groups experienced exceptionally high COVID-19 death rates early in the pandemic and had low initial vaccine rates.',
+    link: 'https://theconversation.com/low-vaccine-booster-rates-are-now-a-key-factor-in-covid-19-deaths-and-racial-disparities-in-booster-rates-persist-187272',
+    imgSrc: 'https://datawrapper.dwcdn.net/oENt5/full.png',
+  },
+  {
     title:
       'Geographic and Temporal Patterns in Covid-19 Mortality by Race and Ethnicity in the United States from March 2020 to February 2022',
     journal: 'medRxiv',
