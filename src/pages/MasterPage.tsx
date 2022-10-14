@@ -15,6 +15,7 @@ import { BULogo } from '../assets/assets.index';
 import AboutPage from './AboutPage';
 import { Link } from 'react-router-dom';
 import { useScreenWidth } from '../utils';
+import { sponsors } from '../content/LandingPageContent';
 
 /**
  * This component represents the main part of the website. The header, footer, and content
@@ -22,6 +23,11 @@ import { useScreenWidth } from '../utils';
  */
 export const Main: React.FC = () => {
   const { isMobile } = useScreenWidth();
+
+  const sponsorsText = sponsors.map((sponsor) => {
+    return <div key={sponsor}>{sponsor}</div>;
+  });
+
   return (
     <Layout className={styles.MasterLayout}>
       <Layout.Header className={styles.MenuHeader}>
@@ -45,16 +51,24 @@ export const Main: React.FC = () => {
       {/* Don't render the footer on the home page */}
       <Layout.Footer className={styles.MasterFooter}>
         <BULogo href="https://www.bu.edu/ceid/" target="_blank" className={styles.FooterLogo} />
-        <div className={styles.FooterTextContainer}>
-          <Link
-            className={styles.FooterText}
-            to={{ pathname: InternalRoutes.ABOUT.path, hash: '#contact' }}
-          >
-            Contact Us
-          </Link>
-          <a className={styles.FooterText} href="https://twitter.com/vitalstatslab">
-            Follow Us on Twitter
-          </a>
+
+        <div className={styles.FooterContainer}>
+          <div className={styles.SponsorsTextContainer}>
+            <div>Our Sponsors</div>
+            {sponsorsText}
+          </div>
+
+          <div className={styles.FooterLinksContainer}>
+            <Link
+              className={styles.FooterLink}
+              to={{ pathname: InternalRoutes.ABOUT.path, hash: '#contact' }}
+            >
+              Contact Us
+            </Link>
+            <a className={styles.FooterLink} href="https://twitter.com/vitalstatslab">
+              Follow Us on Twitter
+            </a>
+          </div>
         </div>
       </Layout.Footer>
     </Layout>
