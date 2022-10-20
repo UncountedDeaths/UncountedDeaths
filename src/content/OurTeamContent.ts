@@ -36,7 +36,7 @@ export const content: MemberCardProps[] = [
   {
     title: 'Dielle Lundberg, MPH',
     subtitle:
-      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Vital Statistics Lab',
+      'Research Fellow in the Department of Global Health at Boston University School of Public Health and Creative Design Manager of the Uncounted Lab',
     imgSrc: lundberg,
   },
   {
