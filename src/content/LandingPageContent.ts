@@ -10,4 +10,3 @@ export const who_we_are_body =
 export const title_text = 'Pandemic Mortality Tracker';
 export const title_body_text =
   'More than 170,000 deaths have gone uncounted across the US during the Covid-19 pandemic. Some of these deaths are deaths indirectly related to the social, economic and health system consequences of the pandemic, but most are uncounted Covid-19 deaths. Excess mortality is a tool to measure the true mortality impact of the pandemic by comparing pandemic mortality to pre-pandemic mortality.';
-export const sponsors = ['The Robertwood Johnson Foundation', 'W.K. Kellog Foundation'];
