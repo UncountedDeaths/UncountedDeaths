@@ -26,3 +26,14 @@ code {
   font-family: 'MarlinGeo';
   src: local('MarlinGeo-Regular'), url(./fonts/MarlinGeo/MarlinGeo-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Neometric-Bold';
+  src: local('Neometric-Bold'), url(./fonts/Neometric/Neometric-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Neometric';
+  src: local('Neometric'), url(./fonts/Neometric/Neometric-Regular.ttf) format('truetype');
+}
