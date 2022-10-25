@@ -67,6 +67,17 @@ const CountyDashboard: React.FC = () => {
     setCurrCharType(idx as number);
   };
 
+  const currChart = currChartSet ? currChartSet?.charts[currChartType] : null;
+  const countyNameOptions = currChartSet
+    ? currChartSet.charts.map((chart_type: ChartType, idx) => {
+        return (
+          <Option key={idx} label={chart_type.name}>
+            {chart_type.name}
+          </Option>
+        );
+      })
+    : [];
+
   return (
     <div className={styles.dashboardTab}>
       <div className={styles.dropDowns}>
@@ -74,16 +85,9 @@ const CountyDashboard: React.FC = () => {
         <Select
           className={styles.stateDashboardControl}
           onSelect={handleChartTypeChange}
-          value={currChartSet?.charts[currChartType].name}
+          value={currChart?.name}
         >
-          {currChartSet &&
-            currChartSet.charts.map((chart_type: ChartType, idx) => {
-              return (
-                <Option key={idx} label={chart_type.name}>
-                  {chart_type.name}
-                </Option>
-              );
-            })}
+          {countyNameOptions}
         </Select>
       </div>
       {isError ? (
@@ -92,15 +96,15 @@ const CountyDashboard: React.FC = () => {
         <div className={styles.stateDashboard}>
           <DWChart
             className={styles.appIFrame}
-            title={currChartSet && currChartSet.charts[currChartType].name}
-            src={currChartSet && currChartSet.charts[currChartType].sources[0].url}
+            title={currChart?.name || ''}
+            src={currChart?.sources[0].url || ''}
           />
-          {currChartSet != undefined && currChartSet.charts[currChartType].sources.length > 1 ? (
+          {currChart && currChart.sources.length > 1 ? (
             <>
               <DWChart
                 className={styles.appIFrame}
-                src={currChartSet.charts[currChartType].sources[1].url}
-                title={currChartSet && currChartSet.charts[currChartType].name}
+                src={currChart.sources[1].url}
+                title={currChart.name}
               />
             </>
           ) : (
