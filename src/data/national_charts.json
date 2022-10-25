@@ -3,10 +3,12 @@
     "graph_type": "Excess Mortality",
     "graphs": [
       {
+        "id": "",
         "year": "2020",
         "url": "https://datawrapper.dwcdn.net/g01tG"
       },
       {
+        "id": "",
         "year": "2021",
         "url": "https://datawrapper.dwcdn.net/9XHiP"
       }
@@ -16,10 +18,12 @@
     "graph_type": "Covid Death Rates",
     "graphs": [
       {
+        "id": "",
         "year": "2020",
         "url": "https://datawrapper.dwcdn.net/f5seJ"
       },
       {
+        "id": "",
         "year": "2021",
         "url": "https://datawrapper.dwcdn.net/8dCS5"
       }
@@ -29,10 +33,12 @@
     "graph_type": "Potential Undercounting",
     "graphs": [
       {
+        "id": "",
         "year": "2020",
         "url": "https://datawrapper.dwcdn.net/uTCtN/"
       },
       {
+        "id": "",
         "year": "2021",
         "url": "https://datawrapper.dwcdn.net/UVczQ/"
       }
@@ -42,6 +48,7 @@
     "graph_type": "Death Investigation Systems",
     "graphs": [
       {
+        "id": "",
         "url": "https://datawrapper.dwcdn.net/rTpxp"
       }
     ]
