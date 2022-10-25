@@ -12,6 +12,10 @@
 }
 
 .FooterLinksContainer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 
@@ -29,18 +33,6 @@
   align-items: center;
 }
 
-.SponsorsTextContainer {
-  display: flex;
-  align-items: flex-start;
-  white-space: nowrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.SponsorsTextContainer > div:first-child {
-  font-weight: 700;
-}
-
 .MasterContent {
   display: flex;
   align-items: center;
@@ -56,10 +48,17 @@
   justify-content: space-between;
   margin-bottom: 1rem;
   background-color: #dbdbdb;
+  min-height: 10rem;
 
   // :hover {
   //   transform: scale(1.01);
   // }
+}
+
+.Icons {
+  height: 1.5rem;
+  width: auto;
+  margin: auto;
 }
 
 .MenuHeader {
@@ -87,7 +86,7 @@
     flex-direction: column;
   }
   .FooterLogo {
-    max-width: 100%;
+    max-width: 60%;
     width: 100%;
     margin: auto;
   }
@@ -95,11 +94,8 @@
     align-items: center;
   }
   .FooterLinksContainer {
-    margin: auto;
-  }
-  .SponsorsTextContainer {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;    
   }
 }

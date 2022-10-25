@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'MarlinGeo-SemiLight';
+  src: local('MarlinGeo-SemiLight'), url(./fonts/MarlinGeo/MarlinGeo-SemiLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MarlinGeo-Bold';
+  src: local('MarlinGeo-Bold'), url(./fonts/MarlinGeo/MarlinGeo-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MarlinGeo';
+  src: local('MarlinGeo-Regular'), url(./fonts/MarlinGeo/MarlinGeo-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Neometric-Bold';
+  src: local('Neometric-Bold'), url(./fonts/Neometric/Neometric-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Neometric';
+  src: local('Neometric'), url(./fonts/Neometric/Neometric-Regular.ttf) format('truetype');
+}

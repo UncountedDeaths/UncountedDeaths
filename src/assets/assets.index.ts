@@ -33,9 +33,11 @@ export { default as minkyo } from './profilePhotos/minkyo.jpeg';
  * Logos and other branding
  */
 
-export { ReactComponent as Logo } from './logo_Horizontal.svg';
-export { ReactComponent as BULogo } from './bu_wordmark.svg';
+export { ReactComponent as Logo } from './header_logo.svg';
 export { ReactComponent as LogoWhite } from './BU_CEID_White.svg';
+export { ReactComponent as Sponsors } from './footer_logo.svg';
+export { ReactComponent as Envelope } from './envelope.svg';
+export { ReactComponent as Twitter } from './twitter.svg';
 
 /**
  * Icons etc
