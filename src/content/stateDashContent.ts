@@ -316,7 +316,7 @@ const countyData = {
     'Windham',
   ].sort(),
   Delaware: ['Kent', 'New Castle', 'Sussex'].sort(),
-  DC: ['District of Columbia'].sort(),
+  ['District of Columbia']: ['District of Columbia'].sort(),
   Florida: [
     'Alachua',
     'Baker',
@@ -3223,7 +3223,7 @@ export const stateData = [
   'Colorado',
   'Connecticut',
   'Delaware',
-  'DC',
+  'District of Columbia',
   'Florida',
   'Georgia',
   'Hawaii',

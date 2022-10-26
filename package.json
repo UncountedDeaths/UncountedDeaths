@@ -2,8 +2,8 @@
   "name": "uncounteddeaths",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://uncounteddeaths.org",
-  "proxy": "https://ian-dashboard-update.vital-stats.pages.dev/",
+  "homepage": "https://uncounteddeaths.com",
+  "proxy": "https://uncounteddeaths.com/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/plots": "^1.2.1",
