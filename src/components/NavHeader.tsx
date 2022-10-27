@@ -50,7 +50,7 @@ const RenderDesktopMenu: React.FC = () => {
       <Logo
         className={styles.Logo}
         onClick={() => navigate(InternalRoutes.HOME.path)}
-        aria-label="Vital Statistics Integrity Project Logo"
+        aria-label="Uncounted Lab Logo"
       />
       <RenderMenu />
     </>
