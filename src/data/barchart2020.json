@@ -1,177 +1,932 @@
 [
   {
     "bars": [
-      { "name": " Mississippi ", "abbr": " MS ", "value": 301.3311733, "select": "unselected" },
-      { "name": " Louisiana ", "abbr": " LA ", "value": 268.2664116, "select": "unselected" },
-      { "name": " Arizona ", "abbr": " AZ ", "value": 253.1433242, "select": "unselected" },
-      { "name": " New York ", "abbr": " NY ", "value": 244.0720308, "select": "unselected" },
-      { "name": " New Mexico ", "abbr": " NM ", "value": 237.8691644, "select": "unselected" },
-      { "name": " New Jersey ", "abbr": " NJ ", "value": 223.2455249, "select": "unselected" },
-      { "name": " South Carolina ", "abbr": " SC ", "value": 218.6462002, "select": "unselected" },
-      { "name": " South Dakota ", "abbr": " SD ", "value": 215.8584543, "select": "unselected" },
-      { "name": " Alabama ", "abbr": " AL ", "value": 215.6453901, "select": "unselected" },
-      { "name": " Missouri ", "abbr": " MO ", "value": 200.7712546, "select": "unselected" },
-      { "name": " Illinois ", "abbr": " IL ", "value": 197.3542328, "select": "unselected" },
-      { "name": " Arkansas ", "abbr": " AR ", "value": 196.541681, "select": "unselected" },
+      {
+        "name": " Mississippi ",
+        "abbr": " MS ",
+        "value": 330.605294753535,
+        "select": "unselected"
+      },
+      {
+        "name": " Arizona ",
+        "abbr": " AZ ",
+        "value": 300.065843650207,
+        "select": "unselected"
+      },
+      {
+        "name": " Louisiana ",
+        "abbr": " LA ",
+        "value": 284.358782881606,
+        "select": "unselected"
+      },
+      {
+        "name": " Alabama ",
+        "abbr": " AL ",
+        "value": 262.270341272844,
+        "select": "unselected"
+      },
+      {
+        "name": " South Carolina ",
+        "abbr": " SC ",
+        "value": 257.473971524097,
+        "select": "unselected"
+      },
+      {
+        "name": " New Mexico ",
+        "abbr": " NM ",
+        "value": 253.809386904334,
+        "select": "unselected"
+      },
+      {
+        "name": " New York ",
+        "abbr": " NY ",
+        "value": 249.865002971158,
+        "select": "unselected"
+      },
+      {
+        "name": " Oklahoma ",
+        "abbr": " OK ",
+        "value": 232.052945252456,
+        "select": "unselected"
+      },
+      {
+        "name": " Arkansas ",
+        "abbr": " AR ",
+        "value": 223.951908715716,
+        "select": "unselected"
+      },
+      {
+        "name": " New Jersey ",
+        "abbr": " NJ ",
+        "value": 219.670291240027,
+        "select": "unselected"
+      },
+      {
+        "name": " Tennessee ",
+        "abbr": " TN ",
+        "value": 216.346136459145,
+        "select": "unselected"
+      },
+      {
+        "name": " West Virginia ",
+        "abbr": " WV ",
+        "value": 215.85257997887,
+        "select": "unselected"
+      },
+      {
+        "name": " South Dakota ",
+        "abbr": " SD ",
+        "value": 211.045334267862,
+        "select": "unselected"
+      },
+      {
+        "name": " Georgia ",
+        "abbr": " GA ",
+        "value": 210.649498266106,
+        "select": "unselected"
+      },
       {
         "name": " District of Columbia ",
         "abbr": " DC ",
-        "value": 194.7719118,
+        "value": 206.760548697322,
         "select": "unselected"
       },
-      { "name": " Connecticut ", "abbr": " CT ", "value": 194.4256418, "select": "unselected" },
-      { "name": " Michigan ", "abbr": " MI ", "value": 193.9082693, "select": "unselected" },
-      { "name": " Oklahoma ", "abbr": " OK ", "value": 190.6973494, "select": "unselected" },
-      { "name": " Tennessee ", "abbr": " TN ", "value": 189.7185858, "select": "unselected" },
-      { "name": " North Dakota ", "abbr": " ND ", "value": 188.2728772, "select": "unselected" },
-      { "name": " Indiana ", "abbr": " IN ", "value": 185.7755012, "select": "unselected" },
-      { "name": " Ohio ", "abbr": " OH ", "value": 181.3181564, "select": "unselected" },
-      { "name": " Wyoming ", "abbr": " WY ", "value": 179.0108715, "select": "unselected" },
-      { "name": " Delaware ", "abbr": " DE ", "value": 173.1821925, "select": "unselected" },
-      { "name": " West Virginia ", "abbr": " WV ", "value": 172.1010191, "select": "unselected" },
-      { "name": " Texas ", "abbr": " TX ", "value": 169.2575546, "select": "unselected" },
-      { "name": " Iowa ", "abbr": " IA ", "value": 169.2492797, "select": "unselected" },
-      { "name": " Georgia ", "abbr": " GA ", "value": 167.0381486, "select": "unselected" },
-      { "name": " Kansas ", "abbr": " KS ", "value": 162.5039218, "select": "unselected" },
-      { "name": " Maryland ", "abbr": " MD ", "value": 161.3394063, "select": "unselected" },
-      { "name": " Pennsylvania ", "abbr": " PA ", "value": 159.4642116, "select": "unselected" },
-      { "name": " Florida ", "abbr": " FL ", "value": 158.8448867, "select": "unselected" },
-      { "name": " Kentucky ", "abbr": " KY ", "value": 158.0029143, "select": "unselected" },
-      { "name": " Wisconsin ", "abbr": " WI ", "value": 153.9874258, "select": "unselected" },
-      { "name": " Nevada ", "abbr": " NV ", "value": 151.7250194, "select": "unselected" },
-      { "name": " North Carolina ", "abbr": " NC ", "value": 147.1382543, "select": "unselected" },
-      { "name": " Rhode Island ", "abbr": " RI ", "value": 141.1683154, "select": "unselected" },
-      { "name": " Nebraska ", "abbr": " NE ", "value": 131.6797754, "select": "unselected" },
-      { "name": " California ", "abbr": " CA ", "value": 130.1641686, "select": "unselected" },
-      { "name": " Virginia ", "abbr": " VA ", "value": 123.9400824, "select": "unselected" },
-      { "name": " Massachusetts ", "abbr": " MA ", "value": 123.8102068, "select": "unselected" },
-      { "name": " Minnesota ", "abbr": " MN ", "value": 123.4457823, "select": "unselected" },
-      { "name": " Colorado ", "abbr": " CO ", "value": 121.8066247, "select": "unselected" },
-      { "name": " Montana ", "abbr": " MT ", "value": 121.483423, "select": "unselected" },
-      { "name": " Idaho ", "abbr": " ID ", "value": 86.32078003, "select": "unselected" },
-      { "name": " Alaska ", "abbr": " AK ", "value": 79.54204515, "select": "unselected" },
-      { "name": " Utah ", "abbr": " UT ", "value": 68.82514969, "select": "unselected" },
-      { "name": " Oregon ", "abbr": " OR ", "value": 65.54488492, "select": "unselected" },
-      { "name": " New Hampshire ", "abbr": " NH ", "value": 65.12069195, "select": "unselected" },
-      { "name": " Washington ", "abbr": " WA ", "value": 49.89630243, "select": "unselected" },
-      { "name": " Vermont ", "abbr": " VT ", "value": 41.24181608, "select": "unselected" },
-      { "name": " Maine ", "abbr": " ME ", "value": 40.03203739, "select": "unselected" },
-      { "name": " Hawaii ", "abbr": " HI ", "value": 16.5197895, "select": "unselected" }
+      {
+        "name": " Texas ",
+        "abbr": " TX ",
+        "value": 205.255264500782,
+        "select": "unselected"
+      },
+      {
+        "name": " Missouri ",
+        "abbr": " MO ",
+        "value": 204.667990170087,
+        "select": "unselected"
+      },
+      {
+        "name": " Ohio ",
+        "abbr": " OH ",
+        "value": 196.653890426652,
+        "select": "unselected"
+      },
+      {
+        "name": " Wyoming ",
+        "abbr": " WY ",
+        "value": 196.160888270496,
+        "select": "unselected"
+      },
+      {
+        "name": " Nevada ",
+        "abbr": " NV ",
+        "value": 194.810762828976,
+        "select": "unselected"
+      },
+      {
+        "name": " Delaware ",
+        "abbr": " DE ",
+        "value": 194.577661515607,
+        "select": "unselected"
+      },
+      {
+        "name": " Illinois ",
+        "abbr": " IL ",
+        "value": 193.428283097038,
+        "select": "unselected"
+      },
+      {
+        "name": " Connecticut ",
+        "abbr": " CT ",
+        "value": 192.5150911252,
+        "select": "unselected"
+      },
+      {
+        "name": " Indiana ",
+        "abbr": " IN ",
+        "value": 190.573580680009,
+        "select": "unselected"
+      },
+      {
+        "name": " California ",
+        "abbr": " CA ",
+        "value": 189.251330251743,
+        "select": "unselected"
+      },
+      {
+        "name": " North Carolina ",
+        "abbr": " NC ",
+        "value": 182.414236426228,
+        "select": "unselected"
+      },
+      {
+        "name": " Michigan ",
+        "abbr": " MI ",
+        "value": 181.945659294283,
+        "select": "unselected"
+      },
+      {
+        "name": " Kentucky ",
+        "abbr": " KY ",
+        "value": 177.458828685062,
+        "select": "unselected"
+      },
+      {
+        "name": " Pennsylvania ",
+        "abbr": " PA ",
+        "value": 172.91262865624,
+        "select": "unselected"
+      },
+      {
+        "name": " Maryland ",
+        "abbr": " MD ",
+        "value": 172.030376002055,
+        "select": "unselected"
+      },
+      {
+        "name": " Kansas ",
+        "abbr": " KS ",
+        "value": 171.772906464418,
+        "select": "unselected"
+      },
+      {
+        "name": " Florida ",
+        "abbr": " FL ",
+        "value": 167.706681274002,
+        "select": "unselected"
+      },
+      {
+        "name": " North Dakota ",
+        "abbr": " ND ",
+        "value": 166.555028854081,
+        "select": "unselected"
+      },
+      {
+        "name": " Virginia ",
+        "abbr": " VA ",
+        "value": 159.30761952214,
+        "select": "unselected"
+      },
+      {
+        "name": " Iowa ",
+        "abbr": " IA ",
+        "value": 159.173572194689,
+        "select": "unselected"
+      },
+      {
+        "name": " Wisconsin ",
+        "abbr": " WI ",
+        "value": 144.021113690752,
+        "select": "unselected"
+      },
+      {
+        "name": " Rhode Island ",
+        "abbr": " RI ",
+        "value": 142.488673800881,
+        "select": "unselected"
+      },
+      {
+        "name": " Massachusetts ",
+        "abbr": " MA ",
+        "value": 126.033144631248,
+        "select": "unselected"
+      },
+      {
+        "name": " Colorado ",
+        "abbr": " CO ",
+        "value": 120.612039002423,
+        "select": "unselected"
+      },
+      {
+        "name": " Alaska ",
+        "abbr": " AK ",
+        "value": 120.597128969655,
+        "select": "unselected"
+      },
+      {
+        "name": " Nebraska ",
+        "abbr": " NE ",
+        "value": 115.96566190339,
+        "select": "unselected"
+      },
+      {
+        "name": " Minnesota ",
+        "abbr": " MN ",
+        "value": 113.446484361288,
+        "select": "unselected"
+      },
+      {
+        "name": " Montana ",
+        "abbr": " MT ",
+        "value": 113.384528165748,
+        "select": "unselected"
+      },
+      {
+        "name": " Idaho ",
+        "abbr": " ID ",
+        "value": 80.0380756819228,
+        "select": "unselected"
+      },
+      {
+        "name": " New Hampshire ",
+        "abbr": " NH ",
+        "value": 75.9160230755651,
+        "select": "unselected"
+      },
+      {
+        "name": " Utah ",
+        "abbr": " UT ",
+        "value": 72.387281571416,
+        "select": "unselected"
+      },
+      {
+        "name": " Oregon ",
+        "abbr": " OR ",
+        "value": 63.7045317752306,
+        "select": "unselected"
+      },
+      {
+        "name": " Washington ",
+        "abbr": " WA ",
+        "value": 51.6833188827682,
+        "select": "unselected"
+      },
+      {
+        "name": " Vermont ",
+        "abbr": " VT ",
+        "value": 45.6159480853018,
+        "select": "unselected"
+      },
+      {
+        "name": " Maine ",
+        "abbr": " ME ",
+        "value": 44.1248870241236,
+        "select": "unselected"
+      },
+      {
+        "name": " Hawaii ",
+        "abbr": " HI ",
+        "value": 14.873344821551,
+        "select": "unselected"
+      }
     ]
   },
   {
     "bars": [
-      { "name": " New Jersey ", "abbr": " NJ ", "value": 214.6701692, "select": "unselected" },
-      { "name": " New York ", "abbr": " NY ", "value": 214.1152024, "select": "unselected" },
-      { "name": " South Dakota ", "abbr": " SD ", "value": 201.4856349, "select": "unselected" },
-      { "name": " Connecticut ", "abbr": " CT ", "value": 192.957271, "select": "unselected" },
-      { "name": " North Dakota ", "abbr": " ND ", "value": 185.9542457, "select": "unselected" },
-      { "name": " Mississippi ", "abbr": " MS ", "value": 180.8554748, "select": "unselected" },
-      { "name": " Rhode Island ", "abbr": " RI ", "value": 174.3973343, "select": "unselected" },
-      { "name": " Louisiana ", "abbr": " LA ", "value": 168.2794885, "select": "unselected" },
-      { "name": " Iowa ", "abbr": " IA ", "value": 162.5802854, "select": "unselected" },
-      { "name": " New Mexico ", "abbr": " NM ", "value": 161.775999, "select": "unselected" },
-      { "name": " Massachusetts ", "abbr": " MA ", "value": 159.9315175, "select": "unselected" },
-      { "name": " Alabama ", "abbr": " AL ", "value": 156.7393676, "select": "unselected" },
-      { "name": " Pennsylvania ", "abbr": " PA ", "value": 153.7786518, "select": "unselected" },
-      { "name": " Indiana ", "abbr": " IN ", "value": 150.8009976, "select": "unselected" },
-      { "name": " Illinois ", "abbr": " IL ", "value": 147.8534, "select": "unselected" },
-      { "name": " Oklahoma ", "abbr": " OK ", "value": 146.2618401, "select": "unselected" },
-      { "name": " Arizona ", "abbr": " AZ ", "value": 145.7633831, "select": "unselected" },
+      {
+        "name": " New York ",
+        "abbr": " NY ",
+        "value": 226.833967914686,
+        "select": "unselected"
+      },
+      {
+        "name": " New Jersey ",
+        "abbr": " NJ ",
+        "value": 216.487606778521,
+        "select": "unselected"
+      },
+      {
+        "name": " Mississippi ",
+        "abbr": " MS ",
+        "value": 205.658897518272,
+        "select": "unselected"
+      },
+      {
+        "name": " Alabama ",
+        "abbr": " AL ",
+        "value": 197.291656477357,
+        "select": "unselected"
+      },
+      {
+        "name": " Connecticut ",
+        "abbr": " CT ",
+        "value": 197.173274984134,
+        "select": "unselected"
+      },
+      {
+        "name": " Arizona ",
+        "abbr": " AZ ",
+        "value": 193.599986430096,
+        "select": "unselected"
+      },
+      {
+        "name": " Rhode Island ",
+        "abbr": " RI ",
+        "value": 188.976291315068,
+        "select": "unselected"
+      },
+      {
+        "name": " Oklahoma ",
+        "abbr": " OK ",
+        "value": 187.367713173025,
+        "select": "unselected"
+      },
+      {
+        "name": " South Dakota ",
+        "abbr": " SD ",
+        "value": 182.654579894466,
+        "select": "unselected"
+      },
+      {
+        "name": " Louisiana ",
+        "abbr": " LA ",
+        "value": 178.861480859499,
+        "select": "unselected"
+      },
+      {
+        "name": " New Mexico ",
+        "abbr": " NM ",
+        "value": 176.188872958649,
+        "select": "unselected"
+      },
+      {
+        "name": " Pennsylvania ",
+        "abbr": " PA ",
+        "value": 173.962080525985,
+        "select": "unselected"
+      },
+      {
+        "name": " Arkansas ",
+        "abbr": " AR ",
+        "value": 165.542650533196,
+        "select": "unselected"
+      },
+      {
+        "name": " Massachusetts ",
+        "abbr": " MA ",
+        "value": 165.105990988816,
+        "select": "unselected"
+      },
+      {
+        "name": " South Carolina ",
+        "abbr": " SC ",
+        "value": 161.897470252337,
+        "select": "unselected"
+      },
+      {
+        "name": " Indiana ",
+        "abbr": " IN ",
+        "value": 161.568283175482,
+        "select": "unselected"
+      },
+      {
+        "name": " Iowa ",
+        "abbr": " IA ",
+        "value": 161.198761149529,
+        "select": "unselected"
+      },
+      {
+        "name": " Ohio ",
+        "abbr": " OH ",
+        "value": 158.579930900455,
+        "select": "unselected"
+      },
+      {
+        "name": " North Dakota ",
+        "abbr": " ND ",
+        "value": 156.89406430338,
+        "select": "unselected"
+      },
+      {
+        "name": " Texas ",
+        "abbr": " TX ",
+        "value": 156.573540464719,
+        "select": "unselected"
+      },
+      {
+        "name": " Nevada ",
+        "abbr": " NV ",
+        "value": 153.767545734444,
+        "select": "unselected"
+      },
+      {
+        "name": " Illinois ",
+        "abbr": " IL ",
+        "value": 148.587163727862,
+        "select": "unselected"
+      },
       {
         "name": " District of Columbia ",
         "abbr": " DC ",
-        "value": 144.3848874,
+        "value": 148.554848013622,
         "select": "unselected"
       },
-      { "name": " Arkansas ", "abbr": " AR ", "value": 140.1026159, "select": "unselected" },
-      { "name": " Missouri ", "abbr": " MO ", "value": 139.0149839, "select": "unselected" },
-      { "name": " Ohio ", "abbr": " OH ", "value": 138.6406743, "select": "unselected" },
-      { "name": " Michigan ", "abbr": " MI ", "value": 136.043731, "select": "unselected" },
-      { "name": " Kansas ", "abbr": " KS ", "value": 134.5128156, "select": "unselected" },
-      { "name": " Nebraska ", "abbr": " NE ", "value": 127.4498385, "select": "unselected" },
-      { "name": " Texas ", "abbr": " TX ", "value": 126.7963301, "select": "unselected" },
-      { "name": " Nevada ", "abbr": " NV ", "value": 124.9409482, "select": "unselected" },
-      { "name": " South Carolina ", "abbr": " SC ", "value": 123.176684, "select": "unselected" },
-      { "name": " Delaware ", "abbr": " DE ", "value": 122.0752798, "select": "unselected" },
-      { "name": " Tennessee ", "abbr": " TN ", "value": 118.5806258, "select": "unselected" },
-      { "name": " Maryland ", "abbr": " MD ", "value": 116.8857693, "select": "unselected" },
-      { "name": " Florida ", "abbr": " FL ", "value": 113.1392852, "select": "unselected" },
-      { "name": " Wisconsin ", "abbr": " WI ", "value": 110.5592592, "select": "unselected" },
-      { "name": " Minnesota ", "abbr": " MN ", "value": 109.755327, "select": "unselected" },
-      { "name": " Kentucky ", "abbr": " KY ", "value": 109.6553559, "select": "unselected" },
-      { "name": " Montana ", "abbr": " MT ", "value": 106.4636544, "select": "unselected" },
-      { "name": " Georgia ", "abbr": " GA ", "value": 105.5784988, "select": "unselected" },
-      { "name": " West Virginia ", "abbr": " WV ", "value": 99.09049718, "select": "unselected" },
-      { "name": " Wyoming ", "abbr": " WY ", "value": 95.73551248, "select": "unselected" },
-      { "name": " California ", "abbr": " CA ", "value": 95.2953997, "select": "unselected" },
-      { "name": " Colorado ", "abbr": " CO ", "value": 91.05346696, "select": "unselected" },
-      { "name": " North Carolina ", "abbr": " NC ", "value": 90.21699226, "select": "unselected" },
-      { "name": " Idaho ", "abbr": " ID ", "value": 87.81692015, "select": "unselected" },
-      { "name": " Virginia ", "abbr": " VA ", "value": 81.18226241, "select": "unselected" },
-      { "name": " New Hampshire ", "abbr": " NH ", "value": 66.77704154, "select": "unselected" },
-      { "name": " Washington ", "abbr": " WA ", "value": 51.32903022, "select": "unselected" },
-      { "name": " Utah ", "abbr": " UT ", "value": 50.07130369, "select": "unselected" },
-      { "name": " Alaska ", "abbr": " AK ", "value": 45.33298513, "select": "unselected" },
-      { "name": " Oregon ", "abbr": " OR ", "value": 40.88415284, "select": "unselected" },
-      { "name": " Maine ", "abbr": " ME ", "value": 36.9458671, "select": "unselected" },
-      { "name": " Hawaii ", "abbr": " HI ", "value": 28.39079402, "select": "unselected" },
-      { "name": " Vermont ", "abbr": " VT ", "value": 25.30747805, "select": "unselected" }
+      {
+        "name": " Missouri ",
+        "abbr": " MO ",
+        "value": 147.581952102003,
+        "select": "unselected"
+      },
+      {
+        "name": " Tennessee ",
+        "abbr": " TN ",
+        "value": 146.35243639846,
+        "select": "unselected"
+      },
+      {
+        "name": " Kansas ",
+        "abbr": " KS ",
+        "value": 145.582397795632,
+        "select": "unselected"
+      },
+      {
+        "name": " California ",
+        "abbr": " CA ",
+        "value": 145.314410987701,
+        "select": "unselected"
+      },
+      {
+        "name": " Delaware ",
+        "abbr": " DE ",
+        "value": 144.015727688159,
+        "select": "unselected"
+      },
+      {
+        "name": " Georgia ",
+        "abbr": " GA ",
+        "value": 137.817760756651,
+        "select": "unselected"
+      },
+      {
+        "name": " Michigan ",
+        "abbr": " MI ",
+        "value": 134.943652297145,
+        "select": "unselected"
+      },
+      {
+        "name": " West Virginia ",
+        "abbr": " WV ",
+        "value": 130.120527700476,
+        "select": "unselected"
+      },
+      {
+        "name": " Kentucky ",
+        "abbr": " KY ",
+        "value": 129.869062029366,
+        "select": "unselected"
+      },
+      {
+        "name": " Maryland ",
+        "abbr": " MD ",
+        "value": 129.201506419375,
+        "select": "unselected"
+      },
+      {
+        "name": " Florida ",
+        "abbr": " FL ",
+        "value": 127.583474726541,
+        "select": "unselected"
+      },
+      {
+        "name": " North Carolina ",
+        "abbr": " NC ",
+        "value": 120.524203423621,
+        "select": "unselected"
+      },
+      {
+        "name": " Nebraska ",
+        "abbr": " NE ",
+        "value": 115.250455177995,
+        "select": "unselected"
+      },
+      {
+        "name": " Wisconsin ",
+        "abbr": " WI ",
+        "value": 112.225127481421,
+        "select": "unselected"
+      },
+      {
+        "name": " Virginia ",
+        "abbr": " VA ",
+        "value": 106.254599642542,
+        "select": "unselected"
+      },
+      {
+        "name": " Minnesota ",
+        "abbr": " MN ",
+        "value": 105.749991224067,
+        "select": "unselected"
+      },
+      {
+        "name": " Montana ",
+        "abbr": " MT ",
+        "value": 100.941680594312,
+        "select": "unselected"
+      },
+      {
+        "name": " Wyoming ",
+        "abbr": " WY ",
+        "value": 99.8542854275044,
+        "select": "unselected"
+      },
+      {
+        "name": " Colorado ",
+        "abbr": " CO ",
+        "value": 89.080002293239,
+        "select": "unselected"
+      },
+      {
+        "name": " Idaho ",
+        "abbr": " ID ",
+        "value": 87.2748403981684,
+        "select": "unselected"
+      },
+      {
+        "name": " New Hampshire ",
+        "abbr": " NH ",
+        "value": 82.7448328067643,
+        "select": "unselected"
+      },
+      {
+        "name": " Utah ",
+        "abbr": " UT ",
+        "value": 55.8586233504918,
+        "select": "unselected"
+      },
+      {
+        "name": " Washington ",
+        "abbr": " WA ",
+        "value": 55.3235375762061,
+        "select": "unselected"
+      },
+      {
+        "name": " Maine ",
+        "abbr": " ME ",
+        "value": 52.6118553027019,
+        "select": "unselected"
+      },
+      {
+        "name": " Oregon ",
+        "abbr": " OR ",
+        "value": 45.8908571491939,
+        "select": "unselected"
+      },
+      {
+        "name": " Hawaii ",
+        "abbr": " HI ",
+        "value": 27.9480525949144,
+        "select": "unselected"
+      },
+      {
+        "name": " Alaska ",
+        "abbr": " AK ",
+        "value": 25.3999175027473,
+        "select": "unselected"
+      },
+      {
+        "name": " Vermont ",
+        "abbr": " VT ",
+        "value": 23.4328500438194,
+        "select": "unselected"
+      }
     ]
   },
   {
     "bars": [
-      { "name": " Wyoming ", "abbr": " WY ", "value": 46.52, "select": "unselected" },
-      { "name": " South Carolina ", "abbr": " SC ", "value": 43.66, "select": "unselected" },
-      { "name": " Alaska ", "abbr": " AK ", "value": 43.01, "select": "unselected" },
-      { "name": " Arizona ", "abbr": " AZ ", "value": 42.42, "select": "unselected" },
-      { "name": " West Virginia ", "abbr": " WV ", "value": 42.42, "select": "unselected" },
-      { "name": " Mississippi ", "abbr": " MS ", "value": 39.98, "select": "unselected" },
-      { "name": " North Carolina ", "abbr": " NC ", "value": 38.69, "select": "unselected" },
-      { "name": " Vermont ", "abbr": " VT ", "value": 38.64, "select": "unselected" },
-      { "name": " Oregon ", "abbr": " OR ", "value": 37.62, "select": "unselected" },
-      { "name": " Tennessee ", "abbr": " TN ", "value": 37.5, "select": "unselected" },
-      { "name": " Louisiana ", "abbr": " LA ", "value": 37.27, "select": "unselected" },
-      { "name": " Georgia ", "abbr": " GA ", "value": 36.79, "select": "unselected" },
-      { "name": " Virginia ", "abbr": " VA ", "value": 34.5, "select": "unselected" },
-      { "name": " New Mexico ", "abbr": " NM ", "value": 31.99, "select": "unselected" },
-      { "name": " Missouri ", "abbr": " MO ", "value": 30.76, "select": "unselected" },
-      { "name": " Kentucky ", "abbr": " KY ", "value": 30.6, "select": "unselected" },
-      { "name": " Michigan ", "abbr": " MI ", "value": 29.84, "select": "unselected" },
-      { "name": " Delaware ", "abbr": " DE ", "value": 29.51, "select": "unselected" },
-      { "name": " Florida ", "abbr": " FL ", "value": 28.77, "select": "unselected" },
-      { "name": " Arkansas ", "abbr": " AR ", "value": 28.72, "select": "unselected" },
-      { "name": " Wisconsin ", "abbr": " WI ", "value": 28.2, "select": "unselected" },
-      { "name": " Maryland ", "abbr": " MD ", "value": 27.55, "select": "unselected" },
-      { "name": " Alabama ", "abbr": " AL ", "value": 27.32, "select": "unselected" },
-      { "name": " Utah ", "abbr": " UT ", "value": 27.25, "select": "unselected" },
-      { "name": " California ", "abbr": " CA ", "value": 26.79, "select": "unselected" },
-      { "name": " District of Columbia ", "abbr": " DC ", "value": 25.87, "select": "unselected" },
-      { "name": " Colorado ", "abbr": " CO ", "value": 25.25, "select": "unselected" },
-      { "name": " Texas ", "abbr": " TX ", "value": 25.09, "select": "unselected" },
-      { "name": " Illinois ", "abbr": " IL ", "value": 25.08, "select": "unselected" },
-      { "name": " Ohio ", "abbr": " OH ", "value": 23.54, "select": "unselected" },
-      { "name": " Oklahoma ", "abbr": " OK ", "value": 23.3, "select": "unselected" },
-      { "name": " Indiana ", "abbr": " IN ", "value": 18.83, "select": "unselected" },
-      { "name": " Nevada ", "abbr": " NV ", "value": 17.65, "select": "unselected" },
-      { "name": " Kansas ", "abbr": " KS ", "value": 17.22, "select": "unselected" },
-      { "name": " Montana ", "abbr": " MT ", "value": 12.36, "select": "unselected" },
-      { "name": " New York ", "abbr": " NY ", "value": 12.27, "select": "unselected" },
-      { "name": " Minnesota ", "abbr": " MN ", "value": 11.09, "select": "unselected" },
-      { "name": " Maine ", "abbr": " ME ", "value": 7.71, "select": "unselected" },
-      { "name": " South Dakota ", "abbr": " SD ", "value": 6.66, "select": "unselected" },
-      { "name": " Iowa ", "abbr": " IA ", "value": 3.94, "select": "unselected" },
-      { "name": " New Jersey ", "abbr": " NJ ", "value": 3.84, "select": "unselected" },
-      { "name": " Pennsylvania ", "abbr": " PA ", "value": 3.57, "select": "unselected" },
-      { "name": " Nebraska ", "abbr": " NE ", "value": 3.21, "select": "unselected" },
-      { "name": " North Dakota ", "abbr": " ND ", "value": 1.23, "select": "unselected" },
-      { "name": " Connecticut ", "abbr": " CT ", "value": 0.76, "select": "unselected" },
-      { "name": " Rhode Island ", "abbr": " RI ", "value": 0.0, "select": "unselected" },
-      { "name": " Massachusetts ", "abbr": " MA ", "value": 0.0, "select": "unselected" },
-      { "name": " Idaho ", "abbr": " ID ", "value": 0.0, "select": "unselected" },
-      { "name": " New Hampshire ", "abbr": " NH ", "value": 0.0, "select": "unselected" },
-      { "name": " Washington ", "abbr": " WA ", "value": 0.0, "select": "unselected" },
-      { "name": " Hawaii ", "abbr": " HI ", "value": 0.0, "select": "unselected" }
+      {
+        "name": " Alaska ",
+        "abbr": " AK ",
+        "value": 78.9382071366406,
+        "select": "unselected"
+      },
+      {
+        "name": " Wyoming ",
+        "abbr": " WY ",
+        "value": 49.095721217468004,
+        "select": "unselected"
+      },
+      {
+        "name": " Vermont ",
+        "abbr": " VT ",
+        "value": 48.630136986301395,
+        "select": "unselected"
+      },
+      {
+        "name": " West Virginia ",
+        "abbr": " WV ",
+        "value": 39.7178723954963,
+        "select": "unselected"
+      },
+      {
+        "name": " Mississippi ",
+        "abbr": " MS ",
+        "value": 37.793223284100804,
+        "select": "unselected"
+      },
+      {
+        "name": " South Carolina ",
+        "abbr": " SC ",
+        "value": 37.120840101235196,
+        "select": "unselected"
+      },
+      {
+        "name": " Louisiana ",
+        "abbr": " LA ",
+        "value": 37.100068073519395,
+        "select": "unselected"
+      },
+      {
+        "name": " Arizona ",
+        "abbr": " AZ ",
+        "value": 35.480831781780694,
+        "select": "unselected"
+      },
+      {
+        "name": " Georgia ",
+        "abbr": " GA ",
+        "value": 34.574844995571304,
+        "select": "unselected"
+      },
+      {
+        "name": " North Carolina ",
+        "abbr": " NC ",
+        "value": 33.9282910232923,
+        "select": "unselected"
+      },
+      {
+        "name": " Virginia ",
+        "abbr": " VA ",
+        "value": 33.3022488432983,
+        "select": "unselected"
+      },
+      {
+        "name": " Tennessee ",
+        "abbr": " TN ",
+        "value": 32.3526461836782,
+        "select": "unselected"
+      },
+      {
+        "name": " New Mexico ",
+        "abbr": " NM ",
+        "value": 30.582207731718704,
+        "select": "unselected"
+      },
+      {
+        "name": " District of Columbia ",
+        "abbr": " DC ",
+        "value": 28.151260504201698,
+        "select": "unselected"
+      },
+      {
+        "name": " Oregon ",
+        "abbr": " OR ",
+        "value": 27.962962962963,
+        "select": "unselected"
+      },
+      {
+        "name": " Missouri ",
+        "abbr": " MO ",
+        "value": 27.892020643112296,
+        "select": "unselected"
+      },
+      {
+        "name": " Kentucky ",
+        "abbr": " KY ",
+        "value": 26.817356458581198,
+        "select": "unselected"
+      },
+      {
+        "name": " Colorado ",
+        "abbr": " CO ",
+        "value": 26.1433576365874,
+        "select": "unselected"
+      },
+      {
+        "name": " Arkansas ",
+        "abbr": " AR ",
+        "value": 26.0811611374408,
+        "select": "unselected"
+      },
+      {
+        "name": " Delaware ",
+        "abbr": " DE ",
+        "value": 25.9854771784232,
+        "select": "unselected"
+      },
+      {
+        "name": " Michigan ",
+        "abbr": " MI ",
+        "value": 25.83299166325,
+        "select": "unselected"
+      },
+      {
+        "name": " Maryland ",
+        "abbr": " MD ",
+        "value": 24.8961088024178,
+        "select": "unselected"
+      },
+      {
+        "name": " Alabama ",
+        "abbr": " AL ",
+        "value": 24.775460496270398,
+        "select": "unselected"
+      },
+      {
+        "name": " Florida ",
+        "abbr": " FL ",
+        "value": 23.924632127152602,
+        "select": "unselected"
+      },
+      {
+        "name": " Texas ",
+        "abbr": " TX ",
+        "value": 23.7176494130203,
+        "select": "unselected"
+      },
+      {
+        "name": " California ",
+        "abbr": " CA ",
+        "value": 23.2161745999866,
+        "select": "unselected"
+      },
+      {
+        "name": " Illinois ",
+        "abbr": " IL ",
+        "value": 23.1822971548999,
+        "select": "unselected"
+      },
+      {
+        "name": " Utah ",
+        "abbr": " UT ",
+        "value": 22.8336495888678,
+        "select": "unselected"
+      },
+      {
+        "name": " Wisconsin ",
+        "abbr": " WI ",
+        "value": 22.0773089406905,
+        "select": "unselected"
+      },
+      {
+        "name": " Nevada ",
+        "abbr": " NV ",
+        "value": 21.0682492581602,
+        "select": "unselected"
+      },
+      {
+        "name": " Ohio ",
+        "abbr": " OH ",
+        "value": 19.3608981971284,
+        "select": "unselected"
+      },
+      {
+        "name": " Oklahoma ",
+        "abbr": " OK ",
+        "value": 19.2564813305071,
+        "select": "unselected"
+      },
+      {
+        "name": " Kansas ",
+        "abbr": " KS ",
+        "value": 15.247170935080401,
+        "select": "unselected"
+      },
+      {
+        "name": " Indiana ",
+        "abbr": " IN ",
+        "value": 15.2199992260361,
+        "select": "unselected"
+      },
+      {
+        "name": " South Dakota ",
+        "abbr": " SD ",
+        "value": 13.452443510247,
+        "select": "unselected"
+      },
+      {
+        "name": " Montana ",
+        "abbr": " MT ",
+        "value": 10.974025974026,
+        "select": "unselected"
+      },
+      {
+        "name": " New York ",
+        "abbr": " NY ",
+        "value": 9.21739130434782,
+        "select": "unselected"
+      },
+      {
+        "name": " Minnesota ",
+        "abbr": " MN ",
+        "value": 6.78425001933937,
+        "select": "unselected"
+      },
+      {
+        "name": " North Dakota ",
+        "abbr": " ND ",
+        "value": 5.80046403712297,
+        "select": "unselected"
+      },
+      {
+        "name": " New Jersey ",
+        "abbr": " NJ ",
+        "value": 1.44884610638035,
+        "select": "unselected"
+      },
+      {
+        "name": " Nebraska ",
+        "abbr": " NE ",
+        "value": 0.61674008810572,
+        "select": "unselected"
+      },
+      {
+        "name": " Massachusetts ",
+        "abbr": " MA ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Maine ",
+        "abbr": " ME ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Connecticut ",
+        "abbr": " CT ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Washington ",
+        "abbr": " WA ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Idaho ",
+        "abbr": " ID ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Iowa ",
+        "abbr": " IA ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Pennsylvania ",
+        "abbr": " PA ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Hawaii ",
+        "abbr": " HI ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " New Hampshire ",
+        "abbr": " NH ",
+        "value": 0.0,
+        "select": "unselected"
+      },
+      {
+        "name": " Rhode Island ",
+        "abbr": " RI ",
+        "value": 0.0,
+        "select": "unselected"
+      }
     ]
   },
   {
