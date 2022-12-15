@@ -51,17 +51,30 @@ const NationalDashboard: React.FC = () => {
   const barData2021: barTest[] = barchart2021;
   const [currGraph, setCurrGraph] = useState<JSX.Element[]>(
     graphs[0].graphs.map((graph) => (
-      <DWChart key={graph.url} title={graph.id} src={graph.url} className={styles.appIFrame} />
+      <DWChart
+        key={graph.url}
+        title={graph.id}
+        src={graph.url}
+        className={[styles.appIFrame, styles.appIFrameLarge].join(' ')}
+      />
     ))
   );
-  const [currBar, setCurrBar] = useState(<DemoColumn data={barData2020[0].bars} />);
+  const [currBar, setCurrBar] = useState<JSX.Element | null>(null);
   const onChange = (value: string) => {
+    const pos = parseInt(value);
     setCurrGraph(
-      graphs[parseInt(value)].graphs.map((graph) => (
-        <DWChart key={graph.url} title={graph.id} src={graph.url} className={styles.appIFrame} />
+      graphs[pos].graphs.map((graph) => (
+        <DWChart
+          key={graph.url}
+          title={graph.id}
+          src={graph.url}
+          className={[styles.appIFrame, pos === 0 ? styles.appIFrameLarge : ''].join(' ')}
+        />
       ))
     );
-    setCurrBar(<DemoColumn data={barData2020[parseInt(value)].bars} />);
+    if (pos !== 0) {
+      setCurrBar(<DemoColumn data={barData2020[pos].bars} />);
+    }
   };
   useEffect(() => {
     if (!loaded) return;
